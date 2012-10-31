@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha28.2.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Viewer" filename="C:\Users\AM\Desktop\node13_workshop\PATCH\Viewer.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
+   <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\_Viewer.v4p" systemname="Viewer" filename="C:\Users\AM\Desktop\node13_workshop\PATCH\Viewer.v4p">
    <BOUNDS type="Window" left="3825" top="2820" width="10920" height="10845">
    </BOUNDS>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="20">
