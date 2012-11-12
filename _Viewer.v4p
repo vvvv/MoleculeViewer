@@ -1,13 +1,13 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\_Viewer.v4p" systemname="Viewer" filename="C:\Users\AM\Desktop\node13_workshop\PATCH\Viewer.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha28.2.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Viewer" filename="C:\Users\AM\Desktop\node13_workshop\PATCH\Viewer.v4p">
    <BOUNDS type="Window" left="180" top="2835" width="14955" height="12510">
    </BOUNDS>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="8235" top="10275" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Aspect Width" visible="1" slicecount="1" values="514">
+   <PIN pinname="Aspect Width" visible="1" slicecount="1" values="575">
    </PIN>
-   <PIN pinname="Aspect Height" visible="1" slicecount="1" values="459">
+   <PIN pinname="Aspect Height" visible="1" slicecount="1" values="521">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -31,13 +31,13 @@
    </PIN>
    </NODE>
    <NODE systemname="DrawBonds" filename="DrawBonds.v4p" nodename="DrawBonds.v4p" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="5505" top="7410" width="1140" height="270">
+   <BOUNDS type="Node" left="5580" top="7425" width="1140" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5505" top="7410" width="4860" height="4300">
+   <BOUNDS type="Box" left="5580" top="7425" width="4860" height="4300">
    </BOUNDS>
    <BOUNDS type="Window" left="10275" top="7275" width="4515" height="4845">
    </BOUNDS>
-   <PIN pinname="XZY" visible="1" slicecount="42" values="-0.7145,-0.4125,0,-0.7145,0.4125,0,0.7145,-0.4125,0,0.525465667247772,0.272960275411606,0.0691316798329353,0,-0.825,0,0,0.825,0,1.23925507068634,0.818816304206848,-0.00709339277818799,1.4992,-0.6675,0,1.9841,0,0,-1.78090739250183,-1.00205969810486,0.115176491439342,-0.194312855601311,1.74456644058228,-0.149702101945877,0.0001,-1.65,0,1.7541,1.452,0,-1.4289,0.825,0">
+   <PIN pinname="XZY" visible="1" slicecount="69" values="-0.7145,-0.4125,0,-0.7145,0.4125,0,0.7145,-0.4125,0,0.525465667247772,0.272960275411606,0.0691316798329353,0,-0.825,0,0,0.825,0,1.23925507068634,0.818816304206848,-0.00709339277818799,1.4992,-0.6675,0,1.9841,0,0,-1.78090739250183,-1.00205969810486,0.115176491439342,-0.194312855601311,1.74456644058228,-0.149702101945877,0.0001,-1.65,0,1.7541,1.452,0,-1.4289,0.825,0">
    </PIN>
    <PIN pinname="Bounds" visible="1" slicecount="30" values="9,0,0,1,13,1,7,2,3,2,6,3,0,4,4,2,11,4,5,1,5,3,10,5,8,6,12,6,8,7">
    </PIN>
@@ -207,9 +207,9 @@
    </PIN>
    </NODE>
    <NODE systemname="DrawAtoms" filename="DrawAtoms.v4p" nodename="DrawAtoms.v4p" componentmode="Hidden" id="71">
-   <BOUNDS type="Node" left="4200" top="7410" width="990" height="270">
+   <BOUNDS type="Node" left="4095" top="6885" width="990" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4200" top="7410" width="5790" height="6400">
+   <BOUNDS type="Box" left="4095" top="6885" width="5790" height="6400">
    </BOUNDS>
    <BOUNDS type="Window" left="465" top="3690" width="14040" height="9375">
    </BOUNDS>
@@ -271,30 +271,6 @@
    <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="100" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="95" srcpinname="Layer" dstnodeid="100" dstpinname="Layer 2">
-   </LINK>
-   <NODE id="116" systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="4200" top="10245" width="3570" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4200" top="10245" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="17520" top="1245" width="8865" height="8325">
-   </BOUNDS>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="116" srcpinname="Actual Backbuffer Height" dstnodeid="20" dstpinname="Aspect Height">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="Transform Out" dstnodeid="116" dstpinname="Aspect Ratio">
-   </LINK>
-   <LINK srcnodeid="116" srcpinname="Actual Backbuffer Width" dstnodeid="20" dstpinname="Aspect Width">
-   </LINK>
-   <LINK srcnodeid="98" srcpinname="Color Output" dstnodeid="116" dstpinname="Background Color">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Layer" dstnodeid="116" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Bonds" dstnodeid="71" dstpinname="Bonds">
    </LINK>
@@ -390,10 +366,10 @@
    <PIN pinname="Space" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ViewTransform" filename="ViewTransform.v4p" nodename="ViewTransform.v4p" componentmode="Hidden" id="104" stayontop="0">
+   <NODE systemname="ViewTransform_ohneCamera" filename="ViewTransform_ohneCamera.v4p" nodename="ViewTransform_ohneCamera.v4p" componentmode="Hidden" id="104" stayontop="0">
    <BOUNDS type="Node" left="7374" top="3390" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4920" top="2400" width="10215" height="11850">
+   <BOUNDS type="Window" left="1590" top="960" width="14880" height="11475">
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -405,7 +381,7 @@
    </PIN>
    <PIN pinname="View" visible="1">
    </PIN>
-   <PIN pinname="Projection" visible="1">
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="OffsetXY" visible="1">
    </PIN>
@@ -419,13 +395,9 @@
    </PIN>
    <PIN pinname="IsSelected" visible="1">
    </PIN>
-   <PIN pinname="XYZ" visible="1">
+   <PIN pinname="XYZ" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="104" srcpinname="View" dstnodeid="116" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="104" srcpinname="Projection" dstnodeid="116" dstpinname="Projection">
-   </LINK>
    <LINK srcnodeid="152" srcpinname="Mouse" dstnodeid="104" dstpinname="Mouse">
    </LINK>
    <LINK srcnodeid="153" srcpinname="Output 1" dstnodeid="104" dstpinname="Selected Atom" linkstyle="Bezier">
@@ -540,12 +512,12 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Layer" dstnodeid="100" dstpinname="Layer 4">
    </LINK>
-   <NODE systemname="Shelf" filename="Shelf.v4p" nodename="Shelf.v4p" componentmode="InAWindow" id="169">
+   <NODE systemname="Shelf" filename="Shelf.v4p" nodename="Shelf.v4p" componentmode="Hidden" id="169">
    <BOUNDS type="Node" left="5095" top="8500" width="1080" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="2833" top="5410" width="4525" height="6180">
    </BOUNDS>
-   <BOUNDS type="Window" left="360" top="5115" width="12570" height="11025">
+   <BOUNDS type="Window" left="465" top="2580" width="15105" height="12570">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -652,22 +624,42 @@
    </LINK>
    <LINK srcnodeid="180" srcpinname="Output" dstnodeid="153" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="25" dstpinname="XZY">
-   </LINK>
-   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="181">
-   <BOUNDS type="Node" left="10125" top="3450" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="26" srcpinname="XYZ" dstnodeid="181" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="XYZ" dstnodeid="104" dstpinname="XYZ">
-   </LINK>
    <LINK srcnodeid="157" srcpinname="Output" dstnodeid="104" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="162" srcpinname="Mesh" dstnodeid="178" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="XYZ" dstnodeid="104" dstpinname="XYZ">
+   </LINK>
+   <NODE id="182" systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="4200" top="10245" width="3570" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4200" top="10245" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14535" top="1440" width="8865" height="8325">
+   </BOUNDS>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="182" srcpinname="Actual Backbuffer Height" dstnodeid="20" dstpinname="Aspect Height">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Transform Out" dstnodeid="182" dstpinname="Aspect Ratio">
+   </LINK>
+   <LINK srcnodeid="182" srcpinname="Actual Backbuffer Width" dstnodeid="20" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Color Output" dstnodeid="182" dstpinname="Background Color">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Layer" dstnodeid="182" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="View" dstnodeid="182" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="XYZ" dstnodeid="25" dstpinname="XZY">
    </LINK>
    </PATCH>
