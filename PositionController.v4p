@@ -300,8 +300,6 @@
    </LINK>
    <LINK srcnodeid="32" srcpinname="Output Node" dstnodeid="16" dstpinname="Source">
    </LINK>
-   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="7" dstpinname="XYZ">
-   </LINK>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="11" dstpinname="Spread">
    </LINK>
    <LINK srcnodeid="15" srcpinname="XYZ Transformed" dstnodeid="11" dstpinname="Input">
@@ -398,6 +396,8 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="OriginalXYZ">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input 2">
@@ -599,5 +599,7 @@
    <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform Mesh">
    </LINK>
    <LINK srcnodeid="32" srcpinname="Output Node" dstnodeid="1" dstpinname="View Projection">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="7" dstpinname="XYZ">
    </LINK>
    </PATCH>
