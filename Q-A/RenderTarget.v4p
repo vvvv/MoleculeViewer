@@ -1,0 +1,149 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
+   <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\RenderTarget.v4p" systemname="RenderTarget" filename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\RenderTarget.v4p">
+   <BOUNDS type="Window" left="11865" top="10065" width="6165" height="5685">
+   </BOUNDS>
+   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2940" top="3660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Format" slicecount="1" values="A8R8G8B8">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1980" top="2220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="(ROUTER DON&apos;T USE)" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="5" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="1980" top="1860" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="1860" width="1200" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="rendererSize">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="1965" top="2610" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Layers">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="6" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="4" dstpinname="Receive String">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="2940" top="4260" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2940" top="4260" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="3300" top="1440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="17" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="3300" top="1050" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3300" top="1050" width="1590" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="ViewAndProjection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output Enum" dstnodeid="18" dstpinname="Receive String">
+   </LINK>
+   <NODE systemname="CAR (Transform Bin)" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll" nodename="CAR (Transform Bin)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="3285" top="1845" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="2" values=",">
+   </PIN>
+   <PIN pinname="First Slice" visible="1">
+   </PIN>
+   <PIN pinname="Remainder" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Input Value" dstnodeid="16" dstpinname="Input">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="3570" top="7890" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="20" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="3570" top="7500" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3570" top="7500" width="1590" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="ViewAndProjection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="21" dstpinname="Receive String">
+   </LINK>
+   <NODE systemname="CAR (Transform Bin)" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll" nodename="CAR (Transform Bin)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="3555" top="8295" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="2" values=",">
+   </PIN>
+   <PIN pinname="First Slice" visible="1">
+   </PIN>
+   <PIN pinname="Remainder" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Input Value" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="1500" top="3090" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="3090" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17460" top="9735" width="6300" height="5280">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="24" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="X" dstnodeid="24" dstpinname="Backbuffer Width">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y" dstnodeid="24" dstpinname="Backbuffer Height">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="EX9 Out" dstnodeid="0" dstpinname="Source">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="First Slice" dstnodeid="24" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Remainder" dstnodeid="24" dstpinname="Projection">
+   </LINK>
+   </PATCH>
