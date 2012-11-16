@@ -5,7 +5,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" encoded="0" values="E:\Users\a\Desktop\Work\vvvv\workshop\MoleculeViewer_room2.jpg">
+   <PIN pinname="Filename" slicecount="1" encoded="0" values="Material\MoleculeViewer_room2.jpg">
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="1">
