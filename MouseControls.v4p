@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\MouseControls.v4p" systemname="MouseControls" filename="C:\Work\MoleculeViewer\MouseControls.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha28.2.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\MouseControls.v4p" systemname="MouseControls" filename="C:\Work\MoleculeViewer\MouseControls.v4p">
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1710" top="285" width="100" height="100">
    </BOUNDS>
@@ -164,4 +164,14 @@
    </LINK>
    <BOUNDS type="Window" left="13005" top="5580" width="4545" height="7515">
    </BOUNDS>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="11" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="3180" top="6330" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3180" top="6330" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Mouse" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
    </PATCH>

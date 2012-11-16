@@ -15,9 +15,9 @@
    </PIN>
    </NODE>
    <NODE systemname="DrawAtoms" filename="DrawAtoms.v4p" nodename="DrawAtoms.v4p" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="5265" top="5190" width="990" height="270">
+   <BOUNDS type="Node" left="5190" top="5190" width="990" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5265" top="5190" width="5790" height="6400">
+   <BOUNDS type="Box" left="5190" top="5190" width="5790" height="6400">
    </BOUNDS>
    <BOUNDS type="Window" left="465" top="3690" width="14040" height="9375">
    </BOUNDS>
@@ -101,17 +101,9 @@
    </PIN>
    <PIN pinname="Selected Atom" visible="1">
    </PIN>
-   </NODE>
-   <NODE id="6" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Mesh">
-   </PIN>
-   <BOUNDS type="Box" left="1245" top="510" width="345" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1245" top="510" width="750" height="240">
+   <BOUNDS type="Window" left="6855" top="405" width="13815" height="14565">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="1" dstpinname="Mesh">
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="1" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Selected Atom" dstnodeid="1" dstpinname="Selected Atom">
@@ -121,9 +113,9 @@
    <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="5250" top="6380" width="750" height="240">
+   <BOUNDS type="Box" left="5175" top="6380" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5250" top="6380" width="750" height="240">
+   <BOUNDS type="Node" left="5175" top="6380" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1">
    </PIN>
@@ -131,8 +123,6 @@
    <LINK srcnodeid="5" srcpinname="XYZ" dstnodeid="3" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="2" srcpinname="XYZ" dstnodeid="3" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="5" dstpinname="Mesh">
    </LINK>
    <NODE id="8" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Mouse">
@@ -222,10 +212,10 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Bounds">
    </LINK>
-   <BOUNDS type="Window" left="10290" top="6525" width="13515" height="8625">
+   <BOUNDS type="Window" left="3780" top="4380" width="13515" height="8625">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="5265" top="5850" width="100" height="100">
+   <BOUNDS type="Node" left="5190" top="5850" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -241,5 +231,27 @@
    <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="7" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="0" dstpinname="XZY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="8565" top="6195" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8565" top="6195" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|" encoded="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XYZ" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="18" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
