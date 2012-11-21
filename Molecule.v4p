@@ -14,7 +14,7 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="DrawAtoms" filename="DrawAtoms.v4p" nodename="DrawAtoms.v4p" componentmode="InAWindow" id="1">
+   <NODE systemname="DrawAtoms" filename="DrawAtoms.v4p" nodename="DrawAtoms.v4p" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="5190" top="5190" width="990" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5190" top="5190" width="5790" height="6400">
@@ -176,68 +176,6 @@
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="RenderTarget" filename="RenderTarget.v4p" nodename="RenderTarget.v4p" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="7487" top="6075" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5007" top="3798" width="4960" height="4555">
-   </BOUNDS>
-   <BOUNDS type="Window" left="15555" top="9030" width="6750" height="5640">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="30" dstpinname="Layer">
-   </LINK>
-   <NODE systemname="Blur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter).v4p" nodename="Blur (EX9.Texture Filter)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="7485" top="6525" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.49">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="30" srcpinname="Texture Out" dstnodeid="31" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="7155" top="7680" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="Texture" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Render State" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="7320" top="7230" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="32" dstpinname="Transform">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8295" top="6885" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8295" top="6885" width="360" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="10.26">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="33" dstpinname="XYZ">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="32" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="32" srcpinname="Layer" dstnodeid="17" dstpinname="Layer 1">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="36" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="10290" top="720" width="0" height="0">
    </BOUNDS>
@@ -248,8 +186,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="View">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Output Node" dstnodeid="30" dstpinname="View">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="37" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="11445" top="735" width="0" height="0">
    </BOUNDS>
@@ -260,24 +196,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Projection">
    </PIN>
    </NODE>
-   <LINK srcnodeid="37" srcpinname="Output Node" dstnodeid="30" dstpinname="Projection">
-   </LINK>
-   <NODE systemname="Blend (EX9.RenderState)" nodename="Blend (EX9.RenderState)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="9240" top="7080" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Render State Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="38" srcpinname="Render State Out" dstnodeid="32" dstpinname="Render State">
-   </LINK>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="39" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="9795" top="6405" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9795" top="6405" width="1590" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="Multiply">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="39" srcpinname="Output Enum" dstnodeid="38" dstpinname="Draw Mode">
+   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="17" dstpinname="Layer 1">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\_Viewer.v4p" systemname="Viewer" filename="C:\Users\AM\Desktop\node13_workshop\PATCH\Viewer.v4p">
-   <BOUNDS type="Window" left="1245" top="1560" width="17895" height="14355">
+   <BOUNDS type="Window" left="4740" top="2070" width="17895" height="14355">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="4500" top="6810" width="5520" height="270">
@@ -220,7 +220,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="MouseControls" filename="MouseControls.v4p" nodename="MouseControls.v4p" componentmode="InAWindow" id="152">
+   <NODE systemname="MouseControls" filename="MouseControls.v4p" nodename="MouseControls.v4p" componentmode="Hidden" id="152">
    <BOUNDS type="Node" left="7283" top="2322" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="4578" top="0" width="5410" height="7965">
@@ -628,7 +628,7 @@
    </LINK>
    <LINK srcnodeid="98" srcpinname="Color Output" dstnodeid="182" dstpinname="Background Color">
    </LINK>
-   <NODE systemname="PositionControllers" filename="PositionControllers.v4p" nodename="PositionControllers.v4p" componentmode="InAWindow" id="257" stayontop="0">
+   <NODE systemname="PositionControllers" filename="PositionControllers.v4p" nodename="PositionControllers.v4p" componentmode="Hidden" id="257" stayontop="0">
    <BOUNDS type="Node" left="4516" top="5047" width="3300" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1151" top="1965" width="6730" height="6165">
@@ -735,11 +735,11 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6375" top="9210" width="1080" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="RendererSize" encoded="0">
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="RendererSize">
    </PIN>
-   <PIN pinname="Default" slicecount="1" values="devnul" encoded="0">
+   <PIN pinname="Default" slicecount="1" encoded="0" values="devnul">
    </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||" encoded="0">
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>

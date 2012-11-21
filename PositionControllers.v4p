@@ -424,7 +424,7 @@
    </LINK>
    <LINK srcnodeid="40" srcpinname="XYZ" dstnodeid="28" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="ObjectSelected" filename="ObjectSelected.v4p" nodename="ObjectSelected.v4p" componentmode="InAWindow" id="60">
+   <NODE systemname="ObjectSelected" filename="ObjectSelected.v4p" nodename="ObjectSelected.v4p" componentmode="Hidden" id="60">
    <BOUNDS type="Node" left="2714" top="4075" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="2190" top="2295" width="5085" height="9480">
@@ -513,7 +513,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Selected MoleculeAtom|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Selected MoleculeAtom|">
    </PIN>
    </NODE>
    <LINK srcnodeid="60" srcpinname="Selected Atom" dstnodeid="66" dstpinname="Y Input Value">
@@ -555,7 +555,7 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -605,7 +605,7 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -629,7 +629,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10320" top="10230" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -637,7 +637,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="isSelected" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="isSelected">
    </PIN>
    </NODE>
    <LINK srcnodeid="80" srcpinname="Output" dstnodeid="81" dstpinname="Y Input Value">
