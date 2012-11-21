@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\Multipass_rendering.v4p" systemname="Multipass_rendering" filename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\Multipass_rendering.v4p">
-   <BOUNDS type="Window" left="855" top="2265" width="13680" height="12570">
+   <BOUNDS type="Window" left="825" top="2130" width="13680" height="12570">
    </BOUNDS>
    <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="6195" top="4935" width="100" height="100">
@@ -10,6 +10,8 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Diffuse Color" slicecount="1" values="|0.81651,0.81651,0.81651,0.51000|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
@@ -237,7 +239,7 @@
    <NODE systemname="Glow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Glow\Glow (EX9.Texture Filter).v4p" nodename="Glow (EX9.Texture Filter)" componentmode="Hidden" id="61">
    <BOUNDS type="Node" left="6480" top="6360" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="GlowAmount" slicecount="1" values="2.36">
+   <PIN pinname="GlowAmount" slicecount="1" values="1.68">
    </PIN>
    <PIN pinname="GlowShape" slicecount="1" values="0.27">
    </PIN>
@@ -329,7 +331,7 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="1.86">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -357,7 +359,7 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.3">
+   <PIN pinname="Width" slicecount="1" values="0.23">
    </PIN>
    </NODE>
    <LINK srcnodeid="35" srcpinname="Texture Out" dstnodeid="53" dstpinname="Input">
@@ -374,14 +376,12 @@
    </NODE>
    <LINK srcnodeid="61" srcpinname="Output" dstnodeid="70" dstpinname="Texture">
    </LINK>
-   <LINK srcnodeid="50" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 2">
-   </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="71">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="71">
    <BOUNDS type="Node" left="4515" top="10035" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4515" top="10035" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="16725" top="1530" width="9045" height="8865">
+   <BOUNDS type="Window" left="14820" top="1890" width="9045" height="8865">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="71" srcpinname="Actual Backbuffer Width" dstnodeid="15" dstpinname="Aspect Width">
@@ -403,5 +403,7 @@
    <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="61" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 2">
    </LINK>
    </PATCH>

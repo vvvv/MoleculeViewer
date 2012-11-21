@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\_Viewer.v4p" systemname="Viewer" filename="C:\Users\AM\Desktop\node13_workshop\PATCH\Viewer.v4p">
-   <BOUNDS type="Window" left="4740" top="2070" width="17895" height="14355">
+   <BOUNDS type="Window" left="1425" top="1215" width="17895" height="14355">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="4500" top="6810" width="5520" height="270">
@@ -163,7 +163,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13830" top="2085" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="9780" top="300" width="10455" height="6255">
+   <BOUNDS type="Window" left="9780" top="300" width="10455" height="5295">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -553,9 +553,9 @@
    <LINK srcnodeid="221" srcpinname="Inverse Output" dstnodeid="224" dstpinname="Switch">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="227" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6405" top="3060" width="0" height="0">
+   <BOUNDS type="Node" left="6390" top="3060" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6405" top="3060" width="480" height="480">
+   <BOUNDS type="Box" left="6390" top="3060" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -573,9 +573,9 @@
    <LINK srcnodeid="227" srcpinname="Y Output Value" dstnodeid="104" dstpinname="CameraOn">
    </LINK>
    <NODE systemname="ShelfViewTransform" filename="ShelfViewTransform.v4p" nodename="ShelfViewTransform.v4p" componentmode="Hidden" id="264">
-   <BOUNDS type="Node" left="6570" top="3745" width="0" height="0">
+   <BOUNDS type="Node" left="6570" top="3805" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4575" top="1490" width="3990" height="4510">
+   <BOUNDS type="Box" left="4575" top="1550" width="3990" height="4510">
    </BOUNDS>
    <BOUNDS type="Window" left="15480" top="6540" width="3990" height="4515">
    </BOUNDS>
@@ -593,7 +593,7 @@
    </PIN>
    <PIN pinname="Layers" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="19245" top="1695" width="7560" height="7815">
+   <BOUNDS type="Window" left="19950" top="1170" width="7560" height="7815">
    </BOUNDS>
    <BOUNDS type="Node" left="3525" top="8340" width="3570" height="270">
    </BOUNDS>
@@ -633,7 +633,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1151" top="1965" width="6730" height="6165">
    </BOUNDS>
-   <BOUNDS type="Window" left="4035" top="2850" width="12975" height="12615">
+   <BOUNDS type="Window" left="0" top="1170" width="19950" height="15810">
    </BOUNDS>
    <PIN pinname="Shelf ViewTransform" visible="1">
    </PIN>
@@ -648,6 +648,10 @@
    <PIN pinname="Selected Atom" visible="1">
    </PIN>
    <PIN pinname="Selected ShelfAtom" visible="1">
+   </PIN>
+   <PIN pinname="Molecule Atoms" visible="1">
+   </PIN>
+   <PIN pinname="Bonds" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="152" srcpinname="Mouse" dstnodeid="257" dstpinname="Mouse">
@@ -765,5 +769,9 @@
    <LINK srcnodeid="257" srcpinname="Selected MoleculeAtom" dstnodeid="274" dstpinname="Selected Atom">
    </LINK>
    <LINK srcnodeid="104" srcpinname="View" dstnodeid="274" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Atoms" dstnodeid="257" dstpinname="Molecule Atoms">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Bonds" dstnodeid="257" dstpinname="Bonds">
    </LINK>
    </PATCH>

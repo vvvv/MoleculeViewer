@@ -100,7 +100,7 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="5" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="12375" top="6240" width="6720" height="7380">
+   <BOUNDS type="Window" left="17160" top="5745" width="7245" height="9480">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="16" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="2535" top="435" width="0" height="0">
