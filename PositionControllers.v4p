@@ -40,7 +40,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="0" top="1170" width="19950" height="15810">
+   <BOUNDS type="Window" left="240" top="660" width="19950" height="15810">
    </BOUNDS>
    <NODE id="21" systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Input" visible="1" pintype="Input">
@@ -299,7 +299,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="43" visible="1" values="-0.960141360759735,-0.481891512870789,0.0181027594953775,-0.960141479969025,0.588259518146515,0.0430322214961052,0.7145,-0.4125,0,0.7145,0.4125,3.53108717082739E-320,0,-0.825,0,0,0.825,0,1.48112404346466,0.735747158527374,0.00471180630847812,1.87878835201263,-0.836141288280487,-0.260264605283737,1.94592273235321,0.103513292968273,-0.269464790821075,-1.83085858821869,-1.25258672237396,-0.00231175450608134,0.0001,1.65,3.03748373195513E-095,0.0001,-1.65,-8.83293130162852E-039,2.20599102973938,1.36552035808563,-0.324394017457962,-1.87552070617676,0.820395648479462,0.0452757701277733,0">
+   <PIN pinname="Y Input Value" slicecount="42" visible="1" values="-0.960141360759735,-0.481891512870789,0.0181027594953775,-0.960141479969025,0.588259518146515,0.0430322214961052,0.7145,-0.4125,0,0.7145,0.4125,3.53108717082739E-320,0,-0.825,0,0,0.825,0,1.48112404346466,0.735747158527374,0.00471180630847812,1.87878835201263,-0.836141288280487,-0.260264605283737,1.94592273235321,0.103513292968273,-0.269464790821075,-1.83085858821869,-1.25258672237396,-0.00231175450608134,0.0001,1.65,3.03748373195513E-095,0.0001,-1.65,-8.83293130162852E-039,2.20599102973938,1.36552035808563,-0.324394017457962,-1.87552070617676,0.820395648479462,0.0452757701277733,0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="MoleculeAtomsXYZ">
    </PIN>
@@ -879,11 +879,63 @@
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="142">
    <BOUNDS type="Node" left="1215" top="9510" width="100" height="100">
    </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="XYZ" dstnodeid="142" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="40" srcpinname="XYZ" dstnodeid="28" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="60" srcpinname="Selected Atom" dstnodeid="138" dstpinname="SelectedAtom">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="143" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5985" top="12915" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5985" top="12915" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|" encoded="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="144">
+   <BOUNDS type="Node" left="6000" top="12420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="129" srcpinname="Output" dstnodeid="144" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="145" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6270" top="12090" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6270" top="12090" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="145" srcpinname="Y Output Value" dstnodeid="144" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="143" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="142" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Output" dstnodeid="28" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

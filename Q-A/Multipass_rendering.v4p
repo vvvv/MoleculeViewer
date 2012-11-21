@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\Multipass_rendering.v4p" systemname="Multipass_rendering" filename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\Multipass_rendering.v4p">
-   <BOUNDS type="Window" left="-2595" top="2250" width="20655" height="12570">
+   <BOUNDS type="Window" left="9405" top="3045" width="20655" height="12570">
    </BOUNDS>
    <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="6195" top="4935" width="100" height="100">
@@ -228,14 +228,6 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="54">
-   <BOUNDS type="Node" left="4485" top="6375" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Filename" slicecount="1" encoded="0" values="..\Material\MoleculeViewer_room.jpg">
-   </PIN>
-   </NODE>
    <NODE systemname="Glow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Glow\Glow (EX9.Texture Filter).v4p" nodename="Glow (EX9.Texture Filter)" componentmode="Hidden" id="61">
    <BOUNDS type="Node" left="6480" top="6360" width="100" height="100">
    </BOUNDS>
@@ -254,20 +246,6 @@
    <BOUNDS type="Window" left="16320" top="3225" width="11745" height="9900">
    </BOUNDS>
    </NODE>
-   <NODE systemname="RenderToLayer" filename="RenderToLayer.v4p" nodename="RenderToLayer.v4p" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="4503" top="7126" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2178" top="3941" width="4650" height="6370">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8925" top="9735" width="7005" height="6375">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="54" srcpinname="Texture Out" dstnodeid="64" dstpinname="Texture">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="7620" top="2205" width="0" height="0">
    </BOUNDS>
@@ -381,7 +359,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4515" top="10035" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="14820" top="1890" width="9045" height="8865">
+   <BOUNDS type="Window" left="19515" top="0" width="9045" height="8865">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="71" srcpinname="Actual Backbuffer Width" dstnodeid="15" dstpinname="Aspect Width">
@@ -399,8 +377,6 @@
    <LINK srcnodeid="46" srcpinname="Remainder" dstnodeid="71" dstpinname="Projection">
    </LINK>
    <LINK srcnodeid="18" srcpinname="Layer" dstnodeid="71" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="61" dstpinname="Input">
    </LINK>
@@ -466,7 +442,7 @@
    <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="81">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="81">
    <BOUNDS type="Node" left="14265" top="6420" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="14265" top="6420" width="2400" height="1800">
@@ -512,7 +488,7 @@
    <PIN pinname="Ambient Color" slicecount="1" values="|0.01001,0.01001,0.01001,1.00000|">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="87">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="87">
    <BOUNDS type="Node" left="12630" top="6405" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="12630" top="6405" width="2400" height="1800">
@@ -605,7 +581,7 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="-1.07">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -657,7 +633,7 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="50">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -765,7 +741,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="18660" top="2010" width="630" height="270">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="counte" encoded="0">
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="counte">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -814,20 +790,144 @@
    </LINK>
    <LINK srcnodeid="106" srcpinname="Output" dstnodeid="119" dstpinname="Go To Position">
    </LINK>
-   <NODE systemname="Preview (EX9.Texture)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Preview\Preview (EX9.Texture).v4p" nodename="Preview (EX9.Texture)" componentmode="Hidden" id="89">
-   <BOUNDS type="Node" left="13665" top="10740" width="100" height="100">
+   <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="121">
+   <BOUNDS type="Node" left="3645" top="4245" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|0.57131,0.57131,0.57131,1.00000|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="88" srcpinname="Output" dstnodeid="89" dstpinname="Input">
+   <LINK srcnodeid="121" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 1">
    </LINK>
-   <NODE systemname="Preview (EX9.Texture)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Preview\Preview (EX9.Texture).v4p" nodename="Preview (EX9.Texture)" componentmode="Hidden" id="101">
-   <BOUNDS type="Node" left="17760" top="8400" width="100" height="100">
+   <NODE id="54" systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden">
+   <BOUNDS type="Node" left="2520" top="4260" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" encoded="0" values="..\Material\MoleculeViewer_room2.jpg">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="64" systemname="RenderToLayer" filename="RenderToLayer.v4p" nodename="RenderToLayer.v4p" componentmode="Hidden">
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="2538" top="5011" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="213" top="1826" width="4650" height="6370">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="8925" top="9735" width="7005" height="6375">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Texture Out" dstnodeid="64" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Mix (EX9.Texture Mixer)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Mix\Mix (EX9.Texture Mixer).v4p" nodename="Mix (EX9.Texture Mixer)" componentmode="Hidden" id="122">
+   <BOUNDS type="Node" left="3810" top="10710" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Fader" slicecount="1" values="0.78">
+   </PIN>
+   <PIN pinname="Control" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="123">
+   <BOUNDS type="Node" left="765" top="6045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="124">
+   <BOUNDS type="Node" left="765" top="6675" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="765" top="6675" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1860" top="9285" width="6120" height="4860">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="123" srcpinname="Layer" dstnodeid="124" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="125">
+   <BOUNDS type="Node" left="930" top="5595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="1.972">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="125" srcpinname="Transform Out" dstnodeid="123" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="126">
+   <BOUNDS type="Node" left="2190" top="7155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="124" srcpinname="EX9 Out" dstnodeid="126" dstpinname="Source">
+   </LINK>
+   <NODE systemname="Blur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter).v4p" nodename="Blur (EX9.Texture Filter)" componentmode="Hidden" id="127">
+   <BOUNDS type="Node" left="2190" top="7665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.44">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="126" srcpinname="Texture Out" dstnodeid="127" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Preview (EX9.Texture)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Preview\Preview (EX9.Texture).v4p" nodename="Preview (EX9.Texture)" componentmode="Hidden" id="128">
+   <BOUNDS type="Node" left="3795" top="11760" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="102" srcpinname="Output" dstnodeid="101" dstpinname="Input">
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="122" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="122" srcpinname="Output" dstnodeid="128" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="129">
+   <BOUNDS type="Node" left="930" top="4965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Z" slicecount="1" values="-0.006">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="129" srcpinname="Transform Out" dstnodeid="125" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="Invert (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Invert\Invert (EX9.Texture Filter).v4p" nodename="Invert (EX9.Texture Filter)" componentmode="Hidden" id="130">
+   <BOUNDS type="Node" left="2175" top="8340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="127" srcpinname="Output" dstnodeid="130" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Output" dstnodeid="122" dstpinname="Control">
    </LINK>
    </PATCH>
