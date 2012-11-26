@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\_Viewer.v4p" systemname="Viewer" filename="C:\Users\AM\Desktop\node13_workshop\PATCH\Viewer.v4p">
-   <BOUNDS type="Window" left="1425" top="1215" width="17895" height="14355">
+   <BOUNDS type="Window" left="945" top="1230" width="17895" height="14355">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="4500" top="6810" width="5520" height="270">
@@ -473,9 +473,9 @@
    <LINK srcnodeid="203" srcpinname="Layer" dstnodeid="194" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="217">
-   <BOUNDS type="Node" left="9570" top="7725" width="100" height="100">
+   <BOUNDS type="Node" left="9540" top="7725" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9570" top="7725" width="480" height="480">
+   <BOUNDS type="Box" left="9540" top="7725" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -489,7 +489,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Oscillator (Animation)" nodename="Oscillator (Animation)" componentmode="Hidden" id="220">
-   <BOUNDS type="Node" left="10170" top="9735" width="100" height="100">
+   <BOUNDS type="Node" left="10140" top="9735" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Go To Position" visible="1">
    </PIN>
@@ -497,7 +497,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="224">
-   <BOUNDS type="Node" left="10170" top="9315" width="100" height="100">
+   <BOUNDS type="Node" left="10140" top="9315" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -507,9 +507,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="223" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="10440" top="8655" width="0" height="0">
+   <BOUNDS type="Node" left="10410" top="8655" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10440" top="8655" width="420" height="240">
+   <BOUNDS type="Box" left="10410" top="8655" width="420" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.3">
    </PIN>
@@ -523,9 +523,9 @@
    <LINK srcnodeid="223" srcpinname="Y Output Value" dstnodeid="224" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="222" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="10725" top="8955" width="0" height="0">
+   <BOUNDS type="Node" left="10695" top="8955" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10725" top="8955" width="420" height="240">
+   <BOUNDS type="Box" left="10695" top="8955" width="420" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -537,7 +537,7 @@
    <LINK srcnodeid="222" srcpinname="Y Output Value" dstnodeid="224" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="221">
-   <BOUNDS type="Node" left="9570" top="8310" width="100" height="100">
+   <BOUNDS type="Node" left="9540" top="8310" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" slicecount="1" visible="1" values="1">
    </PIN>
@@ -633,7 +633,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1151" top="1965" width="6730" height="6165">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="1170" width="19950" height="15810">
+   <BOUNDS type="Window" left="270" top="2100" width="19950" height="15810">
    </BOUNDS>
    <PIN pinname="Shelf ViewTransform" visible="1">
    </PIN>
@@ -695,7 +695,7 @@
    </PIN>
    <PIN pinname="Width" visible="1">
    </PIN>
-   <PIN pinname="GlowAmount" slicecount="1" values="0.71">
+   <PIN pinname="GlowAmount" slicecount="1" values="0.71" visible="1">
    </PIN>
    <PIN pinname="GlowShape" slicecount="1" values="-0.02">
    </PIN>
@@ -773,5 +773,7 @@
    <LINK srcnodeid="26" srcpinname="Atoms" dstnodeid="257" dstpinname="Molecule Atoms">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Bonds" dstnodeid="257" dstpinname="Bonds">
+   </LINK>
+   <LINK srcnodeid="220" srcpinname="Position Out" dstnodeid="226" dstpinname="GlowAmount">
    </LINK>
    </PATCH>

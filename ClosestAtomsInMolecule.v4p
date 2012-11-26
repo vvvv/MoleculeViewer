@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2295" top="3210" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.15">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -73,7 +73,7 @@
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="7" dstpinname="Select">
    </LINK>
    <NODE id="8" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Atoms|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Selected Atoms|">
    </PIN>
    <BOUNDS type="Box" left="2055" top="4590" width="750" height="240">
    </BOUNDS>
@@ -87,7 +87,7 @@
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Input 2">
    </LINK>
    <NODE id="9" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="AtomXYZ" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="AtomXYZ">
    </PIN>
    <BOUNDS type="Box" left="2040" top="495" width="750" height="240">
    </BOUNDS>
@@ -97,7 +97,7 @@
    </PIN>
    </NODE>
    <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="ViewTransform" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ViewTransform">
    </PIN>
    <BOUNDS type="Box" left="3570" top="495" width="750" height="240">
    </BOUNDS>
@@ -107,7 +107,7 @@
    </PIN>
    </NODE>
    <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Mouse">
    </PIN>
    <BOUNDS type="Box" left="4515" top="495" width="750" height="240">
    </BOUNDS>

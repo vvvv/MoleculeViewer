@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\Multipass_rendering.v4p" systemname="Multipass_rendering" filename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\Multipass_rendering.v4p">
-   <BOUNDS type="Window" left="9405" top="3045" width="20655" height="12570">
+   <BOUNDS type="Window" left="-1560" top="4455" width="20655" height="12570">
    </BOUNDS>
    <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="6195" top="4935" width="100" height="100">
@@ -389,7 +389,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.06">
+   <PIN pinname="Width" slicecount="1" values="0.11">
    </PIN>
    </NODE>
    <NODE systemname="Mix (EX9.Texture Mixer)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Mix\Mix (EX9.Texture Mixer).v4p" nodename="Mix (EX9.Texture Mixer)" componentmode="Hidden" id="73">
@@ -543,13 +543,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Gamma " slicecount="4" values="1.84,1.84,1.84,1.84">
+   <PIN pinname="Gamma " slicecount="4" values="2.53,2.53,2.53,2.53">
    </PIN>
    <PIN pinname="Output White" slicecount="1" values="|0.99666,0.99666,0.99666,1.00000|">
    </PIN>
    <PIN pinname="Output Black" slicecount="1" values="|0.00334,0.00334,0.00334,0.00000|">
    </PIN>
-   <PIN pinname="Input White" slicecount="1" values="|0.28606,0.28606,0.28606,1.00000|">
+   <PIN pinname="Input White" slicecount="1" values="|0.90075,0.90075,0.90075,1.00000|">
    </PIN>
    <PIN pinname="Input Black" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
    </PIN>
@@ -568,6 +568,8 @@
    <PIN pinname="Y" slicecount="1" values="-0.15">
    </PIN>
    <PIN pinname="X" slicecount="1" values="-0.26">
+   </PIN>
+   <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="78" srcpinname="Y Output Value" dstnodeid="94" dstpinname="Width">
@@ -589,24 +591,6 @@
    <LINK srcnodeid="95" srcpinname="Y Output Value" dstnodeid="94" dstpinname="Z">
    </LINK>
    <LINK srcnodeid="90" srcpinname="Output" dstnodeid="73" dstpinname="Input 2">
-   </LINK>
-   <NODE systemname="Colorize (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Colorize\Colorize (EX9.Texture Filter).v4p" nodename="Colorize (EX9.Texture Filter)" componentmode="Hidden" id="102">
-   <BOUNDS type="Node" left="17790" top="7710" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="ColorA" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
-   </PIN>
-   <PIN pinname="ColorB" slicecount="1" visible="1" values="|0.00000,0.01001,0.00490,0.00000|">
-   </PIN>
-   <PIN pinname="ColorC" slicecount="1" values="|0.38115,0.00000,0.35119,0.00000|">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="102" srcpinname="Output" dstnodeid="90" dstpinname="Input">
    </LINK>
    <NODE systemname="FrameCounter (Animation)" nodename="FrameCounter (Animation)" componentmode="Hidden" id="105">
    <BOUNDS type="Node" left="17760" top="5655" width="100" height="100">
@@ -766,18 +750,6 @@
    </LINK>
    <LINK srcnodeid="105" srcpinname="Frame Count" dstnodeid="112" dstpinname="Random Seed">
    </LINK>
-   <NODE systemname="Lava (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\Lava\Lava (EX9.Texture Source).v4p" nodename="Lava (EX9.Texture Source)" componentmode="Hidden" id="118">
-   <BOUNDS type="Node" left="17805" top="7095" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Time" visible="1" slicecount="1" values="5768.21179300811">
-   </PIN>
-   <PIN pinname="phi" slicecount="1" values="4.96">
-   </PIN>
-   <PIN pinname="Format" slicecount="1" values="R5G6B5">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="118" srcpinname="Output" dstnodeid="102" dstpinname="Input">
-   </LINK>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="119">
    <BOUNDS type="Node" left="17790" top="6510" width="100" height="100">
    </BOUNDS>
@@ -786,8 +758,6 @@
    <PIN pinname="Position Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="119" srcpinname="Position Out" dstnodeid="118" dstpinname="Time">
-   </LINK>
    <LINK srcnodeid="106" srcpinname="Output" dstnodeid="119" dstpinname="Go To Position">
    </LINK>
    <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="121">
@@ -929,5 +899,13 @@
    <LINK srcnodeid="127" srcpinname="Output" dstnodeid="130" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="130" srcpinname="Output" dstnodeid="122" dstpinname="Control">
+   </LINK>
+   <NODE systemname="Preview (EX9.Texture)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Preview\Preview (EX9.Texture).v4p" nodename="Preview (EX9.Texture)" componentmode="Hidden" id="131">
+   <BOUNDS type="Node" left="13740" top="10650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Output" dstnodeid="131" dstpinname="Input">
    </LINK>
    </PATCH>

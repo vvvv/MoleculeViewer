@@ -69,9 +69,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="5460" top="4440" width="615" height="270">
+   <BOUNDS type="Node" left="5760" top="4050" width="615" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5460" top="4440">
+   <BOUNDS type="Box" left="5760" top="4050">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="42" values="-0.7145,-0.4125,0,-0.7145,0.4125,0,0.7145,-0.4125,0,0.7145,0.4125,0,0,-0.825,0,0,0.825,0,1.4992,0.6674,0,1.4992,-0.6675,0,1.9841,0,0,-1.4289,-0.825,0,0.0001,1.65,0,0.0001,-1.65,0,1.7541,1.452,0,-1.4289,0.825,0">
    </PIN>
@@ -79,15 +79,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="6600" top="4410" width="615" height="270">
+   <BOUNDS type="Node" left="6720" top="4425" width="615" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6600" top="4410">
+   <BOUNDS type="Box" left="6720" top="4425">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="1" dstpinname="XYZ">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="1" dstpinname="Atoms">
-   </LINK>
    <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Layer">
    </PIN>
@@ -103,9 +99,9 @@
    <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="XZY">
    </PIN>
-   <BOUNDS type="Box" left="5490" top="795" width="765" height="270">
+   <BOUNDS type="Box" left="5475" top="795" width="765" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="5490" top="795" width="750" height="240">
+   <BOUNDS type="Node" left="5475" top="795" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -117,6 +113,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6690" top="825" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="2" dstpinname="Atoms">
    </LINK>
@@ -197,5 +195,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="17" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="1" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="1" dstpinname="Atoms">
    </LINK>
    </PATCH>

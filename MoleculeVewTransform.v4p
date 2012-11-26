@@ -353,7 +353,7 @@
    <LINK srcnodeid="202" srcpinname="Output 2" dstnodeid="189" dstpinname="XY">
    </LINK>
    <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="208">
-   <BOUNDS type="Node" left="7005" top="8145" width="100" height="100">
+   <BOUNDS type="Node" left="7635" top="8040" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -387,9 +387,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="211" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8475" top="195" width="0" height="0">
+   <BOUNDS type="Node" left="8535" top="195" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8475" top="195" width="480" height="480">
+   <BOUNDS type="Box" left="8535" top="195" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -421,9 +421,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="208" srcpinname="Output 1" dstnodeid="212" dstpinname="Input 1" linkstyle="Bezier">
-   <LINKPOINT x="8375" y="10375">
+   <LINKPOINT x="8795" y="10305">
    </LINKPOINT>
-   <LINKPOINT x="8665" y="6335">
+   <LINKPOINT x="8875" y="6300">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="212" srcpinname="Output" dstnodeid="174" dstpinname="Input 2">
@@ -535,7 +535,7 @@
    <LINK srcnodeid="211" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Initialize">
    </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="230">
-   <BOUNDS type="Node" left="1110" top="2220" width="100" height="100">
+   <BOUNDS type="Node" left="2040" top="2355" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -543,8 +543,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="230" srcpinname="Output" dstnodeid="9" dstpinname="Input">
    </LINK>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="231">
    <BOUNDS type="Node" left="4920" top="9675" width="100" height="100">
@@ -709,5 +707,7 @@
    <LINK srcnodeid="245" srcpinname="Y Output Value" dstnodeid="239" dstpinname="Switch" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="245" srcpinname="Y Output Value" dstnodeid="240" dstpinname="Switch" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
    </LINK>
    </PATCH>
