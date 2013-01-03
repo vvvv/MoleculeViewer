@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\atomAndBonds.v4p" systemname="atomAndBonds" filename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\atomAndBonds.v4p" locked="0">
-   <BOUNDS type="Window" left="13545" top="6975" width="10110" height="9795">
+   <BOUNDS type="Window" left="4695" top="3705" width="10110" height="9795">
    </BOUNDS>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="8">
    <BOUNDS type="Node" left="4110" top="6105" width="100" height="100">

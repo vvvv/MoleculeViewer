@@ -623,11 +623,11 @@
    </PIN>
    </NODE>
    <NODE id="19" systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="5250" top="5289" width="100" height="100">
+   <BOUNDS type="Node" left="5250" top="5697" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Box" left="1230" top="0" width="4800" height="3600">
+   <BOUNDS type="Box" left="1230" top="408" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="15045" top="8910" width="9000" height="6000">
    </BOUNDS>
@@ -651,7 +651,7 @@
    </PIN>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Node" left="5010" top="5739" width="100" height="100">
+   <BOUNDS type="Node" left="5010" top="6099" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -741,9 +741,9 @@
    <NODE id="25" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="2730" top="10419" width="750" height="240">
+   <BOUNDS type="Box" left="2730" top="10425" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2730" top="10419" width="750" height="240">
+   <BOUNDS type="Node" left="2730" top="10425" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
@@ -792,8 +792,6 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="10" dstpinname="Mouse">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Left Button" dstnodeid="18" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="18" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output 1" dstnodeid="16" dstpinname="Y Input Value" hiddenwhenlocked="1" linkstyle="Bezier">
@@ -801,8 +799,6 @@
    </LINKPOINT>
    <LINKPOINT x="7920" y="2519">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="20" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Output" dstnodeid="20" dstpinname="Input 1">
    </LINK>
@@ -814,12 +810,12 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="15660" top="3285" width="8760" height="12210">
+   <BOUNDS type="Window" left="8790" top="2940" width="8760" height="12210">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="27" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5880" top="10530" width="0" height="0">
+   <BOUNDS type="Node" left="5880" top="10425" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5880" top="10530" width="525" height="240">
+   <BOUNDS type="Box" left="5880" top="10425" width="525" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -842,24 +838,12 @@
    </NODE>
    <LINK srcnodeid="23" srcpinname="Index of Nearest" dstnodeid="28" dstpinname="Input">
    </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="6240" top="9225" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="10" srcpinname="Left Button" dstnodeid="29" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Up Edge" dstnodeid="28" dstpinname="Set">
-   </LINK>
    <LINK srcnodeid="28" srcpinname="Output" dstnodeid="27" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="30" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="1350" top="10305" width="0" height="0">
+   <BOUNDS type="Node" left="1350" top="10425" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1350" top="10305" width="795" height="240">
+   <BOUNDS type="Box" left="1350" top="10425" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
    </PIN>
@@ -867,9 +851,9 @@
    <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="30" dstpinname="Input Node">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
-   <BOUNDS type="Node" left="105" top="10230" width="100" height="100">
+   <BOUNDS type="Node" left="105" top="10425" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="105" top="10230" width="795" height="240">
+   <BOUNDS type="Box" left="105" top="10425" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -923,5 +907,37 @@
    <LINK srcnodeid="36" srcpinname="Output Enum" dstnodeid="35" dstpinname="Receive String">
    </LINK>
    <LINK srcnodeid="35" srcpinname="Input Value" dstnodeid="11" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="3015" top="1650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Left Button" dstnodeid="37" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Up Edge" dstnodeid="18" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="4995" top="5355" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="42" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Down Edge" dstnodeid="42" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="20" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Up Edge" dstnodeid="28" dstpinname="Set">
    </LINK>
    </PATCH>
