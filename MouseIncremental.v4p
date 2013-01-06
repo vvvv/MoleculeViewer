@@ -265,7 +265,7 @@
    <LINK srcnodeid="0" srcpinname="Y" dstnodeid="154" dstpinname="Y">
    </LINK>
    <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="156">
-   <BOUNDS type="Node" left="2142" top="5490" width="100" height="100">
+   <BOUNDS type="Node" left="2292" top="5415" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -287,9 +287,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="156" srcpinname="Output 1" dstnodeid="157" dstpinname="Input 2" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="4127" y="6925">
+   <LINKPOINT x="4227" y="6875">
    </LINKPOINT>
-   <LINKPOINT x="2797" y="4100">
+   <LINKPOINT x="2847" y="4075">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="160">
@@ -426,6 +426,30 @@
    </LINK>
    <LINK srcnodeid="167" srcpinname="Output" dstnodeid="86" dstpinname="Z">
    </LINK>
-   <LINK srcnodeid="157" srcpinname="Output" dstnodeid="85" dstpinname="XY">
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="174">
+   <BOUNDS type="Node" left="2475" top="6255" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="157" srcpinname="Output" dstnodeid="174" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="174" srcpinname="Output" dstnodeid="85" dstpinname="XY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="175" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="2760" top="5835" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2760" top="5835" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="175" srcpinname="Y Output Value" dstnodeid="174" dstpinname="Input 2">
    </LINK>
    </PATCH>

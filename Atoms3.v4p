@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms3.v4p" systemname="Atoms3" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms3.v4p">
-   <BOUNDS type="Window" left="-705" top="2805" width="20670" height="11160">
+   <BOUNDS type="Window" left="1905" top="2100" width="20670" height="11160">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="4935" top="3189" width="0" height="0">
@@ -64,24 +64,6 @@
    <PIN pinname="Layers" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="RenderAtoms" filename="RenderAtoms.v4p" nodename="RenderAtoms.v4p" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="4290" top="8805" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Window" left="10230" top="5370" width="8790" height="7500">
-   </BOUNDS>
-   <PIN pinname="Selected" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Constant" visible="1">
-   </PIN>
-   <PIN pinname="Atom Typ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="65" dstpinname="Layer 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="68" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="6315" top="3024" width="0" height="0">
    </BOUNDS>
@@ -102,20 +84,8 @@
    <PIN pinname="X Input Value" slicecount="3" values="0,0,0">
    </PIN>
    </NODE>
-   <NODE systemname="RenderBonds" filename="RenderBonds.v4p" nodename="RenderBonds.v4p" componentmode="Hidden" id="69">
-   <BOUNDS type="Node" left="5775" top="8790" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Window" left="7965" top="6975" width="6720" height="5280">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Selected" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="81">
-   <BOUNDS type="Node" left="10350" top="7185" width="100" height="100">
+   <BOUNDS type="Node" left="10350" top="8565" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Index" visible="1">
    </PIN>
@@ -135,7 +105,7 @@
    <LINK srcnodeid="88" srcpinname="Layer" dstnodeid="65" dstpinname="Layer 4">
    </LINK>
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="14445" top="3735" width="100" height="100">
+   <BOUNDS type="Node" left="14670" top="3735" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -151,7 +121,7 @@
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="88" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="116">
-   <BOUNDS type="Node" left="10335" top="8925" width="810" height="270">
+   <BOUNDS type="Node" left="10335" top="10305" width="810" height="270">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -159,9 +129,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="10830" top="8532" width="0" height="0">
+   <BOUNDS type="Node" left="10830" top="9912" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10830" top="8532" width="585" height="240">
+   <BOUNDS type="Box" left="10830" top="9912" width="585" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="-0.25">
    </PIN>
@@ -171,138 +141,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="116" dstpinname="Y">
-   </LINK>
-   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="139">
-   <BOUNDS type="Node" left="7497" top="6582" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Count" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="140">
-   <BOUNDS type="Node" left="7512" top="7320" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="141" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7737" top="6957" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7737" top="6957" width="285" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="141" srcpinname="Y Output Value" dstnodeid="140" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="139" srcpinname="Count" dstnodeid="140" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="142">
-   <BOUNDS type="Node" left="11145" top="12486" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="144" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8907" top="5535" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8907" top="5535" width="465" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="146" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="12330" top="5475" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12330" top="5475" width="660" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="145" componentmode="Hidden" systemname="SelectedWithMouse" filename="SelectedWithMouse.v4p" nodename="SelectedWithMouse.v4p" hiddenwhenlocked="0" managers="">
-   <PIN pinname="ViewProjection" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Objects Transform" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Threshold" visible="1" pintype="Input">
-   </PIN>
-   <PIN pinname="Mouse" visible="1" pintype="Input">
-   </PIN>
-   <BOUNDS type="Window" left="13815" top="6555" width="7155" height="7305">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10942" top="5920" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8702" top="2525" width="4480" height="6790">
-   </BOUNDS>
-   <PIN pinname="First Slice" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Object&apos;s Transform" visible="1" pintype="Input">
-   </PIN>
-   <PIN pinname="ViewTransform" visible="1" pintype="Input">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="Bond">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Patch" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Selected Slice" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="145" srcpinname="Selected Slice" dstnodeid="69" dstpinname="Selected">
-   </LINK>
-   <LINK srcnodeid="145" srcpinname="Selected Slice" dstnodeid="81" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="145" dstpinname="Mouse">
-   </LINK>
-   <LINK srcnodeid="146" srcpinname="Y Output Value" dstnodeid="145" dstpinname="Threshold">
-   </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="150">
-   <BOUNDS type="Node" left="15105" top="4320" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   <PIN pinname="Down Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="74" srcpinname="Left Button" dstnodeid="150" dstpinname="Input">
-   </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="151">
-   <BOUNDS type="Node" left="16005" top="4320" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="74" srcpinname="Right Button" dstnodeid="151" dstpinname="Input">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="153">
    <BOUNDS type="Node" left="12780" top="1725" width="100" height="100">
@@ -477,7 +315,7 @@
    <LINK srcnodeid="162" srcpinname="Transform Out" dstnodeid="163" dstpinname="Transform">
    </LINK>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="175">
-   <BOUNDS type="Node" left="10335" top="8130" width="100" height="100">
+   <BOUNDS type="Node" left="10335" top="9510" width="100" height="100">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Output Node" dstnodeid="175" dstpinname="Transform In">
@@ -485,9 +323,9 @@
    <LINK srcnodeid="175" srcpinname="Transform Out" dstnodeid="116" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="176" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="10530" top="7764" width="0" height="0">
+   <BOUNDS type="Node" left="10530" top="9144" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10530" top="7764" width="555" height="240">
+   <BOUNDS type="Box" left="10530" top="9144" width="555" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="-0.5">
    </PIN>
@@ -630,38 +468,6 @@
    </NODE>
    <LINK srcnodeid="211" srcpinname="Output String" dstnodeid="209" dstpinname="Filename">
    </LINK>
-   <LINK srcnodeid="69" srcpinname="Layer" dstnodeid="65" dstpinname="Layer 2">
-   </LINK>
-   <NODE id="143" componentmode="Hidden" systemname="SelectedWithMouse" filename="SelectedWithMouse.v4p" nodename="SelectedWithMouse.v4p">
-   <PIN pinname="Objects Transform" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="ViewProjection" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Threshold">
-   </PIN>
-   <PIN pinname="Mouse" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="12000" top="5835" width="7155" height="7305">
-   </BOUNDS>
-   <PIN pinname="Selected Slice" visible="1">
-   </PIN>
-   <BOUNDS type="Node" left="7519" top="5995" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5279" top="2600" width="4480" height="6790">
-   </BOUNDS>
-   <PIN pinname="First Slice" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Atom">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="143" dstpinname="Mouse">
-   </LINK>
-   <LINK srcnodeid="143" srcpinname="Selected Slice" dstnodeid="64" dstpinname="Selected">
-   </LINK>
-   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Threshold">
-   </LINK>
-   <LINK srcnodeid="143" srcpinname="Selected Slice" dstnodeid="139" dstpinname="Input">
-   </LINK>
    <NODE id="62" componentmode="Hidden" systemname="atomAndBonds" filename="atomAndBonds.v4p" nodename="C:\Users\Marco Tempest\MoleculeViewer\MoleculeViewer\Q-A\atomAndBonds.v4p" hiddenwhenlocked="0" managers="" stayontop="1">
    <PIN pinname="Translate XYZ" visible="1">
    </PIN>
@@ -702,11 +508,7 @@
    </NODE>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Translate XYZ">
    </LINK>
-   <LINK srcnodeid="62" srcpinname="Transform Bonds" dstnodeid="69" dstpinname="Transform">
-   </LINK>
    <LINK srcnodeid="68" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Rotate XYZ">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Transform Center" dstnodeid="143" dstpinname="Objects Transform">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="245">
    <BOUNDS type="Node" left="12765" top="2565" width="100" height="100">
@@ -717,68 +519,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="245" dstpinname="Simulate">
-   </LINK>
-   <NODE systemname="ShowAtomInfo" filename="ShowAtomInfo.v4p" nodename="ShowAtomInfo.v4p" componentmode="Hidden" id="308">
-   <BOUNDS type="Node" left="6363" top="11727" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4731" top="9052" width="3265" height="5350">
-   </BOUNDS>
-   <BOUNDS type="Window" left="12195" top="8130" width="6510" height="6225">
-   </BOUNDS>
-   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="308" srcpinname="Layer" dstnodeid="65" dstpinname="Layer 6">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Transform Center" dstnodeid="308" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="143" srcpinname="Selected Slice" dstnodeid="308" dstpinname="Index">
-   </LINK>
-   <NODE systemname="Shelf" filename="Shelf.v4p" nodename="Shelf.v4p" componentmode="Hidden" id="402">
-   <BOUNDS type="Node" left="7656" top="8761" width="1140" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3279" top="3518" width="8754" height="10504">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8790" top="2940" width="8760" height="12210">
-   </BOUNDS>
-   <PIN pinname="Selected Atom" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Atom Typ" visible="1">
-   </PIN>
-   <PIN pinname="Scale Factor" slicecount="1" values="0.13">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="402" srcpinname="Layer" dstnodeid="65" dstpinname="Layer 7">
-   </LINK>
-   <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="402" dstpinname="Mouse">
-   </LINK>
-   <NODE systemname="BangIfShelfAtomIsDroppped" filename="BangIfShelfAtomIsDroppped.v4p" nodename="BangIfShelfAtomIsDroppped.v4p" componentmode="Hidden" id="423">
-   <BOUNDS type="Node" left="10078" top="10110" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8473" top="7975" width="3210" height="4270">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8505" top="7695" width="7665" height="6720">
-   </BOUNDS>
-   <PIN pinname="ShelfAtomIsSelected" visible="1">
-   </PIN>
-   <PIN pinname="MouseBang" visible="1">
-   </PIN>
-   <PIN pinname="InsertFirstAtom" visible="1">
-   </PIN>
-   <PIN pinname="AtomsTransforms" visible="1">
-   </PIN>
-   <PIN pinname="InsertAtom" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="145" srcpinname="Selected Slice" dstnodeid="423" dstpinname="SelectedBond">
-   </LINK>
-   <LINK srcnodeid="150" srcpinname="Down Edge" dstnodeid="423" dstpinname="MouseBang">
-   </LINK>
-   <LINK srcnodeid="402" srcpinname="Selected Atom" dstnodeid="423" dstpinname="ShelfAtomIsSelected">
    </LINK>
    <NODE systemname="AtomTextNumbers" filename="AtomTextNumbers.v4p" nodename="AtomTextNumbers.v4p" componentmode="Hidden" id="424">
    <BOUNDS type="Node" left="5701" top="14502" width="0" height="0">
@@ -792,10 +532,6 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Transform Center" dstnodeid="424" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="423" srcpinname="ItsTheFirstAtom" dstnodeid="157" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Transform Center" dstnodeid="423" dstpinname="AtomsTransforms">
-   </LINK>
    <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="Hidden" id="425">
    <BOUNDS type="Node" left="10098" top="13008" width="2700" height="270">
    </BOUNDS>
@@ -807,18 +543,18 @@
    </PIN>
    <PIN pinname="Number of Atoms" visible="1">
    </PIN>
+   <PIN pinname="Selected Atom">
+   </PIN>
+   <PIN pinname="Insert Bang">
+   </PIN>
+   <PIN pinname="Delete Bang" visible="1">
+   </PIN>
+   <PIN pinname="AtomTyp">
+   </PIN>
    </NODE>
    <LINK srcnodeid="157" srcpinname="Output" dstnodeid="425" dstpinname="Input Transform">
    </LINK>
-   <LINK srcnodeid="142" srcpinname="Output" dstnodeid="425" dstpinname="Delete Bang">
-   </LINK>
-   <LINK srcnodeid="423" srcpinname="InsertAtom" dstnodeid="425" dstpinname="Insert Bang">
-   </LINK>
    <LINK srcnodeid="245" srcpinname="Bang" dstnodeid="425" dstpinname="Reset">
-   </LINK>
-   <LINK srcnodeid="143" srcpinname="Selected Slice" dstnodeid="425" dstpinname="Selected Atom">
-   </LINK>
-   <LINK srcnodeid="402" srcpinname="Selected Atom" dstnodeid="425" dstpinname="AtomTyp">
    </LINK>
    <LINK srcnodeid="425" srcpinname="Output" dstnodeid="62" dstpinname="AtomInfo In" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="7752" y="16218">
@@ -833,16 +569,6 @@
    </LINKPOINT>
    <LINKPOINT x="1986" y="2631">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Transform Center" dstnodeid="64" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Atom Typ" dstnodeid="64" dstpinname="Atom Typ">
-   </LINK>
-   <LINK srcnodeid="151" srcpinname="Up Edge" dstnodeid="142" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="140" srcpinname="Output" dstnodeid="142" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Transform Bonds" dstnodeid="145" dstpinname="Objects Transform">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Transform Bonds" dstnodeid="81" dstpinname="Input Node">
    </LINK>
@@ -958,24 +684,6 @@
    </LINK>
    <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="442" dstpinname="Reset">
    </LINK>
-   <NODE systemname="NothingIsSelected" filename="NothingIsSelected.v4p" nodename="NothingIsSelected.v4p" componentmode="Hidden" id="473">
-   <BOUNDS type="Node" left="15402" top="10413" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13805" top="8053" width="3195" height="4720">
-   </BOUNDS>
-   <BOUNDS type="Window" left="12405" top="7740" width="5055" height="4875">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="143" srcpinname="Selected Slice" dstnodeid="473" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="145" srcpinname="Selected Slice" dstnodeid="473" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="402" srcpinname="Selected Atom" dstnodeid="473" dstpinname="Input 3">
-   </LINK>
-   <LINK srcnodeid="150" srcpinname="Up Edge" dstnodeid="473" dstpinname="Mouse Up Edge">
-   </LINK>
-   <LINK srcnodeid="473" srcpinname="Output" dstnodeid="442" dstpinname="Enable">
-   </LINK>
    <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="475">
    <BOUNDS type="Node" left="8430" top="1380" width="100" height="100">
    </BOUNDS>
@@ -994,13 +702,9 @@
    <BOUNDS type="Node" left="8223" top="1995" width="100" height="100">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="476" srcpinname="View Projection" dstnodeid="145" dstpinname="ViewProjection">
-   </LINK>
    <LINK srcnodeid="476" srcpinname="View" dstnodeid="186" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="476" srcpinname="Projection" dstnodeid="190" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="476" srcpinname="View Projection" dstnodeid="143" dstpinname="ViewProjection">
    </LINK>
    <LINK srcnodeid="475" srcpinname="X" dstnodeid="476" dstpinname="Initial Yaw">
    </LINK>
@@ -1037,20 +741,20 @@
    </BOUNDS>
    <BOUNDS type="Window" left="9720" top="8190" width="10500" height="7455">
    </BOUNDS>
+   <PIN pinname="Layer 1">
+   </PIN>
+   <PIN pinname="Layer 2">
+   </PIN>
+   <PIN pinname="Layer 4">
+   </PIN>
    </NODE>
    <LINK srcnodeid="208" srcpinname="Layer" dstnodeid="495" dstpinname="Layer 1 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="163" srcpinname="Layer" dstnodeid="495" dstpinname="Layer 3" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="402" srcpinname="Layer" dstnodeid="495" dstpinname="Layer 4" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="88" srcpinname="Layer" dstnodeid="495" dstpinname="Layer 5" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="477" srcpinname="Layer" dstnodeid="495" dstpinname="Layer 6" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="495" dstpinname="Layer 1" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="69" srcpinname="Layer" dstnodeid="495" dstpinname="Layer 2" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="496" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="14460" top="15390" width="0" height="0">
@@ -1125,5 +829,85 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="442" srcpinname="XY and Distance" dstnodeid="500" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="Hidden" id="501">
+   <BOUNDS type="Node" left="6783" top="5107" width="3255" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1264" top="2290" width="11038" height="5635">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11295" top="5790" width="15030" height="8850">
+   </BOUNDS>
+   <PIN pinname="Delete Bang" visible="1">
+   </PIN>
+   <PIN pinname="Input 3 - ShelfAtomIsSelected">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Transform Bonds" dstnodeid="501" dstpinname="Objects Transform">
+   </LINK>
+   <LINK srcnodeid="476" srcpinname="View Projection" dstnodeid="501" dstpinname="ViewProjection">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="501" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Selected Slice 1" dstnodeid="81" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Transform Center" dstnodeid="501" dstpinname="AtomsTransforms - Objects Transform">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Selected Slice" dstnodeid="425" dstpinname="Selected Atom">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Output 1" dstnodeid="442" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Left Button" dstnodeid="501" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Right Button" dstnodeid="501" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="ItsTheFirstAtom" dstnodeid="157" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="InsertAtom" dstnodeid="425" dstpinname="Insert Bang">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Delete Bang" dstnodeid="425" dstpinname="Delete Bang">
+   </LINK>
+   <NODE systemname="Draw" filename="Draw.v4p" nodename="Draw.v4p" componentmode="Hidden" id="503">
+   <BOUNDS type="Node" left="4584" top="8370" width="2565" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="876" top="6735" width="7416" height="3270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9150" top="8685" width="10185" height="4230">
+   </BOUNDS>
+   <PIN pinname="Info Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Transform Center" dstnodeid="503" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Atom Typ" dstnodeid="503" dstpinname="Atom Typ">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Selected Slice" dstnodeid="503" dstpinname="Selected">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Atoms" dstnodeid="495" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Atoms" dstnodeid="65" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Transform Bonds" dstnodeid="503" dstpinname="Transform 1">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Selected Slice 1" dstnodeid="503" dstpinname="Selected 1">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Bonds" dstnodeid="495" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Bonds" dstnodeid="65" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="503" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Shelf" dstnodeid="495" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Shelf" dstnodeid="65" dstpinname="Layer 7">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Selected Atom" dstnodeid="425" dstpinname="AtomTyp">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Selected Atom" dstnodeid="501" dstpinname="Input 3 - ShelfAtomIsSelected" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8955" y="10880">
+   </LINKPOINT>
+   <LINKPOINT x="11655" y="2980">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Info Layer" dstnodeid="65" dstpinname="Layer 6">
    </LINK>
    </PATCH>
