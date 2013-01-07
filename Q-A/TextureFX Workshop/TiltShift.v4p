@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\TextureFX Workshop\TiltShift.v4p" systemname="TiltShift" filename="C:\Work\TextureFX Workshop\TiltShift.v4p">
-   <BOUNDS type="Window" left="390" top="390" width="12045" height="11235">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Q-A\TextureFX Workshop\TiltShift.v4p" systemname="TiltShift" filename="C:\Work\TextureFX Workshop\TiltShift.v4p">
+   <BOUNDS type="Window" left="390" top="390" width="12465" height="11235">
    </BOUNDS>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3420" top="4305" width="100" height="100">

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\DrawBonds.v4p" systemname="DrawBonds" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawBonds.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\DrawBonds.v4p" systemname="DrawBonds" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawBonds.v4p">
    <NODE id="0" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Radius 2" visible="1">
    </PIN>
-   <PIN pinname="Length" slicecount="16" values="0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08" visible="1">
+   <PIN pinname="Length" slicecount="14" visible="1" values="0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08">
    </PIN>
    <BOUNDS type="Node" left="2460" top="4530" width="100" height="100">
    </BOUNDS>
@@ -172,42 +172,6 @@
    </NODE>
    <LINK srcnodeid="15" srcpinname="Output Enum" dstnodeid="12" dstpinname="Receive String">
    </LINK>
-   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="3405" top="4020" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Y" visible="1" slicecount="16" values="0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="3870" top="3330" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="16" values="0.126,0.126,0.126,0.126,0.142,0.142,0.142,0.064">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4095" top="2940" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4095" top="2940" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="16" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
    <BOUNDS type="Node" left="3810" top="600" width="100" height="100">
    </BOUNDS>
@@ -296,10 +260,32 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="25" dstpinname="Select">
    </LINK>
-   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="16" dstpinname="Y">
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="3" dstpinname="Transform">
    </LINK>
-   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="17" dstpinname="Input">
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="2775" top="3105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="28" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="1" dstpinname="Length">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="3015" top="2580" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3015" top="2580" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="1" dstpinname="Length">
    </LINK>
    </PATCH>

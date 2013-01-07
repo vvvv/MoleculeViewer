@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Controller.v4p" systemname="Controller" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Controller.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Controller.v4p" systemname="Controller" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Controller.v4p">
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="11910" top="9075" width="100" height="100">
    </BOUNDS>
@@ -47,9 +47,9 @@
    </PIN>
    </NODE>
    <NODE systemname="BangIfShelfAtomIsDroppped" filename="BangIfShelfAtomIsDroppped.v4p" nodename="BangIfShelfAtomIsDroppped.v4p" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="9121" top="5796" width="0" height="0">
+   <BOUNDS type="Node" left="9151" top="5781" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7516" top="3661" width="3210" height="4270">
+   <BOUNDS type="Box" left="7546" top="3646" width="3210" height="4270">
    </BOUNDS>
    <BOUNDS type="Window" left="8505" top="7695" width="7665" height="6720">
    </BOUNDS>
@@ -160,7 +160,7 @@
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="270" top="1620" width="17835" height="13080">
+   <BOUNDS type="Window" left="510" top="3255" width="17835" height="13080">
    </BOUNDS>
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="13170" top="1680" width="100" height="100">
@@ -359,7 +359,7 @@
    <NODE systemname="AtomBonds" filename="AtomBonds.v4p" nodename="AtomBonds.v4p" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="8538" top="2070" width="1530" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="4500" top="6210" width="9690" height="7560">
+   <BOUNDS type="Window" left="10455" top="1680" width="9690" height="7560">
    </BOUNDS>
    <PIN pinname="Atom Type" visible="1">
    </PIN>
@@ -557,7 +557,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9465" top="3270" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="3">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -595,7 +595,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="83">
-   <BOUNDS type="Node" left="10473" top="5100" width="100" height="100">
+   <BOUNDS type="Node" left="10473" top="4830" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>

@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\SpreadStorage.v4p" systemname="SpreadStorage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\SpreadStorage.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\SpreadStorage.v4p" systemname="SpreadStorage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\SpreadStorage.v4p">
    <NODE systemname="SetSlice (Spreads)" nodename="SetSlice (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1200" top="3405" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Spread" visible="1" slicecount="8" values="0,0,0,0,0,0,0,0">
+   <PIN pinname="Spread" visible="1" slicecount="45" values="0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Index" visible="1">
    </PIN>
@@ -23,9 +23,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="1245" top="7635" width="0" height="0">
+   <BOUNDS type="Node" left="1200" top="7080" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1245" top="7635" width="795" height="240">
+   <BOUNDS type="Box" left="1200" top="7080" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -33,7 +33,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="8" values="0,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="45" values="2,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
@@ -44,24 +44,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Insert Value|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="10374" top="1245" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10374" top="1245" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
@@ -273,7 +255,7 @@
    </PIN>
    </NODE>
    <NODE systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="10374" top="2070" width="100" height="100">
+   <BOUNDS type="Node" left="8739" top="2055" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -310,7 +292,7 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="10140" top="6075" width="11595" height="9450">
+   <BOUNDS type="Window" left="17205" top="6795" width="11595" height="9450">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
    <BOUNDS type="Node" left="7125" top="1230" width="100" height="100">
@@ -416,30 +398,22 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="1230" top="6915" width="100" height="100">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="67" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="105" top="1305" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Default 1" visible="1">
+   <BOUNDS type="Box" left="105" top="1305" width="690" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="45" values="3,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Spread">
    </PIN>
    </NODE>
-   <LINK srcnodeid="65" srcpinname="Output 1" dstnodeid="0" dstpinname="Spread" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="535" y="7270">
-   </LINKPOINT>
-   <LINKPOINT x="285" y="2975">
-   </LINKPOINT>
+   <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Spread">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Initialize" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Output 1" dstnodeid="4" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="65" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" id="66">
-   <BOUNDS type="Node" left="1665" top="6510" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="65" dstpinname="Default 1">
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

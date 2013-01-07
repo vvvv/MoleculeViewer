@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Work\ShaderTest\foggyBalls.v4p" systemname="foggyBalls" filename="C:\Work\MoleculeViewer\Work\ShaderTest\foggyBalls.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Work\ShaderTest\foggyBalls.v4p" systemname="foggyBalls" filename="C:\Work\MoleculeViewer\Work\ShaderTest\foggyBalls.v4p">
    <BOUNDS type="Window" left="150" top="3420" width="13500" height="10980">
    </BOUNDS>
    <NODE systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" id="0">
@@ -109,7 +109,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2775" top="8910" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="13770" top="4110" width="6240" height="5010">
+   <BOUNDS type="Window" left="13620" top="4080" width="6240" height="5010">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -153,7 +153,7 @@
    </PIN>
    <PIN pinname="Y" slicecount="1" values="0.3">
    </PIN>
-   <PIN pinname="Z" visible="1">
+   <PIN pinname="Z" visible="1" slicecount="1" values="5.79500000000027">
    </PIN>
    <PIN pinname="Balance" slicecount="1" values="0.73">
    </PIN>
@@ -481,8 +481,6 @@
    <LINK srcnodeid="44" srcpinname="View" dstnodeid="103" dstpinname="View" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="44" srcpinname="Projection" dstnodeid="103" dstpinname="Projection" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="37" dstpinname="Z">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Color Output" dstnodeid="11" dstpinname="Color">
    </LINK>

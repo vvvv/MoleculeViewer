@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\DrawShelf.v4p" systemname="DrawShelf" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawShelf.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\DrawShelf.v4p" systemname="DrawShelf" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawShelf.v4p">
    <NODE id="4" systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Mesh" visible="1" pintype="Output">
    </PIN>
@@ -131,7 +131,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Mouse (System Global)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Global).v4p" nodename="Mouse (System Global)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="6738" top="750" width="100" height="100">
+   <BOUNDS type="Node" left="6858" top="690" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Left Button" visible="1">
    </PIN>
