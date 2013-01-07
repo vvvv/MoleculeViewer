@@ -5,7 +5,7 @@
    </BOUNDS>
    <PIN pinname="Render State Out" visible="1">
    </PIN>
-   <PIN pinname="Density (for modes Exp and Exp2)" slicecount="1" values="0.47">
+   <PIN pinname="Density (for modes Exp and Exp2)" slicecount="1" values="0.32">
    </PIN>
    <PIN pinname="Range From" slicecount="1" values="0">
    </PIN>

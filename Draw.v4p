@@ -5,7 +5,7 @@
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="15450" top="6270" width="8790" height="7500">
+   <BOUNDS type="Window" left="6525" top="5295" width="8790" height="7500">
    </BOUNDS>
    <PIN pinname="Selected" visible="1">
    </PIN>
@@ -21,11 +21,13 @@
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="8790" top="7545" width="6720" height="6780">
+   <BOUNDS type="Window" left="14760" top="6135" width="9435" height="8445">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Selected" visible="1">
+   </PIN>
+   <PIN pinname="Atom Typ" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DrawShelf" filename="DrawShelf.v4p" nodename="DrawShelf.v4p" componentmode="Hidden" id="2">
@@ -65,6 +67,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4950" top="435" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Atom Typ">
    </LINK>
@@ -387,5 +391,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Selected Atom">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Atom Typ">
    </LINK>
    </PATCH>

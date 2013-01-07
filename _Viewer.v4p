@@ -205,7 +205,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="115" width="11038" height="5635">
    </BOUNDS>
-   <BOUNDS type="Window" left="255" top="2070" width="17835" height="13080">
+   <BOUNDS type="Window" left="270" top="1620" width="17835" height="13080">
    </BOUNDS>
    <PIN pinname="Delete Bang" visible="1">
    </PIN>
@@ -460,7 +460,7 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <NODE id="523" componentmode="Hidden" systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" hiddenwhenlocked="0" managers="">
+   <NODE id="527" componentmode="Hidden" systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Window" left="1485" top="1425" width="17160" height="13170">
    </BOUNDS>
    <BOUNDS type="Node" left="6843" top="5925" width="100" height="100">
@@ -468,24 +468,24 @@
    <BOUNDS type="Box" left="0" top="0" width="4800" height="3600">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="519" srcpinname="XYZ" dstnodeid="523" dstpinname="Initial Interest">
+   <LINK srcnodeid="519" srcpinname="XYZ" dstnodeid="527" dstpinname="Initial Interest">
    </LINK>
-   <LINK srcnodeid="516" srcpinname="Output 3" dstnodeid="523" dstpinname="Inital Distance">
+   <LINK srcnodeid="516" srcpinname="Output 3" dstnodeid="527" dstpinname="Inital Distance">
    </LINK>
-   <LINK srcnodeid="516" srcpinname="Output 2" dstnodeid="523" dstpinname="Initial Pitch">
+   <LINK srcnodeid="516" srcpinname="Output 2" dstnodeid="527" dstpinname="Initial Pitch">
    </LINK>
-   <LINK srcnodeid="516" srcpinname="Output 1" dstnodeid="523" dstpinname="Initial Yaw">
+   <LINK srcnodeid="516" srcpinname="Output 1" dstnodeid="527" dstpinname="Initial Yaw">
    </LINK>
-   <LINK srcnodeid="523" srcpinname="View Projection" dstnodeid="501" dstpinname="ViewProjection" linkstyle="Bezier" hiddenwhenlocked="0">
+   <LINK srcnodeid="527" srcpinname="View Projection" dstnodeid="501" dstpinname="ViewProjection" linkstyle="Bezier" hiddenwhenlocked="0">
    <LINKPOINT x="11285" y="7700">
    </LINKPOINT>
    <LINKPOINT x="9460" y="25">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="523" srcpinname="Projection" dstnodeid="190" dstpinname="Input Value">
+   <LINK srcnodeid="527" srcpinname="Projection" dstnodeid="190" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="523" srcpinname="View" dstnodeid="186" dstpinname="Input Value">
+   <LINK srcnodeid="527" srcpinname="View" dstnodeid="186" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="521" srcpinname="Y Output Value" dstnodeid="523" dstpinname="Initial FOV">
+   <LINK srcnodeid="521" srcpinname="Y Output Value" dstnodeid="527" dstpinname="Initial FOV">
    </LINK>
    </PATCH>
