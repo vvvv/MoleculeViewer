@@ -73,11 +73,35 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="417" width="4534" height="4327">
    </BOUNDS>
-   <BOUNDS type="Window" left="10110" top="9720" width="6525" height="4320">
+   <BOUNDS type="Window" left="11310" top="9660" width="6525" height="4320">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="13" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="13" srcpinname="Texture Out" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="14" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="4200" top="375" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4200" top="375" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="View">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output Node" dstnodeid="13" dstpinname="View">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="15" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="5415" top="465" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5415" top="465" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Projection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output Node" dstnodeid="13" dstpinname="Projection">
    </LINK>
    </PATCH>
