@@ -1,0 +1,127 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\Work\ShaderTest\RenderTarget.v4p" systemname="RenderTarget" filename="C:\Work\MoleculeViewer\Work\ShaderTest\RenderTarget.v4p">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
+   <BOUNDS type="Node" left="1335" top="1680" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1335" top="1680" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13185" top="9420" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Background Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Clear" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Windowed Backbuffer Format" slicecount="1" values="A8R8G8B8">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2769" top="2142" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="512">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="512">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Format" slicecount="1" values="A8R8G8B8">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1884" top="1215" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="3" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="1884" top="915" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1884" top="915" width="585" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="View">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2610" top="1260" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="5" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="2625" top="930" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="930" width="960" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="Projection">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layers">
+   </PIN>
+   <BOUNDS type="Box" left="1335" top="395" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1335" top="395" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="0" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Input Value" dstnodeid="0" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="0" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="2" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="4" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="EX9 Out" dstnodeid="1" dstpinname="Source">
+   </LINK>
+   <NODE id="8" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="2769" top="2742" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2769" top="2742" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Texture Out" dstnodeid="8" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="9210" top="9405" width="5655" height="4140">
+   </BOUNDS>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="3165" top="1665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="9" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="9" dstpinname="Aspect Height">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="0" dstpinname="Aspect Ratio">
+   </LINK>
+   </PATCH>

@@ -1,0 +1,83 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\Work\ShaderTest\mask.v4p" systemname="mask" filename="C:\Work\MoleculeViewer\Work\ShaderTest\mask.v4p">
+   <NODE systemname="Constant (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\Constant.fx" nodename="Constant (EX9.Effect)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="2055" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1830" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ">
+   </PIN>
+   </NODE>
+   <NODE id="8" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mesh">
+   </PIN>
+   <BOUNDS type="Box" left="405" top="455" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="405" top="455" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="0" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   </PIN>
+   <BOUNDS type="Box" left="1830" top="440" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1830" top="440" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="3" dstpinname="Transform In">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="XYZ">
+   </PIN>
+   <BOUNDS type="Box" left="2760" top="470" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2760" top="470" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="3" dstpinname="XYZ">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="3084" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="3084" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="7485" top="6930" width="6330" height="5760">
+   </BOUNDS>
+   <NODE systemname="RenderTarget" filename="RenderTarget.v4p" nodename="RenderTarget.v4p" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="1515" top="2580" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="135" top="417" width="4534" height="4327">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10110" top="9720" width="6525" height="4320">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="13" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Texture Out" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   </PATCH>
