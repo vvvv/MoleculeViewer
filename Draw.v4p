@@ -5,7 +5,7 @@
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="6525" top="5295" width="8790" height="7500">
+   <BOUNDS type="Window" left="5985" top="5685" width="8790" height="7500">
    </BOUNDS>
    <PIN pinname="Selected" visible="1">
    </PIN>

@@ -468,8 +468,6 @@
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="54" dstpinname="View Projection">
    </LINK>
-   <LINK srcnodeid="54" srcpinname="Index of Nearest" dstnodeid="15" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="54" srcpinname="Index of Nearest" dstnodeid="0" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="54" srcpinname="Index of Nearest" dstnodeid="10" dstpinname="Input 1">
@@ -559,7 +557,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9465" top="3270" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="2">
+   <PIN pinname="Y Input Value" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -706,4 +704,78 @@
    </LINK>
    <LINK srcnodeid="112" srcpinname="Output" dstnodeid="10" dstpinname="Mouse Up Edge">
    </LINK>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="113">
+   <BOUNDS type="Node" left="3045" top="8220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" id="114">
+   <BOUNDS type="Node" left="3525" top="7770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="114" srcpinname="Output" dstnodeid="113" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Index of Nearest" dstnodeid="113" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="113" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="115">
+   <BOUNDS type="Node" left="3030" top="6765" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="116">
+   <BOUNDS type="Node" left="3045" top="7485" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="3240" top="7110" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3240" top="7110" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="116" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Count" dstnodeid="116" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Output" dstnodeid="113" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="84" srcpinname="Selected Atom" dstnodeid="115" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="118" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3045" top="5565" width="5820" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3045" top="5565" width="2130" height="1080">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|// if shelf atom is selected we don&apos;t need to select molecule atom. only its bonds|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
