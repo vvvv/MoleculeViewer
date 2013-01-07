@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\AtomTextNumbers.v4p" systemname="AtomTextNumbers" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\AtomTextNumbers.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\AtomTextNumbers.v4p" systemname="AtomTextNumbers" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\AtomTextNumbers.v4p">
    <NODE systemname="Text (EX9)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Text (EX9)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1500" top="3540" width="100" height="100">
+   <BOUNDS type="Node" left="1356" top="3540" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform" visible="1">
    </PIN>
@@ -88,16 +88,14 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
-   </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="0" dstpinname="Text">
    </LINK>
    <NODE id="8" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="1500" top="4140" width="750" height="240">
+   <BOUNDS type="Box" left="1356" top="4140" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1500" top="4140" width="750" height="240">
+   <BOUNDS type="Node" left="1356" top="4140" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="8" dstpinname="Input Node">
@@ -113,6 +111,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1545" top="500" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="1" dstpinname="Transform In">
    </LINK>
@@ -124,6 +124,8 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="3" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="11505" top="7860" width="4845" height="5145">
+   <BOUNDS type="Window" left="11505" top="7860" width="7095" height="5145">
    </BOUNDS>
+   <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
+   </LINK>
    </PATCH>

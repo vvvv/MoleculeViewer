@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\ViewTransform.v4p" systemname="ViewTransform" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\ViewTransform.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\ViewTransform.v4p" systemname="ViewTransform" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\ViewTransform.v4p">
    <NODE systemname="MouseIncremental" filename="MouseIncremental.v4p" nodename="MouseIncremental.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="2414" width="1515" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="-635" top="-991" width="4270" height="6810">
    </BOUNDS>
-   <BOUNDS type="Window" left="5835" top="3225" width="7515" height="10620">
+   <BOUNDS type="Window" left="5835" top="3225" width="9675" height="10620">
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
@@ -16,18 +16,6 @@
    <PIN pinname="XY and Distance" visible="1">
    </PIN>
    <PIN pinname="Default" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1512" top="3255" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output 1" visible="1">
-   </PIN>
-   <PIN pinname="Initialize" visible="1">
-   </PIN>
-   <PIN pinname="Default 1" visible="1" slicecount="3" values="0,0.61,2.23">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
@@ -83,31 +71,39 @@
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enable">
    </LINK>
    <NODE id="6" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Reset - Initialize|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
    </PIN>
-   <BOUNDS type="Box" left="3300" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="3480" top="500" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3300" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="3480" top="500" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Default">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="XY and Distance" dstnodeid="1" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Initialize">
-   </LINK>
    <NODE id="7" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Output 1|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
    <BOUNDS type="Box" left="1512" top="3855" width="750" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="1512" top="3855" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" values="-0.0274380165289256,-0.121978021978022,2.05417582417582">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Output 1" dstnodeid="7" dstpinname="Y Input Value">
-   </LINK>
    <BOUNDS type="Window" left="15075" top="7035" width="5880" height="5895">
    </BOUNDS>
+   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1512" top="3255" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Initialize">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output 1" dstnodeid="7" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="XY and Distance" dstnodeid="10" dstpinname="Input 1">
+   </LINK>
    </PATCH>
