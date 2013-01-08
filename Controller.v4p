@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Controller.v4p" systemname="Controller" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Controller.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Controller.v4p" systemname="Controller" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Controller.v4p">
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="11910" top="9075" width="100" height="100">
    </BOUNDS>
@@ -91,9 +91,9 @@
    <NODE id="13" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="ViewProjection">
    </PIN>
-   <BOUNDS type="Box" left="11715" top="615" width="750" height="240">
+   <BOUNDS type="Box" left="9720" top="525" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11715" top="615" width="750" height="240">
+   <BOUNDS type="Node" left="9720" top="525" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -143,9 +143,9 @@
    <NODE id="22" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Nothing Is Selected|">
    </PIN>
-   <BOUNDS type="Box" left="16710" top="11052" width="750" height="240">
+   <BOUNDS type="Box" left="15780" top="11157" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="16710" top="11052" width="750" height="240">
+   <BOUNDS type="Node" left="15780" top="11157" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="22" dstpinname="Y Input Value">
@@ -160,7 +160,7 @@
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="510" top="3255" width="17835" height="13080">
+   <BOUNDS type="Window" left="735" top="2070" width="22695" height="13080">
    </BOUNDS>
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="13170" top="1680" width="100" height="100">
@@ -432,18 +432,6 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="52" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="10470" top="615" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10470" top="615" width="765" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Mesh Shelf|">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Button (3d Mesh)" filename="%VVVV%\lib\nodes\modules\3D\Button (3d Mesh).v4p" nodename="Button (3d Mesh)" componentmode="Hidden" id="54">
    <BOUNDS type="Node" left="5820" top="4215" width="100" height="100">
    </BOUNDS>
@@ -584,64 +572,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="82" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="13695" top="11052" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13695" top="11052" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|AtomShelf Transform|">
-   </PIN>
-   <PIN pinname="Input Node">
-   </PIN>
-   </NODE>
-   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="83">
-   <BOUNDS type="Node" left="10473" top="4830" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Set" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Up Edge" dstnodeid="83" dstpinname="Set">
-   </LINK>
-   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="9" dstpinname="ShelfAtomIsSelected">
-   </LINK>
-   <NODE systemname="ShelfController" filename="ShelfController.v4p" nodename="ShelfController.v4p" componentmode="Hidden" id="84">
-   <BOUNDS type="Node" left="10470" top="4215" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10470" top="4215" width="7015" height="8970">
-   </BOUNDS>
-   <BOUNDS type="Window" left="3840" top="1410" width="10230" height="11640">
-   </BOUNDS>
-   <PIN pinname="Mouse" visible="1">
-   </PIN>
-   <PIN pinname="Selected Atom" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="84" srcpinname="Transform Out" dstnodeid="82" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="52" srcpinname="Output Node" dstnodeid="84" dstpinname="Mesh">
-   </LINK>
-   <LINK srcnodeid="84" srcpinname="Selected Atom" dstnodeid="83" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="14" srcpinname="Output Node" dstnodeid="84" dstpinname="Mouse">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="87" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="15195" top="11022" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15195" top="11022" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Shelf Atom|">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="89" systemname="IOBox (String)">
    <BOUNDS type="Node" left="10875" top="8313" width="3390" height="270">
    </BOUNDS>
@@ -664,8 +594,6 @@
    </LINK>
    <LINK srcnodeid="42" srcpinname="Output Node" dstnodeid="9" dstpinname="AtomsTransforms">
    </LINK>
-   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="87" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="DistanceCalculation" filename="DistanceCalculation.v4p" nodename="DistanceCalculation.v4p" componentmode="Hidden" id="109">
    <BOUNDS type="Node" left="10443" top="7131" width="0" height="0">
    </BOUNDS>
@@ -675,6 +603,8 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="4" values="0.064,0.12,0.142,0.126">
    </PIN>
+   <PIN pinname="Selected Shelf Atom" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Bond Membership" dstnodeid="109" dstpinname="Bonds Membership">
    </LINK>
@@ -682,11 +612,7 @@
    </LINK>
    <LINK srcnodeid="41" srcpinname="Output 1" dstnodeid="109" dstpinname="Molecule Atom Types">
    </LINK>
-   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="109" dstpinname="Selected Shelf Atom">
-   </LINK>
    <LINK srcnodeid="109" srcpinname="Output" dstnodeid="35" dstpinname="Y">
-   </LINK>
-   <LINK srcnodeid="84" srcpinname="Selected Atom" dstnodeid="10" dstpinname="Input 3">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="112">
    <BOUNDS type="Node" left="13905" top="3180" width="100" height="100">
@@ -762,8 +688,6 @@
    </LINK>
    <LINK srcnodeid="116" srcpinname="Output" dstnodeid="113" dstpinname="Switch">
    </LINK>
-   <LINK srcnodeid="84" srcpinname="Selected Atom" dstnodeid="115" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="118" systemname="IOBox (String)">
    <BOUNDS type="Node" left="3045" top="5565" width="5820" height="270">
    </BOUNDS>
@@ -778,4 +702,22 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="132">
+   <BOUNDS type="Node" left="16695" top="720" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16695" top="720" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Shelf Atom|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="115" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="109" dstpinname="Selected Shelf Atom">
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="9" dstpinname="ShelfAtomIsSelected">
+   </LINK>
    </PATCH>
