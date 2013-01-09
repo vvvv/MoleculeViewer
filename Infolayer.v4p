@@ -1,52 +1,16 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
-   <NODE systemname="InfolayerDraw" filename="InfolayerDraw.v4p" nodename="InfolayerDraw.v4p" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1800" top="4050" width="1530" height="270">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1065" top="885" width="16245" height="13050">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   <PIN pinname="Enable" visible="1">
-   </PIN>
-   <PIN pinname="Selected Atom" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Line Layer" visible="1">
-   </PIN>
-   <PIN pinname="Atom Typ" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Infolayer Layer" visible="1">
-   </PIN>
-   <PIN pinname="XYZ" visible="1">
-   </PIN>
-   <PIN pinname="Atom Title" visible="1">
-   </PIN>
-   <PIN pinname="Text Left" visible="1">
-   </PIN>
-   <PIN pinname="Text Right" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out Quad" visible="1">
-   </PIN>
-   </NODE>
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Infolayer Layer|">
    </PIN>
-   <BOUNDS type="Box" left="1800" top="4820" width="750" height="240">
+   <BOUNDS type="Box" left="2430" top="4370" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1800" top="4820" width="750" height="240">
+   <BOUNDS type="Node" left="2430" top="4370" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Infolayer Layer" dstnodeid="1" dstpinname="Input Node">
-   </LINK>
-   <BOUNDS type="Window" left="6540" top="465" width="7005" height="7065">
+   <BOUNDS type="Window" left="6540" top="465" width="8445" height="7065">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="480" top="585" width="0" height="0">
@@ -60,12 +24,10 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="1965" top="540" width="0" height="0">
+   <BOUNDS type="Node" left="1965" top="585" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1965" top="540" width="1125" height="240">
+   <BOUNDS type="Box" left="1965" top="585" width="1125" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -78,12 +40,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Selected Atom">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="4" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="3315" top="495" width="0" height="0">
+   <BOUNDS type="Node" left="3315" top="585" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3315" top="495" width="1140" height="240">
+   <BOUNDS type="Box" left="3315" top="585" width="1140" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -92,12 +52,10 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="0" dstpinname="Mouse" linkstyle="PolyLine">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4755" top="570" width="0" height="0">
+   <BOUNDS type="Node" left="4755" top="585" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4755" top="570" width="1125" height="240">
+   <BOUNDS type="Box" left="4755" top="585" width="1125" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -110,14 +68,12 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Atom Typ">
-   </LINK>
    <NODE systemname="InfolayerController" filename="InfolayerController.v4p" nodename="InfolayerController.v4p" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="1815" top="2730" width="0" height="0">
+   <BOUNDS type="Node" left="2055" top="2730" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="585" width="15135" height="8205">
+   <BOUNDS type="Box" left="240" top="585" width="15135" height="8205">
    </BOUNDS>
-   <BOUNDS type="Window" left="3210" top="2505" width="19095" height="11985">
+   <BOUNDS type="Window" left="5340" top="3165" width="19095" height="11985">
    </BOUNDS>
    <PIN pinname="TextLeft" visible="1">
    </PIN>
@@ -137,17 +93,9 @@
    </PIN>
    <PIN pinname="View Projection" visible="1">
    </PIN>
-   <PIN pinname="Transform Quad" visible="1">
+   <PIN pinname="Transform Quad" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="XYZ Transformed" dstnodeid="0" dstpinname="XYZ">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Atom Title" dstnodeid="0" dstpinname="Atom Title">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="TextLeft" dstnodeid="0" dstpinname="Text Left">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="TextRight" dstnodeid="0" dstpinname="Text Right">
-   </LINK>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="6" dstpinname="Mouse">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Selected Atom">
@@ -157,17 +105,99 @@
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Atom Typ">
    </LINK>
    <NODE systemname="WithinProjection (Transform)" nodename="WithinProjection (Transform)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="3270" top="2205" width="100" height="100">
+   <BOUNDS type="Node" left="3240" top="2085" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="6" dstpinname="View Projection">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Transform Out Quad" dstnodeid="6" dstpinname="Transform Quad" linkstyle="Bezier">
-   <LINKPOINT x="4105" y="6000">
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="9" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="1065" top="4380" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1065" top="4380" width="495" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mask">
+   </PIN>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6405" top="585" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6405" top="585" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Reset">
+   </LINK>
+   <NODE id="0" componentmode="Hidden" systemname="InfolayerDraw" filename="InfolayerDraw.v4p" nodename="InfolayerDraw.v4p">
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Atom Title" visible="1">
+   </PIN>
+   <PIN pinname="Text Left" visible="1">
+   </PIN>
+   <PIN pinname="Text Right" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="1695" top="3705" width="1530" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1065" top="885" width="17565" height="13050">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Selected Atom" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   <PIN pinname="Line Layer" visible="1">
+   </PIN>
+   <PIN pinname="Atom Typ" visible="1">
+   </PIN>
+   <PIN pinname="Infolayer Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out Quad" visible="1">
+   </PIN>
+   <PIN pinname="CloseButton Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Mask" dstnodeid="9" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="CloseButton Transform" dstnodeid="6" dstpinname="Transform Quad" linkstyle="Bezier">
+   <LINKPOINT x="5065" y="5380">
    </LINKPOINT>
-   <LINKPOINT x="5690" y="795">
+   <LINKPOINT x="4580" y="1340">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="TextRight" dstnodeid="0" dstpinname="Text Right">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="TextLeft" dstnodeid="0" dstpinname="Text Left">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Atom Title" dstnodeid="0" dstpinname="Atom Title">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="XYZ Transformed" dstnodeid="0" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Infolayer Layer" dstnodeid="1" dstpinname="Input Node">
    </LINK>
    </PATCH>
