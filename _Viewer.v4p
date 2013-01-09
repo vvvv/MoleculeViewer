@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p">
    <BOUNDS type="Window" left="480" top="540" width="16275" height="13575">
    </BOUNDS>
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="66" systemname="Renderer (EX9)">
    <BOUNDS type="Node" left="3561" top="10866" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Window" left="17295" top="705" width="7515" height="5985">
+   <BOUNDS type="Window" left="18660" top="1335" width="7515" height="5985">
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
@@ -168,32 +168,6 @@
    </NODE>
    <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="245" dstpinname="Simulate">
    </LINK>
-   <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="Hidden" id="425">
-   <BOUNDS type="Node" left="6303" top="5343" width="1725" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2535" top="1950" width="10320" height="6787">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2235" top="7065" width="15000" height="7500">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Number of Atoms" visible="1">
-   </PIN>
-   <PIN pinname="Selected Atom">
-   </PIN>
-   <PIN pinname="Insert Bang">
-   </PIN>
-   <PIN pinname="Delete Bang" visible="1">
-   </PIN>
-   <PIN pinname="AtomTyp" visible="1">
-   </PIN>
-   <PIN pinname="Input Transform" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="245" srcpinname="Bang" dstnodeid="425" dstpinname="Reset">
-   </LINK>
    <NODE systemname="AtomConstants" filename="AtomConstants.v4p" nodename="AtomConstants.v4p" componentmode="Hidden" id="429">
    <BOUNDS type="Node" left="13732" top="872" width="0" height="0">
    </BOUNDS>
@@ -202,12 +176,12 @@
    <BOUNDS type="Window" left="2625" top="975" width="12735" height="13995">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="Hidden" id="501">
+   <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="InAWindow" id="501">
    <BOUNDS type="Node" left="4743" top="2857" width="2595" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="2745" top="40" width="11038" height="5635">
    </BOUNDS>
-   <BOUNDS type="Window" left="735" top="2070" width="22695" height="13080">
+   <BOUNDS type="Window" left="0" top="2070" width="17955" height="13080">
    </BOUNDS>
    <PIN pinname="Delete Bang" visible="1">
    </PIN>
@@ -217,9 +191,9 @@
    </PIN>
    <PIN pinname="Transform" visible="1">
    </PIN>
-   <PIN pinname="Atoms Transform" visible="1">
+   <PIN pinname="Atoms Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="AtomInfo In" visible="1">
+   <PIN pinname="AtomInfo In" visible="1" slicecount="18" values="2,-1,-1,-1,-1,-1,-1,-1,-1,1,1,-1,-1,-1,-1,-1,-1,-1">
    </PIN>
    <PIN pinname="Atoms Type" visible="1">
    </PIN>
@@ -239,18 +213,18 @@
    </PIN>
    <PIN pinname="ViewProjection" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Selected Bond" visible="1">
+   </PIN>
+   <PIN pinname="Bond Membership" visible="1">
+   </PIN>
+   <PIN pinname="Atom Info" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="501" dstpinname="Mouse" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="501" srcpinname="Selected Atom" dstnodeid="425" dstpinname="Selected Atom">
    </LINK>
    <LINK srcnodeid="74" srcpinname="Left Button" dstnodeid="501" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="74" srcpinname="Right Button" dstnodeid="501" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="501" srcpinname="InsertAtom" dstnodeid="425" dstpinname="Insert Bang">
-   </LINK>
-   <LINK srcnodeid="501" srcpinname="Delete Bang" dstnodeid="425" dstpinname="Delete Bang">
    </LINK>
    <NODE systemname="Draw" filename="Draw.v4p" nodename="Draw.v4p" componentmode="Hidden" id="503">
    <BOUNDS type="Node" left="4734" top="4635" width="1335" height="270">
@@ -294,10 +268,6 @@
    <LINKPOINT x="7525" y="1005">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="501" srcpinname="Number of Atoms" dstnodeid="425" dstpinname="Number of Atoms">
-   </LINK>
-   <LINK srcnodeid="501" srcpinname="SelectedBond Transform" dstnodeid="425" dstpinname="Input Transform">
-   </LINK>
    <NODE systemname="ViewTransform" filename="ViewTransform.v4p" nodename="ViewTransform.v4p" componentmode="Hidden" id="504">
    <BOUNDS type="Node" left="11012" top="4487" width="0" height="0">
    </BOUNDS>
@@ -313,18 +283,6 @@
    <LINK srcnodeid="501" srcpinname="Nothing Is Selected" dstnodeid="504" dstpinname="Enable">
    </LINK>
    <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="504" dstpinname="Reset">
-   </LINK>
-   <LINK srcnodeid="425" srcpinname="Transform Out" dstnodeid="501" dstpinname="Atoms Transform" linkstyle="Bezier">
-   <LINKPOINT x="2960" y="7535">
-   </LINKPOINT>
-   <LINKPOINT x="3595" y="1780">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="425" srcpinname="Output" dstnodeid="501" dstpinname="AtomInfo In" linkstyle="Bezier">
-   <LINKPOINT x="2605" y="9665">
-   </LINKPOINT>
-   <LINKPOINT x="2675" y="715">
-   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="501" srcpinname="Atoms Type" dstnodeid="503" dstpinname="Atom Typ">
    </LINK>
@@ -369,7 +327,7 @@
    </PIN>
    </NODE>
    <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="507">
-   <BOUNDS type="Node" left="3822" top="9630" width="100" height="100">
+   <BOUNDS type="Node" left="3810" top="9630" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -377,9 +335,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="508" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4287" top="9150" width="0" height="0">
+   <BOUNDS type="Node" left="4275" top="9150" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4287" top="9150" width="285" height="360">
+   <BOUNDS type="Box" left="4275" top="9150" width="285" height="360">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -399,9 +357,9 @@
    <LINK srcnodeid="508" srcpinname="Y Output Value" dstnodeid="507" dstpinname="Enabled">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="510" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4932" top="9150" width="0" height="0">
+   <BOUNDS type="Node" left="4920" top="9150" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4932" top="9150" width="285" height="360">
+   <BOUNDS type="Box" left="4920" top="9150" width="285" height="360">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -484,38 +442,6 @@
    </NODE>
    <LINK srcnodeid="535" srcpinname="Output String" dstnodeid="534" dstpinname="Send String">
    </LINK>
-   <NODE id="544" componentmode="Hidden" systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Window" left="1485" top="1425" width="17160" height="13170">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10788" top="6390" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3945" top="465" width="4800" height="3600">
-   </BOUNDS>
-   <PIN pinname="View Projection" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="519" srcpinname="XYZ" dstnodeid="544" dstpinname="Initial Interest">
-   </LINK>
-   <LINK srcnodeid="516" srcpinname="Output 3" dstnodeid="544" dstpinname="Inital Distance">
-   </LINK>
-   <LINK srcnodeid="516" srcpinname="Output 2" dstnodeid="544" dstpinname="Initial Pitch">
-   </LINK>
-   <LINK srcnodeid="516" srcpinname="Output 1" dstnodeid="544" dstpinname="Initial Yaw">
-   </LINK>
-   <LINK srcnodeid="544" srcpinname="View Projection" dstnodeid="501" dstpinname="ViewProjection" linkstyle="Bezier" hiddenwhenlocked="0">
-   <LINKPOINT x="14830" y="7985">
-   </LINKPOINT>
-   <LINKPOINT x="12605" y="130">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="544" srcpinname="Projection" dstnodeid="190" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="544" srcpinname="View" dstnodeid="186" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="521" srcpinname="Y Output Value" dstnodeid="544" dstpinname="Initial FOV">
-   </LINK>
-   <LINK srcnodeid="544" srcpinname="View Projection" dstnodeid="534" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="Shelf" filename="Shelf.v4p" nodename="Shelf.v4p" componentmode="Hidden" id="547">
    <BOUNDS type="Node" left="8235" top="2212" width="1320" height="270">
    </BOUNDS>
@@ -532,8 +458,6 @@
    </LINK>
    <LINK srcnodeid="547" srcpinname="Selected Atom" dstnodeid="501" dstpinname="Selected Shelf Atom">
    </LINK>
-   <LINK srcnodeid="547" srcpinname="Selected Atom" dstnodeid="425" dstpinname="AtomTyp">
-   </LINK>
    <NODE systemname="Infolayer" filename="Infolayer.v4p" nodename="Infolayer.v4p" componentmode="Hidden" id="549">
    <BOUNDS type="Node" left="8490" top="4650" width="1260" height="270">
    </BOUNDS>
@@ -541,7 +465,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="6540" top="465" width="8445" height="7065">
    </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Selected Atom" visible="1">
    </PIN>
@@ -565,7 +489,7 @@
    <LINK srcnodeid="501" srcpinname="Atoms Type" dstnodeid="549" dstpinname="Atom Typ">
    </LINK>
    <NODE systemname="Cursor (DX9)" filename="%VVVV%\lib\nodes\modules\EX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="561">
-   <BOUNDS type="Node" left="8196" top="7755" width="100" height="100">
+   <BOUNDS type="Node" left="8211" top="7830" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -591,7 +515,7 @@
    <LINK srcnodeid="507" srcpinname="Layer" dstnodeid="562" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="565">
-   <BOUNDS type="Node" left="2580" top="7185" width="100" height="100">
+   <BOUNDS type="Node" left="2790" top="7275" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture" visible="1">
    </PIN>
@@ -624,8 +548,6 @@
    </NODE>
    <LINK srcnodeid="563" srcpinname="Output String" dstnodeid="564" dstpinname="Filename">
    </LINK>
-   <LINK srcnodeid="503" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 2">
-   </LINK>
    <LINK srcnodeid="547" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="561" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 5">
@@ -635,5 +557,127 @@
    <LINK srcnodeid="549" srcpinname="Infolayer Layer" dstnodeid="505" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="245" srcpinname="Bang" dstnodeid="549" dstpinname="Reset" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="Hidden" id="425">
+   <BOUNDS type="Node" left="6153" top="5343" width="1920" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2385" top="1950" width="10320" height="6787">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2145" top="5640" width="19035" height="11490">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Number of Atoms" visible="1">
+   </PIN>
+   <PIN pinname="Selected Atom">
+   </PIN>
+   <PIN pinname="Insert Bang">
+   </PIN>
+   <PIN pinname="Delete Bang" visible="1">
+   </PIN>
+   <PIN pinname="AtomTyp" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input Transform" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Selected Bond" visible="1">
+   </PIN>
+   <PIN pinname="Bond Membership" visible="1">
+   </PIN>
+   <PIN pinname="Molecule AtomTyp" visible="1">
+   </PIN>
+   <PIN pinname="Molecule Atom Typ" visible="1">
+   </PIN>
+   <PIN pinname="Shelf Atom Typ" visible="1">
+   </PIN>
+   <PIN pinname="Molecule Atom Info" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="245" srcpinname="Bang" dstnodeid="425" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Selected Atom" dstnodeid="425" dstpinname="Selected Atom">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="InsertAtom" dstnodeid="425" dstpinname="Insert Bang">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Delete Bang" dstnodeid="425" dstpinname="Delete Bang">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="SelectedBond Transform" dstnodeid="425" dstpinname="Input Transform">
+   </LINK>
+   <LINK srcnodeid="425" srcpinname="Transform Out" dstnodeid="501" dstpinname="Atoms Transform" linkstyle="Bezier">
+   <LINKPOINT x="2860" y="7535">
+   </LINKPOINT>
+   <LINKPOINT x="3545" y="1780">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="425" srcpinname="Output" dstnodeid="501" dstpinname="AtomInfo In" linkstyle="Bezier">
+   <LINKPOINT x="2505" y="9665">
+   </LINKPOINT>
+   <LINKPOINT x="2625" y="715">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Selected Bond" dstnodeid="425" dstpinname="Selected Bond">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Bond Membership" dstnodeid="425" dstpinname="Bond Membership">
+   </LINK>
+   <LINK srcnodeid="547" srcpinname="Selected Atom" dstnodeid="425" dstpinname="Shelf Atom Typ">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Atom Info" dstnodeid="425" dstpinname="Molecule Atom Info">
+   </LINK>
+   <NODE id="572" componentmode="Hidden" systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Window" left="1485" top="1425" width="17160" height="13170">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10788" top="6390" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3945" top="465" width="4800" height="3600">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="519" srcpinname="XYZ" dstnodeid="572" dstpinname="Initial Interest">
+   </LINK>
+   <LINK srcnodeid="516" srcpinname="Output 3" dstnodeid="572" dstpinname="Inital Distance">
+   </LINK>
+   <LINK srcnodeid="516" srcpinname="Output 2" dstnodeid="572" dstpinname="Initial Pitch">
+   </LINK>
+   <LINK srcnodeid="516" srcpinname="Output 1" dstnodeid="572" dstpinname="Initial Yaw">
+   </LINK>
+   <LINK srcnodeid="572" srcpinname="View Projection" dstnodeid="501" dstpinname="ViewProjection" linkstyle="Bezier" hiddenwhenlocked="0">
+   <LINKPOINT x="14830" y="7985">
+   </LINKPOINT>
+   <LINKPOINT x="12605" y="130">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="572" srcpinname="Projection" dstnodeid="190" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="572" srcpinname="View" dstnodeid="186" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="521" srcpinname="Y Output Value" dstnodeid="572" dstpinname="Initial FOV">
+   </LINK>
+   <LINK srcnodeid="572" srcpinname="View Projection" dstnodeid="534" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="579">
+   <BOUNDS type="Node" left="5490" top="11610" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="173" srcpinname="Transform Out" dstnodeid="579" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="580" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5745" top="11205" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5745" top="11205" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="AspectRatio">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="devnul">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="580" srcpinname="Output String" dstnodeid="579" dstpinname="Send String">
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 2">
    </LINK>
    </PATCH>
