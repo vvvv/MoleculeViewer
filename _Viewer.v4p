@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p">
    <BOUNDS type="Window" left="480" top="540" width="16275" height="13575">
    </BOUNDS>
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="66" systemname="Renderer (EX9)">
    <BOUNDS type="Node" left="3561" top="10866" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Window" left="18660" top="1335" width="7515" height="5985">
+   <BOUNDS type="Window" left="16335" top="5925" width="7515" height="5985">
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
@@ -181,7 +181,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2745" top="40" width="11038" height="5635">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="2070" width="17955" height="13080">
+   <BOUNDS type="Window" left="0" top="1650" width="22140" height="13080">
    </BOUNDS>
    <PIN pinname="Delete Bang" visible="1">
    </PIN>
@@ -563,7 +563,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2385" top="1950" width="10320" height="6787">
    </BOUNDS>
-   <BOUNDS type="Window" left="2145" top="5640" width="19035" height="11490">
+   <BOUNDS type="Window" left="990" top="2040" width="19035" height="11580">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -679,5 +679,17 @@
    <LINK srcnodeid="580" srcpinname="Output String" dstnodeid="579" dstpinname="Send String">
    </LINK>
    <LINK srcnodeid="503" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="594" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="13755" top="3390" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13755" top="3390" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="74" srcpinname="Y" dstnodeid="594" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
