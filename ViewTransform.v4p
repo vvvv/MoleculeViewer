@@ -63,10 +63,12 @@
    <NODE id="5" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
    </PIN>
-   <BOUNDS type="Box" left="2400" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="2400" top="500" width="600" height="435">
    </BOUNDS>
    <BOUNDS type="Node" left="2400" top="500" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enable">
    </LINK>
@@ -82,28 +84,100 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Default">
    </LINK>
-   <NODE id="7" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   <BOUNDS type="Window" left="16740" top="1815" width="6225" height="7575">
+   </BOUNDS>
+   <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="1497" top="3405" width="810" height="270">
+   </BOUNDS>
+   <PIN pinname="Output Count" slicecount="1" values="5">
    </PIN>
-   <BOUNDS type="Box" left="1512" top="3855" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1512" top="3855" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="-0.0274380165289256,-0.121978021978022,2.05417582417582">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="15075" top="7035" width="5880" height="5895">
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="2067" top="4005" width="100" height="100">
    </BOUNDS>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="1512" top="3255" width="100" height="100">
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output 4" dstnodeid="15" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Output 5" dstnodeid="15" dstpinname="Y">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="2907" top="3825" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <BOUNDS type="Box" left="2907" top="3825" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Initialize">
+   <NODE id="11" componentmode="Hidden" systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Window" left="1485" top="1425" width="17160" height="13170">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1275" top="4635" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="4800" height="3600">
+   </BOUNDS>
+   <PIN pinname="View Projection" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="XYZ" dstnodeid="11" dstpinname="Initial Interest">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Output 1" dstnodeid="7" dstpinname="Y Input Value">
+   <LINK srcnodeid="16" srcpinname="Output 3" dstnodeid="11" dstpinname="Inital Distance">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="XY and Distance" dstnodeid="10" dstpinname="Input 1">
+   <LINK srcnodeid="16" srcpinname="Output 2" dstnodeid="11" dstpinname="Initial Pitch">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Output 1" dstnodeid="11" dstpinname="Initial Yaw">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Initial FOV">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="XY and Distance" dstnodeid="16" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="21" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="1290" top="5865" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1290" top="5865" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|View Projection|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="View Projection" dstnodeid="21" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="22" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="2220" top="5865" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2220" top="5865" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="View">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="View" dstnodeid="22" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="23" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="3240" top="5865" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3240" top="5865" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Projection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Projection" dstnodeid="23" dstpinname="Input Node">
    </LINK>
    </PATCH>
