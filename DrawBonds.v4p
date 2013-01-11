@@ -68,7 +68,7 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Radius 2">
    </LINK>
-   <BOUNDS type="Window" left="13635" top="6150" width="9435" height="8445">
+   <BOUNDS type="Window" left="14070" top="9930" width="9435" height="8445">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
    <BOUNDS type="Node" left="5385" top="3195" width="100" height="100">
@@ -227,7 +227,7 @@
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="24" systemname="IOBox (Enumerations)">
    <BOUNDS type="Node" left="5190" top="645" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5190" top="645" width="1590" height="240">
+   <BOUNDS type="Box" left="5190" top="645" width="1725" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="|AtomTransform Bins|">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\ShelfController.v4p" systemname="ShelfController" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\ShelfController.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\ShelfController.v4p" systemname="ShelfController" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\ShelfController.v4p">
    <NODE id="0" systemname="WithinProjection (Transform)" nodename="WithinProjection (Transform)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Transform Out" visible="1" pintype="Output">
    </PIN>
@@ -127,11 +127,11 @@
    </PIN>
    </NODE>
    <NODE id="5" systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="XYZ" pintype="Input" visible="1" slicecount="4" values="1">
+   <PIN pinname="XYZ" pintype="Input" visible="1" slicecount="4" values="0.18,0.18,0.18,0.18">
    </PIN>
    <PIN pinname="Transform In" visible="1" pintype="Input">
    </PIN>
-   <BOUNDS type="Node" left="3000" top="7047" width="1110" height="270">
+   <BOUNDS type="Node" left="3000" top="6552" width="1110" height="270">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1" pintype="Output">
    </PIN>
@@ -477,7 +477,7 @@
    </PIN>
    </NODE>
    <NODE id="15" systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Transform In" visible="1" pintype="Input">
+   <PIN pinname="Transform In" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
    <PIN pinname="XYZ" visible="1" pintype="Input">
    </PIN>
@@ -501,7 +501,7 @@
    </PIN>
    <PIN pinname="Transform Mesh" visible="1" pintype="Input">
    </PIN>
-   <PIN pinname="View Projection" visible="1" pintype="Input">
+   <PIN pinname="View Projection" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Mouse" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
@@ -568,10 +568,6 @@
    </NODE>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="16" dstpinname="Mesh">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="16" dstpinname="Transform Mesh">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="16" dstpinname="View Projection">
-   </LINK>
    <NODE id="20" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Atom|">
    </PIN>
@@ -595,8 +591,6 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="21" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="15" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="15" dstpinname="XYZ">
    </LINK>
@@ -632,7 +626,7 @@
    <LINKPOINT x="7920" y="1700">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="3840" top="1410" width="15345" height="13005">
+   <BOUNDS type="Window" left="2550" top="3180" width="13740" height="13905">
    </BOUNDS>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="7080" top="540" width="100" height="100">
@@ -643,7 +637,7 @@
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="22" systemname="IOBox (Enumerations)">
    <BOUNDS type="Node" left="7080" top="171" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7080" top="171" width="1290" height="240">
+   <BOUNDS type="Box" left="7080" top="171" width="1755" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="|AtomTransform Bins|">
    </PIN>
@@ -874,8 +868,6 @@
    </NODE>
    <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="5" dstpinname="XYZ">
-   </LINK>
    <NODE id="62" systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden">
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1023,5 +1015,47 @@
    <LINK srcnodeid="28" srcpinname="Up Edge" dstnodeid="64" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="64" srcpinname="Output" dstnodeid="20" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="16" dstpinname="Transform Mesh">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="16" dstpinname="View Projection">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="68">
+   <BOUNDS type="Node" left="4245" top="12225" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4245" top="12225" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AtomTyp">
+   </PIN>
+   </NODE>
+   <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="4245" top="11535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="70" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="4455" top="11085" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4455" top="11085" width="375" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="69" dstpinname=".. To [">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="68" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="15" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="5" dstpinname="XYZ">
    </LINK>
    </PATCH>

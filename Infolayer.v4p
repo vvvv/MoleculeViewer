@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Infolayer Layer|">
    </PIN>
@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="14850" top="5805" width="7290" height="6360">
+   <BOUNDS type="Window" left="9225" top="6285" width="7290" height="6360">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="480" top="585" width="0" height="0">
@@ -73,7 +73,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="240" top="585" width="15135" height="8205">
    </BOUNDS>
-   <BOUNDS type="Window" left="5340" top="3165" width="19095" height="11985">
+   <BOUNDS type="Window" left="4425" top="7845" width="17145" height="9300">
    </BOUNDS>
    <PIN pinname="TextLeft" visible="1">
    </PIN>
@@ -91,9 +91,13 @@
    </PIN>
    <PIN pinname="Atom Typ" visible="1">
    </PIN>
-   <PIN pinname="View Projection" visible="1">
+   <PIN pinname="View Projection" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform Quad" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="ViewProjection Scene" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="6" dstpinname="Mouse">
@@ -103,14 +107,6 @@
    <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="6" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Atom Typ">
-   </LINK>
-   <NODE systemname="WithinProjection (Transform)" nodename="WithinProjection (Transform)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="3030" top="2025" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="6" dstpinname="View Projection">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="9" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="1560" top="4380" width="0" height="0">
@@ -163,7 +159,7 @@
    </PIN>
    <PIN pinname="Y" visible="1">
    </PIN>
-   <PIN pinname="Enable" visible="1">
+   <PIN pinname="Enable" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Selected Atom" visible="1">
    </PIN>
@@ -199,5 +195,25 @@
    <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Infolayer Layer" dstnodeid="1" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Enable" dstnodeid="0" dstpinname="Enable">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="2880" top="2190" width="345" height="270">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="11" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="2865" top="1725" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2865" top="1725" width="1305" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="ViewProjection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output Enum" dstnodeid="12" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Input Value" dstnodeid="6" dstpinname="ViewProjection Scene">
    </LINK>
    </PATCH>

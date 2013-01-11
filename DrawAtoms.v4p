@@ -221,7 +221,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5430" top="2145" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.42">
+   <PIN pinname="Y Input Value" slicecount="1" values="1.47">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

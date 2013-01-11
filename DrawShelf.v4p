@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\DrawShelf.v4p" systemname="DrawShelf" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawShelf.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\DrawShelf.v4p" systemname="DrawShelf" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawShelf.v4p">
    <NODE id="4" systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Mesh" visible="1" pintype="Output">
    </PIN>
@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="78" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4425" top="3660" width="0" height="0">
+   <BOUNDS type="Node" left="4425" top="3795" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4425" top="3660" width="795" height="240">
+   <BOUNDS type="Box" left="4425" top="3795" width="615" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="4" values="1,1,1,1">
    </PIN>
@@ -134,10 +134,48 @@
    </LINK>
    <LINK srcnodeid="33" srcpinname="Input Value" dstnodeid="5" dstpinname="Ambient Color">
    </LINK>
-   <LINK srcnodeid="44" srcpinname="Output Node" dstnodeid="5" dstpinname="Transform">
-   </LINK>
    <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Mesh" dstnodeid="5" dstpinname="Mesh">
    </LINK>
+   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="3030" top="3360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Output Node" dstnodeid="79" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="80" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="3210" top="2940" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3210" top="2940" width="540" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="79" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="79" srcpinname="Transform Out" dstnodeid="5" dstpinname="Transform">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="81" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3750" top="3345" width="2505" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3750" top="3345" width="2535" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; just to hide a seam on a sphere|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

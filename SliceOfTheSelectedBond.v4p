@@ -99,7 +99,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="2355" top="2850" width="100" height="100">
+   <BOUNDS type="Node" left="2355" top="2625" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -238,18 +238,18 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Index">
    </LINK>
-   <BOUNDS type="Window" left="14325" top="5850" width="7380" height="9300">
+   <BOUNDS type="Window" left="10905" top="5310" width="7380" height="9300">
    </BOUNDS>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="6240" top="1185" width="420" height="270">
+   <BOUNDS type="Node" left="6000" top="1050" width="420" height="270">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="22" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="6240" top="645" width="0" height="0">
+   <BOUNDS type="Node" left="6000" top="510" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6240" top="645" width="1725" height="240">
+   <BOUNDS type="Box" left="6000" top="510" width="1725" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="|AtomTransform Bins|">
    </PIN>

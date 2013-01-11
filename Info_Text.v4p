@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Info_Text.v4p" systemname="Info_Text" filename="C:\Users\praxis\Desktop\MoleculeViewer\Info_Text.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Info_Text.v4p" systemname="Info_Text" filename="C:\Users\praxis\Desktop\MoleculeViewer\Info_Text.v4p">
    <BOUNDS type="Window" left="3195" top="4170" width="13545" height="8355">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
@@ -145,6 +145,8 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="8" dstpinname="X" linkstyle="PolyLine">
    </LINK>
@@ -174,6 +176,8 @@
    <PIN pinname="Color" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="7" dstpinname="X" linkstyle="PolyLine">
@@ -497,5 +501,31 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="48" srcpinname="Output String" dstnodeid="2" dstpinname="Text">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="10605" top="645" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10605" top="645" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Enabled">
    </LINK>
    </PATCH>

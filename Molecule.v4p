@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
-   <BOUNDS type="Window" left="6855" top="5565" width="9255" height="7095">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
+   <BOUNDS type="Window" left="1875" top="5595" width="9255" height="7095">
    </BOUNDS>
    <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1377" top="2205" width="2595" height="270">
@@ -59,7 +59,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1395" width="7416" height="3270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2520" top="6540" width="18210" height="8610">
+   <BOUNDS type="Window" left="2430" top="7740" width="18210" height="8610">
    </BOUNDS>
    <PIN pinname="Info Layer" visible="1">
    </PIN>
@@ -215,7 +215,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1050" width="10320" height="6787">
    </BOUNDS>
-   <BOUNDS type="Window" left="1680" top="2340" width="19035" height="11580">
+   <BOUNDS type="Window" left="0" top="3795" width="19035" height="11580">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>

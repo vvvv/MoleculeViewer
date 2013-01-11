@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
    <NODE systemname="Store (Transform)" filename="%VVVV%\addonpack\lib\nodes\plugins\Store.dll" nodename="Store (Transform)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2625" top="7362" width="1620" height="270">
    </BOUNDS>
@@ -216,7 +216,7 @@
    </LINK>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="1680" top="2340" width="19035" height="11580">
+   <BOUNDS type="Window" left="0" top="3795" width="19035" height="11580">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4155" top="6885" width="2040" height="270">
@@ -497,7 +497,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3928" top="1320" width="6480" height="9300">
    </BOUNDS>
-   <BOUNDS type="Window" left="10905" top="5310" width="7380" height="9300">
+   <BOUNDS type="Window" left="10920" top="5745" width="7380" height="9300">
    </BOUNDS>
    <PIN pinname="Input" slicecount="4" values="1,4,3,2">
    </PIN>
