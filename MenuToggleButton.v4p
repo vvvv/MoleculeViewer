@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\MenuToggleButton.v4p" systemname="MenuToggleButton" filename="C:\Work\MoleculeViewer\MenuToggleButton.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MenuToggleButton.v4p" systemname="MenuToggleButton" filename="C:\Work\MoleculeViewer\MenuToggleButton.v4p">
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3495" top="3795" width="100" height="100">
    </BOUNDS>
@@ -9,7 +9,7 @@
    </PIN>
    <PIN pinname="X" visible="1">
    </PIN>
-   <PIN pinname="Z" slicecount="1" values="-0.02">
+   <PIN pinname="Z" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="1">
@@ -32,6 +32,8 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="3">
@@ -57,6 +59,8 @@
    </PIN>
    <PIN pinname="Quality" slicecount="1" values="Antialiased">
    </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
    <BOUNDS type="Node" left="7440" top="1440" width="0" height="0">
@@ -81,6 +85,8 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
+   <PIN pinname="Z" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="7" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="2865" top="1500" width="0" height="0">
@@ -102,18 +108,6 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    <PIN pinname="XYZ" slicecount="1" values="0.06">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5565" top="3375" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5565" top="3375" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="-0.08">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
@@ -520,8 +514,6 @@
    </LINK>
    <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Y">
    </LINK>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Z">
-   </LINK>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Go To Position">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="23" dstpinname="FilterTime">
@@ -599,5 +591,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Y">
+   </LINK>
+   <NODE systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="2430" top="4230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="ZWrite Enable" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Render State Out" dstnodeid="2" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Render State Out" dstnodeid="4" dstpinname="Render State">
    </LINK>
    </PATCH>

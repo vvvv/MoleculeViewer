@@ -51,6 +51,8 @@
    </PIN>
    <PIN pinname="Color" visible="1">
    </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="1461" top="3561" width="100" height="100">
@@ -99,7 +101,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TextField" filename="TextField.v4p" nodename="TextField.v4p" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="8148" top="4725" width="100" height="100">
+   <BOUNDS type="Node" left="8148" top="4515" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="825" top="2100" width="13455" height="15150">
    </BOUNDS>
@@ -135,9 +137,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="9708" top="4035" width="0" height="0">
+   <BOUNDS type="Node" left="9708" top="3825" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9708" top="4035" width="795" height="240">
+   <BOUNDS type="Box" left="9708" top="3825" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="Filename">
    </PIN>
@@ -300,7 +302,7 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="16" dstpinname="Label">
    </LINK>
-   <BOUNDS type="Window" left="600" top="4125" width="17550" height="10605">
+   <BOUNDS type="Window" left="2310" top="5340" width="17550" height="10605">
    </BOUNDS>
    <NODE systemname="Sliders" filename="Sliders.v4p" nodename="Sliders.v4p" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="5059" top="4511" width="2280" height="270">
@@ -733,7 +735,7 @@
    <LINK srcnodeid="135" srcpinname="Output 3" dstnodeid="138" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Button (3d Quad)" filename="%VVVV%\lib\nodes\modules\3D\Button (3d Quad).v4p" nodename="Button (3d Quad)" componentmode="Hidden" id="139">
-   <BOUNDS type="Node" left="1080" top="5265" width="100" height="100">
+   <BOUNDS type="Node" left="1785" top="5295" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Quad" visible="1">
    </PIN>
@@ -753,13 +755,13 @@
    <LINK srcnodeid="38" srcpinname="Output Node" dstnodeid="139" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Grid (EX9.Geometry)" nodename="Grid (EX9.Geometry)" componentmode="Hidden" id="140">
-   <BOUNDS type="Node" left="390" top="4920" width="100" height="100">
+   <BOUNDS type="Node" left="585" top="5925" width="645" height="270">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Constant (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\Constant.fx" nodename="Constant (EX9.Effect)" componentmode="Hidden" id="141">
-   <BOUNDS type="Node" left="435" top="6045" width="100" height="100">
+   <BOUNDS type="Node" left="435" top="6480" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
@@ -785,7 +787,7 @@
    <LINK srcnodeid="53" srcpinname="Input Value" dstnodeid="16" dstpinname="View Projection">
    </LINK>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="143">
-   <BOUNDS type="Node" left="8625" top="4089" width="100" height="100">
+   <BOUNDS type="Node" left="8625" top="3879" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -817,5 +819,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Output Text" dstnodeid="144" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden" id="145">
+   <BOUNDS type="Node" left="195" top="3345" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="ZWrite Enable" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="145" srcpinname="Render State Out" dstnodeid="8" dstpinname="Render State">
    </LINK>
    </PATCH>

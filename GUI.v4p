@@ -30,7 +30,7 @@
    <PIN pinname="Y Input Value" slicecount="1" values="0.970621717895046">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="-1800" top="2160" width="13410" height="8565">
+   <BOUNDS type="Window" left="1185" top="4185" width="13410" height="8565">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="8760" top="6750" width="0" height="0">
@@ -319,7 +319,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="0" width="13689" height="10604">
    </BOUNDS>
-   <BOUNDS type="Window" left="600" top="4125" width="17550" height="10605">
+   <BOUNDS type="Window" left="2310" top="5340" width="17550" height="10605">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
