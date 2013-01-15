@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
    <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\DistanceCalculation.v4p" systemname="DistanceCalculation" filename="C:\Work\MoleculeViewer\DistanceCalculation.v4p">
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="3945" top="1485" width="100" height="100">
+   <BOUNDS type="Node" left="2880" top="1506" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Index" visible="1">
    </PIN>
@@ -11,7 +11,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="3330" top="1920" width="100" height="100">
+   <BOUNDS type="Node" left="2265" top="1905" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Index" visible="1">
    </PIN>
@@ -21,7 +21,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1785" top="2535" width="100" height="100">
+   <BOUNDS type="Node" left="1635" top="2346" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Index" visible="1">
    </PIN>
@@ -31,7 +31,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="1515" top="1935" width="100" height="100">
+   <BOUNDS type="Node" left="510" top="3126" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -41,7 +41,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="1533" top="3135" width="100" height="100">
+   <BOUNDS type="Node" left="531" top="3735" width="1200" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -51,7 +51,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="1533" top="4635" width="100" height="100">
+   <BOUNDS type="Node" left="528" top="4620" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -59,9 +59,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="1788" top="4245" width="0" height="0">
+   <BOUNDS type="Node" left="783" top="4230" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1788" top="4245" width="795" height="240">
+   <BOUNDS type="Box" left="783" top="4230" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="-1">
    </PIN>
@@ -75,16 +75,14 @@
    <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="1518" top="5295" width="750" height="240">
+   <BOUNDS type="Box" left="513" top="5280" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1518" top="5295" width="750" height="240">
+   <BOUNDS type="Node" left="513" top="5280" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="4" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="4" dstpinname="Input 2">
    </LINK>
    <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Shelf Atom|">
@@ -130,7 +128,7 @@
    </NODE>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Index">
    </LINK>
-   <BOUNDS type="Window" left="9225" top="7470" width="8310" height="6900">
+   <BOUNDS type="Window" left="6495" top="10170" width="8310" height="6900">
    </BOUNDS>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="17">
    <BOUNDS type="Node" left="495" top="885" width="100" height="100">
@@ -154,18 +152,18 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="10" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="1530" top="3840" width="100" height="100">
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="1650" top="3096" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="1890" top="3495" width="0" height="0">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="1890" top="2721" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1890" top="3495" width="795" height="240">
+   <BOUNDS type="Box" left="1890" top="2721" width="495" height="270">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="2">
    </PIN>
@@ -174,10 +172,12 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input 2">
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="18" dstpinname="Input">
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="25" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="6" dstpinname="Input 1">
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="4" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Input 1">
    </LINK>
    </PATCH>

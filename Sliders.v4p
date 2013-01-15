@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Sliders.v4p" systemname="Sliders" filename="C:\Work\MoleculeViewer\Sliders.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Sliders.v4p" systemname="Sliders" filename="C:\Work\MoleculeViewer\Sliders.v4p">
    <NODE systemname="Text (EX9)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Text (EX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="6525" width="100" height="100">
    </BOUNDS>
@@ -333,29 +333,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   </NODE>
-   <NODE systemname="Unzip (Transform)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Transform)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="6015" top="4425" width="495" height="270">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output 2" visible="1">
-   </PIN>
-   <PIN pinname="Output 1" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="57" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7200" top="4560" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7200" top="4560" width="585" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="-0.001">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
+   <PIN pinname="Render State" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="54">
@@ -402,24 +380,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <NODE id="49" systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden">
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Z">
-   </PIN>
-   <BOUNDS type="Node" left="6438" top="4935" width="840" height="270">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="X" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Z">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Output 2" dstnodeid="49" dstpinname="Transform In">
-   </LINK>
    <NODE systemname="EQ (Spreads Sets)" nodename="EQ (Spreads Sets)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="11205" top="5220" width="100" height="100">
    </BOUNDS>
@@ -460,20 +420,6 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input 2">
    </LINK>
-   <NODE id="39" systemname="Zip (Transform)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Transform)" componentmode="Hidden">
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <BOUNDS type="Node" left="6015" top="5370" width="480" height="270">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="49" srcpinname="Transform Out" dstnodeid="39" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Output 1" dstnodeid="39" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 2">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="61" systemname="IOBox (Node)">
@@ -493,9 +439,11 @@
    </BOUNDS>
    <PIN pinname="CountXY" visible="1">
    </PIN>
-   <PIN pinname="Internal Value" slicecount="3" values="1,0.525908366976555,1">
+   <PIN pinname="Internal Value" slicecount="3" values="0.961211745083589,0.209456576548621,0.782785772468097">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="69" srcpinname="Color" dstnodeid="59" dstpinname="Color">
@@ -507,8 +455,6 @@
    <LINK srcnodeid="69" srcpinname="Mouse Over" dstnodeid="45" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Is X Slider">
-   </LINK>
-   <LINK srcnodeid="69" srcpinname="Transform Out" dstnodeid="58" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="69" dstpinname="SizeXY">
    </LINK>
@@ -584,8 +530,6 @@
    <PIN pinname="CenterX" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="74" dstpinname="Transform In 1">
-   </LINK>
    <LINK srcnodeid="81" srcpinname="Transform Out" dstnodeid="69" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="81" dstpinname="ScaleY">
@@ -641,5 +585,17 @@
    <LINK srcnodeid="45" srcpinname="Output" dstnodeid="86" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="86" srcpinname="Output" dstnodeid="44" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden" id="87">
+   <BOUNDS type="Node" left="4755" top="6540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="ZWrite Enable" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Transform Out" dstnodeid="74" dstpinname="Transform In 1">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Render State Out" dstnodeid="59" dstpinname="Render State">
    </LINK>
    </PATCH>

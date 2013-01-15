@@ -1,16 +1,16 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Infolayer Layer|">
    </PIN>
-   <BOUNDS type="Box" left="2520" top="7485" width="750" height="240">
+   <BOUNDS type="Box" left="2280" top="5880" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2520" top="7485" width="750" height="240">
+   <BOUNDS type="Node" left="2280" top="5880" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" values="||" visible="1">
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="7335" top="5685" width="9240" height="8550">
+   <BOUNDS type="Window" left="4785" top="5745" width="9240" height="8550">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="480" top="585" width="0" height="0">
@@ -69,9 +69,9 @@
    </PIN>
    </NODE>
    <NODE systemname="InfolayerController" filename="InfolayerController.v4p" nodename="InfolayerController.v4p" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2055" top="2730" width="0" height="0">
+   <BOUNDS type="Node" left="1920" top="2760" width="1650" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="240" top="585" width="15135" height="8205">
+   <BOUNDS type="Box" left="105" top="615" width="15135" height="8205">
    </BOUNDS>
    <BOUNDS type="Window" left="4425" top="7845" width="17145" height="9300">
    </BOUNDS>
@@ -141,7 +141,7 @@
    </PIN>
    <BOUNDS type="Node" left="1545" top="3690" width="2025" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="-4890" top="1065" width="17565" height="13050">
+   <BOUNDS type="Window" left="-1380" top="1785" width="17565" height="13050">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -169,9 +169,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="CloseButton Transform" dstnodeid="6" dstpinname="Transform Quad" linkstyle="Bezier">
-   <LINKPOINT x="4965" y="5370">
+   <LINKPOINT x="4920" y="5380">
    </LINKPOINT>
-   <LINKPOINT x="4530" y="1335">
+   <LINKPOINT x="4440" y="1355">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="6" srcpinname="TextRight" dstnodeid="0" dstpinname="Text Right">
@@ -205,7 +205,7 @@
    <LINK srcnodeid="12" srcpinname="Input Value" dstnodeid="6" dstpinname="ViewProjection Scene">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="2520" top="7020" width="100" height="100">
+   <BOUNDS type="Node" left="2280" top="5415" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>

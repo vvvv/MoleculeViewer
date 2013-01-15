@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\DrawBonds.v4p" systemname="DrawBonds" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawBonds.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\DrawBonds.v4p" systemname="DrawBonds" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawBonds.v4p">
    <NODE id="0" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -21,11 +21,13 @@
    </PIN>
    <PIN pinname="Radius 2" visible="1">
    </PIN>
-   <PIN pinname="Length" slicecount="14" visible="1" values="0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08">
+   <PIN pinname="Length" slicecount="10" visible="1" values="0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08">
    </PIN>
    <BOUNDS type="Node" left="2460" top="4530" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Caps" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="3">
@@ -43,7 +45,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Specular Color" slicecount="1" values="|0.12177,0.12177,0.12177,1.00000|">
+   <PIN pinname="Specular Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Alpha" visible="1">
    </PIN>
@@ -72,7 +74,7 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Radius 2">
    </LINK>
-   <BOUNDS type="Window" left="14595" top="4005" width="9435" height="8445">
+   <BOUNDS type="Window" left="1395" top="5730" width="9435" height="8445">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
    <BOUNDS type="Node" left="5385" top="3195" width="100" height="100">
@@ -89,7 +91,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4785" top="4185" width="345" height="240">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" values="|0.31780,0.31780,0.31780,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" values="|0.95161,0.95161,0.95161,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -135,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4980" top="4920" width="345" height="270">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" values="|0.98164,0.00000,0.00000,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Color Output" dstnodeid="10" dstpinname="Input">
@@ -279,7 +281,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3015" top="2580" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="2">
+   <PIN pinname="Y Input Value" slicecount="1" values="2.93">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -287,8 +289,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="1" dstpinname="Length">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="8235" top="690" width="0" height="0">
@@ -311,5 +311,7 @@
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="3" dstpinname="Diffuse Color">
    </LINK>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Alpha">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="1" dstpinname="Length">
    </LINK>
    </PATCH>

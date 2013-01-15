@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\CreateBonds.v4p" systemname="CreateBonds" filename="C:\Work\MoleculeViewer\CreateBonds.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\CreateBonds.v4p" systemname="CreateBonds" filename="C:\Work\MoleculeViewer\CreateBonds.v4p">
    <NODE id="19" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
    </PIN>
@@ -23,14 +23,14 @@
    <NODE id="21" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Bonds Transform|">
    </PIN>
-   <BOUNDS type="Box" left="1554" top="6101" width="750" height="240">
+   <BOUNDS type="Box" left="1575" top="7320" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1554" top="6101" width="750" height="240">
+   <BOUNDS type="Node" left="1575" top="7320" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="10455" top="1680" width="9690" height="7560">
+   <BOUNDS type="Window" left="345" top="2115" width="9690" height="10155">
    </BOUNDS>
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="105">
    <BOUNDS type="Node" left="1542" top="4386" width="675" height="270">
@@ -143,9 +143,9 @@
    <LINK srcnodeid="114" srcpinname="Output Enum" dstnodeid="115" dstpinname="Receive String">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5430" top="6045" width="0" height="0">
+   <BOUNDS type="Node" left="5445" top="7320" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5430" top="6045" width="795" height="240">
+   <BOUNDS type="Box" left="5445" top="7320" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -249,9 +249,9 @@
    <LINK srcnodeid="124" srcpinname="Output" dstnodeid="123" dstpinname="Select">
    </LINK>
    <NODE id="125" systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1563" top="5667" width="1380" height="270">
+   <BOUNDS type="Node" left="1563" top="6327" width="1380" height="270">
    </BOUNDS>
-   <PIN pinname="Y" slicecount="4" visible="1" values="0.07">
+   <PIN pinname="Y" slicecount="1" visible="1" values="0.07">
    </PIN>
    </NODE>
    <LINK srcnodeid="125" srcpinname="Transform Out" dstnodeid="21" dstpinname="Input Node">
@@ -259,7 +259,7 @@
    <LINK srcnodeid="110" srcpinname="Transform Out" dstnodeid="125" dstpinname="Transform In">
    </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="127">
-   <BOUNDS type="Node" left="2940" top="5235" width="100" height="100">
+   <BOUNDS type="Node" left="2445" top="5730" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -267,9 +267,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3585" top="4980" width="0" height="0">
+   <BOUNDS type="Node" left="2700" top="5340" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3585" top="4980" width="795" height="240">
+   <BOUNDS type="Box" left="2700" top="5340" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="2">
    </PIN>
@@ -282,6 +282,6 @@
    </LINK>
    <LINK srcnodeid="123" srcpinname="Output" dstnodeid="127" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="123" srcpinname="Output" dstnodeid="125" dstpinname="Y">
+   <LINK srcnodeid="127" srcpinname="Output" dstnodeid="125" dstpinname="Y">
    </LINK>
    </PATCH>

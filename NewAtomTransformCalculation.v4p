@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p" systemname="NewAtomTransformCalculation" filename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\NewAtomTransformCalculation.v4p" systemname="NewAtomTransformCalculation" filename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p">
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1752" top="1500" width="675" height="270">
    </BOUNDS>
@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3060" top="3660" width="720" height="585">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="0,-0.19,0">
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -111,7 +111,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="-137" top="136" width="5200" height="4900">
    </BOUNDS>
-   <BOUNDS type="Window" left="11685" top="7575" width="8310" height="6900">
+   <BOUNDS type="Window" left="6495" top="10170" width="8310" height="6900">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -119,13 +119,15 @@
    </PIN>
    <PIN pinname="Selected Bond">
    </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Switch">
    </PIN>
-   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="1500" top="495" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="1500" top="495" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Switch">
@@ -150,24 +152,22 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="1" dstpinname="Y">
-   </LINK>
    <NODE id="12" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input Node|">
    </PIN>
-   <BOUNDS type="Box" left="2400" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="2400" top="495" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2400" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="2400" top="495" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Output Node" dstnodeid="0" dstpinname="Input Node">
    </LINK>
    <NODE id="13" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Index - Selected Bond|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Bond|">
    </PIN>
-   <BOUNDS type="Box" left="3300" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="4011" top="495" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3300" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="4011" top="495" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Index">
@@ -179,9 +179,9 @@
    <NODE id="14" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Shelf Atom|">
    </PIN>
-   <BOUNDS type="Box" left="4200" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="5430" top="495" width="915" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4200" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="5430" top="495" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Selected Shelf Atom">
@@ -189,9 +189,9 @@
    <NODE id="15" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Molecule Atom Types|">
    </PIN>
-   <BOUNDS type="Box" left="5100" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="7155" top="495" width="855" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5100" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="7155" top="495" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Molecule Atom Types">
@@ -199,15 +199,31 @@
    <NODE id="16" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Bonds Membership|">
    </PIN>
-   <BOUNDS type="Box" left="6000" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="8610" top="495" width="915" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6000" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="8610" top="495" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Bonds Membership">
    </LINK>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Selected Bond">
    </LINK>
-   <BOUNDS type="Window" left="10085" top="10118" width="8145" height="6493">
+   <BOUNDS type="Window" left="1875" top="8055" width="10350" height="6495">
    </BOUNDS>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="1" dstpinname="Y">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2955" top="4371" width="2295" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2955" top="4371" width="1575" height="1035">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; initial transform for the first atom|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\MouseIncremental.v4p" systemname="MouseIncremental" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\MouseIncremental.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MouseIncremental.v4p" systemname="MouseIncremental" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\MouseIncremental.v4p">
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1065" top="1500" width="1020" height="270">
    </BOUNDS>
@@ -26,7 +26,7 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="0" dstpinname="Mouse">
    </LINK>
-   <BOUNDS type="Window" left="15525" top="2985" width="9675" height="10620">
+   <BOUNDS type="Window" left="1710" top="4335" width="9675" height="10620">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="3183" top="540" width="0" height="0">
@@ -518,10 +518,10 @@
    </NODE>
    <LINK srcnodeid="167" srcpinname="Output" dstnodeid="190" dstpinname="Y Input Value">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="191" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6225" top="6660" width="0" height="0">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="194" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="7245" top="1215" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6225" top="6660" width="795" height="480">
+   <BOUNDS type="Box" left="7245" top="1215" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -529,13 +529,17 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.143982002249719,1.70538922155689">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|0, 0|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="179" srcpinname="Output" dstnodeid="191" dstpinname="Y Input Value">
+   <LINK srcnodeid="194" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Default 1">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Initialize" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

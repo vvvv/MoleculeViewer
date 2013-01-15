@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\AtomConstants.v4p" systemname="AtomConstants" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\AtomConstants.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\AtomConstants.v4p" systemname="AtomConstants" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\AtomConstants.v4p">
    <NODE systemname="Fog (EX9.RenderState)" nodename="Fog (EX9.RenderState)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="390" top="1050" width="100" height="100">
    </BOUNDS>
@@ -17,7 +17,7 @@
    </PIN>
    <PIN pinname="Pixel Fog Mode" slicecount="1" values="Exp2">
    </PIN>
-   <PIN pinname="Vertex Fog Mode" slicecount="1" values="Linear">
+   <PIN pinname="Vertex Fog Mode" slicecount="1" values="None">
    </PIN>
    <PIN pinname="Render State In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -112,7 +112,7 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="4" dstpinname="Send String">
    </LINK>
-   <BOUNDS type="Window" left="6150" top="1155" width="15045" height="13995">
+   <BOUNDS type="Window" left="6150" top="1155" width="7605" height="13995">
    </BOUNDS>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="6930" top="6240" width="705" height="270">
@@ -845,5 +845,19 @@
    <LINK srcnodeid="30" srcpinname="Transform Out" dstnodeid="17" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="32" srcpinname="Transform Out" dstnodeid="17" dstpinname="Input 4">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="76" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="870" top="555" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="870" top="555" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.67">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Density (for modes Exp and Exp2)">
    </LINK>
    </PATCH>
