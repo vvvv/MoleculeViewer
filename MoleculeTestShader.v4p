@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeTestShader.v4p" systemname="MoleculeTestShader" filename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeTestShader.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\MoleculeTestShader.v4p" systemname="MoleculeTestShader" filename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeTestShader.v4p">
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2940" top="2271" width="100" height="100">
    </BOUNDS>
@@ -15,23 +15,27 @@
    </PIN>
    </NODE>
    <NODE systemname="Blur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter).v4p" nodename="Blur (EX9.Texture Filter)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="3126" top="2745" width="100" height="100">
+   <BOUNDS type="Node" left="2946" top="2835" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.42">
+   <PIN pinname="Width" slicecount="1" values="0.33">
    </PIN>
    </NODE>
    <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="2946" top="4311" width="100" height="100">
+   <BOUNDS type="Node" left="1536" top="4596" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Blend Mode" slicecount="1" values="| Blend|">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="3">
@@ -41,19 +45,7 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="0">
    </PIN>
-   </NODE>
-   <NODE systemname="Glow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Glow\Glow (EX9.Texture Filter).v4p" nodename="Glow (EX9.Texture Filter)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="3126" top="3222" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="GlowAmount" slicecount="1" values="2.07">
-   </PIN>
-   <PIN pinname="GlowRadius" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="PostBrightness" slicecount="1" values="0.59">
+   <PIN pinname="Input" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="5">
@@ -73,19 +65,9 @@
    </PIN>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
-   </NODE>
-   <NODE systemname="Blend (EX9.Texture Mixer)" nodename="Blend (EX9.Texture Mixer)" componentmode="Hidden" id="6" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Blend\Blend (EX9.Texture Mixer).v4p">
-   <BOUNDS type="Node" left="2946" top="3711" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Windowed Backbuffer Format" slicecount="1" values="A8R8G8B8">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Mode" slicecount="1" values="| Heat|">
-   </PIN>
-   <PIN pinname="Opacity" slicecount="1" values="0.66">
+   <PIN pinname="Fullscreen Swap Effect" slicecount="1" values="discard">
    </PIN>
    </NODE>
    <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
@@ -95,6 +77,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1500" top="495" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="5" dstpinname="Layers">
    </LINK>
@@ -107,6 +91,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2400" top="495" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="5" dstpinname="View">
    </LINK>
@@ -130,28 +116,60 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="5" dstpinname="Aspect Ratio">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="2" dstpinname="Texture">
-   </LINK>
    <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="2946" top="5046" width="750" height="240">
+   <BOUNDS type="Box" left="1521" top="5736" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2946" top="5046" width="750" height="240">
+   <BOUNDS type="Node" left="1521" top="5736" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Layer" dstnodeid="11" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="6" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="1" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="5" srcpinname="EX9 Out" dstnodeid="0" dstpinname="Source">
    </LINK>
-   <BOUNDS type="Window" left="6465" top="8205" width="6855" height="6825">
+   <BOUNDS type="Window" left="8025" top="7500" width="6855" height="6825">
    </BOUNDS>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="4" dstpinname="Input">
+   <NODE systemname="HSCB (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p" nodename="HSCB (EX9.Texture Filter)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="2940" top="3345" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Brightness" slicecount="1" values="0.11">
+   </PIN>
+   <PIN pinname="Saturation" slicecount="1" values="3.2">
+   </PIN>
+   <PIN pinname="Contrast" slicecount="1" values="-2.69">
+   </PIN>
+   <PIN pinname="Saturation Balance" slicecount="1" values="0.37">
+   </PIN>
+   <PIN pinname="Hue" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="21" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Layer" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Mix (EX9.Texture Mixer)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Mix\Mix (EX9.Texture Mixer).v4p" nodename="Mix (EX9.Texture Mixer)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="2775" top="3930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Fader" slicecount="1" values="0.43">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="25" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="25" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="2" dstpinname="Texture">
    </LINK>
    </PATCH>

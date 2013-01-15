@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
    <NODE systemname="Store (Transform)" filename="%VVVV%\addonpack\lib\nodes\plugins\Store.dll" nodename="Store (Transform)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2625" top="7362" width="1620" height="270">
    </BOUNDS>
@@ -96,14 +96,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="13053" top="3666" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Count" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="13056" top="4248" width="405" height="270">
    </BOUNDS>
@@ -151,9 +143,9 @@
    <NODE id="21" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
    </PIN>
-   <BOUNDS type="Box" left="15315" top="830" width="750" height="240">
+   <BOUNDS type="Box" left="16620" top="980" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="15315" top="830" width="750" height="240">
+   <BOUNDS type="Node" left="16620" top="980" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -210,13 +202,9 @@
    </LINK>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Select">
    </LINK>
-   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="15" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Count" dstnodeid="16" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="0" top="3795" width="19035" height="11580">
+   <BOUNDS type="Window" left="945" top="2265" width="19035" height="11580">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4155" top="6885" width="2040" height="270">
@@ -328,7 +316,7 @@
    </LINK>
    <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="42" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="42" srcpinname="Count" dstnodeid="5" dstpinname="Input 1" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINK srcnodeid="42" srcpinname="Count" dstnodeid="5" dstpinname="Input 1" linkstyle="Bezier" hiddenwhenlocked="0">
    <LINKPOINT x="5880" y="10590">
    </LINKPOINT>
    <LINKPOINT x="4980" y="5685">
@@ -374,7 +362,7 @@
    </LINK>
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="67" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="67" srcpinname="Output 1" dstnodeid="71" dstpinname="Spread" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINK srcnodeid="67" srcpinname="Output 1" dstnodeid="71" dstpinname="Spread" linkstyle="Bezier" hiddenwhenlocked="0">
    <LINKPOINT x="10836" y="9434">
    </LINKPOINT>
    <LINKPOINT x="10281" y="7189">
@@ -514,8 +502,6 @@
    </LINK>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="112" dstpinname="Filter">
    </LINK>
-   <LINK srcnodeid="15" srcpinname="Count" dstnodeid="142" dstpinname="Bin Size">
-   </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="165">
    <BOUNDS type="Node" left="12855" top="6360" width="660" height="270">
    </BOUNDS>
@@ -532,21 +518,21 @@
    </LINK>
    <LINK srcnodeid="165" srcpinname="Output" dstnodeid="0" dstpinname="Remove">
    </LINK>
-   <NODE systemname="AtomHasNoChildren" filename="AtomHasNoChildren.v4p" nodename="AtomHasNoChildren.v4p" componentmode="Hidden" id="188">
+   <NODE systemname="AtomHasChildren" filename="AtomHasChildren.v4p" nodename="AtomHasChildren.v4p" componentmode="Hidden" id="188">
    <BOUNDS type="Node" left="13437" top="5357" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="6707" top="2667" width="13461" height="5380">
    </BOUNDS>
-   <BOUNDS type="Window" left="11985" top="8655" width="6075" height="5490">
+   <BOUNDS type="Window" left="9240" top="6570" width="6075" height="5490">
    </BOUNDS>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="188" srcpinname="Output" dstnodeid="165" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="110" srcpinname="Y Output Value" dstnodeid="188" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="188" dstpinname="Selected Atom">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Count" dstnodeid="188" dstpinname="Bin Size">
    </LINK>
    <NODE id="74" systemname="SetSlice (Spreads)" nodename="SetSlice (Spreads)" componentmode="Hidden">
    <PIN pinname="Spread" visible="1">
@@ -619,15 +605,17 @@
    <LINK srcnodeid="195" srcpinname="Output" dstnodeid="74" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="196" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="13527" top="1872" width="0" height="0">
+   <BOUNDS type="Node" left="15417" top="807" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="13527" top="1872" width="390" height="240">
+   <BOUNDS type="Box" left="15417" top="807" width="390" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="9">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="195" dstpinname="Input 2">
@@ -636,4 +624,24 @@
    </LINK>
    <LINK srcnodeid="121" srcpinname="Count" dstnodeid="101" dstpinname="Input 1">
    </LINK>
+   <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="142" dstpinname="Bin Size">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="188" dstpinname="Bin Size">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <NODE id="197" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="15369" top="225" width="825" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15369" top="225" width="1245" height="540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Number of Slices per Atom|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
