@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\Sliders.v4p" systemname="Sliders" filename="C:\Work\MoleculeViewer\Sliders.v4p">
    <NODE systemname="Text (EX9)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Text (EX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="6525" width="100" height="100">
@@ -407,7 +407,7 @@
    </BOUNDS>
    <PIN pinname="CountXY" visible="1">
    </PIN>
-   <PIN pinname="Internal Value" slicecount="3" values="0.964496516220654,0.254570701226568,1">
+   <PIN pinname="Internal Value" slicecount="3" values="0.976857208979403,0.112859677543778,1">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>

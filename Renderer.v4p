@@ -1,9 +1,9 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\Renderer.v4p" systemname="Renderer" filename="C:\Work\MoleculeViewer\Renderer.v4p">
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="0" systemname="Renderer (EX9)">
    <BOUNDS type="Node" left="1530" top="2781" width="3615" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="11250" top="1410" width="13665" height="11610">
+   <BOUNDS type="Window" left="11055" top="2265" width="13665" height="11610">
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>

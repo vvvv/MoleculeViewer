@@ -1,9 +1,9 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p" bgcolor="15132390">
    <BOUNDS type="Window" left="1845" top="0" width="19455" height="13770">
    </BOUNDS>
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="74" debug="0">
-   <BOUNDS type="Node" left="6900" top="1710" width="100" height="100">
+   <BOUNDS type="Node" left="3405" top="1650" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -15,26 +15,8 @@
    </PIN>
    <PIN pinname="Right Button" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="6900" top="1710">
+   <BOUNDS type="Box" left="3405" top="1650">
    </BOUNDS>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="153">
-   <BOUNDS type="Node" left="3615" top="570" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3615" top="570" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
    </NODE>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="186">
    <BOUNDS type="Node" left="8235" top="6375" width="100" height="100">
@@ -80,18 +62,10 @@
    </NODE>
    <LINK srcnodeid="189" srcpinname="Output String" dstnodeid="190" dstpinname="Send String">
    </LINK>
-   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="245">
-   <BOUNDS type="Node" left="3630" top="1590" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Simulate" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Bang" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="AtomConstants" filename="AtomConstants.v4p" nodename="AtomConstants.v4p" componentmode="Hidden" id="429">
-   <BOUNDS type="Node" left="6915" top="975" width="0" height="0">
+   <BOUNDS type="Node" left="3375" top="915" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6915" top="975" width="5040" height="4720">
+   <BOUNDS type="Box" left="3375" top="915" width="5040" height="4720">
    </BOUNDS>
    <BOUNDS type="Window" left="6150" top="1155" width="7605" height="13995">
    </BOUNDS>
@@ -232,8 +206,6 @@
    </NODE>
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="561" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="245" srcpinname="Bang" dstnodeid="549" dstpinname="Reset" hiddenwhenlocked="0">
-   </LINK>
    <LINK srcnodeid="504" srcpinname="View Projection" dstnodeid="534" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="504" srcpinname="View" dstnodeid="186" dstpinname="Input Value">
@@ -241,15 +213,15 @@
    <LINK srcnodeid="504" srcpinname="Projection" dstnodeid="190" dstpinname="Input Value">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="598">
-   <BOUNDS type="Node" left="1611" top="1275" width="100" height="100">
+   <BOUNDS type="Node" left="651" top="3405" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="599" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="1596" top="870" width="0" height="0">
+   <BOUNDS type="Node" left="636" top="3000" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1596" top="870" width="1275" height="240">
+   <BOUNDS type="Box" left="636" top="3000" width="1305" height="255">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="ViewProjection">
    </PIN>
@@ -259,8 +231,6 @@
    <LINK srcnodeid="549" srcpinname="Infolayer Layer" dstnodeid="505" dstpinname="Layer 3" hiddenwhenlocked="0">
    </LINK>
    <LINK srcnodeid="547" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 4" hiddenwhenlocked="0">
-   </LINK>
-   <LINK srcnodeid="245" srcpinname="Bang" dstnodeid="504" dstpinname="Reset" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Room" filename="Room.v4p" nodename="Room.v4p" componentmode="Hidden" id="601">
    <BOUNDS type="Node" left="765" top="4815" width="0" height="0">
@@ -359,10 +329,12 @@
    </PIN>
    </NODE>
    <NODE systemname="Keyboard (System Window)" filename="%VVVV%\lib\nodes\modules\System\Keyboard (System Window).v4p" nodename="Keyboard (System Window)" componentmode="Hidden" id="646">
-   <BOUNDS type="Node" left="8160" top="1725" width="100" height="100">
+   <BOUNDS type="Node" left="2085" top="1650" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Keyboard" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="2085" top="1650">
+   </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="651" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="8010" top="2580" width="0" height="0">
@@ -480,30 +452,6 @@
    </LINK>
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="638" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="245" dstpinname="Simulate">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="673" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7140" top="2505" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7140" top="2505" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="DoRead">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="505" srcpinname="Layer" dstnodeid="604" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="Renderer" filename="Renderer.v4p" nodename="Renderer.v4p" componentmode="Hidden" id="685">
@@ -537,7 +485,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1623" top="3828" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="570" top="5295" width="17280" height="9150">
+   <BOUNDS type="Window" left="570" top="5295" width="14130" height="9150">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -587,7 +535,7 @@
    </PIN>
    <PIN pinname="Load" visible="1">
    </PIN>
-   <PIN pinname="DoRead" visible="1">
+   <PIN pinname="DoRead" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="597" dstpinname="Mouse" hiddenwhenlocked="1">
@@ -601,8 +549,6 @@
    <LINK srcnodeid="597" srcpinname="Atoms Type" dstnodeid="549" dstpinname="Atom Typ" hiddenwhenlocked="0">
    </LINK>
    <LINK srcnodeid="598" srcpinname="Input Value" dstnodeid="597" dstpinname="ViewProjection">
-   </LINK>
-   <LINK srcnodeid="245" srcpinname="Bang" dstnodeid="597" dstpinname="Reset" hiddenwhenlocked="0">
    </LINK>
    <LINK srcnodeid="597" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 2">
    </LINK>
@@ -621,8 +567,6 @@
    <LINK srcnodeid="638" srcpinname="Save" dstnodeid="597" dstpinname="Write">
    </LINK>
    <LINK srcnodeid="638" srcpinname="Load" dstnodeid="597" dstpinname="Load">
-   </LINK>
-   <LINK srcnodeid="673" srcpinname="Y Output Value" dstnodeid="597" dstpinname="DoRead">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="687" systemname="IOBox (String)">
    <BOUNDS type="Node" left="18060" top="960" width="5310" height="270">
@@ -654,4 +598,10 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <LINK srcnodeid="638" srcpinname="Reset" dstnodeid="597" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="638" srcpinname="Reset" dstnodeid="549" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="638" srcpinname="Reset" dstnodeid="504" dstpinname="Reset">
+   </LINK>
    </PATCH>

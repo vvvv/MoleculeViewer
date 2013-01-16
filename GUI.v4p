@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
@@ -253,9 +253,9 @@
    <LINK srcnodeid="162" srcpinname="Up Edge" dstnodeid="174" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="177" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="12180" top="6720" width="0" height="0">
+   <BOUNDS type="Node" left="12165" top="6690" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="12180" top="6720" width="450" height="465">
+   <BOUNDS type="Box" left="12165" top="6690" width="450" height="465">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -271,7 +271,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="178">
-   <BOUNDS type="Node" left="12180" top="5895" width="100" height="100">
+   <BOUNDS type="Node" left="12165" top="5925" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -280,8 +280,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="178" srcpinname="Output" dstnodeid="177" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="162" srcpinname="Up Edge" dstnodeid="178" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="DrawMenu" filename="DrawMenu.v4p" nodename="DrawMenu.v4p" componentmode="Hidden" id="167">
@@ -357,9 +355,9 @@
    <LINK srcnodeid="167" srcpinname="File Name" dstnodeid="180" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="181" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="11436" top="6675" width="0" height="0">
+   <BOUNDS type="Node" left="11430" top="6690" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="11436" top="6675" width="480" height="480">
+   <BOUNDS type="Box" left="11430" top="6690" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -393,9 +391,9 @@
    <LINK srcnodeid="167" srcpinname="Open" dstnodeid="174" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="183" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="10620" top="6660" width="0" height="0">
+   <BOUNDS type="Node" left="10620" top="6690" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10620" top="6660" width="480" height="480">
+   <BOUNDS type="Box" left="10620" top="6690" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -481,5 +479,31 @@
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Offset Y">
    </LINK>
    <LINK srcnodeid="230" srcpinname="Y" dstnodeid="167" dstpinname="Y">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="235">
+   <BOUNDS type="Node" left="12162" top="6300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="178" srcpinname="Output" dstnodeid="235" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Output" dstnodeid="177" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="237">
+   <BOUNDS type="Node" left="12735" top="5910" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Simulate" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="237" srcpinname="Bang" dstnodeid="235" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="167" srcpinname="Reset" dstnodeid="178" dstpinname="Input 1">
    </LINK>
    </PATCH>
