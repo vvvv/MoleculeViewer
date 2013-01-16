@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
    <NODE systemname="Store (Transform)" filename="%VVVV%\addonpack\lib\nodes\plugins\Store.dll" nodename="Store (Transform)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2625" top="7362" width="1620" height="270">
    </BOUNDS>
@@ -289,9 +289,9 @@
    <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="22" dstpinname="Input Node">
    </LINK>
    <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="11181" top="9204" width="100" height="100">
+   <BOUNDS type="Node" left="11181" top="9624" width="1455" height="270">
    </BOUNDS>
-   <PIN pinname="Default 1" visible="1" slicecount="1" values="0">
+   <PIN pinname="Default 1" visible="1" slicecount="0" values="0">
    </PIN>
    <PIN pinname="Output 1" visible="1">
    </PIN>
@@ -351,9 +351,9 @@
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="67" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="67" srcpinname="Output 1" dstnodeid="71" dstpinname="Spread" linkstyle="Bezier" hiddenwhenlocked="0">
-   <LINKPOINT x="10816" y="9804">
+   <LINKPOINT x="10816" y="10084">
    </LINKPOINT>
-   <LINKPOINT x="10271" y="7374">
+   <LINKPOINT x="10271" y="7514">
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="79">
@@ -407,9 +407,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="67" srcpinname="Output 1" dstnodeid="110" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="9393" y="10060">
+   <LINKPOINT x="9393" y="10340">
    </LINKPOINT>
-   <LINKPOINT x="9345" y="710">
+   <LINKPOINT x="9345" y="850">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Sift (Value)" nodename="Sift (Value)" componentmode="Hidden" id="112">
@@ -697,7 +697,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="204">
-   <BOUNDS type="Node" left="12030" top="8790" width="100" height="100">
+   <BOUNDS type="Node" left="12570" top="9030" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -715,11 +715,29 @@
    <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Clear">
    </LINK>
    <NODE systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" id="205">
-   <BOUNDS type="Node" left="11580" top="8310" width="100" height="100">
+   <BOUNDS type="Node" left="12135" top="8550" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="205" srcpinname="Output" dstnodeid="67" dstpinname="Default 1">
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="206">
+   <BOUNDS type="Node" left="11880" top="9015" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="206" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="198" srcpinname="Y Output Value" dstnodeid="206" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="Output" dstnodeid="206" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="206" srcpinname="Output" dstnodeid="67" dstpinname="Default 1">
    </LINK>
    </PATCH>
