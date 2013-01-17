@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MouseIncremental.v4p" systemname="MouseIncremental" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\MouseIncremental.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\MouseIncremental.v4p" systemname="MouseIncremental" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\MouseIncremental.v4p">
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1065" top="1500" width="1020" height="270">
    </BOUNDS>
@@ -19,9 +19,9 @@
    <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
-   <BOUNDS type="Box" left="1065" top="540" width="660" height="240">
+   <BOUNDS type="Box" left="1065" top="312" width="660" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1065" top="540" width="750" height="240">
+   <BOUNDS type="Node" left="1065" top="312" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="0" dstpinname="Mouse">
@@ -29,9 +29,9 @@
    <BOUNDS type="Window" left="1710" top="4335" width="9675" height="10620">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3183" top="540" width="0" height="0">
+   <BOUNDS type="Node" left="3180" top="312" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3183" top="540" width="480" height="480">
+   <BOUNDS type="Box" left="3180" top="312" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -51,9 +51,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="2370" top="540" width="0" height="0">
+   <BOUNDS type="Node" left="2370" top="312" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2370" top="540" width="480" height="480">
+   <BOUNDS type="Box" left="2370" top="312" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -115,9 +115,9 @@
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Simulate">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="146">
-   <BOUNDS type="Node" left="4518" top="450" width="100" height="100">
+   <BOUNDS type="Node" left="4845" top="312" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4518" top="450" width="795" height="720">
+   <BOUNDS type="Box" left="4845" top="312" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -127,7 +127,7 @@
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Default">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|PitchYawDistance Default|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -519,9 +519,9 @@
    <LINK srcnodeid="167" srcpinname="Output" dstnodeid="190" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="194" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7245" top="1215" width="0" height="0">
+   <BOUNDS type="Node" left="7245" top="312" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7245" top="1215" width="795" height="480">
+   <BOUNDS type="Box" left="7245" top="312" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -536,6 +536,8 @@
    <PIN pinname="Default" slicecount="1" values="|0, 0|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Pan Default|">
    </PIN>
    </NODE>
    <LINK srcnodeid="194" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Default 1">

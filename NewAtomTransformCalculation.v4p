@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\NewAtomTransformCalculation.v4p" systemname="NewAtomTransformCalculation" filename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p" systemname="NewAtomTransformCalculation" filename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p">
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1752" top="1500" width="675" height="270">
    </BOUNDS>
@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2205" top="3648" width="795" height="615">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0.3">
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -92,26 +92,12 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3255" top="3333" width="3390" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3255" top="3333" width="3600" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|distance between atoms = RAtom1+RAtom2|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE systemname="DistanceCalculation" filename="DistanceCalculation.v4p" nodename="DistanceCalculation.v4p" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="2463" top="2586" width="0" height="0">
+   <BOUNDS type="Node" left="2463" top="2502" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="-137" top="136" width="5200" height="4900">
+   <BOUNDS type="Box" left="0" top="52" width="5200" height="4900">
    </BOUNDS>
-   <BOUNDS type="Window" left="6495" top="10170" width="8310" height="6900">
+   <BOUNDS type="Window" left="6510" top="7335" width="8310" height="6900">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>

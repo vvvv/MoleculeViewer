@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
-   <BOUNDS type="Window" left="570" top="5295" width="8955" height="9150">
+   <BOUNDS type="Window" left="570" top="5295" width="8310" height="9150">
    </BOUNDS>
    <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1377" top="2205" width="2595" height="270">
@@ -37,7 +37,7 @@
    </PIN>
    <PIN pinname="Selected Atom" visible="1">
    </PIN>
-   <PIN pinname="ViewProjection" slicecount="1" values="||">
+   <PIN pinname="ViewProjection" slicecount="1" values="||" visible="1">
    </PIN>
    <PIN pinname="Selected Bond" visible="1">
    </PIN>
@@ -130,18 +130,6 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Selected Bond" dstnodeid="1" dstpinname="Selected Bond">
    </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="5" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="3045" top="615" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3045" top="615" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="ViewProjection">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="5" srcpinname="Output Node" dstnodeid="0" dstpinname="ViewProjection">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="6" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="4050" top="615" width="0" height="0">
    </BOUNDS>
@@ -155,9 +143,9 @@
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="0" dstpinname="Mouse">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5580" top="609" width="0" height="0">
+   <BOUNDS type="Node" left="5580" top="615" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5580" top="609" width="795" height="240">
+   <BOUNDS type="Box" left="5580" top="615" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -217,9 +205,9 @@
    <LINK srcnodeid="0" srcpinname="Atoms Type" dstnodeid="17" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6825" top="660" width="0" height="0">
+   <BOUNDS type="Node" left="6825" top="615" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6825" top="660" width="480" height="480">
+   <BOUNDS type="Box" left="6825" top="615" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -369,5 +357,23 @@
    <LINK srcnodeid="58" srcpinname="Output 1" dstnodeid="56" dstpinname="Load New">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Something Is Selected" dstnodeid="13" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="60">
+   <BOUNDS type="Node" left="2580" top="990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="59" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="2565" top="615" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2565" top="615" width="1305" height="255">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="ViewProjection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Output Enum" dstnodeid="60" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Input Value" dstnodeid="0" dstpinname="ViewProjection">
    </LINK>
    </PATCH>

@@ -129,7 +129,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3705" top="1500" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="-0.01">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -143,7 +143,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12000" top="1530" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.06">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.048">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -272,8 +272,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Mouse Over|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="18" dstpinname="Transform Quad">
-   </LINK>
    <NODE id="32" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
@@ -326,7 +324,7 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Color Output" dstnodeid="21" dstpinname="Input 1" linkstyle="PolyLine">
    </LINK>
-   <BOUNDS type="Window" left="705" top="375" width="16755" height="10125">
+   <BOUNDS type="Window" left="705" top="375" width="14505" height="10125">
    </BOUNDS>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="18" dstpinname="View Projection">
    </LINK>
@@ -705,5 +703,7 @@
    <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="58" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="58" srcpinname="Count" dstnodeid="57" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="18" dstpinname="Transform Quad">
    </LINK>
    </PATCH>
