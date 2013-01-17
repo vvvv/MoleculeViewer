@@ -2,20 +2,6 @@
    <PATCH nodename="C:\Work\MoleculeViewer\MoleculeLoader.v4p" systemname="MoleculeLoader" filename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeLoader.v4p">
    <BOUNDS type="Window" left="225" top="3315" width="6600" height="11040">
    </BOUNDS>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1">
-   <BOUNDS type="Node" left="2250" top="315" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2250" top="315" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Load">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1215" top="2460" width="900" height="270">
    </BOUNDS>
@@ -88,8 +74,6 @@
    <PIN pinname="Openend" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Open">
-   </LINK>
    <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="9" dstpinname="Filter">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Path" dstnodeid="2" dstpinname="Filename">
@@ -305,5 +289,63 @@
    <LINK srcnodeid="9" srcpinname="Openend" dstnodeid="40" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Openend" dstnodeid="2" dstpinname="Read">
+   </LINK>
+   <NODE id="42" nodename="IOBox (Enumerations)" componentmode="InABox" systemname="IOBox (Enumerations)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2055" top="510" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2055" top="510" width="765" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" pintype="Input" visible="1" values="Load">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Style" pintype="Configuration" slicecount="1" values="PullDown">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output Enum" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="41" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Receive String" pintype="Input" visible="1">
+   </PIN>
+   <BOUNDS type="Node" width="255" height="270" left="2055" top="915">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="(ROUTER DON&apos;T USE)" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Output Enum" dstnodeid="41" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Input Value" dstnodeid="9" dstpinname="Open">
    </LINK>
    </PATCH>

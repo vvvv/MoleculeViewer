@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MenuSeparationLine.v4p" systemname="MenuSeparationLine" filename="C:\Work\MoleculeViewer\MenuSeparationLine.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\MenuSeparationLine.v4p" systemname="MenuSeparationLine" filename="C:\Work\MoleculeViewer\MenuSeparationLine.v4p">
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2475" top="4188" width="100" height="100">
    </BOUNDS>
@@ -169,15 +169,15 @@
    <NODE systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden" id="34">
    <BOUNDS type="Node" left="975" top="3480" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Render State In" visible="1">
+   <PIN pinname="Render State In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Render State Out" visible="1">
    </PIN>
    <PIN pinname="ZWrite Enable" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Render State Out" dstnodeid="34" dstpinname="Render State In">
-   </LINK>
    <LINK srcnodeid="34" srcpinname="Render State Out" dstnodeid="0" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Render State Out" dstnodeid="34" dstpinname="Render State In">
    </LINK>
    </PATCH>

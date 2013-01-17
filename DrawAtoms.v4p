@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\DrawAtoms.v4p" systemname="DrawAtoms" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawAtoms.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\DrawAtoms.v4p" systemname="DrawAtoms" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawAtoms.v4p">
    <NODE id="1" systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden">
    <PIN pinname="Radius" visible="1" slicecount="1" values="0">
    </PIN>
@@ -115,7 +115,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="5685" top="1110" width="720" height="270">
+   <BOUNDS type="Node" left="5685" top="1110" width="255" height="270">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -227,24 +227,6 @@
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Resolution X">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Resolution Y">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7200" top="660" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7200" top="660" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Alpha">
    </LINK>
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="61">
    <BOUNDS type="Node" left="585" top="2625" width="100" height="100">
@@ -487,5 +469,23 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="87" srcpinname="Output Enum" dstnodeid="86" dstpinname="Culling">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="88">
+   <BOUNDS type="Node" left="6573" top="1125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="89" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="6588" top="630" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6588" top="630" width="1590" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="SliderTransparency">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Output Enum" dstnodeid="88" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Input Value" dstnodeid="19" dstpinname="Alpha">
    </LINK>
    </PATCH>
