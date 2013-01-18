@@ -645,7 +645,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7425" top="2139" width="675" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.13">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -705,7 +705,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8145" top="3390" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.2">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.15">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1019,6 +1019,8 @@
    </PIN>
    <PIN pinname="AspectRatio XY" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="6045" top="8385" width="4635" height="4695">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="109" srcpinname="Y" dstnodeid="4" dstpinname="Y">
    </LINK>
@@ -1029,7 +1031,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4083" top="3555" width="540" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.13">
+   <PIN pinname="Y Input Value" slicecount="1" values="-0.8">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

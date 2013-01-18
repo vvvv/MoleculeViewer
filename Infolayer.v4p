@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Infolayer Layer|">
    </PIN>
@@ -141,7 +141,7 @@
    </PIN>
    <BOUNDS type="Node" left="1545" top="3690" width="2025" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1380" top="1785" width="17565" height="13050">
+   <BOUNDS type="Window" left="1155" top="1095" width="17565" height="13050">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>

@@ -301,7 +301,7 @@
    </BOUNDS>
    <PIN pinname="CountXY" visible="1">
    </PIN>
-   <PIN pinname="Internal Value" slicecount="3" values="0.72861764520854,0.753931770252649,0.374245183493121">
+   <PIN pinname="Internal Value" slicecount="3" values="1,0.296000295129037,0.518000516475814">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -559,7 +559,7 @@
    </BOUNDS>
    <PIN pinname="Alignment" slicecount="1" values="Centered">
    </PIN>
-   <PIN pinname="Phase" slicecount="1" values="0">
+   <PIN pinname="Phase" slicecount="1" values="0.02">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
