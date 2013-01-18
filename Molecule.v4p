@@ -7,7 +7,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1215" width="11038" height="5635">
    </BOUNDS>
-   <BOUNDS type="Window" left="4650" top="4320" width="18090" height="9840">
+   <BOUNDS type="Window" left="4650" top="4320" width="11520" height="9840">
    </BOUNDS>
    <PIN pinname="Delete Bang" visible="1">
    </PIN>
@@ -37,7 +37,7 @@
    </PIN>
    <PIN pinname="Selected Atom" visible="1">
    </PIN>
-   <PIN pinname="ViewProjection" slicecount="1" values="||" visible="1">
+   <PIN pinname="ViewProjection" slicecount="1" visible="1" values="||">
    </PIN>
    <PIN pinname="Selected Bond" visible="1">
    </PIN>
@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1890" width="7416" height="3270">
    </BOUNDS>
-   <BOUNDS type="Window" left="6765" top="5010" width="14865" height="9165">
+   <BOUNDS type="Window" left="870" top="5760" width="14865" height="9165">
    </BOUNDS>
    <PIN pinname="Info Layer" visible="1">
    </PIN>

@@ -20,7 +20,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="420" top="4770" width="13065" height="9525">
+   <BOUNDS type="Window" left="-2535" top="5220" width="13065" height="9525">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="6285" top="6735" width="0" height="0">
@@ -45,7 +45,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6015" top="1320" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="-0.59">
+   <PIN pinname="Y Input Value" slicecount="1" values="-0.29">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -83,7 +83,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="153">
-   <BOUNDS type="Node" left="2295" top="5910" width="100" height="100">
+   <BOUNDS type="Node" left="2295" top="5874" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -93,7 +93,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="155">
-   <BOUNDS type="Node" left="2310" top="6435" width="100" height="100">
+   <BOUNDS type="Node" left="2310" top="6291" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -115,7 +115,7 @@
    </PIN>
    </NODE>
    <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="161">
-   <BOUNDS type="Node" left="2295" top="6894" width="100" height="100">
+   <BOUNDS type="Node" left="2295" top="6690" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -197,19 +197,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="161" srcpinname="Output 1" dstnodeid="170" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="588" y="9001">
+   <LINKPOINT x="588" y="8865">
    </LINKPOINT>
-   <LINKPOINT x="1251" y="302">
+   <LINKPOINT x="1251" y="234">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="170" srcpinname="Y Output Value" dstnodeid="164" dstpinname="Go To Position">
    </LINK>
-   <NODE systemname="DrawMenu" filename="DrawMenu.v4p" nodename="DrawMenu.v4p" componentmode="InAWindow" id="167">
-   <BOUNDS type="Node" left="3725" top="4667" width="4755" height="270">
+   <NODE systemname="DrawMenu" filename="DrawMenu.v4p" nodename="DrawMenu.v4p" componentmode="Hidden" id="167">
+   <BOUNDS type="Node" left="3710" top="4592" width="4755" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15" top="900" width="13689" height="10604">
+   <BOUNDS type="Box" left="0" top="825" width="13689" height="10604">
    </BOUNDS>
-   <BOUNDS type="Window" left="240" top="900" width="11220" height="13455">
+   <BOUNDS type="Window" left="165" top="930" width="11220" height="13455">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -243,6 +243,8 @@
    </PIN>
    <PIN pinname="PerfMeterOn" visible="1">
    </PIN>
+   <PIN pinname="Scale" visible="1" slicecount="1" values="1.11115384615385">
+   </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="167" dstpinname="Mouse">
    </LINK>
@@ -255,7 +257,7 @@
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="179" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="3702" top="7005" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3702" top="7005" width="795" height="240">
+   <BOUNDS type="Box" left="3702" top="7005" width="495" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="ConstantLayer">
    </PIN>
@@ -293,6 +295,10 @@
    </PIN>
    <PIN pinname="Y" visible="1">
    </PIN>
+   <PIN pinname="Horizontal Align" slicecount="1" values="Left">
+   </PIN>
+   <PIN pinname="Offset X" visible="1" slicecount="2" values="0,-0.564">
+   </PIN>
    </NODE>
    <LINK srcnodeid="184" srcpinname="Input Value" dstnodeid="230" dstpinname="AspectRatio XY">
    </LINK>
@@ -301,7 +307,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5040" top="1320" width="795" height="465">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" values="0.489,0">
+   <PIN pinname="Y Input Value" slicecount="2" values="0,-0.589">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -311,9 +317,9 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="231" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Offset X">
-   </LINK>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="234">
    <BOUNDS type="Node" left="4110" top="3714" width="100" height="100">
    </BOUNDS>
@@ -331,8 +337,6 @@
    <LINK srcnodeid="234" srcpinname="Y" dstnodeid="157" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Offset Y">
-   </LINK>
-   <LINK srcnodeid="230" srcpinname="Y" dstnodeid="167" dstpinname="Y">
    </LINK>
    <LINK srcnodeid="167" srcpinname="MouseOver MenuButton" dstnodeid="153" dstpinname="Input 2">
    </LINK>
@@ -585,5 +589,67 @@
    <LINK srcnodeid="256" srcpinname="Layer" dstnodeid="259" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="259" srcpinname="Layer" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Multiply (Value Spectral)" nodename="Multiply (Value Spectral)" componentmode="Hidden" id="260">
+   <BOUNDS type="Node" left="9660" top="1965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="184" srcpinname="Input Value" dstnodeid="260" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="262" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5583" top="3681" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5583" top="3681" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1.26">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="263">
+   <BOUNDS type="Node" left="5598" top="4125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="262" srcpinname="Y Output Value" dstnodeid="263" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="260" srcpinname="Output" dstnodeid="263" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="263" srcpinname="Output" dstnodeid="167" dstpinname="Scale">
+   </LINK>
+   <LINK srcnodeid="230" srcpinname="Y" dstnodeid="167" dstpinname="Y">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="266">
+   <BOUNDS type="Node" left="5040" top="2805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="266" srcpinname="Output" dstnodeid="230" dstpinname="Offset X">
+   </LINK>
+   <LINK srcnodeid="231" srcpinname="Y Output Value" dstnodeid="266" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="260" srcpinname="Output" dstnodeid="266" dstpinname="Input 2">
    </LINK>
    </PATCH>

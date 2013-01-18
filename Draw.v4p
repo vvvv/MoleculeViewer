@@ -72,7 +72,7 @@
    <BOUNDS type="Node" left="7950" top="465" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <BOUNDS type="Window" left="6765" top="5010" width="14865" height="9165">
+   <BOUNDS type="Window" left="870" top="5760" width="14865" height="9165">
    </BOUNDS>
    <NODE systemname="ShowAtomInfo" filename="ShowAtomInfo.v4p" nodename="ShowAtomInfo.v4p" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="4920" top="2235" width="0" height="0">

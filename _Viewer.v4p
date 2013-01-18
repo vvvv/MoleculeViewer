@@ -75,7 +75,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3811" top="4655" width="5877" height="4855">
    </BOUNDS>
-   <BOUNDS type="Window" left="1035" top="2550" width="7845" height="9855">
+   <BOUNDS type="Window" left="3225" top="4830" width="7845" height="9855">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4665" top="2580" width="3730" height="4435">
    </BOUNDS>
-   <BOUNDS type="Window" left="10035" top="6675" width="7965" height="5700">
+   <BOUNDS type="Window" left="9255" top="5475" width="6795" height="7755">
    </BOUNDS>
    <PIN pinname="Selected Atom" visible="1">
    </PIN>
@@ -275,11 +275,11 @@
    </PIN>
    </NODE>
    <NODE id="640" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|10. Check all buttons and sliders.&cr;&lf;&cr;&lf;11. Infolayer should be rebuilt so that it is defined in its own coordinates and then just moved by transforms.|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|10. Check all buttons and sliders.&cr;&lf;&cr;&lf;11. Infolayer should be rebuilt so that it is defined in its own coordinates and then just moved by transforms.&cr;&lf;&cr;&lf;12. Atoms&apos; transparency. It will be adjusted not in controller, but directly in DrawAtoms... ?|">
    </PIN>
    <BOUNDS type="Node" left="14505" top="1695" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="14505" top="1695" width="3015" height="1185">
+   <BOUNDS type="Box" left="14505" top="1695" width="3060" height="3525">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -347,7 +347,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2070" top="2595" width="3810" height="4464">
    </BOUNDS>
-   <BOUNDS type="Window" left="420" top="4770" width="13065" height="9525">
+   <BOUNDS type="Window" left="-2535" top="5220" width="13065" height="9525">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -558,8 +558,6 @@
    </LINK>
    <LINK srcnodeid="690" srcpinname="Output" dstnodeid="549" dstpinname="Reset" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="690" srcpinname="Output" dstnodeid="504" dstpinname="Reset" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="547" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 5">
    </LINK>
    <LINK srcnodeid="638" srcpinname="Layer" dstnodeid="505" dstpinname="Layer 4">
@@ -585,5 +583,7 @@
    <LINK srcnodeid="692" srcpinname="Input Value" dstnodeid="653" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="692" srcpinname="Input Value" dstnodeid="654" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="690" srcpinname="Output" dstnodeid="504" dstpinname="Reset" hiddenwhenlocked="1">
    </LINK>
    </PATCH>
