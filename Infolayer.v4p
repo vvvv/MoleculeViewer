@@ -3,14 +3,14 @@
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Infolayer Layer|">
    </PIN>
-   <BOUNDS type="Box" left="2280" top="5880" width="750" height="240">
+   <BOUNDS type="Box" left="1530" top="4830" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2280" top="5880" width="750" height="240">
+   <BOUNDS type="Node" left="1530" top="4830" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4785" top="5745" width="9240" height="8550">
+   <BOUNDS type="Window" left="7785" top="2430" width="7185" height="6690">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="480" top="585" width="0" height="0">
@@ -97,7 +97,7 @@
    </PIN>
    <PIN pinname="Enable" visible="1">
    </PIN>
-   <PIN pinname="ViewProjection Scene" visible="1">
+   <PIN pinname="ViewProjection Scene" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="6" dstpinname="Mouse">
@@ -141,7 +141,7 @@
    </PIN>
    <BOUNDS type="Node" left="1545" top="3690" width="2025" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1155" top="1095" width="17565" height="13050">
+   <BOUNDS type="Window" left="5205" top="5010" width="14820" height="11100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -187,15 +187,15 @@
    <LINK srcnodeid="6" srcpinname="Enable" dstnodeid="0" dstpinname="Enable">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="2880" top="2190" width="345" height="270">
+   <BOUNDS type="Node" left="3015" top="2160" width="345" height="270">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="11" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="2865" top="1725" width="0" height="0">
+   <BOUNDS type="Node" left="3000" top="1695" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2865" top="1725" width="1305" height="240">
+   <BOUNDS type="Box" left="3000" top="1695" width="1305" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="ViewProjection">
    </PIN>
@@ -204,18 +204,6 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Input Value" dstnodeid="6" dstpinname="ViewProjection Scene">
    </LINK>
-   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="2280" top="5415" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer 2" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="26" srcpinname="Layer" dstnodeid="1" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Infolayer Layer" dstnodeid="26" dstpinname="Layer 2">
+   <LINK srcnodeid="0" srcpinname="Infolayer Layer" dstnodeid="1" dstpinname="Input Node">
    </LINK>
    </PATCH>

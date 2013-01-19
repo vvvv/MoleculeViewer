@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
-   <BOUNDS type="Window" left="570" top="5295" width="8310" height="9150">
+   <BOUNDS type="Window" left="345" top="210" width="8265" height="8880">
    </BOUNDS>
    <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1377" top="2205" width="2595" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1215" width="11038" height="5635">
    </BOUNDS>
-   <BOUNDS type="Window" left="4650" top="4320" width="11520" height="9840">
+   <BOUNDS type="Window" left="345" top="210" width="18525" height="10425">
    </BOUNDS>
    <PIN pinname="Delete Bang" visible="1">
    </PIN>
@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1890" width="7416" height="3270">
    </BOUNDS>
-   <BOUNDS type="Window" left="870" top="5760" width="14865" height="9165">
+   <BOUNDS type="Window" left="345" top="210" width="12795" height="10425">
    </BOUNDS>
    <PIN pinname="Info Layer" visible="1">
    </PIN>
@@ -297,7 +297,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="444" top="1005" width="10320" height="6787">
    </BOUNDS>
-   <BOUNDS type="Window" left="930" top="3540" width="22515" height="11580">
+   <BOUNDS type="Window" left="1470" top="0" width="22485" height="11760">
    </BOUNDS>
    <PIN pinname="Initial Atom Transform" visible="1">
    </PIN>

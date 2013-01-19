@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="78" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5730" top="825" width="0" height="0">
+   <BOUNDS type="Node" left="5730" top="675" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5730" top="825" width="615" height="240">
+   <BOUNDS type="Box" left="5730" top="675" width="615" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="4" values="1,1,1,1">
    </PIN>
@@ -256,16 +256,22 @@
    </NODE>
    <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="87" dstpinname="XYZ UnTransformed">
    </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="93" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="4725" top="795" width="0" height="0">
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="95">
+   <BOUNDS type="Node" left="4365" top="2085" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4725" top="795" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="ViewProjectionInverse">
+   <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="93" srcpinname="Output Node" dstnodeid="87" dstpinname="Transform">
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="94" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="4365" top="1590" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4365" top="1590" width="1770" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="ViewProjectionInverse">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Output Enum" dstnodeid="95" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="95" srcpinname="Input Value" dstnodeid="87" dstpinname="Transform">
    </LINK>
    </PATCH>

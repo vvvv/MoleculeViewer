@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\myDeleteSlice.v4p" systemname="myDeleteSlice" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\myDeleteSlice.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\myDeleteSlice.v4p" systemname="myDeleteSlice" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\myDeleteSlice.v4p">
    <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1515" top="4557" width="100" height="100">
    </BOUNDS>
@@ -103,7 +103,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="2595" top="2787" width="100" height="100">
+   <BOUNDS type="Node" left="2577" top="2610" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -147,7 +147,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="3255" top="2607" width="100" height="100">
+   <BOUNDS type="Node" left="3255" top="2610" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -216,6 +216,44 @@
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="12" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="11337" top="10335" width="6516" height="7362">
+   <BOUNDS type="Window" left="19665" top="9780" width="6510" height="7365">
    </BOUNDS>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="3615" top="5565" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3615" top="5565" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="14" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="4845" top="5610" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4845" top="5610" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5715" top="4605" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5715" top="4605" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
    </PATCH>

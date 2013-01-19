@@ -5,7 +5,7 @@
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="930" top="6135" width="15120" height="10320">
+   <BOUNDS type="Window" left="930" top="6135" width="11280" height="10320">
    </BOUNDS>
    <PIN pinname="Selected" visible="1">
    </PIN>
@@ -72,7 +72,7 @@
    <BOUNDS type="Node" left="7950" top="465" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <BOUNDS type="Window" left="870" top="5760" width="14865" height="9165">
+   <BOUNDS type="Window" left="345" top="210" width="12795" height="10425">
    </BOUNDS>
    <NODE systemname="ShowAtomInfo" filename="ShowAtomInfo.v4p" nodename="ShowAtomInfo.v4p" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="4920" top="2235" width="0" height="0">

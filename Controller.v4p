@@ -172,7 +172,7 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4650" top="4320" width="11520" height="9840">
+   <BOUNDS type="Window" left="345" top="210" width="18525" height="10425">
    </BOUNDS>
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="10377" top="1425" width="100" height="100">
@@ -251,7 +251,7 @@
    <NODE systemname="CreateBonds" filename="CreateBonds.v4p" nodename="CreateBonds.v4p" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="4053" top="2565" width="2520" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="345" top="2115" width="9690" height="10155">
+   <BOUNDS type="Window" left="720" top="10470" width="9690" height="10155">
    </BOUNDS>
    <PIN pinname="Atom Type" visible="1">
    </PIN>
