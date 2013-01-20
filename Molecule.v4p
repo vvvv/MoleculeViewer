@@ -297,7 +297,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="444" top="1005" width="10320" height="6787">
    </BOUNDS>
-   <BOUNDS type="Window" left="1470" top="0" width="22485" height="11760">
+   <BOUNDS type="Window" left="-240" top="2550" width="16980" height="13890">
    </BOUNDS>
    <PIN pinname="Initial Atom Transform" visible="1">
    </PIN>

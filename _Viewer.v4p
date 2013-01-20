@@ -413,7 +413,7 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Atoms Transform" visible="1">
+   <PIN pinname="Atoms Transform" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="AtomInfo" visible="1">
    </PIN>
