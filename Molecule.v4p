@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
-   <BOUNDS type="Window" left="345" top="210" width="8265" height="8880">
+   <BOUNDS type="Window" left="2595" top="555" width="8265" height="8880">
    </BOUNDS>
-   <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="Hidden" id="0">
+   <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="InAWindow" id="0">
    <BOUNDS type="Node" left="1377" top="2205" width="2595" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1215" width="11038" height="5635">
    </BOUNDS>
-   <BOUNDS type="Window" left="345" top="210" width="18525" height="10425">
+   <BOUNDS type="Window" left="1065" top="2160" width="18525" height="10425">
    </BOUNDS>
    <PIN pinname="Delete Bang" visible="1">
    </PIN>
@@ -58,6 +58,8 @@
    <PIN pinname="Bond Radius" visible="1">
    </PIN>
    <PIN pinname="Something Is Selected" visible="1">
+   </PIN>
+   <PIN pinname="Selected Bond ID" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Draw" filename="Draw.v4p" nodename="Draw.v4p" componentmode="Hidden" id="1">
@@ -255,7 +257,7 @@
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="35" dstpinname="Input Node">
    </LINK>
    <NODE systemname="MoleculeWriter" filename="MoleculeWriter.v4p" nodename="MoleculeWriter.v4p" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="3948" top="5250" width="100" height="100">
+   <BOUNDS type="Node" left="3498" top="5070" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -267,7 +269,7 @@
    </BOUNDS>
    <PIN pinname="Atoms Info" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="3948" top="5250">
+   <BOUNDS type="Box" left="3498" top="5070">
    </BOUNDS>
    </NODE>
    <NODE systemname="MoleculeLoader" filename="MoleculeLoader.v4p" componentmode="Hidden" id="47" nodename="MoleculeLoader.v4p">
@@ -292,18 +294,20 @@
    <PIN pinname="Openend" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="Hidden" id="56">
+   <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="InAWindow" id="56">
    <BOUNDS type="Node" left="3264" top="4230" width="1950" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="444" top="1005" width="10320" height="6787">
    </BOUNDS>
-   <BOUNDS type="Window" left="-240" top="2550" width="16980" height="13890">
+   <BOUNDS type="Window" left="1695" top="2475" width="9825" height="13890">
    </BOUNDS>
    <PIN pinname="Initial Atom Transform" visible="1">
    </PIN>
    <PIN pinname="Initial Atom Info" visible="1">
    </PIN>
    <PIN pinname="Load New" visible="1">
+   </PIN>
+   <PIN pinname="Selected Bond" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Insert Atom" dstnodeid="56" dstpinname="Insert Bang">
@@ -331,8 +335,6 @@
    <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="16" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Shelf Atom Typ">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Selected Bond" dstnodeid="56" dstpinname="Selected Bond">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Clear">
    </LINK>
@@ -375,5 +377,21 @@
    <LINK srcnodeid="59" srcpinname="Output Enum" dstnodeid="60" dstpinname="Receive String">
    </LINK>
    <LINK srcnodeid="60" srcpinname="Input Value" dstnodeid="0" dstpinname="ViewProjection">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Selected Bond ID" dstnodeid="56" dstpinname="Selected Bond">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="61" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="7110" top="5970" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7110" top="5970" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Selected Bond" dstnodeid="61" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

@@ -404,12 +404,12 @@
    </LINK>
    <LINK srcnodeid="604" srcpinname="Layer" dstnodeid="685" dstpinname="Layers">
    </LINK>
-   <NODE systemname="Molecule" filename="Molecule.v4p" componentmode="Hidden" id="597" nodename="Molecule.v4p">
+   <NODE systemname="Molecule" filename="Molecule.v4p" componentmode="InAWindow" id="597" nodename="Molecule.v4p">
    <BOUNDS type="Node" left="1575" top="3468" width="1890" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1575" top="3468" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="345" top="210" width="8265" height="8880">
+   <BOUNDS type="Window" left="2595" top="555" width="8265" height="8880">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
