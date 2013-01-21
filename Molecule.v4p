@@ -2,7 +2,7 @@
    <PATCH nodename="C:\Work\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
    <BOUNDS type="Window" left="2595" top="555" width="8265" height="8880">
    </BOUNDS>
-   <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="InAWindow" id="0">
+   <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1377" top="2205" width="2595" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1215" width="11038" height="5635">
@@ -273,9 +273,9 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="MoleculeLoader" filename="MoleculeLoader.v4p" componentmode="Hidden" id="47" nodename="MoleculeLoader.v4p">
-   <BOUNDS type="Node" left="4125" top="3084" width="100" height="100">
+   <BOUNDS type="Node" left="4101" top="3084" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4125" top="3084" width="4800" height="3600">
+   <BOUNDS type="Box" left="4101" top="3084" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="225" top="3315" width="6600" height="11040">
    </BOUNDS>
@@ -294,12 +294,12 @@
    <PIN pinname="Openend" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="InAWindow" id="56">
+   <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="Hidden" id="56">
    <BOUNDS type="Node" left="3264" top="4230" width="1950" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="444" top="1005" width="10320" height="6787">
    </BOUNDS>
-   <BOUNDS type="Window" left="1695" top="2475" width="9825" height="13890">
+   <BOUNDS type="Window" left="1815" top="3375" width="16425" height="13665">
    </BOUNDS>
    <PIN pinname="Initial Atom Transform" visible="1">
    </PIN>
@@ -308,6 +308,10 @@
    <PIN pinname="Load New" visible="1">
    </PIN>
    <PIN pinname="Selected Bond" visible="1">
+   </PIN>
+   <PIN pinname="Loaded Atom Transform" visible="1">
+   </PIN>
+   <PIN pinname="Loaded Atom Info" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Insert Atom" dstnodeid="56" dstpinname="Insert Bang">
@@ -327,9 +331,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="56" srcpinname="Atoms Info" dstnodeid="0" dstpinname="AtomInfo In" linkstyle="Bezier">
-   <LINKPOINT x="6026" y="4755">
+   <LINKPOINT x="7560" y="5955">
    </LINKPOINT>
-   <LINKPOINT x="8413" y="435">
+   <LINKPOINT x="8415" y="435">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="16" dstpinname="Input Node">
@@ -347,7 +351,7 @@
    <LINK srcnodeid="47" srcpinname="Atom Info" dstnodeid="56" dstpinname="Initial Atom Info">
    </LINK>
    <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="5415" top="3528" width="100" height="100">
+   <BOUNDS type="Node" left="5160" top="3768" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -380,18 +384,8 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Selected Bond ID" dstnodeid="56" dstpinname="Selected Bond">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="61" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7110" top="5970" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7110" top="5970" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="0" srcpinname="Selected Bond" dstnodeid="61" dstpinname="Y Input Value">
+   <LINK srcnodeid="47" srcpinname="Transform Out" dstnodeid="56" dstpinname="Loaded Atom Transform">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Atom Info" dstnodeid="56" dstpinname="Loaded Atom Info">
    </LINK>
    </PATCH>

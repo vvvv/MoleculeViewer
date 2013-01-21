@@ -209,9 +209,9 @@
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="15" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="20" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7125" top="4590" width="11445" height="270">
+   <BOUNDS type="Node" left="5145" top="4425" width="11445" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7125" top="4590" width="1800" height="1770">
+   <BOUNDS type="Box" left="5145" top="4425" width="1800" height="1785">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;&lt; slice number correction is happening here. At the moment, it&apos;s the slice number inside of the Bonds section of the Atom. Slice number should be converted to the global number.|">
    </PIN>

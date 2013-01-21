@@ -394,7 +394,7 @@
    </LINK>
    <LINK srcnodeid="39" srcpinname="Bond Membership" dstnodeid="145" dstpinname="Bonds Membership">
    </LINK>
-   <NODE id="146" componentmode="InAWindow" systemname="SelectAtomOrBond" filename="SelectAtomOrBond.v4p" nodename="SelectAtomOrBond.v4p" hiddenwhenlocked="0" managers="">
+   <NODE id="146" componentmode="Hidden" systemname="SelectAtomOrBond" filename="SelectAtomOrBond.v4p" nodename="SelectAtomOrBond.v4p" hiddenwhenlocked="0" managers="">
    <PIN pinname="Atom Mesh" visible="1">
    </PIN>
    <PIN pinname="Bond Mesh" visible="1">

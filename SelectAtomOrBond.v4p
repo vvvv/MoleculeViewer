@@ -136,7 +136,7 @@
    <PIN pinname="Switch" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="SliceOfTheSelectedBond" filename="SliceOfTheSelectedBond.v4p" nodename="SliceOfTheSelectedBond.v4p" componentmode="InAWindow" id="19">
+   <NODE systemname="SliceOfTheSelectedBond" filename="SliceOfTheSelectedBond.v4p" nodename="SliceOfTheSelectedBond.v4p" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="9510" top="3345" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Selected Bond" visible="1">

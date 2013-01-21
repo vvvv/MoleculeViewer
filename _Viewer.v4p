@@ -245,7 +245,7 @@
    <LINK srcnodeid="561" srcpinname="Layer" dstnodeid="604" dstpinname="Layer 2">
    </LINK>
    <NODE id="602" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1.  THERE IS A BUG Storage.&cr;&lf;&cr;&lf;2. Menu is somehow not always sitting on the left border, despite of my &quot;offset&quot; subpatch. May be it needs to be rebuilt.|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Menu is somehow not always sitting on the left border, despite of my &quot;offset&quot; subpatch. May be it needs to be rebuilt.|">
    </PIN>
    <BOUNDS type="Node" left="11685" top="2655" width="5310" height="270">
    </BOUNDS>
@@ -404,7 +404,7 @@
    </LINK>
    <LINK srcnodeid="604" srcpinname="Layer" dstnodeid="685" dstpinname="Layers">
    </LINK>
-   <NODE systemname="Molecule" filename="Molecule.v4p" componentmode="InAWindow" id="597" nodename="Molecule.v4p">
+   <NODE systemname="Molecule" filename="Molecule.v4p" componentmode="Hidden" id="597" nodename="Molecule.v4p">
    <BOUNDS type="Node" left="1575" top="3468" width="1890" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1575" top="3468" width="4800" height="3600">

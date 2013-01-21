@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\RemoveAtom.v4p" systemname="RemoveAtom" filename="C:\Work\MolecularViewer_Storage\RemoveAtom.v4p">
-   <NODE systemname="ClearConnectedBonds" filename="ClearConnectedBonds.v4p" nodename="ClearConnectedBonds.v4p" componentmode="InAWindow" id="0">
+   <NODE systemname="ClearConnectedBonds" filename="ClearConnectedBonds.v4p" nodename="ClearConnectedBonds.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1155" top="5190" width="2925" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1">

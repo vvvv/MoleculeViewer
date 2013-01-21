@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\AtomInfoStorage.v4p" systemname="AtomInfoStorage" filename="C:\Work\MoleculeViewer\AtomInfoStorage.v4p">
-   <NODE systemname="RemoveAtom" filename="RemoveAtom.v4p" nodename="RemoveAtom.v4p" componentmode="InAWindow" id="0">
+   <NODE systemname="RemoveAtom" filename="RemoveAtom.v4p" nodename="RemoveAtom.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="268" top="5576" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="84" top="2610" width="5835" height="7410">
@@ -34,12 +34,12 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="InsertAtom" filename="InsertAtom.v4p" componentmode="InAWindow" id="2" nodename="InsertAtom.v4p">
+   <NODE systemname="InsertAtom" filename="InsertAtom.v4p" componentmode="Hidden" id="2" nodename="InsertAtom.v4p">
    <BOUNDS type="Node" left="264" top="4104" width="3420" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="264" top="4104" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="6000" top="4740" width="6975" height="7350">
+   <BOUNDS type="Window" left="5325" top="4590" width="6975" height="7350">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -96,7 +96,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="0" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="7260" top="5460" width="9510" height="9045">
+   <BOUNDS type="Window" left="8475" top="6045" width="9510" height="9045">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="1575" top="285" width="0" height="0">
@@ -156,7 +156,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="AtomHasChildren" filename="AtomHasChildren.v4p" nodename="AtomHasChildren.v4p" componentmode="InAWindow" id="17">
+   <NODE systemname="AtomHasChildren" filename="AtomHasChildren.v4p" nodename="AtomHasChildren.v4p" componentmode="Hidden" id="17">
    <BOUNDS type="Node" left="6072" top="2400" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="1275" top="1108" width="13461" height="5380">
