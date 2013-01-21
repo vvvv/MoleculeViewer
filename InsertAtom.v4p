@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\InsertAtom.v4p" systemname="InsertAtom" filename="C:\Work\MolecularViewer_Storage\InsertAtom.v4p">
-   <BOUNDS type="Window" left="5325" top="4590" width="6975" height="7350">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\InsertAtom.v4p" systemname="InsertAtom" filename="C:\Work\MolecularViewer_Storage\InsertAtom.v4p">
+   <BOUNDS type="Window" left="5325" top="4590" width="9435" height="7350">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="1431" top="537" width="0" height="0">
@@ -195,6 +195,8 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Selected Atom">
    </LINK>
@@ -289,5 +291,31 @@
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="21" dstpinname="New Atom ID">
+   </LINK>
+   <NODE systemname="GetAtomInfo_carTest" filename="GetAtomInfo_carTest.v4p" nodename="GetAtomInfo_carTest.v4p" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="6075" top="2730" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12000" top="7995" width="4410" height="5580">
+   </BOUNDS>
+   <PIN pinname="Selected Atom" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Selected Atom">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6075" top="3285" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6075" top="3285" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="ID" dstnodeid="49" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

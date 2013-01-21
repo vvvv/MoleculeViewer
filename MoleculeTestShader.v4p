@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\MoleculeTestShader.v4p" systemname="MoleculeTestShader" filename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeTestShader.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeTestShader.v4p" systemname="MoleculeTestShader" filename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeTestShader.v4p">
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2940" top="2271" width="100" height="100">
    </BOUNDS>

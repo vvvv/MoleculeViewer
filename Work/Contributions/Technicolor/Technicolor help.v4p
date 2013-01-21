@@ -1,0 +1,391 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv33beta15.1.dtd" >
+   <PATCH nodename="C:\Documents and Settings\desaxismundi\Bureau\Technicolor\Technicolor help.v4p" bgcolor="14935011">
+   <BOUNDS height="5355" left="1935" top="5910" type="Window" width="11850">
+   </BOUNDS>
+   <NODE componentmode="InAWindow" id="19" nodename="Renderer (EX9)">
+   <BOUNDS height="0" left="3645" top="4515" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="4290" left="1935" top="1635" type="Window" width="17835">
+   </BOUNDS>
+   <BOUNDS height="1800" left="3645" top="4515" type="Box" width="2400">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection Transform" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="18" nodename="FileTexture (EX9.Texture)">
+   <BOUNDS height="0" left="5670" top="555" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="xxx.jpg">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE hiddenwhenlocked="1" id="17" nodename="Grid (EX9.Geometry)">
+   <BOUNDS height="0" left="2025" top="2490" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="16" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="3585" top="1020" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="16920" top="6135" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="3585" top="1020" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.81">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="amount">
+   </PIN>
+   </NODE>
+   <NODE hiddenwhenlocked="1" id="15" nodename="Quad (DX9)">
+   <BOUNDS height="0" left="435" top="3090" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="15" dstpinname="Texture" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="18" srcpinname="Texture Out">
+   <LINKPOINT x="7095" y="1815">
+   </LINKPOINT>
+   <LINKPOINT x="2040" y="1815">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="Hidden" id="14" nodename="Technicolor2.fx">
+   <BOUNDS height="100" left="4620" top="3150" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="8550" left="2850" top="6345" type="Window" width="18675">
+   </BOUNDS>
+   <BOUNDS left="4620" top="3150" type="Box">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="redfilter" slicecount="1" values="|1.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="bluegreenfilter" slicecount="1" values="|0.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="magentafilter" slicecount="1" values="|1.00000,0.00000,0.25000,1.00000|">
+   </PIN>
+   <PIN pinname="amount" visible="1">
+   </PIN>
+   <PIN pinname="cyanfilter" slicecount="1" values="|0.00000,1.00000,0.50000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="Mesh" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="17" srcpinname="Mesh">
+   <LINKPOINT x="2055" y="2040">
+   </LINKPOINT>
+   <LINKPOINT x="4815" y="2040">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Texture" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="18" srcpinname="Texture Out">
+   <LINKPOINT x="7095" y="1815">
+   </LINKPOINT>
+   <LINKPOINT x="6570" y="1815">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="amount" srcnodeid="16" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="13" nodename="Technicolor3.fx">
+   <BOUNDS height="100" left="7140" top="3180" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="10500" left="2715" top="4320" type="Window" width="19995">
+   </BOUNDS>
+   <BOUNDS left="7140" top="3180" type="Box">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="amount" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="13" dstpinname="Mesh" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="17" srcpinname="Mesh">
+   <LINKPOINT x="2055" y="2040">
+   </LINKPOINT>
+   <LINKPOINT x="7320" y="2040">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="13" dstpinname="Texture" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="18" srcpinname="Texture Out">
+   <LINKPOINT x="7095" y="1815">
+   </LINKPOINT>
+   <LINKPOINT x="9090" y="1815">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="13" dstpinname="amount" srcnodeid="16" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="12" nodename="Technicolor1.fx">
+   <BOUNDS height="100" left="2475" top="3180" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="10500" left="5130" top="3450" type="Window" width="19995">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS left="2475" top="3180" type="Box">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="amount" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="12" dstpinname="Mesh" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="17" srcpinname="Mesh">
+   </LINK>
+   <LINK dstnodeid="12" dstpinname="amount" srcnodeid="16" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="12" dstpinname="Texture" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="18" srcpinname="Texture Out">
+   <LINKPOINT x="7095" y="1815">
+   </LINKPOINT>
+   <LINKPOINT x="4365" y="1815">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="11" nodename="Group (EX9)">
+   <BOUNDS height="0" left="3645" top="4140" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Layer Template Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="19" dstpinname="Layers" srcnodeid="11" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="11" dstpinname="Layer 1" linkstyle="PolyLine" srcnodeid="15" srcpinname="Layer">
+   <LINKPOINT x="465" y="3975">
+   </LINKPOINT>
+   <LINKPOINT x="3660" y="3975">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="10" nodename="AspectRatio (Transform)">
+   <BOUNDS height="0" left="5025" top="4515" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Uniform Scale" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Aspect Width" slicecount="1" visible="1" values="16">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitIn">
+   </PIN>
+   <PIN pinname="Aspect Height" slicecount="1" visible="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE hiddenwhenlocked="1" id="9" nodename="Transform (Transform 2d)">
+   <BOUNDS height="0" left="480" top="2670" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="XYZ">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" visible="1" values="-0.375">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" visible="1" values="0.25">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="15" dstpinname="Transform" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="9" srcpinname="Transform Out">
+   <LINKPOINT x="270" y="3180">
+   </LINKPOINT>
+   <LINKPOINT x="645" y="3180">
+   </LINKPOINT>
+   </LINK>
+   <NODE hiddenwhenlocked="1" id="8" nodename="Transform (Transform 2d)">
+   <BOUNDS height="0" left="2790" top="2715" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="XYZ">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" visible="1" values="-0.125">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" visible="1" values="0.25">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="12" dstpinname="Transform" srcnodeid="8" srcpinname="Transform Out">
+   </LINK>
+   <NODE hiddenwhenlocked="1" id="7" nodename="Transform (Transform 2d)">
+   <BOUNDS height="0" left="4920" top="2655" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="XYZ">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" visible="1" values="0.125">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" visible="1" values="0.25">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="Transform" srcnodeid="7" srcpinname="Transform Out">
+   </LINK>
+   <NODE hiddenwhenlocked="1" id="6" nodename="Transform (Transform 2d)">
+   <BOUNDS height="0" left="7440" top="2685" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="XYZ">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" visible="1" values="0.375">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" visible="1" values="0.25">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="13" dstpinname="Transform" srcnodeid="6" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="19" dstpinname="Projection Transform" srcnodeid="10" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="11" dstpinname="Layer 2" linkstyle="VHV" srcnodeid="12" srcpinname="Layer">
+   <LINKPOINT x="2505" y="3795">
+   </LINKPOINT>
+   <LINKPOINT x="3840" y="3795">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="11" dstpinname="Layer 3" linkstyle="VHV" srcnodeid="14" srcpinname="Layer">
+   <LINKPOINT x="4650" y="3780">
+   </LINKPOINT>
+   <LINKPOINT x="4020" y="3780">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="11" dstpinname="Layer 4" linkstyle="PolyLine" srcnodeid="13" srcpinname="Layer">
+   <LINKPOINT x="7170" y="3960">
+   </LINKPOINT>
+   <LINKPOINT x="4200" y="3960">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)">
+   <BOUNDS height="270" left="15" top="15" type="Node" width="705">
+   </BOUNDS>
+   <BOUNDS height="645" left="15" top="15" type="Box" width="3690">
+   </BOUNDS>
+   <BOUNDS height="160" left="1215" top="900" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="TECHNICOLOR">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="4" nodename="IOBox (String)">
+   <BOUNDS height="270" left="15" top="675" type="Node" width="1635">
+   </BOUNDS>
+   <BOUNDS height="270" left="15" top="675" type="Box" width="1635">
+   </BOUNDS>
+   <BOUNDS height="160" left="615" top="300" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|PS 2.0 VS 1.0 NEEDED|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="3" nodename="IOBox (String)">
+   <BOUNDS height="270" left="15" top="4470" type="Node" width="1320">
+   </BOUNDS>
+   <BOUNDS height="510" left="15" top="4470" type="Box" width="1680">
+   </BOUNDS>
+   <BOUNDS height="160" left="1320" top="1320" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|credits : vade&cr;&lf;http://001.vade.info/|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="2" nodename="FileStream (DShow9)">
+   <BOUNDS height="0" left="6780" top="615" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Video" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="1" nodename="VideoTexture (EX9.Texture VMR9 YUVMixingMode)">
+   <BOUNDS height="0" left="7155" top="1080" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Video" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="1" dstpinname="Video" srcnodeid="2" srcpinname="Video">
+   </LINK>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)">
+   <BOUNDS height="270" left="6660" top="285" type="Node" width="1590">
+   </BOUNDS>
+   <BOUNDS height="270" left="6660" top="285" type="Box" width="1530">
+   </BOUNDS>
+   <BOUNDS height="160" left="1185" top="1575" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|or play a movie here|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="GridSplit (2d)" id="20" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="450" top="2175" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   </PATCH>

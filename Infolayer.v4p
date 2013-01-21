@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Infolayer Layer|">
    </PIN>
@@ -68,7 +68,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="InfolayerController" filename="InfolayerController.v4p" nodename="InfolayerController.v4p" componentmode="Hidden" id="6">
+   <NODE systemname="InfolayerController" filename="InfolayerController.v4p" nodename="InfolayerController.v4p" componentmode="InAWindow" id="6">
    <BOUNDS type="Node" left="1920" top="2760" width="1650" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="105" top="615" width="15135" height="8205">
@@ -128,7 +128,7 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Reset">
    </LINK>
-   <NODE id="0" componentmode="Hidden" systemname="InfolayerDraw" filename="InfolayerDraw.v4p" nodename="InfolayerDraw.v4p">
+   <NODE id="0" componentmode="InAWindow" systemname="InfolayerDraw" filename="InfolayerDraw.v4p" nodename="InfolayerDraw.v4p">
    <PIN pinname="Transform In" visible="1">
    </PIN>
    <PIN pinname="XYZ" visible="1">
@@ -141,7 +141,7 @@
    </PIN>
    <BOUNDS type="Node" left="1545" top="3690" width="2025" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="5205" top="5010" width="14820" height="11100">
+   <BOUNDS type="Window" left="5250" top="7215" width="14820" height="11100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>

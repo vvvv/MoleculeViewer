@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\InfolayerDraw.v4p" systemname="InfolayerDraw" filename="C:\Work\MoleculeViewer\InfolayerDraw.v4p">
-   <BOUNDS type="Window" left="5205" top="5010" width="14820" height="11100">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\InfolayerDraw.v4p" systemname="InfolayerDraw" filename="C:\Work\MoleculeViewer\InfolayerDraw.v4p">
+   <BOUNDS type="Window" left="5250" top="7215" width="14820" height="11100">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="154">
    <BOUNDS type="Node" left="7725" top="8010" width="100" height="100">
@@ -135,7 +135,7 @@
    <LINK srcnodeid="229" srcpinname="Output" dstnodeid="226" dstpinname="Color">
    </LINK>
    <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="230">
-   <BOUNDS type="Node" left="600" top="5880" width="100" height="100">
+   <BOUNDS type="Node" left="600" top="5970" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -307,7 +307,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="11700" top="6000" width="390" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.03">
+   <PIN pinname="Y Input Value" slicecount="1" values="1.01">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -433,9 +433,9 @@
    <LINK srcnodeid="320" srcpinname="Layer" dstnodeid="154" dstpinname="Layer 3">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="326" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5490" top="630" width="0" height="0">
+   <BOUNDS type="Node" left="5415" top="180" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5490" top="630" width="795" height="720">
+   <BOUNDS type="Box" left="5415" top="180" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" values="0,0,0.912216603755951">
    </PIN>
@@ -632,4 +632,46 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="355" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="810" top="4995" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="810" top="4995" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.62">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="355" srcpinname="Y Output Value" dstnodeid="230" dstpinname="X">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="356" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="930" top="5325" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="930" top="5325" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.44">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="356" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Y">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="357" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="1155" top="5580" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1155" top="5580" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="357" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Z">
+   </LINK>
    </PATCH>

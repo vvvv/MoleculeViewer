@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -206,12 +206,12 @@
    </LINK>
    <LINK srcnodeid="170" srcpinname="Y Output Value" dstnodeid="164" dstpinname="Go To Position">
    </LINK>
-   <NODE systemname="DrawMenu" filename="DrawMenu.v4p" nodename="DrawMenu.v4p" componentmode="Hidden" id="167">
-   <BOUNDS type="Node" left="3710" top="4592" width="4755" height="270">
+   <NODE systemname="Menu" filename="Menu.v4p" nodename="Menu.v4p" componentmode="InAWindow" id="167">
+   <BOUNDS type="Node" left="3710" top="4772" width="4755" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="825" width="13689" height="10604">
+   <BOUNDS type="Box" left="0" top="1005" width="13689" height="10604">
    </BOUNDS>
-   <BOUNDS type="Window" left="345" top="210" width="18525" height="10425">
+   <BOUNDS type="Window" left="1470" top="2760" width="18525" height="11955">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -229,7 +229,7 @@
    </PIN>
    <PIN pinname="Save" visible="1">
    </PIN>
-   <PIN pinname="Y" visible="1">
+   <PIN pinname="Y" visible="1" slicecount="1" values="0.38">
    </PIN>
    <PIN pinname="MouseOver MenuButton" visible="1">
    </PIN>
@@ -247,12 +247,12 @@
    </PIN>
    <PIN pinname="Scale" visible="1" slicecount="1" values="1.11115384615385">
    </PIN>
+   <PIN pinname="X" visible="1" slicecount="1" values="-0.94">
+   </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="167" dstpinname="Mouse">
    </LINK>
    <LINK srcnodeid="167" srcpinname="MouseOver Layer" dstnodeid="8" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="157" srcpinname="Output" dstnodeid="167" dstpinname="X">
    </LINK>
    <LINK srcnodeid="88" srcpinname="Output Node" dstnodeid="167" dstpinname="Keyboard">
    </LINK>
@@ -558,12 +558,12 @@
    </LINK>
    <LINK srcnodeid="167" srcpinname="PerfMeterOn" dstnodeid="255" dstpinname="Input Value">
    </LINK>
-   <NODE systemname="DrawTitle" filename="DrawTitle.v4p" componentmode="Hidden" id="256" nodename="DrawTitle.v4p">
-   <BOUNDS type="Node" left="9225" top="4605" width="1425" height="270">
+   <NODE systemname="Title" filename="Title.v4p" componentmode="Hidden" id="256" nodename="Title.v4p">
+   <BOUNDS type="Node" left="9075" top="4800" width="1425" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9225" top="4605" width="4800" height="3600">
+   <BOUNDS type="Box" left="9075" top="4800" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2730" top="1170" width="7485" height="6000">
+   <BOUNDS type="Window" left="2730" top="1170" width="7035" height="6000">
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -602,8 +602,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="230" srcpinname="Y" dstnodeid="167" dstpinname="Y">
-   </LINK>
    <LINK srcnodeid="231" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Offset X">
    </LINK>
    <LINK srcnodeid="262" srcpinname="Y Output Value" dstnodeid="167" dstpinname="Scale">
@@ -622,4 +620,8 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <LINK srcnodeid="157" srcpinname="Output" dstnodeid="167" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="230" srcpinname="Y" dstnodeid="167" dstpinname="Y">
+   </LINK>
    </PATCH>

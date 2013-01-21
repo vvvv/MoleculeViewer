@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
    <BOUNDS type="Window" left="2595" top="555" width="8265" height="8880">
    </BOUNDS>
    <NODE systemname="Controller" filename="Controller.v4p" nodename="Controller.v4p" componentmode="Hidden" id="0">
@@ -62,12 +62,12 @@
    <PIN pinname="Selected Bond ID" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Draw" filename="Draw.v4p" nodename="Draw.v4p" componentmode="Hidden" id="1">
+   <NODE systemname="Draw" filename="Draw.v4p" nodename="Draw.v4p" componentmode="InAWindow" id="1">
    <BOUNDS type="Node" left="1365" top="3525" width="1470" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1890" width="7416" height="3270">
    </BOUNDS>
-   <BOUNDS type="Window" left="345" top="210" width="12795" height="10425">
+   <BOUNDS type="Window" left="11325" top="4380" width="12795" height="10425">
    </BOUNDS>
    <PIN pinname="Info Layer" visible="1">
    </PIN>
@@ -257,7 +257,7 @@
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="35" dstpinname="Input Node">
    </LINK>
    <NODE systemname="MoleculeWriter" filename="MoleculeWriter.v4p" nodename="MoleculeWriter.v4p" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="3498" top="5070" width="100" height="100">
+   <BOUNDS type="Node" left="3603" top="5250" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -269,7 +269,7 @@
    </BOUNDS>
    <PIN pinname="Atoms Info" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="3498" top="5070">
+   <BOUNDS type="Box" left="3603" top="5250">
    </BOUNDS>
    </NODE>
    <NODE systemname="MoleculeLoader" filename="MoleculeLoader.v4p" componentmode="Hidden" id="47" nodename="MoleculeLoader.v4p">
@@ -294,12 +294,12 @@
    <PIN pinname="Openend" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="Hidden" id="56">
+   <NODE systemname="Storage" filename="Storage.v4p" nodename="Storage.v4p" componentmode="InAWindow" id="56">
    <BOUNDS type="Node" left="3264" top="4230" width="1950" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="444" top="1005" width="10320" height="6787">
    </BOUNDS>
-   <BOUNDS type="Window" left="1815" top="3375" width="16425" height="13665">
+   <BOUNDS type="Window" left="4215" top="4815" width="16425" height="11775">
    </BOUNDS>
    <PIN pinname="Initial Atom Transform" visible="1">
    </PIN>

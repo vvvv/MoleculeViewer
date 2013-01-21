@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\MenuButton.v4p" systemname="MenuButton" filename="C:\Work\MoleculeViewer\MenuButton.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MenuButton.v4p" systemname="MenuButton" filename="C:\Work\MoleculeViewer\MenuButton.v4p">
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="5460" width="100" height="100">
    </BOUNDS>
@@ -176,7 +176,7 @@
    </LINK>
    <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="7" dstpinname="Text">
    </LINK>
-   <BOUNDS type="Window" left="1035" top="1635" width="8670" height="9360">
+   <BOUNDS type="Window" left="16155" top="870" width="8670" height="9360">
    </BOUNDS>
    <NODE systemname="Button (3d Quad)" filename="%VVVV%\lib\nodes\modules\3D\Button (3d Quad).v4p" nodename="Button (3d Quad)" componentmode="Hidden" id="18">
    <BOUNDS type="Node" left="3480" top="6375" width="100" height="100">
