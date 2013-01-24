@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Title.v4p" systemname="Title" filename="C:\Users\praxis\Desktop\MoleculeViewer\Title.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Title.v4p" systemname="Title" filename="C:\Users\praxis\Desktop\MoleculeViewer\Title.v4p">
    <BOUNDS type="Window" left="2730" top="1170" width="7035" height="6000">
    </BOUNDS>
    <NODE systemname="Text (EX9)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Text (EX9)" componentmode="Hidden" id="0">
@@ -57,11 +57,11 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="2598" top="630" width="100" height="100">
+   <BOUNDS type="Node" left="2574" top="630" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="AspectRatioValue">
    </PIN>
@@ -69,9 +69,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="11" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="2553" top="300" width="0" height="0">
+   <BOUNDS type="Node" left="2577" top="300" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2553" top="300" width="1590" height="240">
+   <BOUNDS type="Box" left="2577" top="300" width="1590" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="AspectRatioValue">
    </PIN>
@@ -109,7 +109,7 @@
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Offset Y">
    </LINK>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="615" top="2490" width="100" height="100">
+   <BOUNDS type="Node" left="2310" top="2760" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -157,55 +157,27 @@
    <LINK srcnodeid="17" srcpinname="Render State Out" dstnodeid="0" dstpinname="Render State">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="4830" top="1440" width="100" height="100">
+   <BOUNDS type="Node" left="645" top="765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="18" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="4830" top="945" width="0" height="0">
+   <BOUNDS type="Node" left="645" top="270" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4830" top="945" width="1770" height="240">
+   <BOUNDS type="Box" left="645" top="270" width="1770" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="ViewProjectionInverse">
    </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Output Enum" dstnodeid="19" dstpinname="Receive String">
    </LINK>
-   <NODE systemname="WithinViewport (Transform)" nodename="WithinViewport (Transform)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="4905" top="2070" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="20" srcpinname="Transform Out" dstnodeid="8" dstpinname="Transform In">
+   <LINK srcnodeid="9" srcpinname="X" dstnodeid="8" dstpinname="X">
    </LINK>
-   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="1710" top="1110" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="10" srcpinname="Input Value" dstnodeid="22" dstpinname="XY">
+   <LINK srcnodeid="9" srcpinname="Y" dstnodeid="8" dstpinname="Y">
    </LINK>
-   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="2310" top="2400" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Aspect Width" visible="1">
-   </PIN>
-   <PIN pinname="Uniform Scale" slicecount="1" values="0.11">
-   </PIN>
-   <PIN pinname="Alignment" slicecount="1" values="FitWidth">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="24" dstpinname="Transform In">
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="8" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="24" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Y" dstnodeid="24" dstpinname="Aspect Width">
+   <LINK srcnodeid="14" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
    </LINK>
    </PATCH>

@@ -260,18 +260,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Text Y|">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3390" top="8340" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3390" top="8340" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Mouse Over|">
-   </PIN>
-   </NODE>
    <NODE id="32" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
@@ -283,8 +271,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Output Node" dstnodeid="18" dstpinname="Mouse">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Mouse Over" dstnodeid="31" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 1">
    </LINK>

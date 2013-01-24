@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -20,7 +20,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="345" top="210" width="14850" height="9945">
+   <BOUNDS type="Window" left="6690" top="1245" width="12795" height="9945">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="5850" top="6810" width="0" height="0">
@@ -206,10 +206,10 @@
    </LINK>
    <LINK srcnodeid="170" srcpinname="Y Output Value" dstnodeid="164" dstpinname="Go To Position">
    </LINK>
-   <NODE systemname="Menu" filename="Menu.v4p" nodename="Menu.v4p" componentmode="InAWindow" id="167">
-   <BOUNDS type="Node" left="3710" top="4772" width="4755" height="270">
+   <NODE systemname="Menu" filename="Menu.v4p" nodename="Menu.v4p" componentmode="Hidden" id="167">
+   <BOUNDS type="Node" left="3705" top="4770" width="4755" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="1005" width="13689" height="10604">
+   <BOUNDS type="Box" left="3705" top="4770" width="13689" height="10604">
    </BOUNDS>
    <BOUNDS type="Window" left="1470" top="2760" width="18525" height="11955">
    </BOUNDS>
@@ -559,9 +559,9 @@
    <LINK srcnodeid="167" srcpinname="PerfMeterOn" dstnodeid="255" dstpinname="Input Value">
    </LINK>
    <NODE systemname="Title" filename="Title.v4p" componentmode="Hidden" id="256" nodename="Title.v4p">
-   <BOUNDS type="Node" left="9075" top="4800" width="1425" height="270">
+   <BOUNDS type="Node" left="9075" top="4770" width="1425" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9075" top="4800" width="4800" height="3600">
+   <BOUNDS type="Box" left="9075" top="4770" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="2730" top="1170" width="7035" height="6000">
    </BOUNDS>

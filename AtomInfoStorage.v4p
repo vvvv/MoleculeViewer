@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\AtomInfoStorage.v4p" systemname="AtomInfoStorage" filename="C:\Work\MoleculeViewer\AtomInfoStorage.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\AtomInfoStorage.v4p" systemname="AtomInfoStorage" filename="C:\Work\MoleculeViewer\AtomInfoStorage.v4p">
    <NODE systemname="RemoveAtom" filename="RemoveAtom.v4p" nodename="RemoveAtom.v4p" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="268" top="4160" width="0" height="0">
+   <BOUNDS type="Node" left="268" top="4160" width="1950" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="84" top="1194" width="5835" height="7410">
    </BOUNDS>
@@ -13,7 +13,7 @@
    </PIN>
    <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Delete" visible="1">
+   <PIN pinname="Delete" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
@@ -146,70 +146,6 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="ID" dstnodeid="2" dstpinname="Parent Atom ID">
    </LINK>
-   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="5715" top="2905" width="510" height="270">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="AtomHasChildren" filename="AtomHasChildren.v4p" nodename="AtomHasChildren.v4p" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="5712" top="1932" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="915" top="640" width="13461" height="5380">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8505" top="9750" width="6075" height="6615">
-   </BOUNDS>
-   <PIN pinname="Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Selected Atom" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="5700" top="2410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="16" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Selected Atom">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="18" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="0" dstpinname="Delete">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5715" top="4809" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5715" top="4809" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Delete Atom|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="19" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Selected Bond">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
@@ -261,5 +197,7 @@
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Input" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="24" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Delete">
    </LINK>
    </PATCH>

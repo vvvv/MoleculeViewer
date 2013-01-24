@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\InsertAtom.v4p" systemname="InsertAtom" filename="C:\Work\MolecularViewer_Storage\InsertAtom.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\InsertAtom.v4p" systemname="InsertAtom" filename="C:\Work\MolecularViewer_Storage\InsertAtom.v4p">
    <BOUNDS type="Window" left="5325" top="4590" width="9435" height="7350">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">

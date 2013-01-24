@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\DrawShelf.v4p" systemname="DrawShelf" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawShelf.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\DrawShelf.v4p" systemname="DrawShelf" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawShelf.v4p">
    <NODE id="4" systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Mesh" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Node" left="1497" top="2859" width="100" height="100">
+   <BOUNDS type="Node" left="567" top="3084" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -19,9 +19,9 @@
    <NODE id="25" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="2700" top="4935" width="750" height="240">
+   <BOUNDS type="Box" left="1920" top="4965" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2700" top="4935" width="750" height="240">
+   <BOUNDS type="Node" left="1920" top="4965" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -29,15 +29,15 @@
    <BOUNDS type="Window" left="7485" top="7305" width="7725" height="6735">
    </BOUNDS>
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="3330" top="1200" width="255" height="270">
+   <BOUNDS type="Node" left="3285" top="1200" width="255" height="270">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="34" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="3330" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="3282" top="675" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3330" top="675" width="840" height="240">
+   <BOUNDS type="Box" left="3282" top="675" width="840" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="Colors">
    </PIN>
@@ -45,9 +45,9 @@
    <LINK srcnodeid="34" srcpinname="Output Enum" dstnodeid="33" dstpinname="Receive String">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="43" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="660" top="4965" width="0" height="0">
+   <BOUNDS type="Node" left="570" top="4965" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="660" top="4965" width="795" height="240">
+   <BOUNDS type="Box" left="570" top="4965" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Mesh">
    </PIN>
@@ -55,9 +55,9 @@
    <LINK srcnodeid="4" srcpinname="Mesh" dstnodeid="43" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="44" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="2205" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="2229" top="675" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2205" top="675" width="795" height="240">
+   <BOUNDS type="Box" left="2229" top="675" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="78" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5730" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="6150" top="660" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5730" top="675" width="615" height="240">
+   <BOUNDS type="Box" left="6150" top="660" width="615" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="4" values="1,1,1,1">
    </PIN>
@@ -89,7 +89,7 @@
    </PIN>
    <PIN pinname="Alpha" pintype="Input" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="2700" top="4329" width="100" height="100">
+   <BOUNDS type="Node" left="1920" top="4344" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1" pintype="Output">
    </PIN>
@@ -137,9 +137,9 @@
    <LINK srcnodeid="4" srcpinname="Mesh" dstnodeid="5" dstpinname="Mesh">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="82" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="1755" top="2370" width="0" height="0">
+   <BOUNDS type="Node" left="825" top="2595" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1755" top="2370" width="795" height="240">
+   <BOUNDS type="Box" left="825" top="2595" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="33">
    </PIN>
@@ -157,7 +157,7 @@
    <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Resolution Y">
    </LINK>
    <NODE systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden" id="83">
-   <BOUNDS type="Node" left="1380" top="3870" width="100" height="100">
+   <BOUNDS type="Node" left="1095" top="3735" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Render State Out" visible="1">
    </PIN>
@@ -167,7 +167,7 @@
    </PIN>
    </NODE>
    <NODE systemname="ApplyTransform (Transform Vector)" nodename="ApplyTransform (Transform Vector)" componentmode="Hidden" id="87">
-   <BOUNDS type="Node" left="3150" top="3165" width="100" height="100">
+   <BOUNDS type="Node" left="4269" top="2505" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -177,9 +177,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="91" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3810" top="3885" width="0" height="0">
+   <BOUNDS type="Node" left="3000" top="3960" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3810" top="3885" width="705" height="240">
+   <BOUNDS type="Box" left="3000" top="3960" width="705" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="50.19">
    </PIN>
@@ -195,15 +195,15 @@
    <LINK srcnodeid="33" srcpinname="Input Value" dstnodeid="5" dstpinname="Ambient Color">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="95">
-   <BOUNDS type="Node" left="3150" top="2280" width="100" height="100">
+   <BOUNDS type="Node" left="4260" top="1200" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="94" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="3150" top="1785" width="0" height="0">
+   <BOUNDS type="Node" left="4260" top="645" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3150" top="1785" width="1770" height="240">
+   <BOUNDS type="Box" left="4260" top="645" width="1770" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="ViewProjectionInverse">
    </PIN>
@@ -217,7 +217,7 @@
    <LINK srcnodeid="44" srcpinname="Output Node" dstnodeid="5" dstpinname="Transform">
    </LINK>
    <NODE systemname="Light (EX9 Direction)" filename="%VVVV%\lib\nodes\modules\EX9\Light (EX9 Direction).v4p" nodename="Light (EX9 Direction)" componentmode="Hidden" id="97">
-   <BOUNDS type="Node" left="4230" top="2655" width="100" height="100">
+   <BOUNDS type="Node" left="5364" top="2085" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Light Direction Out" visible="1">
    </PIN>

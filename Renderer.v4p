@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Renderer.v4p" systemname="Renderer" filename="C:\Work\MoleculeViewer\Renderer.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Renderer.v4p" systemname="Renderer" filename="C:\Work\MoleculeViewer\Renderer.v4p">
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="0" systemname="Renderer (EX9)">
    <BOUNDS type="Node" left="1530" top="2781" width="3615" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="18225" top="2010" width="8310" height="5760">
+   <BOUNDS type="Window" left="19755" top="2505" width="8310" height="5760">
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
@@ -31,7 +31,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="6375" top="3486" width="100" height="100">
+   <BOUNDS type="Node" left="5925" top="2796" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Aspect Width" visible="1">
    </PIN>
@@ -69,15 +69,15 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="6354" top="4230" width="100" height="100">
+   <BOUNDS type="Node" left="5904" top="3540" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6609" top="3885" width="0" height="0">
+   <BOUNDS type="Node" left="6159" top="3195" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6609" top="3885" width="1005" height="240">
+   <BOUNDS type="Box" left="6159" top="3195" width="1005" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="AspectRatio">
    </PIN>
@@ -232,7 +232,7 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="15" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="9165" top="4740" width="9750" height="7455">
+   <BOUNDS type="Window" left="9165" top="4740" width="8865" height="7785">
    </BOUNDS>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="11" dstpinname="Input Value">
    </LINK>
