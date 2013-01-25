@@ -1,0 +1,105 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Users\praxis\Desktop\Texture FX\TextureFX\TextureAdditions.v4p" systemname="TextureAdditions" filename="C:\Users\praxis\Desktop\Texture FX\TextureFX\TextureAdditions.v4p">
+   <BOUNDS type="Window" left="3090" top="6015" width="12525" height="8655">
+   </BOUNDS>
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="7635" top="525" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HTMLTexture (EX9.Texture URL)" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.Texture.HTML.dll" nodename="HTMLTexture (EX9.Texture URL)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="7620" top="885" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7620" top="885">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="VideoTexture (EX9.Texture VMR9)" nodename="VideoTexture (EX9.Texture VMR9)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="7620" top="1245" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Value)" nodename="DynamicTexture (EX9.Texture Value)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="5805" top="3210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Green" slicecount="4" values="0,1,0,0">
+   </PIN>
+   <PIN pinname="Blue" slicecount="4" values="0,0,1,0">
+   </PIN>
+   <PIN pinname="Red" slicecount="4" values="1,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="7170" top="3210" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Raw)" nodename="DynamicTexture (EX9.Texture Raw)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="8580" top="3195" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Cons (EX9.Texture)" nodename="Cons (EX9.Texture)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="3450" top="1515" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Crop (EX9.Texture)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Crop (EX9.Texture).v4p" nodename="Crop (EX9.Texture)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="3465" top="1935" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HSCB (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p" nodename="HSCB (EX9.Texture Filter)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="7200" top="4365" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7200" top="4365">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HSLA (EX9.Texture Join)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\SplitJoin\HSLA\HSLA (EX9.Texture Join).v4p" nodename="HSLA (EX9.Texture Join)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="7200" top="4950" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7200" top="4950">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HSLA (EX9.Texture Split)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\SplitJoin\HSLA\HSLA (EX9.Texture Split).v4p" nodename="HSLA (EX9.Texture Split)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="8025" top="4935" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8025" top="4935">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HSVA (EX9.Texture Join)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\SplitJoin\HSVA\HSVA (EX9.Texture Join).v4p" nodename="HSVA (EX9.Texture Join)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="7185" top="5400" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7185" top="5400">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HSVA (EX9.Texture Split)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\SplitJoin\HSVA\HSVA (EX9.Texture Split).v4p" nodename="HSVA (EX9.Texture Split)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="8010" top="5400" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8010" top="5400">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Info (EX9.Texture)" nodename="Info (EX9.Texture)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="3465" top="2340" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Queue (EX9.Texture)" nodename="Queue (EX9.Texture)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="3570" top="3630" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Pipet (EX9.Texture)" nodename="Pipet (EX9.Texture)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="3570" top="4290" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Invert (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Invert\Invert (EX9.Texture Filter).v4p" nodename="Invert (EX9.Texture Filter)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="7200" top="6390" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Resize (EX9.Texture)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Resize (EX9.Texture).v4p" nodename="Resize (EX9.Texture)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="7200" top="6810" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Writer (EX9.Texture)" nodename="Writer (EX9.Texture)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="3555" top="5475" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Writer (EX9.Texture AVI)" nodename="Writer (EX9.Texture AVI)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="4380" top="5490" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
