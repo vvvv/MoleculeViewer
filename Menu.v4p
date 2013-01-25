@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Menu.v4p" systemname="Menu" filename="C:\Users\praxis\Desktop\MoleculeViewer\Menu.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Menu.v4p" systemname="Menu" filename="C:\Users\praxis\Desktop\MoleculeViewer\Menu.v4p">
    <NODE id="0" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -72,12 +72,12 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="MenuButton" filename="MenuButton.v4p" nodename="MenuButton.v4p" componentmode="Hidden" id="36">
+   <NODE systemname="MenuButton" filename="MenuButton.v4p" nodename="MenuButton.v4p" componentmode="InAWindow" id="36">
    <BOUNDS type="Node" left="3510" top="6967" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="2220" top="2852" width="5635" height="8230">
    </BOUNDS>
-   <BOUNDS type="Window" left="16155" top="870" width="8670" height="9360">
+   <BOUNDS type="Window" left="9645" top="585" width="8670" height="9360">
    </BOUNDS>
    <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
    </PIN>
@@ -186,7 +186,7 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="16" dstpinname="Label">
    </LINK>
-   <BOUNDS type="Window" left="1470" top="2760" width="18525" height="11955">
+   <BOUNDS type="Window" left="1515" top="5415" width="18525" height="11955">
    </BOUNDS>
    <NODE systemname="Sliders" filename="Sliders.v4p" nodename="Sliders.v4p" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="5284" top="6881" width="2280" height="270">

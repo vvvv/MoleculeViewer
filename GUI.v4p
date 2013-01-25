@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -206,12 +206,12 @@
    </LINK>
    <LINK srcnodeid="170" srcpinname="Y Output Value" dstnodeid="164" dstpinname="Go To Position">
    </LINK>
-   <NODE systemname="Menu" filename="Menu.v4p" nodename="Menu.v4p" componentmode="Hidden" id="167">
+   <NODE systemname="Menu" filename="Menu.v4p" nodename="Menu.v4p" componentmode="InAWindow" id="167">
    <BOUNDS type="Node" left="3705" top="4770" width="4755" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="3705" top="4770" width="13689" height="10604">
    </BOUNDS>
-   <BOUNDS type="Window" left="1470" top="2760" width="18525" height="11955">
+   <BOUNDS type="Window" left="1515" top="5415" width="18525" height="11955">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>

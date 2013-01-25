@@ -301,7 +301,7 @@
    </BOUNDS>
    <PIN pinname="CountXY" visible="1">
    </PIN>
-   <PIN pinname="Internal Value" slicecount="3" values="1,0,0.153095030897974">
+   <PIN pinname="Internal Value" slicecount="3" values="0.776548796814355,0.958179774816631,0.250921351100211">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p" bgcolor="15132390">
-   <BOUNDS type="Window" left="5445" top="690" width="19095" height="16425">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p" bgcolor="15132390">
+   <BOUNDS type="Window" left="690" top="480" width="19095" height="16425">
    </BOUNDS>
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="74" debug="0">
    <BOUNDS type="Node" left="3405" top="1290" width="100" height="100">
@@ -27,11 +27,11 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Camera" filename="Camera.v4p" nodename="Camera.v4p" componentmode="Hidden" id="504">
-   <BOUNDS type="Node" left="4334" top="4469" width="1560" height="270">
+   <BOUNDS type="Node" left="3809" top="6194" width="1560" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1396" top="2042" width="5877" height="4855">
+   <BOUNDS type="Box" left="871" top="3767" width="5877" height="4855">
    </BOUNDS>
-   <BOUNDS type="Window" left="5775" top="3435" width="11040" height="11595">
+   <BOUNDS type="Window" left="10395" top="2820" width="11040" height="13785">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -91,7 +91,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2052" top="4470" width="4230" height="3270">
    </BOUNDS>
-   <BOUNDS type="Window" left="7785" top="2430" width="7185" height="6690">
+   <BOUNDS type="Window" left="8805" top="660" width="7185" height="6690">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -139,11 +139,11 @@
    </PIN>
    </NODE>
    <NODE id="602" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Menu is somehow not always sitting on the left border, despite of my &quot;offset&quot; subpatch. May be it needs to be rebuilt.|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Menu is somehow not always sitting on the left border, despite of my &quot;offset&quot; subpatch. May be it needs to be rebuilt.&cr;&lf;&cr;&lf;!!!! 2. If one pick shelf Atom then other shelf atom are also pickable with this one. Maybe one has to build global controller to have track of all events!|">
    </PIN>
    <BOUNDS type="Node" left="11685" top="1335" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11685" top="1335" width="2910" height="1620">
+   <BOUNDS type="Box" left="11685" top="1335" width="3075" height="1800">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -153,9 +153,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="641" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11685" top="3135" width="5310" height="270">
+   <BOUNDS type="Node" left="11685" top="3555" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11685" top="3135" width="1875" height="540">
+   <BOUNDS type="Box" left="11685" top="3555" width="1875" height="540">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="NOTES">
    </PIN>
@@ -171,9 +171,9 @@
    <NODE id="640" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
    <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Atoms&apos; transparency. It will be adjusted not in controller, but directly in DrawAtoms... ?|">
    </PIN>
-   <BOUNDS type="Node" left="11730" top="3825" width="5310" height="270">
+   <BOUNDS type="Node" left="11730" top="4245" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11730" top="3825" width="2955" height="765">
+   <BOUNDS type="Box" left="11730" top="4245" width="2955" height="765">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -190,7 +190,7 @@
    <BOUNDS type="Box" left="2085" top="1290">
    </BOUNDS>
    </NODE>
-   <NODE id="638" systemname="GUI" filename="GUI.v4p" nodename="GUI.v4p" componentmode="Hidden" debug="0">
+   <NODE id="638" systemname="GUI" filename="GUI.v4p" nodename="GUI.v4p" componentmode="InAWindow" debug="0">
    <PIN pinname="Mouse">
    </PIN>
    <PIN pinname="Keyboard" visible="1">
@@ -236,6 +236,10 @@
    <BOUNDS type="Window" left="9165" top="4740" width="8865" height="7785">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Molecule" filename="Molecule.v4p" componentmode="Hidden" id="597" nodename="Molecule.v4p">
@@ -337,7 +341,7 @@
    </PIN>
    </NODE>
    <NODE id="686" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Animate alpha of the Infolayer.&cr;&lf;&cr;&lf;2. Vertexshader for the Atoms&cr;&lf;&cr;&lf;4. Color animation for selected Atom of the molecule.&cr;&lf;&cr;&lf;5.Infolayer should be rebuilt so that it is defined in its own coordinates and then just moved by transforms.&cr;&lf;&cr;&lf;6. Infolayer Alpha (Fade In / Out) needs to be added.&cr;&lf;&cr;&lf;7. If the camera is ON nothing should be selected by Mouse Over.&cr;&lf;&cr;&lf;8. Molecule &gt; Title. ViewProjectionInverse + Offset should be changed,|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Animate alpha of the Infolayer.&cr;&lf;&cr;&lf;2. Vertexshader for the Atoms&cr;&lf;&cr;&lf;4. Color animation for selected Atom of the molecule.&cr;&lf;&cr;&lf;5.Infolayer should be rebuilt so that it is defined in its own coordinates and then just moved by transforms.&cr;&lf;&cr;&lf;6. Infolayer Alpha (Fade In / Out) needs to be added.&cr;&lf;&cr;&lf;7. If the camera is ON nothing should be selected by Mouse Over.&cr;&lf;&cr;&lf;8. Molecule &gt; Title. ViewProjectionInverse + Offset should be changed,&cr;&lf;&cr;&lf;9. Helppatch fuer Rotation Successive|">
    </PIN>
    <BOUNDS type="Node" left="14985" top="1290" width="5310" height="270">
    </BOUNDS>
@@ -385,9 +389,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="703" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11775" top="5025" width="5310" height="270">
+   <BOUNDS type="Node" left="11775" top="5445" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11775" top="5025" width="2415" height="525">
+   <BOUNDS type="Box" left="11775" top="5445" width="2415" height="525">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Questions">
    </PIN>
@@ -401,11 +405,11 @@
    </PIN>
    </NODE>
    <NODE id="702" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Storage &gt; InsertAtom &gt; GetAtomInfo: Which one?&cr;&lf;2. Evalueate pin at AtomInfoStorage.&cr;&lf;3. DeleteAtom Bang are coming into Store not from the top, but from AtomInfoStorage.&cr;&lf;4. InfoLayerController - R are inside - should they be in the parent patch?&cr;&lf;5. InfoLayerDraw returns only Button transform and Button is placed in the Controller. That&apos;s because Draw doesn&apos;t receive Mouse. But it is different in other subpatches....|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Storage &gt; InsertAtom &gt; GetAtomInfo: Which one?&cr;&lf;&cr;&lf;unzip version.&cr;&lf;&cr;&lf;2. Evalueate pin at AtomInfoStorage.&cr;&lf;&cr;&lf;S+H solution!&cr;&lf;&cr;&lf;4. InfoLayerController - R are inside - should they be in the parent patch?&cr;&lf;&cr;&lf;R rausnehmen! Ueberall. Ins parrent patch.&cr;&lf;&cr;&lf;5. InfoLayerDraw returns only Button transform and Button is placed in the Controller. That&apos;s because Draw doesn&apos;t receive Mouse. But it is different in other subpatches....&cr;&lf;&cr;&lf;Beide Varianten erklaeren. Pro and cons&cr;&lf;&cr;&lf;6. Shelf should get also state, that camera is on, so no shelf atom is alowed to be picked.&cr;&lf;&cr;&lf;MainController hat Automata mit definirten States, like Orbiting, Shelf, Menu, Add Atom, Delete Atom. Select Atom. Show Info Layer. |">
    </PIN>
-   <BOUNDS type="Node" left="11820" top="5715" width="5310" height="270">
+   <BOUNDS type="Node" left="11820" top="6135" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11820" top="5715" width="3000" height="2865">
+   <BOUNDS type="Box" left="11820" top="6135" width="3150" height="7170">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -465,7 +469,7 @@
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="707" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <NODE id="708" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. ViewTransform zusammenfassen&cr;&lf;- DONE&cr;&lf;&cr;&lf;2. MouseIncremental wird Rotate Transform Successive Vector.&cr;&lf;&cr;&lf;3. Weel for zoom.&cr;&lf;- But maybe not everybody will have mouse with weel... ?&cr;&lf;&cr;&lf;4. Cursor and PerfMeter zusammen in einem subpatch.&cr;&lf;- DONE&cr;&lf;&cr;&lf;6. AntTweakBar - anschauen und erwägen.&cr;&lf;&cr;&lf;7. WithinViewport ueberall + AspectRatio see GUI Title&cr;&lf;&cr;&lf;8. GUI ViewProjectionInverse vs. WithinViewport + What&apos;s with sliders?&cr;&lf;&cr;&lf;9. Shelf LinearSpread nach oben.&cr;&lf;- DONE&cr;&lf;&cr;&lf;10. Vector3 nach MouseState.&cr;&lf;- DONE&cr;&lf;&cr;&lf;11. Button MouseOver pin output instead of Select (spread generation). Several places.&cr;&lf;- DONE&cr;&lf;&cr;&lf;12. Light for Shelf anpassen.&cr;&lf;&cr;&lf;13. Immer versuchen statt X, Y getrennt zu halten ein Vector zu nehmen. Auch bei + und so weiter, einfach ein spread zu addieren.&cr;&lf;&cr;&lf;14. Storage, umbau FrameDelays.&cr;&lf;|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. ViewTransform zusammenfassen&cr;&lf;- DONE&cr;&lf;&cr;&lf;2. MouseIncremental wird Rotate Transform Successive Vector.&cr;&lf;- Helppatch&cr;&lf;&cr;&lf;3. Weel for zoom.&cr;&lf;- TODO&cr;&lf;&cr;&lf;4. Cursor and PerfMeter zusammen in einem subpatch.&cr;&lf;- DONE&cr;&lf;&cr;&lf;6. AntTweakBar - anschauen und erwägen.&cr;&lf;&cr;&lf;7. WithinViewport ueberall + AspectRatio see GUI Title&cr;&lf;&cr;&lf;8. GUI ViewProjectionInverse vs. WithinViewport + What&apos;s with sliders?&cr;&lf;&cr;&lf;9. Shelf LinearSpread nach oben.&cr;&lf;- DONE&cr;&lf;&cr;&lf;10. Vector3 nach MouseState.&cr;&lf;- DONE&cr;&lf;&cr;&lf;11. Button MouseOver pin output instead of Select (spread generation). Several places.&cr;&lf;- DONE&cr;&lf;&cr;&lf;12. Light for Shelf anpassen.&cr;&lf;&cr;&lf;13. Immer versuchen statt X, Y getrennt zu halten ein Vector zu nehmen. Auch bei + und so weiter, einfach ein spread zu addieren.&cr;&lf;&cr;&lf;14. Storage, umbau FrameDelays.&cr;&lf;|">
    </PIN>
    <BOUNDS type="Node" left="8205" top="7200" width="5310" height="270">
    </BOUNDS>
@@ -478,4 +482,8 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <LINK srcnodeid="504" srcpinname="View" dstnodeid="685" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="504" srcpinname="Projection" dstnodeid="685" dstpinname="Projection">
+   </LINK>
    </PATCH>

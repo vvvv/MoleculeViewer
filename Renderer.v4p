@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Renderer.v4p" systemname="Renderer" filename="C:\Work\MoleculeViewer\Renderer.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Renderer.v4p" systemname="Renderer" filename="C:\Work\MoleculeViewer\Renderer.v4p">
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="0" systemname="Renderer (EX9)">
    <BOUNDS type="Node" left="1530" top="2781" width="3615" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="19755" top="2505" width="8310" height="5760">
+   <BOUNDS type="Window" left="11835" top="3780" width="14415" height="10215">
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
-   <PIN pinname="View" visible="1">
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Projection" visible="1">
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Actual Backbuffer Width" visible="1">
    </PIN>
@@ -38,34 +38,6 @@
    <PIN pinname="Aspect Height" visible="1">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="4278" top="1830" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="3" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="4278" top="1440" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4278" top="1440" width="615" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="View">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="4701" top="2295" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="5" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="4716" top="1905" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4716" top="1905" width="1020" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="Projection">
    </PIN>
    </NODE>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="6">
@@ -190,10 +162,6 @@
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="0" dstpinname="Layers">
    </LINK>
-   <LINK srcnodeid="2" srcpinname="Input Value" dstnodeid="0" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="0" dstpinname="Projection">
-   </LINK>
    <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="0" dstpinname="Aspect Ratio">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="8" dstpinname="X">
@@ -203,10 +171,6 @@
    <LINK srcnodeid="8" srcpinname="XY" dstnodeid="9" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="9" dstpinname="Send String">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="2" dstpinname="Receive String">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="4" dstpinname="Receive String">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="6" dstpinname="Input Value">
    </LINK>
@@ -279,5 +243,29 @@
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Y">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="22" dstpinname="X">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="24" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="4245" top="990" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4245" top="990" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="View">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Output Node" dstnodeid="0" dstpinname="View">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="25" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="5340" top="990" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5340" top="990" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Projection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="0" dstpinname="Projection">
    </LINK>
    </PATCH>
