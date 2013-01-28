@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Camera.v4p" systemname="Camera" filename="C:\Work\MoleculeViewer\Camera.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Camera.v4p" systemname="Camera" filename="C:\Work\MoleculeViewer\Camera.v4p">
    <NODE systemname="MouseIncremental" filename="MouseIncremental.v4p" nodename="MouseIncremental.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1485" top="3359" width="1515" height="270">
    </BOUNDS>
@@ -539,7 +539,7 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="FilterTime" slicecount="1" values="0">
+   <PIN pinname="FilterTime" slicecount="1" values="0.3">
    </PIN>
    </NODE>
    <LINK srcnodeid="66" srcpinname="Output" dstnodeid="89" dstpinname="Go To Position">
@@ -606,8 +606,8 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="65" dstpinname="Mouse">
    </LINK>
-   <LINK srcnodeid="85" srcpinname="Transform Out" dstnodeid="42" dstpinname="Transform In 1">
-   </LINK>
    <LINK srcnodeid="60" srcpinname="Output 1" dstnodeid="66" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="85" srcpinname="Transform Out" dstnodeid="42" dstpinname="Transform In 1">
    </LINK>
    </PATCH>

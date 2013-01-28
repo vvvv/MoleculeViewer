@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p" bgcolor="15132390">
-   <BOUNDS type="Window" left="2595" top="540" width="20385" height="10410">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p" bgcolor="15132390">
+   <BOUNDS type="Window" left="0" top="9480" width="21795" height="15600">
    </BOUNDS>
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="74" debug="0">
    <BOUNDS type="Node" left="3405" top="1290" width="100" height="100">
@@ -86,7 +86,7 @@
    </NODE>
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="547" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Infolayer" filename="Infolayer.v4p" nodename="Infolayer.v4p" componentmode="InAWindow" id="549">
+   <NODE systemname="Infolayer" filename="Infolayer.v4p" nodename="Infolayer.v4p" componentmode="Hidden" id="549">
    <BOUNDS type="Node" left="2052" top="4470" width="1830" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="2052" top="4470" width="4230" height="3270">
@@ -247,7 +247,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1575" top="3468" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2595" top="555" width="12855" height="10620">
+   <BOUNDS type="Window" left="1170" top="315" width="12855" height="10620">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -341,11 +341,11 @@
    </PIN>
    </NODE>
    <NODE id="686" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. &cr;&lf;&cr;&lf;2. Vertexshader for the Atoms&cr;&lf;&cr;&lf;4. Color animation for selected Atom of the molecule.&cr;&lf;&cr;&lf;5.Infolayer should be rebuilt so that it is defined in its own coordinates and then just moved by transforms.&cr;&lf;&cr;&lf;6. Infolayer Alpha (Fade In / Out) needs to be added.&cr;&lf;&cr;&lf;7. If the camera is ON nothing should be selected by Mouse Over.&cr;&lf;&cr;&lf;8. Molecule &gt; Title. ViewProjectionInverse + Offset should be changed,&cr;&lf;&cr;&lf;9. Helppatch fuer Rotation Successive|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. &cr;&lf;&cr;&lf;2. Vertexshader for the Atoms&cr;&lf;&cr;&lf;4. Color animation for selected Atom of the molecule.&cr;&lf;&cr;&lf;5.Infolayer should be rebuilt so that it is defined in its own coordinates and then just moved by transforms.&cr;&lf;&cr;&lf;6. Infolayer Alpha (Fade In / Out) needs to be added.&cr;&lf;&cr;&lf;7. If the camera is ON nothing should be selected by Mouse Over.&cr;&lf;&cr;&lf;8. Molecule &gt; Title. ViewProjectionInverse + Offset should be changed,&cr;&lf;&cr;&lf;9. Helppatch fuer Rotation Successive&cr;&lf;&cr;&lf;10. Draw ins View umbenennen. Storage wird zu Model.&cr;&lf;&cr;&lf;11. MoleculeController...&cr;&lf;&cr;&lf;12. GetAtomInfo wird Atom (Split). And Atom (Join).&cr;&lf;&cr;&lf;13. Atom Radii And Bond Radii gehen ins View.&cr;&lf;&cr;&lf;14. Model redet direct mit View und gibt Atom Info direct dahin.&cr;&lf;&cr;&lf;15. CreateBonds gehen ins Model.&cr;&lf;&cr;&lf;16. Eigentlich SelectedAtom muss ins Model gespeichert werden. Und Model sagt zu View wer selected ist. Bei mehrere selected Atoms das ist notwendig, bei uns kann man shortcut machen.&cr;&lf;&cr;&lf;CONTROLLER VON VIEW moeglichst TRENNEN.&cr;&lf;&cr;&lf;17. Store Transform, schauen ob man irgendwie loop entfernen fuer den slice nummer von dem neuen Atom.|">
    </PIN>
    <BOUNDS type="Node" left="15195" top="1275" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15195" top="1275" width="3270" height="4845">
+   <BOUNDS type="Box" left="15195" top="1275" width="4065" height="8685">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -487,11 +487,11 @@
    <LINK srcnodeid="504" srcpinname="Projection" dstnodeid="685" dstpinname="Projection">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="710" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="15570" top="6660" width="5310" height="270">
+   <BOUNDS type="Node" left="15210" top="10620" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15570" top="6660" width="3885" height="555">
+   <BOUNDS type="Box" left="15210" top="10620" width="4260" height="615">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|States for Atomata|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|States for Automata|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -503,11 +503,11 @@
    </PIN>
    </NODE>
    <NODE id="709" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|- Shelf Atom Selected&cr;&lf;- Shelf Atom Picked&cr;&lf;- Bond Selected&cr;&lf;- Atom Selected&cr;&lf;- Atom Droped to the Bond&cr;&lf;- Atom Add&cr;&lf;- Atom Delete&cr;&lf;- Camera Roll&cr;&lf;- Info Layer Show&cr;&lf;- Info Layer Close&cr;&lf;- Menu Open&cr;&lf;- Menu Close&cr;&lf;- Slider Move&cr;&lf;- Open File&cr;&lf;- Save File&cr;&lf;- Shading ON&cr;&lf;- Perf Meter ON|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|- Shelf Atom Selected&cr;&lf;- Shelf Atom Picked&cr;&lf;- Bond Selected&cr;&lf;- Atom Selected&cr;&lf;- Atom Dropped to the Bond&cr;&lf;- Atom Dropped to nowhere&cr;&lf;- Atom Add&cr;&lf;- Atom Delete&cr;&lf;- Camera Roll&cr;&lf;- Info Layer Show&cr;&lf;- Info Layer Close&cr;&lf;- Menu Open&cr;&lf;- Menu Close&cr;&lf;- Slider Move&cr;&lf;- Open File Dialog&cr;&lf;- Load File&cr;&lf;- Save File&cr;&lf;- Shading ON&cr;&lf;- Perf Meter ON&cr;&lf;- Reset|">
    </PIN>
-   <BOUNDS type="Node" left="15600" top="7380" width="5310" height="270">
+   <BOUNDS type="Node" left="15240" top="11340" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15600" top="7380" width="3270" height="4845">
+   <BOUNDS type="Box" left="15240" top="11340" width="4410" height="5580">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>

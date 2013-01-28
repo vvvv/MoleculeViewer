@@ -26,7 +26,6 @@ sampler Samp = sampler_state    //sampler for doing the texture-lookup
     MagFilter = LINEAR;
 };
 
-// Noise Texture
 texture noiseTexture <string uiname="noiseTexture texture";>;
 sampler noiseSamp = sampler_state    //sampler for doing the texture-lookup
 { 
@@ -36,14 +35,11 @@ sampler noiseSamp = sampler_state    //sampler for doing the texture-lookup
     MagFilter = LINEAR;
 };
 
-// Vars
-float scale;
-bool noiseEnable;
 
 float4x4 tTex: TEXTUREMATRIX <string uiname="Texture Transform";>;
 float4x4 tColor <string uiname="Color Transform";>;
 
-
+float scale;
 
 struct vs2ps
 {
@@ -52,7 +48,6 @@ struct vs2ps
     float3 LightDirV: TEXCOORD1;
     float3 NormV: TEXCOORD2;
     float3 ViewDirV: TEXCOORD3;
-	float noiseValue: TEXCOORD4;
 };
 
 // -----------------------------------------------------------------------------
@@ -74,25 +69,12 @@ vs2ps VS(
     //normal in view space
     Out.NormV = normalize(mul(NormO, tWV));
 	
-	float noiseValue;
+	float value=tex2Dlod(noiseSamp, float4(PosO.xy, 0, 0))*scale;
 	
-	if (noiseEnable)
-	{
-		// sample the noise texture at the normal position
-		noiseValue=tex2Dlod(noiseSamp, float4(NormO.xy, 0, 0));
-		//noiseValue=smoothstep(0, 0.1, noiseValue);
+	float4 newPosition=PosO + float4(NormO, 1.0)*value;
 		
-		// scale the normal with the noise value and add it
-		// to the original position
-		// Result: original posiiton will be moved in the normal's direction
-		PosO=PosO + float4(NormO*noiseValue*scale, 1.0);
-	}
-	
     //position (projected)
-	Out.PosWVP  = mul(PosO, tWVP);
-    
-	//send noiseValue to the pixel shader
-	Out.noiseValue=noiseValue;
+    Out.PosWVP  = mul(newPosition, tWVP);
     Out.TexCd = mul(TexCd, tTex);
     Out.ViewDirV = -normalize(mul(PosO, tWV));
     return Out;
@@ -112,13 +94,7 @@ float4 PS(vs2ps In): COLOR
 
     col.rgb *= PhongDirectional(In.NormV, In.ViewDirV, In.LightDirV);
     col.a *= Alpha;
-	
-	
-	// scale the rgb with the noiseValue in power 2.
-	if (noiseEnable)
-	{
-		col.rgb*=clamp (In.noiseValue*In.noiseValue, 0, 1);
-    }
+    
 
     return mul(col, tColor);
 }

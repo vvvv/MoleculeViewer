@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
    <NODE systemname="Store (Transform)" filename="%VVVV%\addonpack\lib\nodes\plugins\Store.dll" nodename="Store (Transform)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5250" top="5232" width="1620" height="270">
    </BOUNDS>
@@ -45,7 +45,7 @@
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="Index">
    </LINK>
    <NODE id="19" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Delete Bang|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Delete">
    </PIN>
    <BOUNDS type="Box" left="6540" top="450" width="690" height="240">
    </BOUNDS>
@@ -55,7 +55,7 @@
    </PIN>
    </NODE>
    <NODE id="20" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Insert Bang|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Insert">
    </PIN>
    <BOUNDS type="Box" left="5475" top="450" width="750" height="240">
    </BOUNDS>
@@ -67,7 +67,7 @@
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Insert">
    </LINK>
    <NODE id="21" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Load New|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Initialize">
    </PIN>
    <BOUNDS type="Box" left="14145" top="450" width="750" height="240">
    </BOUNDS>
@@ -113,11 +113,11 @@
    </PIN>
    </NODE>
    <NODE id="26" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Shelf Atom Typ|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Shelf Atom Type|">
    </PIN>
-   <BOUNDS type="Box" left="7665" top="450" width="750" height="240">
+   <BOUNDS type="Box" left="7860" top="450" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7665" top="450" width="750" height="240">
+   <BOUNDS type="Node" left="7860" top="450" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -209,7 +209,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Loaded Atom Info|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Initial Atom Info|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -235,7 +235,7 @@
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Loaded Atom Transform|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Initial Atom Transform|">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -350,37 +350,7 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="279" dstpinname="Insert">
    </LINK>
-   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="282" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="11385" top="4680" width="900" height="270">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Input 3" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="282" dstpinname="Input 1" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="282" dstpinname="Input 2" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="205" srcpinname="Output" dstnodeid="206" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="285" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="12225" top="4260" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="204" srcpinname="Output" dstnodeid="285" dstpinname="Input 1" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="285" srcpinname="Output 1" dstnodeid="282" dstpinname="Input 3" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="286" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="945" top="1590" width="0" height="0">
@@ -442,8 +412,6 @@
    </LINK>
    <LINK srcnodeid="286" srcpinname="Y Output Value" dstnodeid="279" dstpinname="Input" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="22" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="289" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="289" srcpinname="Output" dstnodeid="5" dstpinname="Switch">
@@ -454,20 +422,8 @@
    </LINK>
    <LINK srcnodeid="289" srcpinname="Output" dstnodeid="279" dstpinname="Delete">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="290" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="13335" top="4260" width="7875" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13335" top="4260" width="1770" height="1635">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;&lt; FOR THE EVALUATE PINS. AtomInfoStorage doesn&apos;t have to work always, only when something has changed.|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="279" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="22" dstpinname="Input Node">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Controller.v4p" systemname="Controller" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Controller.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Controller.v4p" systemname="Controller" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Controller.v4p">
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="12480" top="6255" width="100" height="100">
    </BOUNDS>
@@ -172,7 +172,7 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="2025" top="5520" width="18525" height="10425">
+   <BOUNDS type="Window" left="5805" top="2505" width="18525" height="10425">
    </BOUNDS>
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="11442" top="1500" width="100" height="100">
@@ -249,9 +249,9 @@
    </PIN>
    </NODE>
    <NODE systemname="CreateBonds" filename="CreateBonds.v4p" nodename="CreateBonds.v4p" componentmode="Hidden" id="39">
-   <BOUNDS type="Node" left="4053" top="2565" width="2520" height="270">
+   <BOUNDS type="Node" left="4023" top="2535" width="2520" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="720" top="10470" width="9690" height="10155">
+   <BOUNDS type="Window" left="345" top="8190" width="9690" height="10155">
    </BOUNDS>
    <PIN pinname="Atom Type" visible="1">
    </PIN>
@@ -661,9 +661,9 @@
    <LINK srcnodeid="173" srcpinname="Y Output Value" dstnodeid="150" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="174" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8691" top="546" width="0" height="0">
+   <BOUNDS type="Node" left="8541" top="561" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8691" top="546" width="795" height="240">
+   <BOUNDS type="Box" left="8541" top="561" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.776548796814355">
    </PIN>
