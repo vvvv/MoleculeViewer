@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Storage.v4p" systemname="Storage" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Storage.v4p">
    <NODE systemname="Store (Transform)" filename="%VVVV%\addonpack\lib\nodes\plugins\Store.dll" nodename="Store (Transform)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5250" top="5232" width="1620" height="270">
    </BOUNDS>
@@ -122,7 +122,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4560" top="4350" width="16425" height="11775">
+   <BOUNDS type="Window" left="4320" top="7080" width="16425" height="11775">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
    <BOUNDS type="Node" left="7005" top="4713" width="2040" height="270">
@@ -299,7 +299,7 @@
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="8355" top="6090" width="7830" height="7065">
+   <BOUNDS type="Window" left="13890" top="9105" width="11415" height="7065">
    </BOUNDS>
    <PIN pinname="Atom to Delete" visible="1">
    </PIN>
@@ -313,11 +313,13 @@
    </PIN>
    <PIN pinname="Insert" visible="1">
    </PIN>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Delete Atom" visible="1">
    </PIN>
    <PIN pinname="Selected Atom" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="281">
@@ -466,4 +468,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="279" dstpinname="Reset">
+   </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Draw.v4p" systemname="Draw" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Draw.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Draw.v4p" systemname="Draw" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Draw.v4p">
    <NODE systemname="DrawAtoms" filename="DrawAtoms.v4p" nodename="DrawAtoms.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1920" top="2279" width="100" height="100">
    </BOUNDS>
@@ -72,7 +72,7 @@
    <BOUNDS type="Node" left="7950" top="465" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <BOUNDS type="Window" left="4920" top="1470" width="12795" height="10425">
+   <BOUNDS type="Window" left="11325" top="4380" width="12795" height="10425">
    </BOUNDS>
    <NODE nodename="Group (EX9)" id="28" systemname="Group (EX9)">
    <BOUNDS type="Node" left="2973" top="6795" width="5115" height="270">

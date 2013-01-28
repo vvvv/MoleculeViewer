@@ -51,7 +51,7 @@
    </PIN>
    <PIN pinname="Filter" pintype="Input" visible="1">
    </PIN>
-   <PIN pinname="Open" visible="1" pintype="Input">
+   <PIN pinname="Open" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
    <BOUNDS type="Node" left="1215" top="1845" width="100" height="100">
    </BOUNDS>
@@ -290,62 +290,24 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Openend" dstnodeid="2" dstpinname="Read">
    </LINK>
-   <NODE id="42" nodename="IOBox (Enumerations)" componentmode="InABox" systemname="IOBox (Enumerations)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="2055" top="510" width="0" height="0">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="2040" top="480" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2055" top="510" width="765" height="240">
+   <BOUNDS type="Box" left="2040" top="480" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" pintype="Input" visible="1" values="Load">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
-   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
-   </PIN>
-   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
-   </PIN>
-   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Style" pintype="Configuration" slicecount="1" values="PullDown">
-   </PIN>
-   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output Enum" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Open">
    </PIN>
    </NODE>
-   <NODE id="41" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Receive String" pintype="Input" visible="1">
-   </PIN>
-   <BOUNDS type="Node" width="255" height="270" left="2055" top="915">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="(ROUTER DON&apos;T USE)" pintype="Input" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="42" srcpinname="Output Enum" dstnodeid="41" dstpinname="Receive String">
-   </LINK>
-   <LINK srcnodeid="41" srcpinname="Input Value" dstnodeid="9" dstpinname="Open">
+   <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Open">
    </LINK>
    </PATCH>

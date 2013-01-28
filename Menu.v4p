@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Menu.v4p" systemname="Menu" filename="C:\Users\praxis\Desktop\MoleculeViewer\Menu.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Menu.v4p" systemname="Menu" filename="C:\Users\praxis\Desktop\MoleculeViewer\Menu.v4p">
    <NODE id="0" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -72,7 +72,7 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="MenuButton" filename="MenuButton.v4p" nodename="MenuButton.v4p" componentmode="InAWindow" id="36">
+   <NODE systemname="MenuButton" filename="MenuButton.v4p" nodename="MenuButton.v4p" componentmode="Hidden" id="36">
    <BOUNDS type="Node" left="3510" top="6967" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="2220" top="2852" width="5635" height="8230">
