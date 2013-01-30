@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>

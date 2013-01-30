@@ -1,21 +1,21 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Reset.v4p" systemname="Reset" filename="C:\Users\praxis\Desktop\MoleculeViewer\Reset.v4p">
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1500" top="1965" width="100" height="100">
+   <BOUNDS type="Node" left="1440" top="1230" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="1" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="1500" top="1500" width="0" height="0">
+   <BOUNDS type="Node" left="1440" top="765" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="1500" width="780" height="240">
+   <BOUNDS type="Box" left="1440" top="765" width="780" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="Reset">
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1500" top="2475" width="645" height="270">
+   <BOUNDS type="Node" left="1440" top="1740" width="645" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -25,7 +25,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="2085" top="1920" width="100" height="100">
+   <BOUNDS type="Node" left="2025" top="1185" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -39,9 +39,9 @@
    <NODE id="4" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="1500" top="3245" width="750" height="240">
+   <BOUNDS type="Box" left="1440" top="2510" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1500" top="3245" width="750" height="240">
+   <BOUNDS type="Node" left="1440" top="2510" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value">

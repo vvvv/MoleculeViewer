@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Infolayer.v4p" systemname="Infolayer" filename="C:\Work\MoleculeViewer\Infolayer.v4p">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Infolayer Layer|">
    </PIN>
-   <BOUNDS type="Box" left="1920" top="4890" width="750" height="240">
+   <BOUNDS type="Box" left="1896" top="4890" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1920" top="4890" width="750" height="240">
+   <BOUNDS type="Node" left="1896" top="4890" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -111,6 +111,8 @@
    </PIN>
    <PIN pinname="Atom Info" visible="1">
    </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="6" dstpinname="Mouse">
    </LINK>
@@ -151,7 +153,7 @@
    </PIN>
    <PIN pinname="Text Right" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="1935" top="4110" width="4530" height="270">
+   <BOUNDS type="Node" left="1911" top="4110" width="4530" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="1830" top="5595" width="14820" height="11100">
    </BOUNDS>
@@ -181,11 +183,13 @@
    </PIN>
    <PIN pinname="Alpha" visible="1">
    </PIN>
+   <PIN pinname="Transform In 2" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="CloseButton Transform" dstnodeid="6" dstpinname="Transform Quad" linkstyle="Bezier">
-   <LINKPOINT x="7655" y="5380">
+   <LINKPOINT x="7639" y="5380">
    </LINKPOINT>
-   <LINKPOINT x="8530" y="1955">
+   <LINKPOINT x="8522" y="1955">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="6" srcpinname="TextRight" dstnodeid="0" dstpinname="Text Right">
@@ -195,8 +199,6 @@
    <LINK srcnodeid="6" srcpinname="Atom Title" dstnodeid="0" dstpinname="Atom Title">
    </LINK>
    <LINK srcnodeid="6" srcpinname="XYZ Transformed" dstnodeid="0" dstpinname="XYZ">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Enable" dstnodeid="0" dstpinname="Enable">
    </LINK>
@@ -279,5 +281,9 @@
    <LINK srcnodeid="18" srcpinname="Input Value" dstnodeid="6" dstpinname="Right Column">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Atom Info">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform In 2">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform In">
    </LINK>
    </PATCH>

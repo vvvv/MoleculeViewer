@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\MoleculeView.v4p" systemname="MoleculeView" filename="C:\Work\MoleculeViewer\MoleculeView.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeView.v4p" systemname="MoleculeView" filename="C:\Work\MoleculeViewer\MoleculeView.v4p">
    <NODE systemname="DrawAtoms" filename="DrawAtoms.v4p" nodename="DrawAtoms.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1980" top="4275" width="1680" height="270">
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="4905" top="6195" width="13305" height="10320">
+   <BOUNDS type="Window" left="2385" top="4215" width="13305" height="10320">
    </BOUNDS>
    <PIN pinname="Selected" visible="1">
    </PIN>
@@ -64,7 +64,7 @@
    <BOUNDS type="Node" left="9897" top="456" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <BOUNDS type="Window" left="4080" top="2670" width="12795" height="11625">
+   <BOUNDS type="Window" left="12135" top="6945" width="12795" height="11625">
    </BOUNDS>
    <NODE nodename="Group (EX9)" id="28" systemname="Group (EX9)">
    <BOUNDS type="Node" left="5388" top="8610" width="5115" height="270">
@@ -177,15 +177,15 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="6858" top="6399" width="100" height="100">
+   <BOUNDS type="Node" left="7008" top="6804" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="44" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="6858" top="6039" width="0" height="0">
+   <BOUNDS type="Node" left="7008" top="6444" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6858" top="6039" width="1005" height="240">
+   <BOUNDS type="Box" left="7008" top="6444" width="1005" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="Projection">
    </PIN>
@@ -193,15 +193,15 @@
    <LINK srcnodeid="44" srcpinname="Output Enum" dstnodeid="45" dstpinname="Receive String">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="43">
-   <BOUNDS type="Node" left="6354" top="6003" width="100" height="100">
+   <BOUNDS type="Node" left="6354" top="6828" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="42" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="6354" top="5643" width="0" height="0">
+   <BOUNDS type="Node" left="6354" top="6468" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6354" top="5643" width="1005" height="240">
+   <BOUNDS type="Box" left="6354" top="6468" width="585" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="View">
    </PIN>
@@ -209,15 +209,15 @@
    <LINK srcnodeid="42" srcpinname="Output Enum" dstnodeid="43" dstpinname="Receive String">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="7338" top="6816" width="100" height="100">
+   <BOUNDS type="Node" left="8103" top="6846" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="40" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="7353" top="6411" width="0" height="0">
+   <BOUNDS type="Node" left="8118" top="6441" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7353" top="6411" width="1590" height="240">
+   <BOUNDS type="Box" left="8118" top="6441" width="1080" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="AspectRatio">
    </PIN>
@@ -225,7 +225,7 @@
    <LINK srcnodeid="40" srcpinname="Output Enum" dstnodeid="41" dstpinname="Receive String">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="5640" top="5265" width="1245" height="270">
+   <BOUNDS type="Node" left="5640" top="5130" width="1245" height="270">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -269,15 +269,15 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="View" visible="1">
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Projection" visible="1">
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Aspect Ratio" visible="1">
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Evaluate" visible="1" pintype="Input">
    </PIN>
-   <BOUNDS type="Window" left="8025" top="7500" width="6855" height="7530">
+   <BOUNDS type="Window" left="8025" top="7500" width="10665" height="7530">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Layer" dstnodeid="46" dstpinname="Input 2">
@@ -498,10 +498,10 @@
    </LINK>
    <LINK srcnodeid="70" srcpinname="Output" dstnodeid="1" dstpinname="Radius">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="49" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="49" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="28" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="49" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="49" dstpinname="Layer 2">
    </LINK>
    </PATCH>

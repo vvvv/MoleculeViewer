@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\InfolayerView.v4p" systemname="InfolayerView" filename="C:\Work\MoleculeViewer\InfolayerView.v4p">
+   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\InfolayerView.v4p" systemname="InfolayerView" filename="C:\Work\MoleculeViewer\InfolayerView.v4p">
    <BOUNDS type="Window" left="1830" top="5595" width="14820" height="11100">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="154">
@@ -95,9 +95,9 @@
    <LINK srcnodeid="279" srcpinname="Layer" dstnodeid="154" dstpinname="Layer 5" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="284" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="11700" top="6000" width="0" height="0">
+   <BOUNDS type="Node" left="11580" top="6120" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="11700" top="6000" width="390" height="240">
+   <BOUNDS type="Box" left="11580" top="6120" width="390" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="1.01">
    </PIN>
@@ -111,9 +111,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="285" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="12150" top="6000" width="0" height="0">
+   <BOUNDS type="Node" left="12030" top="6120" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="12150" top="6000" width="435" height="240">
+   <BOUNDS type="Box" left="12030" top="6120" width="435" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.25">
    </PIN>
@@ -375,7 +375,7 @@
    <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="249">
    <BOUNDS type="Node" left="1881" top="3735" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -413,8 +413,6 @@
    <LINK srcnodeid="247" srcpinname="Transform Out" dstnodeid="347" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="364" srcpinname="Y Output Value" dstnodeid="249" dstpinname="XYZ">
-   </LINK>
-   <LINK srcnodeid="247" srcpinname="Transform Out" dstnodeid="249" dstpinname="Transform In">
    </LINK>
    <NODE systemname="PointingLine" filename="PointingLine.v4p" nodename="PointingLine.v4p" componentmode="Hidden" id="368">
    <BOUNDS type="Node" left="5130" top="6600" width="100" height="100">
@@ -515,5 +513,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="382" srcpinname="Y Output Value" dstnodeid="347" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="247" srcpinname="Transform Out" dstnodeid="249" dstpinname="Transform In">
    </LINK>
    </PATCH>
