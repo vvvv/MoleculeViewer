@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\AtomInfoStorage.v4p" systemname="AtomInfoStorage" filename="C:\Work\MoleculeViewer\AtomInfoStorage.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\AtomInfoStorage.v4p" systemname="AtomInfoStorage" filename="C:\Work\MoleculeViewer\AtomInfoStorage.v4p">
    <NODE systemname="RemoveAtom" filename="RemoveAtom.v4p" nodename="RemoveAtom.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="268" top="4160" width="1950" height="270">
    </BOUNDS>
@@ -19,7 +19,7 @@
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="3045" top="255" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3045" top="255" width="300" height="240">
+   <BOUNDS type="Box" left="3045" top="255" width="600" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
@@ -39,7 +39,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="264" top="3288" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="5325" top="4590" width="9435" height="8235">
+   <BOUNDS type="Window" left="15405" top="1680" width="7020" height="9825">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -106,7 +106,7 @@
    </NODE>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="0" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="13890" top="9105" width="11415" height="7065">
+   <BOUNDS type="Window" left="14400" top="10215" width="11415" height="7065">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="1575" top="285" width="0" height="0">
@@ -142,7 +142,7 @@
    </NODE>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Atom Typ">
    </LINK>
-   <NODE systemname="GetAtomInfo" filename="GetAtomInfo.v4p" nodename="GetAtomInfo.v4p" componentmode="Hidden" id="12">
+   <NODE systemname="Atom (Split)" filename="Atom (Split).v4p" nodename="Atom (Split).v4p" componentmode="Hidden" id="12">
    <BOUNDS type="Node" left="1950" top="2826" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Selected Atom" visible="1">

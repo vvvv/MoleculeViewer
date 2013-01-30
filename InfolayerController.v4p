@@ -166,26 +166,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="21">
-   <BOUNDS type="Node" left="2685" top="780" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2685" top="780" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Typ|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="2670" top="4770" width="810" height="270">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Index" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="0" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="Index">
@@ -220,10 +200,6 @@
    </LINK>
    <LINK srcnodeid="18" srcpinname="Left Button" dstnodeid="19" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="22" dstpinname="Index">
-   </LINK>
    <NODE id="26" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Quad|">
    </PIN>
@@ -240,7 +216,7 @@
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="15" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="4020" top="3045" width="17070" height="10890">
+   <BOUNDS type="Window" left="4965" top="6375" width="17070" height="10890">
    </BOUNDS>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="29">
    <BOUNDS type="Node" left="8823" top="8274" width="100" height="100">
@@ -323,8 +299,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Output" dstnodeid="41" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="38" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Down Edge" dstnodeid="11" dstpinname="Input 2">
    </LINK>
@@ -551,5 +525,33 @@
    <LINK srcnodeid="90" srcpinname="Output String" dstnodeid="28" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="93" srcpinname="Output String" dstnodeid="29" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Atom (Split)" filename="Atom (Split).v4p" nodename="Atom (Split)" componentmode="Hidden" id="94">
+   <BOUNDS type="Node" left="2760" top="4710" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Selected Atom" visible="1">
+   </PIN>
+   <PIN pinname="Typ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="95" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="2745" top="780" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2745" top="780" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Info|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="95" srcpinname="Y Output Value" dstnodeid="94" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="94" dstpinname="Selected Atom">
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Typ" dstnodeid="38" dstpinname="Index">
    </LINK>
    </PATCH>

@@ -22,7 +22,7 @@
    <PIN pinname="ViewProjectionInverse" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="DrawShelf" filename="DrawShelf.v4p" nodename="DrawShelf.v4p" componentmode="Hidden" id="1">
+   <NODE systemname="ShelfView" filename="ShelfView.v4p" nodename="ShelfView.v4p" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="2055" top="2160" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="7485" top="7305" width="7725" height="6735">

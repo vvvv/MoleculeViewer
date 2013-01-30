@@ -92,7 +92,7 @@
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Filter">
    </LINK>
-   <NODE systemname="GetAtomInfo" filename="GetAtomInfo.v4p" nodename="GetAtomInfo.v4p" componentmode="Hidden" id="24">
+   <NODE systemname="Atom (Split)" filename="Atom (Split).v4p" nodename="Atom (Split).v4p" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="1095" top="1446" width="1380" height="270">
    </BOUNDS>
    </NODE>

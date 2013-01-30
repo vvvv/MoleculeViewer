@@ -57,23 +57,23 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1995" top="585" width="660" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="6" values="1,2,0,0,0,3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Typ|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom info|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="InfolayerController" filename="InfolayerController.v4p" nodename="InfolayerController.v4p" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="1920" top="3300" width="4560" height="270">
+   <BOUNDS type="Node" left="1890" top="3225" width="4560" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="105" top="1155" width="15135" height="8205">
+   <BOUNDS type="Box" left="75" top="1080" width="15135" height="8205">
    </BOUNDS>
-   <BOUNDS type="Window" left="4020" top="3045" width="17070" height="10890">
+   <BOUNDS type="Window" left="4965" top="6375" width="17070" height="10890">
    </BOUNDS>
    <PIN pinname="TextLeft" visible="1" slicecount="5" values="|Atomic Number|,|Standart Atomic Weight|,|Electron Configurations|,Phase,Density">
    </PIN>
@@ -109,6 +109,8 @@
    </PIN>
    <PIN pinname="Right Column" visible="1">
    </PIN>
+   <PIN pinname="Atom Info" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="6" dstpinname="Mouse">
    </LINK>
@@ -138,7 +140,7 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Reset">
    </LINK>
-   <NODE id="0" componentmode="Hidden" systemname="InfolayerDraw" filename="InfolayerDraw.v4p" nodename="InfolayerDraw.v4p">
+   <NODE id="0" componentmode="Hidden" systemname="InfolayerView" filename="InfolayerView.v4p" nodename="InfolayerView.v4p">
    <PIN pinname="Transform In" visible="1">
    </PIN>
    <PIN pinname="XYZ" visible="1">
@@ -181,9 +183,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="CloseButton Transform" dstnodeid="6" dstpinname="Transform Quad" linkstyle="Bezier">
-   <LINKPOINT x="7665" y="5405">
+   <LINKPOINT x="7655" y="5380">
    </LINKPOINT>
-   <LINKPOINT x="8550" y="2005">
+   <LINKPOINT x="8530" y="1955">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="6" srcpinname="TextRight" dstnodeid="0" dstpinname="Text Right">
@@ -275,5 +277,7 @@
    <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="6" dstpinname="Left Column">
    </LINK>
    <LINK srcnodeid="18" srcpinname="Input Value" dstnodeid="6" dstpinname="Right Column">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Atom Info">
    </LINK>
    </PATCH>

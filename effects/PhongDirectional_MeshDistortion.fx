@@ -65,7 +65,7 @@ vs2ps VS(
     float4 TexCd : TEXCOORD0
 )
 {
-    //inititalize all fields of output struct with 0
+	//inititalize all fields of output struct with 0
     vs2ps Out = (vs2ps)0;
 
     //inverse light direction in view space
@@ -74,13 +74,12 @@ vs2ps VS(
     //normal in view space
     Out.NormV = normalize(mul(NormO, tWV));
 	
-	float noiseValue;
+	float noiseValue=0;
 	
 	if (noiseEnable)
 	{
 		// sample the noise texture at the normal position
 		noiseValue=tex2Dlod(noiseSamp, float4(NormO.xy, 0, 0));
-		//noiseValue=smoothstep(0, 0.1, noiseValue);
 		
 		// scale the normal with the noise value and add it
 		// to the original position
@@ -117,7 +116,7 @@ float4 PS(vs2ps In): COLOR
 	// scale the rgb with the noiseValue in power 2.
 	if (noiseEnable)
 	{
-		col.rgb*=clamp (In.noiseValue*In.noiseValue, 0, 1);
+		col.rgb*=In.noiseValue;
     }
 
     return mul(col, tColor);
@@ -134,7 +133,7 @@ technique TPhongDirectional
     {
         //Wrap0 = U;  // useful when mesh is round like a sphere
         VertexShader = compile vs_3_0 VS();
-        PixelShader = compile ps_2_0 PS();
+        PixelShader = compile ps_3_0 PS();
     }
 }
 

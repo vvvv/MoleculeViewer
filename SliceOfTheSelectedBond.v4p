@@ -218,8 +218,8 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="GetAtomInfo" filename="GetAtomInfo.v4p" nodename="GetAtomInfo.v4p" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="2187" top="2019" width="100" height="100">
+   <NODE systemname="Atom (Split)" filename="Atom (Split).v4p" nodename="Atom (Split).v4p" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="2394" top="2034" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -243,9 +243,9 @@
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3294" top="1590" width="0" height="0">
+   <BOUNDS type="Node" left="3021" top="1635" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3294" top="1590" width="285" height="240">
+   <BOUNDS type="Box" left="3021" top="1635" width="285" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="-1">
    </PIN>

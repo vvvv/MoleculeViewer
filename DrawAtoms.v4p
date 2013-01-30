@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\DrawAtoms.v4p" systemname="DrawAtoms" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawAtoms.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\DrawAtoms.v4p" systemname="DrawAtoms" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawAtoms.v4p">
    <NODE id="1" systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden">
    <PIN pinname="Radius" visible="1" slicecount="1" values="0">
    </PIN>
@@ -30,7 +30,7 @@
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="930" top="6135" width="11280" height="10320">
+   <BOUNDS type="Window" left="4905" top="6195" width="13305" height="10320">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
    <BOUNDS type="Node" left="4635" top="615" width="100" height="100">
@@ -303,7 +303,7 @@
    <LINK srcnodeid="89" srcpinname="Output Enum" dstnodeid="88" dstpinname="Receive String">
    </LINK>
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="90">
-   <BOUNDS type="Node" left="6315" top="2115" width="100" height="100">
+   <BOUNDS type="Node" left="6315" top="8295" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -313,9 +313,9 @@
    <LINK srcnodeid="88" srcpinname="Input Value" dstnodeid="90" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="91" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6300" top="1740" width="0" height="0">
+   <BOUNDS type="Node" left="6300" top="7920" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6300" top="1740" width="555" height="240">
+   <BOUNDS type="Box" left="6300" top="7920" width="555" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
@@ -371,7 +371,7 @@
    </PIN>
    <PIN pinname="noiseEnable" visible="1">
    </PIN>
-   <PIN pinname="scale" slicecount="1" values="0.01" visible="1">
+   <PIN pinname="scale" slicecount="1" visible="1" values="0.01">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="94" dstpinname="Transform">
@@ -391,9 +391,9 @@
    <LINK srcnodeid="1" srcpinname="Mesh" dstnodeid="94" dstpinname="Mesh">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6105" top="6615" width="0" height="0">
+   <BOUNDS type="Node" left="5400" top="6750" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6105" top="6615" width="375" height="240">
+   <BOUNDS type="Box" left="5400" top="6750" width="375" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="128">
    </PIN>
@@ -407,13 +407,13 @@
    </PIN>
    </NODE>
    <NODE systemname="Perlin (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\Perlin\Perlin (EX9.Texture Source).v4p" nodename="Perlin (EX9.Texture Source)" componentmode="Hidden" id="116">
-   <BOUNDS type="Node" left="4995" top="7080" width="100" height="100">
+   <BOUNDS type="Node" left="4290" top="7215" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Amplify" slicecount="1" values="0.5">
+   <PIN pinname="Amplify" slicecount="1" values="0.4">
    </PIN>
    <PIN pinname="Balance" slicecount="1" values="1">
    </PIN>
@@ -429,7 +429,7 @@
    <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="116" dstpinname="Height">
    </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="115">
-   <BOUNDS type="Node" left="5295" top="6192" width="100" height="100">
+   <BOUNDS type="Node" left="4590" top="6327" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -439,7 +439,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="114">
-   <BOUNDS type="Node" left="5295" top="6630" width="100" height="100">
+   <BOUNDS type="Node" left="4590" top="6765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -455,9 +455,9 @@
    <LINK srcnodeid="114" srcpinname="Output" dstnodeid="116" dstpinname="Z">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="113" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5310" top="5340" width="0" height="0">
+   <BOUNDS type="Node" left="4605" top="5475" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5310" top="5340" width="795" height="240">
+   <BOUNDS type="Box" left="4605" top="5475" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="2">
    </PIN>
@@ -471,7 +471,7 @@
    <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="116" dstpinname="Enabled">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="118">
-   <BOUNDS type="Node" left="5460" top="5790" width="100" height="100">
+   <BOUNDS type="Node" left="4755" top="5925" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -487,7 +487,7 @@
    <LINK srcnodeid="116" srcpinname="Output" dstnodeid="94" dstpinname="noiseTexture texture">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="126">
-   <BOUNDS type="Node" left="8880" top="4755" width="100" height="100">
+   <BOUNDS type="Node" left="11100" top="1020" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="SliderAtomSize">
    </PIN>
@@ -495,9 +495,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="127" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="8880" top="4350" width="0" height="0">
+   <BOUNDS type="Node" left="11100" top="615" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8880" top="4350" width="1590" height="240">
+   <BOUNDS type="Box" left="11100" top="615" width="1590" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="SliderAtomSize">
    </PIN>
@@ -505,7 +505,7 @@
    <LINK srcnodeid="127" srcpinname="Output Enum" dstnodeid="126" dstpinname="Receive String">
    </LINK>
    <NODE systemname="InputMorph (Value)" nodename="InputMorph (Value)" componentmode="Hidden" id="128">
-   <BOUNDS type="Node" left="5250" top="8280" width="100" height="100">
+   <BOUNDS type="Node" left="4530" top="8220" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -519,9 +519,9 @@
    <LINK srcnodeid="126" srcpinname="Input Value" dstnodeid="128" dstpinname="Switch">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="129" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5655" top="7770" width="0" height="0">
+   <BOUNDS type="Node" left="4935" top="7710" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5655" top="7770" width="495" height="240">
+   <BOUNDS type="Box" left="4935" top="7710" width="495" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.07">
    </PIN>
@@ -535,9 +535,9 @@
    <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="128" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="130" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6225" top="7755" width="0" height="0">
+   <BOUNDS type="Node" left="5505" top="7695" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6225" top="7755" width="465" height="240">
+   <BOUNDS type="Box" left="5505" top="7695" width="465" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.27">
    </PIN>

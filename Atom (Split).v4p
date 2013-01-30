@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\GetAtomInfo.v4p" systemname="GetAtomInfo" filename="C:\Work\MolecularViewer_Storage\GetAtomInfo.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Atom (Split).v4p" systemname="Atom (Split)" filename="C:\Work\MoleculeViewer\Atom (Split).v4p">
    <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1530" top="1875" width="100" height="100">
    </BOUNDS>

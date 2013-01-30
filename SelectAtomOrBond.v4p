@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\SelectAtomOrBond.v4p" systemname="SelectAtomOrBond" filename="C:\Work\MoleculeViewer\SelectAtomOrBond.v4p">
-   <BOUNDS type="Window" left="1005" top="3915" width="18120" height="7905">
+   <BOUNDS type="Window" left="1350" top="8010" width="18120" height="7905">
    </BOUNDS>
    <NODE systemname="Button (3d Mesh)" filename="%VVVV%\lib\nodes\modules\3D\Button (3d Mesh).v4p" nodename="Button (3d Mesh)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="4170" top="2745" width="100" height="100">
@@ -225,7 +225,7 @@
    </PIN>
    </NODE>
    <NODE id="27" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input - Atom Info|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Info|">
    </PIN>
    <BOUNDS type="Box" left="1635" top="345" width="750" height="240">
    </BOUNDS>
@@ -387,39 +387,11 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Bond ID|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Bond Slice|">
    </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Bond Slice" dstnodeid="47" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="53" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="12540" top="6765" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12540" top="6765" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="24" srcpinname="Index of Nearest" dstnodeid="53" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="12180" top="5490" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12180" top="5490" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="24" srcpinname="Index of Nearest" dstnodeid="54" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
