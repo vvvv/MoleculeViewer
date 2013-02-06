@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculeController.v4p" systemname="MoleculeController" filename="C:\Work\MoleculeViewer\MoleculeController.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\MoleculeController.v4p" systemname="MoleculeController" filename="C:\Work\MoleculeViewer\MoleculeController.v4p">
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="10230" top="1599" width="100" height="100">
    </BOUNDS>
@@ -100,7 +100,7 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="7650" top="4725" width="16650" height="10095">
+   <BOUNDS type="Window" left="990" top="300" width="16650" height="10095">
    </BOUNDS>
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="10020" top="1098" width="100" height="100">

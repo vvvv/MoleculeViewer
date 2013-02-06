@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\ViewCalculation.v4p" systemname="ViewCalculation" filename="C:\Users\praxis\Desktop\MoleculeViewer\ViewCalculation.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\ViewCalculation.v4p" systemname="ViewCalculation" filename="C:\Users\praxis\Desktop\MoleculeViewer\ViewCalculation.v4p">
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3390" top="1470" width="1020" height="270">
    </BOUNDS>
@@ -239,9 +239,9 @@
    <LINK srcnodeid="154" srcpinname="XY" dstnodeid="178" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="194" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="9315" top="282" width="0" height="0">
+   <BOUNDS type="Node" left="7815" top="267" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9315" top="282" width="795" height="480">
+   <BOUNDS type="Box" left="7815" top="267" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -485,7 +485,7 @@
    </BOUNDS>
    <PIN pinname="Angular Speed XYZ" visible="1">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>

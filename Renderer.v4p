@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\Renderer.v4p" systemname="Renderer" filename="C:\Work\MoleculeViewer\Renderer.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Renderer.v4p" systemname="Renderer" filename="C:\Work\MoleculeViewer\Renderer.v4p">
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="0" systemname="Renderer (EX9)">
    <BOUNDS type="Node" left="1530" top="2781" width="3615" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="18435" top="780" width="8295" height="8160">
+   <BOUNDS type="Window" left="19635" top="1755" width="8295" height="8160">
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
@@ -245,9 +245,9 @@
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="22" dstpinname="X">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="24" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="4245" top="990" width="0" height="0">
+   <BOUNDS type="Node" left="4293" top="990" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4245" top="990" width="795" height="240">
+   <BOUNDS type="Box" left="4293" top="990" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>

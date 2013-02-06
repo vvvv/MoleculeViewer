@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\MoleculePixelShaderEffect.v4p" systemname="MoleculePixelShaderEffect" filename="C:\Work\MoleculeViewer\MoleculePixelShaderEffect.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\MoleculePixelShaderEffect.v4p" systemname="MoleculePixelShaderEffect" filename="C:\Work\MoleculeViewer\MoleculePixelShaderEffect.v4p">
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2940" top="2271" width="100" height="100">
    </BOUNDS>
@@ -130,7 +130,7 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="EX9 Out" dstnodeid="0" dstpinname="Source">
    </LINK>
-   <BOUNDS type="Window" left="8025" top="7500" width="10665" height="7530">
+   <BOUNDS type="Window" left="6330" top="3345" width="10665" height="7530">
    </BOUNDS>
    <NODE systemname="HSCB (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p" nodename="HSCB (EX9.Texture Filter)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="4026" top="4560" width="100" height="100">
@@ -171,7 +171,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4356" top="3546" width="450" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.93">
+   <PIN pinname="Y Input Value" slicecount="1" values="3.51">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -199,7 +199,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4671" top="4188" width="420" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.58">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.59">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -213,7 +213,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3288" top="5265" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.47">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.43">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -227,7 +227,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4221" top="2889" width="510" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.35">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.39">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
