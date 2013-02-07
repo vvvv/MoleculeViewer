@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\MoleculeController.v4p" systemname="MoleculeController" filename="C:\Work\MoleculeViewer\MoleculeController.v4p">
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="10230" top="1599" width="100" height="100">
+   <BOUNDS type="Node" left="14805" top="1770" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -11,7 +11,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="11070" top="1599" width="100" height="100">
+   <BOUNDS type="Node" left="15645" top="1770" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -19,11 +19,11 @@
    </PIN>
    </NODE>
    <NODE systemname="BangIfShelfAtomIsDroppped" filename="BangIfShelfAtomIsDroppped.v4p" nodename="BangIfShelfAtomIsDroppped.v4p" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="5068" top="4551" width="2355" height="270">
+   <BOUNDS type="Node" left="9544" top="4551" width="2220" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3463" top="2416" width="3210" height="4270">
+   <BOUNDS type="Box" left="7939" top="2416" width="3210" height="4270">
    </BOUNDS>
-   <BOUNDS type="Window" left="8505" top="7695" width="7665" height="6720">
+   <BOUNDS type="Window" left="12390" top="8295" width="10455" height="6180">
    </BOUNDS>
    <PIN pinname="ShelfAtomIsSelected" visible="1">
    </PIN>
@@ -43,9 +43,9 @@
    <NODE id="14" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
-   <BOUNDS type="Box" left="10020" top="525" width="750" height="240">
+   <BOUNDS type="Box" left="14787" top="630" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10020" top="525" width="750" height="240">
+   <BOUNDS type="Node" left="14787" top="630" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -53,9 +53,9 @@
    <NODE id="15" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Atom|">
    </PIN>
-   <BOUNDS type="Box" left="1410" top="8175" width="750" height="240">
+   <BOUNDS type="Box" left="5370" top="7785" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1410" top="8175" width="750" height="240">
+   <BOUNDS type="Node" left="5370" top="7785" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -65,9 +65,9 @@
    <NODE id="18" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Insert Atom|">
    </PIN>
-   <BOUNDS type="Box" left="7365" top="8070" width="465" height="510">
+   <BOUNDS type="Box" left="11700" top="7785" width="465" height="510">
    </BOUNDS>
-   <BOUNDS type="Node" left="7365" top="8070" width="750" height="240">
+   <BOUNDS type="Node" left="11700" top="7785" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -79,9 +79,9 @@
    <NODE id="20" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Bond|">
    </PIN>
-   <BOUNDS type="Box" left="2625" top="8175" width="750" height="240">
+   <BOUNDS type="Box" left="6585" top="7785" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2625" top="8175" width="750" height="240">
+   <BOUNDS type="Node" left="6585" top="7785" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -89,9 +89,9 @@
    <NODE id="24" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Delete Atom|">
    </PIN>
-   <BOUNDS type="Box" left="9978" top="8175" width="465" height="510">
+   <BOUNDS type="Box" left="13260" top="7785" width="465" height="510">
    </BOUNDS>
-   <BOUNDS type="Node" left="9978" top="8175" width="750" height="240">
+   <BOUNDS type="Node" left="13260" top="7785" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -100,10 +100,10 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="990" top="300" width="16650" height="10095">
+   <BOUNDS type="Window" left="2790" top="5175" width="17700" height="9675">
    </BOUNDS>
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="10020" top="1098" width="100" height="100">
+   <BOUNDS type="Node" left="14784" top="1203" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Left Button" visible="1">
    </PIN>
@@ -121,7 +121,7 @@
    <LINK srcnodeid="14" srcpinname="Output Node" dstnodeid="25" dstpinname="Mouse">
    </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="9978" top="7626" width="100" height="100">
+   <BOUNDS type="Node" left="13281" top="7173" width="645" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
@@ -135,9 +135,9 @@
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="24" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="38" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="4485" top="8175" width="0" height="0">
+   <BOUNDS type="Node" left="8925" top="7785" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4485" top="8175" width="795" height="240">
+   <BOUNDS type="Box" left="8925" top="7785" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|New Atom Transform|">
    </PIN>
@@ -145,9 +145,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="42" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="2580" top="585" width="0" height="0">
+   <BOUNDS type="Node" left="6510" top="525" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2580" top="585" width="795" height="240">
+   <BOUNDS type="Box" left="6510" top="525" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -157,9 +157,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="40" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3645" top="600" width="0" height="0">
+   <BOUNDS type="Node" left="7455" top="525" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3645" top="600" width="945" height="240">
+   <BOUNDS type="Box" left="7455" top="525" width="945" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -175,9 +175,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="49" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="270" top="555" width="0" height="0">
+   <BOUNDS type="Node" left="4230" top="525" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="270" top="555" width="795" height="240">
+   <BOUNDS type="Box" left="4230" top="525" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -187,9 +187,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="50" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="1230" top="555" width="0" height="0">
+   <BOUNDS type="Node" left="5190" top="525" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1230" top="555" width="765" height="240">
+   <BOUNDS type="Box" left="5190" top="525" width="765" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -201,9 +201,9 @@
    <LINK srcnodeid="42" srcpinname="Output Node" dstnodeid="9" dstpinname="AtomsTransforms">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="132">
-   <BOUNDS type="Node" left="13215" top="630" width="100" height="100">
+   <BOUNDS type="Node" left="13473" top="600" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="13215" top="630" width="795" height="240">
+   <BOUNDS type="Box" left="13473" top="600" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Selected Shelf Atom|">
    </PIN>
@@ -211,11 +211,11 @@
    </PIN>
    </NODE>
    <NODE systemname="NewAtomTransformCalculation" filename="NewAtomTransformCalculation.v4p" nodename="NewAtomTransformCalculation.v4p" componentmode="Hidden" id="145">
-   <BOUNDS type="Node" left="4466" top="6668" width="3165" height="270">
+   <BOUNDS type="Node" left="8930" top="6668" width="3165" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="394" top="3422" width="8145" height="6493">
+   <BOUNDS type="Box" left="4858" top="3422" width="8145" height="6493">
    </BOUNDS>
-   <BOUNDS type="Window" left="1875" top="8055" width="12000" height="6495">
+   <BOUNDS type="Window" left="13680" top="7290" width="13890" height="8385">
    </BOUNDS>
    <PIN pinname="Index - Selected Bond" slicecount="1" visible="1" values="0">
    </PIN>
@@ -229,9 +229,11 @@
    </PIN>
    <PIN pinname="Atom Info" visible="1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="First Atom Switch" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="ItsTheFirstAtom" dstnodeid="145" dstpinname="Switch">
-   </LINK>
    <LINK srcnodeid="145" srcpinname="Output" dstnodeid="38" dstpinname="Input Node">
    </LINK>
    <NODE id="146" componentmode="Hidden" systemname="SelectAtomOrBond" filename="SelectAtomOrBond.v4p" nodename="SelectAtomOrBond.v4p" hiddenwhenlocked="0" managers="">
@@ -253,11 +255,11 @@
    </PIN>
    <PIN pinname="Index of Nearest" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="1395" top="3480" width="3375" height="270">
+   <BOUNDS type="Node" left="5355" top="3480" width="2535" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1395" top="3480" width="4800" height="3600">
+   <BOUNDS type="Box" left="5355" top="3480" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2790" top="6945" width="18120" height="7905">
+   <BOUNDS type="Window" left="9630" top="7695" width="16830" height="8610">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -297,9 +299,9 @@
    <LINK srcnodeid="146" srcpinname="Selected Bond" dstnodeid="9" dstpinname="SelectedBond">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="172" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6135" top="8160" width="0" height="0">
+   <BOUNDS type="Node" left="10485" top="7785" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6135" top="8160" width="795" height="240">
+   <BOUNDS type="Box" left="10485" top="7785" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -313,9 +315,9 @@
    <LINK srcnodeid="146" srcpinname="Selected Bond Slice" dstnodeid="172" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="177" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="7410" top="525" width="0" height="0">
+   <BOUNDS type="Node" left="9345" top="510" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7410" top="525" width="795" height="240">
+   <BOUNDS type="Box" left="9345" top="510" width="495" height="300">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Bonds Transform|">
    </PIN>
@@ -326,12 +328,12 @@
    </NODE>
    <LINK srcnodeid="177" srcpinname="Output Node" dstnodeid="146" dstpinname="Bond Transform">
    </LINK>
-   <LINK srcnodeid="177" srcpinname="Output Node" dstnodeid="145" dstpinname="Input Node">
+   <LINK srcnodeid="177" srcpinname="Output Node" dstnodeid="145" dstpinname="Bonds Transform">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="178" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8895" top="525" width="0" height="0">
+   <BOUNDS type="Node" left="12051" top="585" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8895" top="525" width="720" height="240">
+   <BOUNDS type="Box" left="12051" top="585" width="720" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -354,28 +356,10 @@
    </LINK>
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="145" dstpinname="Atom Info">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="180">
-   <BOUNDS type="Node" left="5550" top="927" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="179" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="5535" top="525" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5535" top="525" width="1305" height="255">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="ViewProjection">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="179" srcpinname="Output Enum" dstnodeid="180" dstpinname="Receive String">
-   </LINK>
-   <LINK srcnodeid="180" srcpinname="Input Value" dstnodeid="146" dstpinname="View Projection">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="181" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="14700" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="16254" top="525" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="14700" top="675" width="480" height="480">
+   <BOUNDS type="Box" left="16254" top="525" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -392,30 +376,8 @@
    </NODE>
    <LINK srcnodeid="181" srcpinname="Y Output Value" dstnodeid="146" dstpinname="Enable" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="183">
-   <BOUNDS type="Node" left="13218" top="1161" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Count" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="182">
-   <BOUNDS type="Node" left="13203" top="1629" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="183" srcpinname="Count" dstnodeid="182" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="183" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="182" srcpinname="Output" dstnodeid="146" dstpinname="ShelfAtomSelected">
-   </LINK>
    <NODE systemname="IsNil (Value)" filename="IsNil (Value).v4p" nodename="IsNil (Value)" componentmode="Hidden" id="185">
-   <BOUNDS type="Node" left="9435" top="6810" width="100" height="100">
+   <BOUNDS type="Node" left="12723" top="6762" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -428,6 +390,216 @@
    </LINK>
    <LINK srcnodeid="185" srcpinname="Inverse Output" dstnodeid="26" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="182" srcpinname="Output" dstnodeid="9" dstpinname="ShelfAtomIsSelected">
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="187">
+   <BOUNDS type="Node" left="10044" top="987" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="186" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="10035" top="525" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10035" top="525" width="1335" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="ViewProjection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="186" srcpinname="Output Enum" dstnodeid="187" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="187" srcpinname="Input Value" dstnodeid="146" dstpinname="View Projection">
+   </LINK>
+   <NODE systemname="IsNil (Value)" filename="IsNil (Value).v4p" nodename="IsNil (Value)" componentmode="Hidden" id="188">
+   <BOUNDS type="Node" left="11019" top="2412" width="735" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="11019" top="2412">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="188" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="188" srcpinname="Inverse Output" dstnodeid="146" dstpinname="ShelfAtomSelected">
+   </LINK>
+   <LINK srcnodeid="188" srcpinname="Inverse Output" dstnodeid="9" dstpinname="ShelfAtomSelected">
+   </LINK>
+   <NODE componentmode="InABox" id="195" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="615" top="465" type="Node" width="7425">
+   </BOUNDS>
+   <BOUNDS height="7155" left="615" top="465" type="Box" width="2820">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|MoleculeController have several distinct tasks which are represented by individual subpatches. Please these subpatches for more info.&cr;&lf;&cr;&lf;The first task is to report if one of the atoms or bonds are selected. This information is used by another tasks of the controller and also used in MoleculeView to highlight different parts of the molecule.&cr;&lf;&cr;&lf;Bonds can be selected only if one of the shelf atoms is picked by the user, That is why here is checked if the spread of Selected Shelf Atoms is empty or not.&cr;&lf;&cr;&lf;This subpatch is responsible for another task of the controller - to tell whether a new atom should be added to the molecule or not.&cr;&lf;&cr;&lf;A NewAtomTransformCalculation creates a transformation for a new atom (in case this atom will be added to the molecule).&cr;&lf;&cr;&lf;And the last task is to tell whether one of the atoms should be deleted. This is the case if the spread of selected atoms is not empty AND if the right mouse button is pressed.&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="194" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="1476" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="165" top="1476" type="Box" width="405">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="1.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="193" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="2985" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="405" left="165" top="2985" type="Box" width="420">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="191" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="4221" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="405" left="165" top="4221" type="Box" width="420">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="190" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="5289" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="165" top="5289" type="Box" width="345">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="189" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="6327" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="165" top="6327" type="Box" width="345">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="196" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="4890" top="3387" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="4890" top="3387" type="Box" width="405">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="1.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="197" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9069" top="4482" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="9069" top="4482" type="Box" width="405">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="198" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="8457" top="6579" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="8457" top="6579" type="Box" width="405">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="199" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="12276" top="6924" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="12276" top="6924" type="Box" width="405">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="200" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="10599" top="2325" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="10599" top="2325" type="Box" width="405">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="ItsTheFirstAtom" dstnodeid="145" dstpinname="First Atom Switch">
    </LINK>
    </PATCH>

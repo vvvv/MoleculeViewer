@@ -353,7 +353,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="289">
-   <BOUNDS type="Node" left="12360" top="4066" width="510" height="270">
+   <BOUNDS type="Node" left="12360" top="4006" width="510" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
@@ -424,8 +424,6 @@
    <PIN pinname="Bonds Transform" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="290" dstpinname="Transform In">
-   </LINK>
    <NODE systemname="Atom (Split)" filename="Atom (Split).v4p" nodename="Atom (Split)" componentmode="Hidden" id="291">
    <BOUNDS type="Node" left="13164" top="6870" width="100" height="100">
    </BOUNDS>
@@ -509,5 +507,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="291" srcpinname="Type" dstnodeid="290" dstpinname="Atom Type">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="290" dstpinname="Transform In">
    </LINK>
    </PATCH>
