@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\AtomConstants.v4p" systemname="AtomConstants" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\AtomConstants.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\AtomConstants.v4p" systemname="AtomConstants" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\AtomConstants.v4p">
    <NODE systemname="Fog (EX9.RenderState)" nodename="Fog (EX9.RenderState)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="390" top="1050" width="100" height="100">
    </BOUNDS>
@@ -9,17 +9,19 @@
    </PIN>
    <PIN pinname="Range From" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Range To" slicecount="1" values="1">
+   <PIN pinname="Range To" slicecount="1" values="1.44">
    </PIN>
    <PIN pinname="Enable RangeFog (Vertex Fog)" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Enable" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Pixel Fog Mode" slicecount="1" values="Exp2">
+   <PIN pinname="Pixel Fog Mode" slicecount="1" values="Linear">
    </PIN>
    <PIN pinname="Vertex Fog Mode" slicecount="1" values="None">
    </PIN>
    <PIN pinname="Render State In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Fog Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    </NODE>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="1">
@@ -825,7 +827,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="870" top="555" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.67">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\StatesController.v4p" systemname="StatesController" filename="C:\Users\praxis\Desktop\MoleculeViewer\StatesController.v4p">
-   <BOUNDS type="Window" left="8865" top="4740" width="12240" height="10890">
+   <BOUNDS type="Window" left="3450" top="0" width="12240" height="10890">
    </BOUNDS>
    <NODE systemname="Automata (Animation)" nodename="Automata (Animation)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="7755" top="5142" width="2985" height="270">
@@ -135,7 +135,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="7776" top="2544" width="100" height="100">
+   <BOUNDS type="Node" left="7776" top="1719" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -157,7 +157,7 @@
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="8" dstpinname="Input 3">
    </LINK>
    <NODE systemname="MouseState (System Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="9348" top="792" width="1185" height="270">
+   <BOUNDS type="Node" left="9312" top="792" width="1230" height="270">
    </BOUNDS>
    <PIN pinname="Left Button" visible="1">
    </PIN>
@@ -169,9 +169,9 @@
    <LINK srcnodeid="17" srcpinname="Left Button" dstnodeid="10" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="18" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="9348" top="285" width="0" height="0">
+   <BOUNDS type="Node" left="9312" top="285" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9348" top="285" width="795" height="240">
+   <BOUNDS type="Box" left="9312" top="285" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -233,7 +233,7 @@
    <LINK srcnodeid="15" srcpinname="DoIdle" dstnodeid="41" dstpinname="Set">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="42">
-   <BOUNDS type="Node" left="11250" top="5862" width="100" height="100">
+   <BOUNDS type="Node" left="11250" top="5874" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -242,10 +242,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="15" srcpinname="DoAtomMove" dstnodeid="42" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="DoCameraMove" dstnodeid="42" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="41" dstpinname="Reset">
    </LINK>
    <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="44">
@@ -321,7 +317,7 @@
    <LINK srcnodeid="47" srcpinname="Output" dstnodeid="46" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="8346" top="6036" width="100" height="100">
+   <BOUNDS type="Node" left="8340" top="5874" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -339,7 +335,7 @@
    <LINK srcnodeid="15" srcpinname="DoCameraMove" dstnodeid="48" dstpinname="Input 2">
    </LINK>
    <NODE systemname="IsNil (Value)" filename="IsNil (Value).v4p" nodename="IsNil (Value)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="8748" top="3087" width="100" height="100">
+   <BOUNDS type="Node" left="8193" top="2832" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -516,4 +512,8 @@
    <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
+   <LINK srcnodeid="15" srcpinname="DoCameraMove" dstnodeid="42" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="DoAtomMove" dstnodeid="42" dstpinname="Input 1">
+   </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p" bgcolor="15132390">
-   <BOUNDS type="Window" left="1665" top="1230" width="20175" height="15600">
+   <BOUNDS type="Window" left="3075" top="5460" width="17910" height="15810">
    </BOUNDS>
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="74" debug="0">
    <BOUNDS type="Node" left="3720" top="585" width="100" height="100">
@@ -145,7 +145,7 @@
    </PIN>
    <BOUNDS type="Node" left="11685" top="1335" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11685" top="1335" width="3090" height="1410">
+   <BOUNDS type="Box" left="11685" top="1335" width="3000" height="2970">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -244,12 +244,12 @@
    <PIN pinname="Projection" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Molecule" filename="Molecule.v4p" componentmode="InAWindow" id="597" nodename="Molecule.v4p">
+   <NODE systemname="Molecule" filename="Molecule.v4p" componentmode="Hidden" id="597" nodename="Molecule.v4p">
    <BOUNDS type="Node" left="1590" top="3603" width="1410" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1590" top="3603" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10635" top="765" width="15270" height="11355">
+   <BOUNDS type="Window" left="4350" top="315" width="15840" height="11370">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -521,15 +521,15 @@
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="736" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="638" srcpinname="MouseOver" dstnodeid="736" dstpinname="SliderON" linkstyle="Bezier">
-   <LINKPOINT x="8985" y="4196">
+   <LINKPOINT x="8985" y="4200">
    </LINKPOINT>
-   <LINKPOINT x="7260" y="193">
+   <LINKPOINT x="7275" y="210">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="547" srcpinname="Selected Atom" dstnodeid="736" dstpinname="Selected Shelf Atom" linkstyle="Bezier">
-   <LINKPOINT x="150" y="2786">
+   <LINKPOINT x="360" y="3555">
    </LINKPOINT>
-   <LINKPOINT x="4785" y="508">
+   <LINKPOINT x="2235" y="15">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="736" srcpinname="Camera Enable" dstnodeid="504" dstpinname="Enable">

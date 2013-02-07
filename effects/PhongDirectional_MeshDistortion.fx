@@ -37,7 +37,7 @@ sampler noiseSamp = sampler_state    //sampler for doing the texture-lookup
 };
 
 // Vars
-float scale;
+float noiseScale;
 bool noiseEnable;
 
 float4x4 tTex: TEXTUREMATRIX <string uiname="Texture Transform";>;
@@ -84,7 +84,7 @@ vs2ps VS(
 		// scale the normal with the noise value and add it
 		// to the original position
 		// Result: original posiiton will be moved in the normal's direction
-		PosO=PosO + float4(NormO*noiseValue*scale, 1.0);
+		PosO=PosO + float4(NormO*noiseValue*noiseScale, 1.0);
 	}
 	
     //position (projected)

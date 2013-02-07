@@ -5,7 +5,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5655" top="1740" width="7015" height="8970">
    </BOUNDS>
-   <BOUNDS type="Window" left="1350" top="345" width="14760" height="10440">
+   <BOUNDS type="Window" left="1545" top="660" width="14760" height="10875">
    </BOUNDS>
    <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
    </PIN>

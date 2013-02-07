@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\SelectAtomOrBond.v4p" systemname="SelectAtomOrBond" filename="C:\Work\MoleculeViewer\SelectAtomOrBond.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\SelectAtomOrBond.v4p" systemname="SelectAtomOrBond" filename="C:\Work\MoleculeViewer\SelectAtomOrBond.v4p">
    <BOUNDS type="Window" left="2790" top="6945" width="18120" height="7905">
    </BOUNDS>
    <NODE systemname="Button (3d Mesh)" filename="%VVVV%\lib\nodes\modules\3D\Button (3d Mesh).v4p" nodename="Button (3d Mesh)" componentmode="Hidden" id="11">
@@ -167,9 +167,9 @@
    <NODE id="29" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
-   <BOUNDS type="Box" left="14085" top="345" width="750" height="240">
+   <BOUNDS type="Box" left="14085" top="360" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="14085" top="345" width="750" height="240">
+   <BOUNDS type="Node" left="14085" top="360" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -177,9 +177,9 @@
    <NODE id="28" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|View Projection|">
    </PIN>
-   <BOUNDS type="Box" left="12810" top="345" width="750" height="240">
+   <BOUNDS type="Box" left="12810" top="360" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="12810" top="345" width="750" height="240">
+   <BOUNDS type="Node" left="12810" top="360" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -187,9 +187,9 @@
    <NODE id="27" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Info|">
    </PIN>
-   <BOUNDS type="Box" left="1635" top="345" width="750" height="240">
+   <BOUNDS type="Box" left="4245" top="360" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1635" top="345" width="750" height="240">
+   <BOUNDS type="Node" left="4245" top="360" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -197,9 +197,9 @@
    <NODE id="25" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Bond Membership|">
    </PIN>
-   <BOUNDS type="Box" left="11199" top="330" width="750" height="240">
+   <BOUNDS type="Box" left="11205" top="360" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11199" top="330" width="750" height="240">
+   <BOUNDS type="Node" left="11205" top="360" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -207,9 +207,9 @@
    <LINK srcnodeid="30" srcpinname="Output Node" dstnodeid="24" dstpinname="Mesh">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="31" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="3120" top="345" width="0" height="0">
+   <BOUNDS type="Node" left="3315" top="360" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3120" top="345" width="720" height="240">
+   <BOUNDS type="Box" left="3315" top="360" width="720" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -219,9 +219,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="34" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="4155" top="345" width="0" height="0">
+   <BOUNDS type="Node" left="5175" top="360" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4155" top="345" width="795" height="240">
+   <BOUNDS type="Box" left="5175" top="360" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -243,9 +243,9 @@
    <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Bond Membership">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="15795" top="345" width="0" height="0">
+   <BOUNDS type="Node" left="15795" top="360" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="15795" top="345" width="795" height="240">
+   <BOUNDS type="Box" left="15795" top="360" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -283,9 +283,9 @@
    <LINK srcnodeid="31" srcpinname="Output Node" dstnodeid="11" dstpinname="Transform Mesh">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="42" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="6525" top="345" width="0" height="0">
+   <BOUNDS type="Node" left="6525" top="360" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6525" top="345" width="795" height="240">
+   <BOUNDS type="Box" left="6525" top="360" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -335,9 +335,9 @@
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="52" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="17250" top="315" width="0" height="0">
+   <BOUNDS type="Node" left="17250" top="360" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="17250" top="315" width="480" height="480">
+   <BOUNDS type="Box" left="17250" top="360" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -401,5 +401,17 @@
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="11925" top="5925" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11925" top="5925" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="63" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

@@ -3,7 +3,7 @@
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="0" systemname="Renderer (EX9)">
    <BOUNDS type="Node" left="1530" top="2781" width="3615" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="19635" top="1755" width="8295" height="8160">
+   <BOUNDS type="Window" left="18945" top="1755" width="8985" height="8160">
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>

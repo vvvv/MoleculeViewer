@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\praxis\Desktop\MoleculeViewer\NewAtomTransformCalculation.v4p" systemname="NewAtomTransformCalculation" filename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p" systemname="NewAtomTransformCalculation" filename="C:\Work\MoleculeViewer\NewAtomTransformCalculation.v4p">
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2472" top="1500" width="675" height="270">
    </BOUNDS>
@@ -107,7 +107,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Molecule Atom Types" visible="1">
+   <PIN pinname="Molecule Atom Types" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
@@ -213,6 +213,8 @@
    </BOUNDS>
    <PIN pinname="Typ" visible="1">
    </PIN>
+   <PIN pinname="Type" visible="1">
+   </PIN>
    </NODE>
    <NODE id="18" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="1866" top="960" width="0" height="0">
@@ -230,8 +232,6 @@
    </NODE>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Selected Atom">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Typ" dstnodeid="9" dstpinname="Molecule Atom Types">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="786" top="510" width="0" height="0">
    </BOUNDS>
@@ -247,5 +247,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Type" dstnodeid="9" dstpinname="Molecule Atom Types">
    </LINK>
    </PATCH>

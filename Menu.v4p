@@ -185,7 +185,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="20085" top="6783" width="5445" height="6220">
    </BOUNDS>
-   <BOUNDS type="Window" left="1170" top="5040" width="8985" height="6720">
+   <BOUNDS type="Window" left="1170" top="5040" width="9810" height="5625">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -489,7 +489,7 @@
    <NODE systemname="MenuToggleButton" filename="MenuToggleButton.v4p" nodename="MenuToggleButton.v4p" componentmode="Hidden" id="149" stayontop="0">
    <BOUNDS type="Node" left="17010" top="6783" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="300" top="5475" width="18555" height="10200">
+   <BOUNDS type="Window" left="1560" top="5640" width="18555" height="10200">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -769,7 +769,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="182" systemname="IOBox (String)">
    <BOUNDS type="Node" left="12060" top="5520" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="12060" top="5520" width="495" height="240">
+   <BOUNDS type="Box" left="12060" top="5520" width="960" height="240">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="Save">
    </PIN>
@@ -1482,4 +1482,46 @@
    </NODE>
    <LINK srcnodeid="265" srcpinname="Y Output Value" dstnodeid="16" dstpinname="XY">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="266" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="21405" top="5460" width="1515" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="21405" top="5460" width="915" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Three &cr;&lf;lines|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="267" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="19554" top="5235" width="1515" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19554" top="5235" width="705" height="810">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Two&cr;&lf;Toggle Buttons|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="268" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="16620" top="4095" width="1515" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16620" top="4095" width="1059" height="540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Two&cr;&lf;Bang Buttons|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

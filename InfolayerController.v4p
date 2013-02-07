@@ -497,6 +497,8 @@
    </PIN>
    <PIN pinname="Typ" visible="1">
    </PIN>
+   <PIN pinname="Type" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="95" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="2745" top="780" width="0" height="0">
@@ -516,8 +518,6 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="94" dstpinname="Selected Atom">
    </LINK>
-   <LINK srcnodeid="94" srcpinname="Typ" dstnodeid="38" dstpinname="Index">
-   </LINK>
    <NODE systemname="IsNil (Value)" filename="IsNil (Value).v4p" nodename="IsNil (Value)" componentmode="Hidden" id="96">
    <BOUNDS type="Node" left="4005" top="2280" width="100" height="100">
    </BOUNDS>
@@ -531,5 +531,7 @@
    <LINK srcnodeid="96" srcpinname="Inverse Output" dstnodeid="20" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input 2" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Type" dstnodeid="38" dstpinname="Index">
    </LINK>
    </PATCH>

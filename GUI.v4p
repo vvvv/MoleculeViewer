@@ -254,11 +254,11 @@
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="167" dstpinname="Mouse">
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="167" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="167" srcpinname="MouseOver Layer" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="88" srcpinname="Output Node" dstnodeid="167" dstpinname="Keyboard">
+   <LINK srcnodeid="88" srcpinname="Output Node" dstnodeid="167" dstpinname="Keyboard" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="184">
    <BOUNDS type="Node" left="12420" top="807" width="100" height="100">
