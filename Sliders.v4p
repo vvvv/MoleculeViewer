@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Sliders.v4p" systemname="Sliders" filename="C:\Work\MoleculeViewer\Sliders.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug29.1.dtd" >
+   <PATCH nodename="C:\Users\Joreg\dev\github\MoleculeViewer\Sliders.v4p" systemname="Sliders" filename="C:\Work\MoleculeViewer\Sliders.v4p">
    <NODE systemname="Text (EX9)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Text (EX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5820" top="6165" width="100" height="100">
    </BOUNDS>
@@ -303,7 +303,7 @@
    </BOUNDS>
    <PIN pinname="CountXY" visible="1">
    </PIN>
-   <PIN pinname="Internal Value" slicecount="3" values="0.742463020057222,0.948492604011444,0">
+   <PIN pinname="Internal Value" slicecount="3" values="0.65232507707725,0.832600963037194,0">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -603,7 +603,7 @@
    </BOUNDS>
    <BOUNDS height="4380" left="570" top="225" type="Box" width="2940">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Sliders was built using the Slider (GUI) node, which outputs spread of transformations for a handle and a bar of each slider and their colors.&cr;&lf;&cr;&lf;These transformations can be used for example for the simple Quads to visualize these elements.&cr;&lf;&cr;&lf;Text labes are drawn with a Text (EX9) node which is spreaded with transforms and string inputs.&cr;&lf;&cr;&lf;***&cr;&lf;A LinearSpread (Spread) is used to spread labels vertcally. By default it outputs spread of values in a range (-0,5, 0,5). This spread has to be reversed, because vertical axis is in the range (0.5, -0.5): top to bottom. |">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Sliders was built using the Slider (GUI) node, which outputs spread of transformations for a handle and a bar of each slider and their colors.&cr;&lf;&cr;&lf;These transformations can be used for example for the simple Quads to visualize these elements.&cr;&lf;&cr;&lf;Text labes are drawn with a Text (EX9) node which is spreaded with transforms and string inputs.&cr;&lf;&cr;&lf;A LinearSpread (Spreads) is used to spread labels vertically. By default it returns a spread of values in a range (-0,5, 0,5). This spread has to be reversed, because the vertical axis is in the range (0.5, -0.5): top to bottom. |">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

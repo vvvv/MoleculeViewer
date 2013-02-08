@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\MenuToggleButton.v4p" systemname="MenuToggleButton" filename="C:\Work\MoleculeViewer\MenuToggleButton.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug29.1.dtd" >
+   <PATCH nodename="C:\Users\Joreg\dev\github\MoleculeViewer\MenuToggleButton.v4p" systemname="MenuToggleButton" filename="C:\Work\MoleculeViewer\MenuToggleButton.v4p">
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="8130" top="7323" width="100" height="100">
    </BOUNDS>
@@ -182,7 +182,7 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Color Output" dstnodeid="21" dstpinname="Input 1" linkstyle="PolyLine">
    </LINK>
-   <BOUNDS type="Window" left="300" top="5475" width="18555" height="10200">
+   <BOUNDS type="Window" left="1560" top="5640" width="18555" height="10200">
    </BOUNDS>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="18" dstpinname="View Projection">
    </LINK>
@@ -623,7 +623,7 @@
    </BOUNDS>
    <BOUNDS height="8685" left="570" top="225" type="Box" width="3210">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|A transformation is prepared to the button.&cr;&lf;&cr;&lf;The Toggle Button is constructed from two Quads, a bigger and smaller one, sitting on top of each other. Cons (Transform)  concatenates two slices into one spread (thus spreading the Quad). First slice is the original transformation and the second one is the scaled down version.&cr;&lf;&cr;&lf;Original tranformation is also used for the Button (3d Quad) in order to check if the mouse is over the button.&cr;&lf;&cr;&lf;If the mouse is over the button, a LinearFilter (Animation) interpolates smoothly between 0 and 1. And this interpolated value is used to gradually switch between the Default and Over colors, representing the button.&cr;&lf;&cr;&lf;And also If the mouse is over the button AND mouse left button is pressed, then Toggle (Animation) switches its state and the patch reports On status to its parent. &cr;&lf;&cr;&lf;This state is used two smoothly switch colors for the label, which is drawn using Text (EX9).&cr;&lf;&cr;&lf;***&cr;&lf;A Button Color Default input is duplicated so many times as there slices in the output spread of the Button (3d Quad). And this spread of default colors is concatenated with a spread or Default/Over or Active colors (which are already spreaded because of the spreaded output of the Button (3d Quad and Spreaded input of the Switch (Color Input)) to give a color for inner and outer Quads of every button.&cr;&lf;&cr;&lf;|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|A transformation is prepared to the button.&cr;&lf;&cr;&lf;The Toggle Button is constructed from two Quads, a bigger and smaller one, sitting on top of each other. Cons (Transform)  concatenates two slices into one spread (thus spreading the Quad). First slice is the original transformation and the second one is the scaled down version.&cr;&lf;&cr;&lf;Original tranformation is also used for the Button (3d Quad) in order to check if the mouse is over the button.&cr;&lf;&cr;&lf;If the mouse is over the button, a LinearFilter (Animation) interpolates smoothly between 0 and 1. And this interpolated value is used to gradually switch between the Default and Over colors, representing the button.&cr;&lf;&cr;&lf;And also If the mouse is over the button AND mouse left button is pressed, then Toggle (Animation) switches its state and the patch reports On status to its parent. &cr;&lf;&cr;&lf;This state is used two smoothly switch colors for the label, which is drawn using Text (EX9).&cr;&lf;&cr;&lf;The &apos;Button Color Default&apos; input is duplicated so many times as there slices in the output spread of the Button (3d Quad). And this spread of default colors is concatenated with a spread or Default/Over or Active colors (which are already spreaded because of the spreaded output of the Button (3d Quad) and spreaded input of the Switch (Color Input)) to give a color for inner and outer Quads of every button.&cr;&lf;&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -863,13 +863,13 @@
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="58">
    <BOUNDS type="Node" left="9585" top="5790" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input" visible="1" slicecount="2" values="0">
    </PIN>
    <PIN pinname="Count" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="58" srcpinname="Count" dstnodeid="57" dstpinname="Select">
    </LINK>
-   <LINK srcnodeid="47" srcpinname="Output" dstnodeid="58" dstpinname="Input">
+   <LINK srcnodeid="18" srcpinname="Mouse Over" dstnodeid="58" dstpinname="Input">
    </LINK>
    </PATCH>

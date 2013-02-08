@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug29.1.dtd" >
+   <PATCH nodename="C:\Users\Joreg\dev\github\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -20,7 +20,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="7770" top="7410" width="16665" height="9660">
+   <BOUNDS type="Window" left="6930" top="2160" width="16665" height="9660">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="8610" top="6210" width="0" height="0">
@@ -631,7 +631,7 @@
    </BOUNDS>
    <BOUNDS height="8475" left="570" top="225" type="Box" width="3270">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|A Menu subpatch draws all the sliders, buttons, fields, and outputs their states and values.&cr;&lf;&cr;&lf;These values and states can be seen as *** global *** values to the whole app and that  is why their are send directly to the different parts of the app instead of taking a long path through the nodes.&cr;&lf;&cr;&lf;***&cr;&lf;The Menu subpatch inself has no logic and Animation nodes. It has subpatches for the different GUI elements (which in some cases have their small logic to define their own states) and Transform nodes to place this elements on the screen. As a whole the Menu subpatch is passive.&cr;&lf;&cr;&lf;In respond to pressing Menu button a Menu layer has to be moved in or out of the screen. This animation is placed outside of the Menu subpatch. If the left mouse button bangs (TogEdge (Animation)) AND the Menu reports that the mouse is over the MenuButton, then the Toggle (Animation) state changes and over the FrameDelay it is used to control the X value of the Menu.&cr;&lf;&cr;&lf;Newton (Animation) smoothes the transition between the toggled states.&cr;&lf;&cr;&lf;It&apos;s output value is used to control InputMorph (Value) which is just interpolates between two X values used to position the Manu on the screen.&cr;&lf;&cr;&lf;This subpatch just draws the title on top of the screen.|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|A Menu subpatch draws all the sliders, buttons, fields, and returns their states and values.&cr;&lf;&cr;&lf;These values and states can be seen as global values to the whole app and that is why they are sent directly to the different parts of the app instead of taking a long path through the nodes.&cr;&lf;&cr;&lf;The Menu subpatch itself has no logic and Animation nodes. It has subpatches for the different GUI elements (which in some cases have their small logic to define their own states) and Transform nodes to place these elements on the screen. As a whole the Menu subpatch is passive.&cr;&lf;&cr;&lf;In respond to pressing the Menu button a Menu layer has to be moved in or out of the screen. This animation is placed outside of the Menu subpatch. If the left mouse button bangs (TogEdge (Animation)) AND the Menu reports that the mouse is over the MenuButton, then the Toggle (Animation) state changes and over the FrameDelay it is used to control the X value of the Menu.&cr;&lf;&cr;&lf;Newton (Animation) smoothes the transition between the toggled states.&cr;&lf;&cr;&lf;It&apos;s output value is used to control InputMorph (Value) which is just interpolates between two X values used to position the Manu on the screen.&cr;&lf;&cr;&lf;This subpatch just draws the title on top of the screen.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

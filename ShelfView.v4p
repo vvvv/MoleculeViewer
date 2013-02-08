@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\ShelfView.v4p" systemname="ShelfView" filename="C:\Work\MoleculeViewer\ShelfView.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug29.1.dtd" >
+   <PATCH nodename="C:\Users\Joreg\dev\github\MoleculeViewer\ShelfView.v4p" systemname="ShelfView" filename="C:\Work\MoleculeViewer\ShelfView.v4p">
    <NODE id="4" systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Mesh" visible="1" pintype="Output">
    </PIN>
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6360" top="4605" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" values="||" visible="1">
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
    <BOUNDS type="Window" left="3825" top="975" width="11805" height="8025">
@@ -225,7 +225,7 @@
    </BOUNDS>
    <BOUNDS height="7305" left="735" top="225" type="Box" width="3270">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Light position should not be changed whith camera movements. So the lights position is multiplied by Inversed ViewProjection matrix.&cr;&lf;&cr;&lf;Sphere (EX9.Geometry) is used as a mesh for the Atoms.&cr;&lf;&cr;&lf;Atoms of the shelf are GUI elements, placed in some kind of Head-Up display, so they are in 3D scene, but stay always in the same place independent of the 3d camera. Because of the same Z coordinate they will Z-fight (http://en.wikipedia.org/wiki/Z-fighting).&cr;&lf;&cr;&lf;***&cr;&lf;The simple hack to prevent this is to use a ZWriteEnable (EX9.RenderState) is used with a ZWrite Enable pin set to 0. Now, 3d buffer is disabled for writing, so every object is just drawn on top of the previous one.&cr;&lf;&cr;&lf;An advanced solution is to sort all objects before hand and draw them in the right order. So the top most one will not be obscured.&cr;&lf;***&cr;&lf;&cr;&lf;***&cr;&lf;PhongDirectional (EX9.Effect) is a shader applied to the shelf atoms.&cr;&lf;***|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Light position should not be changed whith camera movements. So the lights position is multiplied by Inversed ViewProjection matrix.&cr;&lf;&cr;&lf;Sphere (EX9.Geometry) is used as a mesh for the Atoms.&cr;&lf;&cr;&lf;Atoms of the shelf are GUI elements, placed in some kind of Head-Up display, so they are in 3D scene, but stay always in the same place independent of the 3d camera. Because of the same Z coordinate they will Z-fight (http://en.wikipedia.org/wiki/Z-fighting).&cr;&lf;&cr;&lf;The simple hack to prevent this is to use a ZWriteEnable (EX9.RenderState) with its ZWrite Enable pin set to 0. Like this the Depthbuffer is ignored when drawing pixels and every object is just drawn on top of the previous one.&cr;&lf;&cr;&lf;PhongDirectional (EX9.Effect) is the vertex-/pixel-shader used to draw the shelf atoms.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -355,9 +355,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="115" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="285" top="6306" type="Node" width="315">
+   <BOUNDS height="270" left="285" top="4821" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="285" top="6306" type="Box" width="420">
+   <BOUNDS height="405" left="285" top="4821" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
    </PIN>
@@ -373,5 +373,13 @@
    <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="78" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Alpha">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="116" systemname="IOBox (Color)">
+   <BOUNDS type="Node" left="8475" top="5175" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8475" top="5175" width="2250" height="480">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Input Value" dstnodeid="116" dstpinname="Color Input">
    </LINK>
    </PATCH>
