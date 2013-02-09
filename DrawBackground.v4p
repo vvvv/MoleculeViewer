@@ -32,26 +32,16 @@
    <PIN pinname="Alpha" slicecount="1" values="0.24">
    </PIN>
    </NODE>
-   <NODE id="3" systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5304" top="1500" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Render State Out" visible="1">
-   </PIN>
-   <PIN pinname="ZWrite Enable" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="3" srcpinname="Render State Out" dstnodeid="1" dstpinname="Render State">
-   </LINK>
    <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Transform">
    </PIN>
-   <BOUNDS type="Box" left="6165" top="495" width="750" height="240">
+   <BOUNDS type="Box" left="6165" top="345" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6165" top="495" width="750" height="240">
+   <BOUNDS type="Node" left="6165" top="345" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="1" dstpinname="Transform">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="Color">
    </LINK>
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
@@ -69,22 +59,12 @@
    <NODE id="6" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
-   <BOUNDS type="Box" left="7065" top="495" width="750" height="240">
+   <BOUNDS type="Box" left="7065" top="345" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7065" top="495" width="750" height="240">
+   <BOUNDS type="Node" left="7065" top="345" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="0" dstpinname="Mouse">
-   </LINK>
-   <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|View Projection|">
-   </PIN>
-   <BOUNDS type="Box" left="8265" top="495" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8265" top="495" width="750" height="240">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="0" dstpinname="View Projection">
    </LINK>
    <NODE id="8" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Mouse Over|">
@@ -96,7 +76,7 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Mouse Over" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="1170" top="5040" width="10005" height="5385">
+   <BOUNDS type="Window" left="0" top="7500" width="10005" height="5385">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="7659" top="1290" width="0" height="0">
@@ -190,4 +170,24 @@
    <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="4620" top="1365" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="19" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="4635" top="960" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4635" top="960" width="1395" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="|GUI RenderState|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output Enum" dstnodeid="18" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Input Value" dstnodeid="1" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="1" dstpinname="Transform">
+   </LINK>
    </PATCH>

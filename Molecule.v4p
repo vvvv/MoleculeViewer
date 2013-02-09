@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug29.1.dtd" >
-   <PATCH nodename="C:\Users\Joreg\dev\github\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
-   <BOUNDS type="Window" left="4350" top="315" width="16245" height="11370">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\Molecule.v4p" systemname="Molecule" filename="C:\Work\MoleculeViewer\Molecule.v4p">
+   <BOUNDS type="Window" left="4350" top="315" width="16245" height="10575">
    </BOUNDS>
    <NODE systemname="MoleculeView" filename="MoleculeView.v4p" nodename="MoleculeView.v4p" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="8775" top="8010" width="2205" height="270">
@@ -113,9 +113,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="11397" top="9060" width="0" height="0">
+   <BOUNDS type="Node" left="11367" top="9075" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="11397" top="9060" width="1050" height="240">
+   <BOUNDS type="Box" left="11367" top="9075" width="1050" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -317,7 +317,7 @@
    </BOUNDS>
    <BOUNDS height="8280" left="615" top="465" type="Box" width="3720">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|The Molecule is completely built using the Model-View-Controller design pattern.&cr;&lf;&cr;&lf;***&cr;&lf;Only one inconsistency is made: there is a little dependency of the View from the Controller. And the View sends its meshes to the Controller. In a pure MVC pattern a View should be completely separated from a Controller.&cr;&lf;&cr;&lf;But in some cases (like here) some simple shortcuts are OK.&cr;&lf;&cr;&lf;This subpatch is a Model of a Molecule. No, it&apos;s not a 3d mesh, but only the Data needed to represent the Molecule on the screen. Or the other way round - what is on the screen is just one possible way to represent a molecule which this model holds. So the subpatch holds and maintains the data.&cr;&lf;&cr;&lf;MoleculeView draws the molecule on the screen. It takes it&apos;s data from the MoleculeModel. Only 2 exceptions: Selected Atom and Selected Bond values are coming from the MoleculeController.&cr;&lf;&cr;&lf;This subpatch takes the information from the Model, also it takes user input and meshes from the View, with all these inputs it does some math and logic and updates the model if is needed. And it tells to MoleculeView what is selected by the user. So it controls what is happening.&cr;&lf;&cr;&lf;MoleculeWriter saves all the data about the molecule in a file.&cr;&lf;&cr;&lf;MoleculeLoader loads a file, parses it and initialises the model with the loaded data.&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|The Molecule is completely built using the Model-View-Controller design pattern.&cr;&lf;&cr;&lf;Only one inconsistency is made: there is a little dependency of the View from the Controller. And the View sends its meshes to the Controller. In a pure MVC pattern a View should be completely separated from a Controller.&cr;&lf;&cr;&lf;But in some cases (like here) some simple shortcuts are OK.&cr;&lf;&cr;&lf;This subpatch is a Model of a Molecule. No, it&apos;s not a 3d mesh, but only the Data needed to represent the Molecule on the screen. Or the other way round - what is on the screen is just one possible way to represent a molecule which this model holds. So the subpatch holds and maintains the data.&cr;&lf;&cr;&lf;MoleculeView draws the molecule on the screen. It takes it&apos;s data from the MoleculeModel. Only 2 exceptions: Selected Atom and Selected Bond values are coming from the MoleculeController.&cr;&lf;&cr;&lf;This subpatch takes the information from the Model, also it takes user input and meshes from the View, with all these inputs it does some math and logic and updates the model if is needed. And it tells to MoleculeView what is selected by the user. So it controls what is happening.&cr;&lf;&cr;&lf;MoleculeWriter saves all the data about the molecule in a file.&cr;&lf;&cr;&lf;MoleculeLoader loads a file, parses it and initialises the model with the loaded data.&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -327,9 +327,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="84" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="3192" type="Node" width="315">
+   <BOUNDS height="270" left="165" top="2952" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="390" left="165" top="3192" type="Box" width="405">
+   <BOUNDS height="390" left="165" top="2952" type="Box" width="405">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="1.">
    </PIN>
@@ -343,9 +343,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="83" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="4845" type="Node" width="315">
+   <BOUNDS height="270" left="165" top="4605" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="165" top="4845" type="Box" width="420">
+   <BOUNDS height="405" left="165" top="4605" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
    </PIN>
@@ -453,9 +453,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="92" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="5925" type="Node" width="315">
+   <BOUNDS height="270" left="165" top="5685" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="165" top="5925" type="Box" width="420">
+   <BOUNDS height="405" left="165" top="5685" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
    </PIN>
@@ -469,9 +469,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="93" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="7593" type="Node" width="315">
+   <BOUNDS height="270" left="165" top="6933" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="390" left="165" top="7593" type="Box" width="345">
+   <BOUNDS height="390" left="165" top="6933" type="Box" width="345">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
    </PIN>
@@ -485,9 +485,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="94" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="8235" type="Node" width="315">
+   <BOUNDS height="270" left="165" top="7605" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="390" left="165" top="8235" type="Box" width="345">
+   <BOUNDS height="390" left="165" top="7605" type="Box" width="345">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
    </PIN>

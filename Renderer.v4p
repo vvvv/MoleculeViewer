@@ -3,7 +3,7 @@
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="0" systemname="Renderer (EX9)">
    <BOUNDS type="Node" left="1530" top="2781" width="3615" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="18945" top="1755" width="8985" height="8160">
+   <BOUNDS type="Window" left="18720" top="2160" width="8985" height="8160">
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Actual Backbuffer Height" visible="1">
    </PIN>
-   <PIN pinname="Aspect Ratio" visible="1">
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
    </PIN>
@@ -162,8 +162,6 @@
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="0" dstpinname="Layers">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="0" dstpinname="Aspect Ratio">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="8" dstpinname="X">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="8" dstpinname="Y">
@@ -243,29 +241,5 @@
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Y">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="22" dstpinname="X">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="24" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="4293" top="990" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4293" top="990" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="View">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="24" srcpinname="Output Node" dstnodeid="0" dstpinname="View">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="25" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="5340" top="990" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5340" top="990" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Projection">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="0" dstpinname="Projection">
    </LINK>
    </PATCH>

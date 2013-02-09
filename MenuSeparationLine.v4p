@@ -17,7 +17,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6852" top="3003" width="1740" height="540">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="2" values="|0.15343,0.15343,0.15343,1.00000|,|0.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="2" values="|0.26674,0.26674,0.26674,1.00000|,|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -31,7 +31,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7005" top="1425" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.001">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.0015">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -107,18 +107,6 @@
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Bin Size">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output Node" dstnodeid="32" dstpinname="Input Node">
-   </LINK>
-   <NODE systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="4830" top="3072" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Render State In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Render State Out" visible="1">
-   </PIN>
-   <PIN pinname="ZWrite Enable" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="34" srcpinname="Render State Out" dstnodeid="0" dstpinname="Render State">
    </LINK>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="35">
    <BOUNDS type="Node" left="6045" top="2175" width="100" height="100">
@@ -250,24 +238,6 @@
    </NODE>
    <LINK srcnodeid="1" srcpinname="Color Output" dstnodeid="0" dstpinname="Color">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5127" top="2550" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5127" top="2550" width="420" height="420">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="34" dstpinname="ZWrite Enable">
-   </LINK>
    <NODE componentmode="InABox" id="50" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="7887" top="789" type="Node" width="315">
    </BOUNDS>
@@ -346,4 +316,22 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="4965" top="3180" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="52" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="4980" top="2700" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4980" top="2700" width="1470" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="|GUI RenderState|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Output Enum" dstnodeid="53" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Input Value" dstnodeid="0" dstpinname="Render State">
+   </LINK>
    </PATCH>

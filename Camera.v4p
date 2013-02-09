@@ -92,7 +92,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="PitchYawDistance Default">
    </LINK>
-   <BOUNDS type="Window" left="8775" top="2535" width="11880" height="7410">
+   <BOUNDS type="Window" left="8775" top="2535" width="11880" height="8625">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="6804" top="3165" width="0" height="0">
@@ -209,15 +209,15 @@
    <LINK srcnodeid="54" srcpinname="Output String" dstnodeid="55" dstpinname="Send String">
    </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="6048" top="5943" width="100" height="100">
+   <BOUNDS type="Node" left="4623" top="6033" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="52" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6288" top="5541" width="0" height="0">
+   <BOUNDS type="Node" left="4863" top="5631" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6288" top="5541" width="1110" height="255">
+   <BOUNDS type="Box" left="4863" top="5631" width="1110" height="255">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="ViewProjection">
    </PIN>
@@ -313,5 +313,69 @@
    <LINK srcnodeid="0" srcpinname="View Transform" dstnodeid="57" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="0" srcpinname="View Transform" dstnodeid="31" dstpinname="Transform In 1">
+   </LINK>
+   <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="93">
+   <BOUNDS type="Node" left="5490" top="6810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In 1" visible="1">
+   </PIN>
+   <PIN pinname="Transform In 2" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Transform Out" dstnodeid="93" dstpinname="Transform In 1">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="94">
+   <BOUNDS type="Node" left="6285" top="5970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="95" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="6270" top="5580" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6270" top="5580" width="1095" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="AspectRatio">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="95" srcpinname="Output Enum" dstnodeid="94" dstpinname="Receive String">
+   </LINK>
+   <NODE systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden" id="96">
+   <BOUNDS type="Node" left="5745" top="6405" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Input Value" dstnodeid="96" dstpinname="Source">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="Transform Out" dstnodeid="93" dstpinname="Transform In 2">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="97">
+   <BOUNDS type="Node" left="5490" top="7530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Transform Out" dstnodeid="97" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="98" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5745" top="7155" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5745" top="7155" width="2655" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="ViewProjectionInversedAspectRatio">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="devnul">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Output String" dstnodeid="97" dstpinname="Send String">
    </LINK>
    </PATCH>

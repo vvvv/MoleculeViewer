@@ -114,7 +114,7 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="4" dstpinname="Send String">
    </LINK>
-   <BOUNDS type="Window" left="6150" top="1155" width="12645" height="13995">
+   <BOUNDS type="Window" left="3750" top="1005" width="12645" height="13995">
    </BOUNDS>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="6930" top="6240" width="705" height="270">
@@ -861,5 +861,91 @@
    <LINK srcnodeid="63" srcpinname="Output String" dstnodeid="65" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output String" dstnodeid="80" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Blend (EX9.RenderState Advanced)" nodename="Blend (EX9.RenderState Advanced)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="5295" top="1575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="Destination Blend Mode">
+   </PIN>
+   <PIN pinname="Source Blend Mode">
+   </PIN>
+   <PIN pinname="Render State In" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="82" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="5655" top="1095" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5655" top="1095" width="885" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="SrcAlpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="82" srcpinname="Output Enum" dstnodeid="83" dstpinname="Source Blend Mode">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="81" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="6705" top="1095" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6705" top="1095" width="1095" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="InvSrcColor">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Output Enum" dstnodeid="83" dstpinname="Destination Blend Mode">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="4905" top="2565" width="300" height="270">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="84" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5130" top="2115" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5130" top="2115" width="1695" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|GUI RenderState|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="devnul">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Output String" dstnodeid="85" dstpinname="Send String">
+   </LINK>
+   <NODE systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden" id="87">
+   <BOUNDS type="Node" left="4890" top="720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="ZWrite Enable">
+   </PIN>
+   <PIN pinname="Render State In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="86" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5190" top="120" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5190" top="120" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Y Output Value" dstnodeid="87" dstpinname="ZWrite Enable">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Render State Out" dstnodeid="83" dstpinname="Render State In">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Render State Out" dstnodeid="85" dstpinname="Input Value">
    </LINK>
    </PATCH>

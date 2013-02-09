@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug29.1.dtd" >
-   <PATCH nodename="C:\Users\Joreg\dev\github\MoleculeViewer\StatesController.v4p" systemname="StatesController" filename="C:\Users\praxis\Desktop\MoleculeViewer\StatesController.v4p">
-   <BOUNDS type="Window" left="3450" top="0" width="12240" height="10890">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\StatesController.v4p" systemname="StatesController" filename="C:\Users\praxis\Desktop\MoleculeViewer\StatesController.v4p">
+   <BOUNDS type="Window" left="3450" top="0" width="13305" height="10890">
    </BOUNDS>
    <NODE systemname="Automata (Animation)" nodename="Automata (Animation)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="7755" top="5142" width="2985" height="270">
@@ -59,7 +59,7 @@
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="15" dstpinname="OnShelf">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="10989" top="4365" width="100" height="100">
+   <BOUNDS type="Node" left="11694" top="2640" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -135,7 +135,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="7776" top="1719" width="100" height="100">
+   <BOUNDS type="Node" left="10281" top="3564" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -195,7 +195,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="SliderON">
+   <PIN pinname="Descriptive Name" slicecount="1" values="OnMenu">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -460,8 +460,6 @@
    <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="Down Edge" dstnodeid="15" dstpinname="OnMouseRelease">
-   </LINK>
    <NODE componentmode="InABox" id="61" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="7284" top="6711" type="Node" width="315">
    </BOUNDS>
@@ -494,8 +492,6 @@
    <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="15" dstpinname="OnSlider">
-   </LINK>
    <NODE componentmode="InABox" id="63" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="7230" top="5025" type="Node" width="315">
    </BOUNDS>
@@ -515,5 +511,33 @@
    <LINK srcnodeid="15" srcpinname="DoCameraMove" dstnodeid="42" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="15" srcpinname="DoAtomMove" dstnodeid="42" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="15" dstpinname="OnSlider">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="11745" top="3180" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Down Edge" dstnodeid="64" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="66">
+   <BOUNDS type="Node" left="10905" top="2640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="66" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Down Edge" dstnodeid="64" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Output" dstnodeid="15" dstpinname="OnMouseRelease">
    </LINK>
    </PATCH>

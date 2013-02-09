@@ -146,16 +146,6 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE id="28" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|View Projection|">
-   </PIN>
-   <BOUNDS type="Box" left="10485" top="360" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10485" top="360" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
    <NODE id="27" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Info|">
    </PIN>
@@ -205,10 +195,6 @@
    <LINK srcnodeid="29" srcpinname="Output Node" dstnodeid="24" dstpinname="Mouse">
    </LINK>
    <LINK srcnodeid="29" srcpinname="Output Node" dstnodeid="11" dstpinname="Mouse">
-   </LINK>
-   <LINK srcnodeid="28" srcpinname="Output Node" dstnodeid="24" dstpinname="View Projection">
-   </LINK>
-   <LINK srcnodeid="28" srcpinname="Output Node" dstnodeid="11" dstpinname="View Projection">
    </LINK>
    <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Atom Info">
    </LINK>
@@ -520,4 +506,18 @@
    <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
+   <NODE id="28" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <BOUNDS type="Box" left="10485" top="360" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10485" top="360" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|View Projection|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Output Node" dstnodeid="24" dstpinname="View Projection">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output Node" dstnodeid="11" dstpinname="View Projection">
+   </LINK>
    </PATCH>

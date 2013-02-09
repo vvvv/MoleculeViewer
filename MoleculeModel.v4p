@@ -138,36 +138,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="GetMatrix (Transform)" nodename="GetMatrix (Transform)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="5355" top="5631" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="Matrix Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="63" dstpinname="Transform">
-   </LINK>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="5355" top="6090" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="63" srcpinname="Matrix Out" dstnodeid="64" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="SetMatrix (Transform)" nodename="SetMatrix (Transform)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="5355" top="6570" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Matrix In" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="64" srcpinname="Output 1" dstnodeid="65" dstpinname="Matrix In">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="68">
    <BOUNDS type="Node" left="8655" top="450" width="100" height="100">
    </BOUNDS>
@@ -307,7 +277,7 @@
    </PIN>
    </NODE>
    <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="281">
-   <BOUNDS type="Node" left="10458" top="5949" width="900" height="270">
+   <BOUNDS type="Node" left="10455" top="5955" width="900" height="270">
    </BOUNDS>
    <PIN pinname="Default 1" visible="1">
    </PIN>
@@ -405,8 +375,6 @@
    <LINK srcnodeid="289" srcpinname="Output" dstnodeid="279" dstpinname="Delete">
    </LINK>
    <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="279" dstpinname="Reset">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="22" dstpinname="Input Node">
    </LINK>
    <NODE systemname="CreateBonds" filename="CreateBonds.v4p" nodename="CreateBonds.v4p" componentmode="Hidden" id="290">
    <BOUNDS type="Node" left="11910" top="7245" width="1635" height="270">
@@ -508,6 +476,20 @@
    </NODE>
    <LINK srcnodeid="291" srcpinname="Type" dstnodeid="290" dstpinname="Atom Type">
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="290" dstpinname="Transform In">
+   <NODE systemname="FrameDelay (Transform)" filename="%VVVV%\lib\nodes\modules\Transform\FrameDelay (Transform).v4p" nodename="FrameDelay (Transform)" componentmode="Hidden" id="301">
+   <BOUNDS type="Node" left="5355" top="5955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5355" top="5955">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="301" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="301" srcpinname="Transform Out" dstnodeid="22" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="301" srcpinname="Transform Out" dstnodeid="290" dstpinname="Transform In">
    </LINK>
    </PATCH>

@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="8805" top="660" width="13050" height="7125">
+   <BOUNDS type="Window" left="2565" top="1920" width="13050" height="7125">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="5280" top="585" width="0" height="0">
@@ -73,7 +73,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4875" top="1080" width="15135" height="8205">
    </BOUNDS>
-   <BOUNDS type="Window" left="1890" top="360" width="17070" height="9795">
+   <BOUNDS type="Window" left="12540" top="4290" width="17070" height="9795">
    </BOUNDS>
    <PIN pinname="TextLeft" visible="1" slicecount="5" values="|Atomic Number|,|Standart Atomic Weight|,|Electron Configurations|,Phase,Density">
    </PIN>
@@ -155,7 +155,7 @@
    </PIN>
    <BOUNDS type="Node" left="6711" top="4110" width="4530" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2625" top="330" width="14820" height="10035">
+   <BOUNDS type="Window" left="2625" top="330" width="14820" height="12045">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>

@@ -391,22 +391,20 @@
    <LINK srcnodeid="185" srcpinname="Inverse Output" dstnodeid="26" dstpinname="Input 1">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="187">
-   <BOUNDS type="Node" left="10044" top="987" width="100" height="100">
+   <BOUNDS type="Node" left="10029" top="687" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="186" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="10035" top="525" width="0" height="0">
+   <BOUNDS type="Node" left="10050" top="165" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10035" top="525" width="1335" height="240">
+   <BOUNDS type="Box" left="10050" top="165" width="2775" height="240">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="ViewProjection">
+   <PIN pinname="Input Enum" slicecount="1" values="ViewProjectionInversedAspectRatio">
    </PIN>
    </NODE>
    <LINK srcnodeid="186" srcpinname="Output Enum" dstnodeid="187" dstpinname="Receive String">
-   </LINK>
-   <LINK srcnodeid="187" srcpinname="Input Value" dstnodeid="146" dstpinname="View Projection">
    </LINK>
    <NODE systemname="IsNil (Value)" filename="IsNil (Value).v4p" nodename="IsNil (Value)" componentmode="Hidden" id="188">
    <BOUNDS type="Node" left="11019" top="2412" width="735" height="270">
@@ -601,5 +599,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="ItsTheFirstAtom" dstnodeid="145" dstpinname="First Atom Switch">
+   </LINK>
+   <LINK srcnodeid="187" srcpinname="Input Value" dstnodeid="146" dstpinname="View Projection">
    </LINK>
    </PATCH>
