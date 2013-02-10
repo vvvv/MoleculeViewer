@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\Sliders.v4p" systemname="Sliders" filename="C:\Work\MoleculeViewer\Sliders.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\Sliders.v4p" systemname="Sliders" filename="C:\Work\MoleculeViewer\Sliders.v4p" bgcolor="15132390">
    <NODE systemname="Text (EX9)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Text (EX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5820" top="5415" width="100" height="100">
    </BOUNDS>
@@ -200,7 +200,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="12180" top="4650" width="16080" height="11055">
+   <BOUNDS type="Window" left="915" top="2415" width="14340" height="9225">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="35">
    <BOUNDS type="Node" left="5802" top="6615" width="1665" height="270">
@@ -272,14 +272,12 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 2">
-   </LINK>
    <NODE systemname="Slider (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll" nodename="Slider (GUI)" componentmode="Hidden" id="69">
    <BOUNDS type="Node" left="10332" top="4545" width="2595" height="270">
    </BOUNDS>
    <PIN pinname="CountXY" visible="1">
    </PIN>
-   <PIN pinname="Internal Value" slicecount="3" values="0.740522103030532,0.724375795706432,0">
+   <PIN pinname="Internal Value" slicecount="3" values="0.505572195093222,0,0.0229966420886876">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -547,7 +545,7 @@
    </BOUNDS>
    <BOUNDS height="4380" left="570" top="225" type="Box" width="2940">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Sliders was built using the Slider (GUI) node, which outputs spread of transformations for a handle and a bar of each slider and their colors.&cr;&lf;&cr;&lf;These transformations can be used for example for the simple Quads to visualize these elements.&cr;&lf;&cr;&lf;Text labes are drawn with a Text (EX9) node which is spreaded with transforms and string inputs.&cr;&lf;&cr;&lf;A LinearSpread (Spreads) is used to spread labels vertically. By default it returns a spread of values in a range (-0,5, 0,5). This spread has to be reversed, because the vertical axis is in the range (0.5, -0.5): top to bottom. |">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Sliders are built using the Slider (GUI) node, which returns a spread of transformations for a handle and a bar of each slider and their colors.&cr;&lf;&cr;&lf;Handles and bars of the sliders can be drawn with Quads.&cr;&lf;&cr;&lf;Text labes are drawn using a Text (EX9) node which is spreaded with transformations and string inputs.&cr;&lf;&cr;&lf;A LinearSpread (Spreads) is used to spread labels vertically. By default it returns a spread of values in a range of (-0.5, 0.5). This spread has to be reversed, because the vertical axis is in the range (0.5, -0.5): top to bottom. |">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -589,9 +587,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="110" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="2085" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="1890" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="390" left="120" top="2085" type="Box" width="405">
+   <BOUNDS height="390" left="120" top="1890" type="Box" width="405">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
    </PIN>
@@ -683,9 +681,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="119" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="2949" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="2739" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="390" left="120" top="2949" type="Box" width="405">
+   <BOUNDS height="390" left="120" top="2739" type="Box" width="405">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
    </PIN>
@@ -775,5 +773,7 @@
    <LINK srcnodeid="82" srcpinname="Output Node" dstnodeid="89" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="82" srcpinname="Output Node" dstnodeid="81" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 2">
    </LINK>
    </PATCH>

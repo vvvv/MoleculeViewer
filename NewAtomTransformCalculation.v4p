@@ -190,7 +190,7 @@
    </LINK>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Selected Bond">
    </LINK>
-   <BOUNDS type="Window" left="13680" top="7290" width="13890" height="8385">
+   <BOUNDS type="Window" left="13680" top="7290" width="12885" height="6615">
    </BOUNDS>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="1" dstpinname="Y">
    </LINK>
@@ -222,102 +222,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Info|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="27" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="615" top="225" type="Node" width="7425">
-   </BOUNDS>
-   <BOUNDS height="7155" left="615" top="225" type="Box" width="2820">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="-----">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="26" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="1236" type="Node" width="315">
-   </BOUNDS>
-   <BOUNDS height="390" left="165" top="1236" type="Box" width="405">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="1.">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="16">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="25" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="2745" type="Node" width="315">
-   </BOUNDS>
-   <BOUNDS height="405" left="165" top="2745" type="Box" width="420">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="16">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="24" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="3981" type="Node" width="315">
-   </BOUNDS>
-   <BOUNDS height="405" left="165" top="3981" type="Box" width="420">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="16">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="23" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="5049" type="Node" width="315">
-   </BOUNDS>
-   <BOUNDS height="390" left="165" top="5049" type="Box" width="345">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="16">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="22" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="6087" type="Node" width="315">
-   </BOUNDS>
-   <BOUNDS height="390" left="165" top="6087" type="Box" width="345">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="28" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -402,4 +306,100 @@
    </NODE>
    <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Atom Info">
    </LINK>
+   <NODE componentmode="InABox" id="38" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="525" top="360" type="Node" width="7425">
+   </BOUNDS>
+   <BOUNDS height="4065" left="525" top="360" type="Box" width="2940">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|A new atom can be placed only on a free bond. So in order to know where (in 3d space) to place an atom, a transformation of a corresponding bond is needed.&cr;&lf;&cr;&lf;Then the new atom should be rotated, so that it&apos;s zero bond is aligned with the parent bond.&cr;&lf;&cr;&lf;And a distance (offset from the position of the parent atom) should be calculated. The distance is a sum of radii of the two atoms.&cr;&lf;&cr;&lf;A final transformation is constructed.&cr;&lf;&cr;&lf;If the new atom is the first atom of the molecule it needs an inital transform.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="37" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="75" top="351" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="75" top="351" type="Box" width="405">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="1.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="36" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="75" top="1572" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="405" left="75" top="1572" type="Box" width="420">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="35" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="75" top="2436" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="405" left="75" top="2436" type="Box" width="420">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="34" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="75" top="3495" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="75" top="3495" type="Box" width="345">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="33" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="75" top="3912" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="390" left="75" top="3912" type="Box" width="345">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\ShelfController.v4p" systemname="ShelfController" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\ShelfController.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\ShelfController.v4p" systemname="ShelfController" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\ShelfController.v4p" bgcolor="15132390">
    <NODE id="2" systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Spread Count" pintype="Input" visible="1" slicecount="1" values="4">
    </PIN>
@@ -37,7 +37,7 @@
    </PIN>
    </NODE>
    <NODE id="5" systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="XYZ" pintype="Input" visible="1" slicecount="4" values="0.18,0.18,0.18,0.18">
+   <PIN pinname="XYZ" pintype="Input" visible="1" slicecount="1" values="0.1,0.1,0.1,0.1">
    </PIN>
    <PIN pinname="Transform In" visible="1" pintype="Input">
    </PIN>
@@ -136,7 +136,7 @@
    </NODE>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="4" dstpinname="X">
    </LINK>
-   <BOUNDS type="Window" left="1545" top="660" width="14760" height="10875">
+   <BOUNDS type="Window" left="2505" top="3015" width="11490" height="10515">
    </BOUNDS>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="22" systemname="IOBox (Enumerations)">
    <BOUNDS type="Node" left="9420" top="315" width="0" height="0">
@@ -256,8 +256,6 @@
    <PIN pinname="Output 1" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="128" srcpinname="Position Out" dstnodeid="5" dstpinname="XYZ">
-   </LINK>
    <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="9420" top="720" width="100" height="100">
    </BOUNDS>
@@ -467,7 +465,7 @@
    </BOUNDS>
    <BOUNDS height="390" left="4470" top="6822" type="Box" width="405">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -483,7 +481,7 @@
    </BOUNDS>
    <BOUNDS height="390" left="4110" top="8262" type="Box" width="405">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -499,7 +497,7 @@
    </BOUNDS>
    <BOUNDS height="390" left="10440" top="4185" type="Box" width="405">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="6.">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -515,7 +513,7 @@
    </BOUNDS>
    <BOUNDS height="390" left="12495" top="4185" type="Box" width="405">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="7.">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="6.">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -529,9 +527,9 @@
    <NODE componentmode="InABox" id="157" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="615" top="465" type="Node" width="7425">
    </BOUNDS>
-   <BOUNDS height="10515" left="615" top="465" type="Box" width="3225">
+   <BOUNDS height="9045" left="615" top="465" type="Box" width="3210">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|To place the Atoms evenly spaced at the bottom of the screen, a LinearSpread (Spreads) with the Spread Count pin set to the number of Atoms is used. A spread of generated values is used for the X coordinate of the atoms.&cr;&lf;&cr;&lf;These coordinates are used for shelf atoms by default. So the values on &apos;Input 1&apos; of the Switch (Value Input) are passed to the Translate (Transform Vectore) to create Transformation for the atoms.&cr;&lf;&cr;&lf;But if the mouse is over one of the atoms AND left mouse button is pressed, then the Switch let the values on its &apos;Input 2&apos; through to the Translate node. These values are mouse XY position, so a particular atom will follow the mouse.&cr;&lf;&cr;&lf;Select (Value) just about the Switch with the &apos;Select&apos; pin set to 3 just above the Swith is used to duplicate the state 3 times, because the vectors on the Switch inputs.&cr;&lf;&cr;&lf;Button (3d Mesh) checks if the mouse is over one or the other atom. It outputs a boolean spred of true-falses (one-zeroes). This information is used over FrameDelay to define a position, sclae and an alpha of every atom in the shelf.&cr;&lf;&cr;&lf;Select (Value) is misused here to identify the slice of the selected atom.&cr;&lf;&cr;&lf;Selected atom gets a bigger value for the UniformScale (Transform) node and Damper(Animation) smoothes the changes.&cr;&lf;&cr;&lf;If the atom is selected AND left mouse buttons is pressed, then this atom gets lower alpha value used for its color.|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|To place the atoms at the bottom of the screen evenly spaced, a LinearSpread (Spreads) with the &apos;Spread Count&apos; pin set to the number of atoms is used. A spread of generated values is used for the X coordinate of the atoms.&cr;&lf;&cr;&lf;These coordinates are used for shelf atoms by default. So the values on &apos;Input 1&apos; of the Switch (Value Input) are passed to the Translate (Transform Vector) to create transformation for the atoms.&cr;&lf;&cr;&lf;However, if the mouse is placed over one of the atoms AND the left mouse button is pressed, the Switch lets the values from its &apos;Input 2&apos; pass through to the Translate node. These values are mouse XY position, hence a particular atom will follow the mouse.&cr;&lf;&cr;&lf;Select (Value) just above the Switch with the &apos;Select&apos; pin set to 3 is used to copy the state 3 times, because the vectors on the inputs of the Switch have 3 dimensions.&cr;&lf;&cr;&lf;Button (3d Mesh) checks whether the mouse is placed over an atom. It returns a boolean spread of true-falses (one-zeroes). This information is used via FrameDelay (Animation) to define the position, scale and alpha of every atom on the shelf.&cr;&lf;&cr;&lf;Select (Value) is misused here to identify the slice of the selected atom.&cr;&lf;&cr;&lf;The selected atom gets a bigger value for the UniformScale (Transform) and Damper (Animation) smoothes these changes.&cr;&lf;&cr;&lf;If the atom is selected AND the left mouse button is pressed, this atom gets a lower alpha value used for its color.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -669,9 +667,25 @@
    <LINK srcnodeid="161" srcpinname="Output" dstnodeid="160" dstpinname="Switch">
    </LINK>
    <NODE componentmode="InABox" id="162" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="6345" type="Node" width="315">
+   <BOUNDS height="270" left="165" top="5925" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="165" top="6345" type="Box" width="420">
+   <BOUNDS height="405" left="165" top="5925" type="Box" width="420">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="163" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="7395" type="Node" width="315">
+   </BOUNDS>
+   <BOUNDS height="405" left="165" top="7395" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
    </PIN>
@@ -684,10 +698,10 @@
    <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
-   <NODE componentmode="InABox" id="163" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="7800" type="Node" width="315">
+   <NODE componentmode="InABox" id="164" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="8010" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="165" top="7800" type="Box" width="420">
+   <BOUNDS height="405" left="165" top="8010" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
    </PIN>
@@ -700,28 +714,12 @@
    <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
-   <NODE componentmode="InABox" id="164" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="8445" type="Node" width="315">
+   <NODE componentmode="InABox" id="165" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="8835" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="165" top="8445" type="Box" width="420">
+   <BOUNDS height="405" left="165" top="8835" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="6.">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="16">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="165" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="9255" type="Node" width="315">
-   </BOUNDS>
-   <BOUNDS height="405" left="165" top="9255" type="Box" width="420">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="7.">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -763,5 +761,75 @@
    <LINK srcnodeid="166" srcpinname="Transform Out" dstnodeid="16" dstpinname="Transform Mesh">
    </LINK>
    <LINK srcnodeid="166" srcpinname="Transform Out" dstnodeid="21" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="128" srcpinname="Position Out" dstnodeid="5" dstpinname="XYZ">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="167" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="10470" top="8880" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10470" top="8880" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Titles Text|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Input Value" dstnodeid="167" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="168">
+   <BOUNDS type="Node" left="9030" top="7935" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="ScaleXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="166" srcpinname="Transform Out" dstnodeid="168" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="169" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="9015" top="8880" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9015" top="8880" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Titles Transform|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="168" srcpinname="Transform Out" dstnodeid="169" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="170">
+   <BOUNDS type="Node" left="9420" top="7530" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9420" top="7530" width="375" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.42">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="170" srcpinname="Y Output Value" dstnodeid="168" dstpinname="ScaleXY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="171" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="9210" top="6825" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9210" top="6825" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,-1.02">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="171" srcpinname="Y Output Value" dstnodeid="168" dstpinname="TranslateXY">
    </LINK>
    </PATCH>

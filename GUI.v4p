@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\GUI.v4p" systemname="GUI" filename="C:\Work\MoleculeViewer\GUI.v4p" bgcolor="15132390">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -20,7 +20,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="1320" top="5280" width="12915" height="12285">
+   <BOUNDS type="Window" left="825" top="3465" width="14865" height="10470">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="8595" top="7710" width="0" height="0">
@@ -197,7 +197,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6450" top="5670" width="13689" height="10604">
    </BOUNDS>
-   <BOUNDS type="Window" left="1320" top="5280" width="12915" height="12285">
+   <BOUNDS type="Window" left="11520" top="450" width="20670" height="10995">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -475,7 +475,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12000" top="5670" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2730" top="1170" width="7035" height="6000">
+   <BOUNDS type="Window" left="2730" top="1170" width="10395" height="5235">
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -533,7 +533,7 @@
    </BOUNDS>
    <BOUNDS height="8475" left="570" top="225" type="Box" width="3270">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|A Menu subpatch draws all the sliders, buttons, fields, and returns their states and values.&cr;&lf;&cr;&lf;These values and states can be seen as global values to the whole app and that is why they are sent directly to the different parts of the app instead of taking a long path through the nodes.&cr;&lf;&cr;&lf;The Menu subpatch itself has no logic and Animation nodes. It has subpatches for the different GUI elements (which in some cases have their small logic to define their own states) and Transform nodes to place these elements on the screen. As a whole the Menu subpatch is passive.&cr;&lf;&cr;&lf;In respond to pressing the Menu button a Menu layer has to be moved in or out of the screen. This animation is placed outside of the Menu subpatch. If the left mouse button bangs (TogEdge (Animation)) AND the Menu reports that the mouse is over the MenuButton, then the Toggle (Animation) state changes and over the FrameDelay it is used to control the X value of the Menu.&cr;&lf;&cr;&lf;Newton (Animation) smoothes the transition between the toggled states.&cr;&lf;&cr;&lf;It&apos;s output value (0...1) is mapped to two X values (for ON and OFF states) used to position the Manu on the screen.&cr;&lf;&cr;&lf;This subpatch just draws the title on top of the screen.|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|A Menu subpatch draws all sliders, buttons, fields and returns their states and values.&cr;&lf;&cr;&lf;These values and states can be seen as global values to the whole app and that is why they are send directly to different parts of the app instead of taking a long path through the subpatches.&cr;&lf;&cr;&lf;The Menu subpatch itself has no logic and animation nodes. It has subpatches for the different GUI elements (which in some cases have their small logic to define their own states) and Transform nodes to place these elements on the screen. As a whole the Menu subpatch is passive.&cr;&lf;&cr;&lf;By pressing the Menu button the menu layer  moves in or out of the screen. This animation is placed outside the Menu subpatch. If the left mouse button bangs (TogEdge (Animation)) AND the Menu reports that the mouse is placed over the MenuButton, the Toggle (Animation) state changes and is used to control the X value of the menu via the FrameDelay.&cr;&lf;&cr;&lf;Newton (Animation) smoothes the transition between the toggled states.&cr;&lf;&cr;&lf;Newton&apos;s output (0...1) is mapped to two X values (for ON and OFF states) that are used to position the menu on the screen.&cr;&lf;&cr;&lf;This subpatch just draws the title on top of the screen.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -559,9 +559,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="271" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="1050" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="840" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="120" top="1050" type="Box" width="420">
+   <BOUNDS height="405" left="120" top="840" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
    </PIN>
@@ -671,9 +671,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="280" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="2310" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="2070" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="120" top="2310" type="Box" width="420">
+   <BOUNDS height="405" left="120" top="2070" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
    </PIN>
@@ -687,9 +687,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="281" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="6105" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="5895" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="120" top="6105" type="Box" width="420">
+   <BOUNDS height="405" left="120" top="5895" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="4.">
    </PIN>
@@ -703,9 +703,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="282" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="6705" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="6510" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="120" top="6705" type="Box" width="420">
+   <BOUNDS height="405" left="120" top="6510" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
    </PIN>
@@ -719,9 +719,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="283" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="7566" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="7341" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="120" top="7566" type="Box" width="420">
+   <BOUNDS height="405" left="120" top="7341" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="6.">
    </PIN>

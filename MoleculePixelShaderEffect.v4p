@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug29.1.dtd" >
-   <PATCH nodename="C:\Users\Joreg\dev\github\MoleculeViewer\MoleculePixelShaderEffect.v4p" systemname="MoleculePixelShaderEffect" filename="C:\Work\MoleculeViewer\MoleculePixelShaderEffect.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\MoleculePixelShaderEffect.v4p" systemname="MoleculePixelShaderEffect" filename="C:\Work\MoleculeViewer\MoleculePixelShaderEffect.v4p">
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="6060" top="1911" width="100" height="100">
    </BOUNDS>
@@ -46,6 +46,8 @@
    <PIN pinname="Fullscreen Swap Effect" slicecount="1" values="discard">
    </PIN>
    <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Backbuffer Width" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
@@ -237,7 +239,7 @@
    </BOUNDS>
    <BOUNDS height="7920" left="615" top="225" type="Box" width="3165">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|In order to apply post-fx pixel shader to the atoms AND bonds, these layers should be rendered first all.&cr;&lf;&cr;&lf;This rendered &quot;image&quot; of the atoms and bonds will be used as texture in future compositing. That&apos;s why it&apos;s important to render these elements on a transparent background. Therefore an alpha of the Renderer&apos;s Background is set to 0 using SetAlpha (Color).&cr;&lf;&cr;&lf;DX9Texture (EX9.Texture) retrieves a texture from the Renderer (EX9). Please use the Inspektor to check and set the right Format of the texture. An alpha channel is important in this case, that is why a A8R8G8B8 format is chosen (a texture will have an 8bit alpha channel).&cr;&lf;&cr;&lf;A Blur (EX9.Texture Filter) is applied to this texture first of all.&cr;&lf;&cr;&lf;After that a contrast and brightness are adjusted using HSCB (EX9.Texture Filter).&cr;&lf;&cr;&lf;At the end, the original rendered texture and the adjusted texture are mixed together using Mix (EX9. Texture Mixer) with some Fader value.&cr;&lf;&cr;&lf;In order to use this final texture for further composing it is applied to a fullscreen quad (using FullscreenQuad (DX9)) which returns a new EX9 Layer.|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|In order to apply a pixel-shader to the atoms and bonds, these layers should be rendered first all.&cr;&lf;&cr;&lf;This rendered &quot;image&quot; of the atoms and bonds will be used as a texture for future compositing. That&apos;s why it&apos;s important to render these layers on a transparent background. Therefore an alpha of the Renderer&apos;s &apos;Background Color&apos; is set to 0 using SetAlpha (Color).&cr;&lf;&cr;&lf;DX9Texture (EX9.Texture) retrieves a texture from the Renderer (EX9). Please use the Inspektor to check and set the right Format of the texture. An alpha channel is important in this case, that is why a A8R8G8B8 format is chosen (a texture will have an 8bit alpha channel).&cr;&lf;&cr;&lf;A Blur (EX9.Texture Filter) is applied to this texture.&cr;&lf;&cr;&lf;After that a contrast and brightness are adjusted using HSCB (EX9.Texture Filter).&cr;&lf;&cr;&lf;At the end, the original rendered texture and the adjusted texture are mixed together using Mix (EX9. Texture Mixer) with some &apos;Fader&apos; value.&cr;&lf;&cr;&lf;In order to use this texture for further render passes it is applied to a fullscreen quad (using FullscreenQuad (DX9)) which returns a new EX9 Layer.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -263,9 +265,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="35" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="165" top="1035" type="Node" width="315">
+   <BOUNDS height="270" left="165" top="1065" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="165" top="1035" type="Box" width="420">
+   <BOUNDS height="405" left="165" top="1065" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
    </PIN>

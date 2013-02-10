@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\DrawBackground.v4p" systemname="DrawBackground" filename="C:\Users\praxis\Desktop\MoleculeViewer\DrawBackground.v4p">
+   <PATCH nodename="C:\Work\MoleculeViewer\DrawBackground.v4p" systemname="DrawBackground" filename="C:\Users\praxis\Desktop\MoleculeViewer\DrawBackground.v4p" bgcolor="15132390">
    <NODE systemname="Button (3d Quad)" filename="%VVVV%\lib\nodes\modules\3D\Button (3d Quad).v4p" nodename="Button (3d Quad)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="7467" top="3225" width="840" height="270">
    </BOUNDS>
@@ -59,9 +59,9 @@
    <NODE id="6" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
-   <BOUNDS type="Box" left="7065" top="345" width="750" height="240">
+   <BOUNDS type="Box" left="7860" top="345" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7065" top="345" width="750" height="240">
+   <BOUNDS type="Node" left="7860" top="345" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="0" dstpinname="Mouse">
@@ -76,14 +76,14 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Mouse Over" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="0" top="7500" width="10005" height="5385">
+   <BOUNDS type="Window" left="3780" top="10590" width="10005" height="5070">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="7659" top="1290" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7659" top="1290" width="555" height="240">
+   <BOUNDS type="Box" left="7659" top="1290" width="435" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.24">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -95,9 +95,9 @@
    <NODE componentmode="InABox" id="13" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="570" top="225" type="Node" width="7425">
    </BOUNDS>
-   <BOUNDS height="2085" left="570" top="225" type="Box" width="3270">
+   <BOUNDS height="1980" left="570" top="225" type="Box" width="3270">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Background for the menu layer is just a Quad (DX9) drawn with an alpha channel of the set to some value to achive transparency. ZWriteEnable (EX9.RenderState) node is used to disable changing the depth buffer by this quad to prevent the z-fighting.&cr;&lf;&cr;&lf;Button (3d Quad) checks if the mouse is over the Quad.|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Background for the menu layer is just a Quad (DX9) drawn with an alpha channel. SetAlpha (Color) with an &apos;Alpha&apos; pin set to any value below 1 creates different levels of transparency.&cr;&lf;&cr;&lf;Button (3d Quad) checks if the mouse is placed over the Quad.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -155,9 +155,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="16" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="1740" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="1500" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="390" left="120" top="1740" type="Box" width="405">
+   <BOUNDS height="390" left="120" top="1500" type="Box" width="405">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
    </PIN>

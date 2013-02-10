@@ -449,7 +449,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12420" top="1575" width="795" height="720">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="0.05,0.08,0">
+   <PIN pinname="Y Input Value" slicecount="3" values="-0.011,0.08,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

@@ -95,6 +95,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Atom Type" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Input">
    </LINK>
@@ -111,7 +113,9 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Typ|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Type|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Atom Typ">
@@ -331,5 +335,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Atom Type">
    </LINK>
    </PATCH>

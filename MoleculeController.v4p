@@ -215,7 +215,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4858" top="3422" width="8145" height="6493">
    </BOUNDS>
-   <BOUNDS type="Window" left="13680" top="7290" width="13890" height="8385">
+   <BOUNDS type="Window" left="13680" top="7290" width="12885" height="6615">
    </BOUNDS>
    <PIN pinname="Index - Selected Bond" slicecount="1" visible="1" values="0">
    </PIN>

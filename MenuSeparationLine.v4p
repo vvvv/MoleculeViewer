@@ -15,9 +15,9 @@
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="1" systemname="IOBox (Color)">
    <BOUNDS type="Node" left="6852" top="3003" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6852" top="3003" width="1740" height="540">
+   <BOUNDS type="Box" left="6852" top="3003" width="585" height="585">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="2" values="|0.26674,0.26674,0.26674,1.00000|,|0.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="2" values="|0.16248,0.16248,0.16248,1.00000|,|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -78,7 +78,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="1170" top="5040" width="9810" height="5625">
+   <BOUNDS type="Window" left="-1275" top="3120" width="9090" height="5625">
    </BOUNDS>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="32">
    <BOUNDS type="Node" left="6036" top="1185" width="100" height="100">
@@ -161,9 +161,9 @@
    <NODE componentmode="InABox" id="45" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="570" top="225" type="Node" width="7425">
    </BOUNDS>
-   <BOUNDS height="2775" left="570" top="225" type="Box" width="3195">
+   <BOUNDS height="3030" left="570" top="225" type="Box" width="3210">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Separation line is drawn as two very thin Quads having a bit different colors, one Quad is a bit higher than the other. Just to give the line a bit depth. So, the incoming transform has to be duplicated. A simple IOBox (Node) is used here with a Bin Size set to 2 to achive the duplication.&cr;&lf;&cr;&lf;Spread of two Y positions is used to place the Quads.&cr;&lf;&cr;&lf;Two different colors are set for the Quads.&cr;&lf;&cr;&lf;&cr;&lf;|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Separation line is drawn as two very thin Quads having a bit different colors, one Quad is placed a bit higher than the other. Just to give the line a bit depth. So, the incoming transformation has to be duplicated. A simple IOBox (Node) is used here with a &apos;Bin Size&apos; pin set to 2 to achieve the duplication.&cr;&lf;&cr;&lf;A spread of two Y positions is used to place the Quads.&cr;&lf;&cr;&lf;Two different colors are set for the Quads.&cr;&lf;&cr;&lf;&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -189,9 +189,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="43" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="120" top="1902" type="Node" width="315">
+   <BOUNDS height="270" left="120" top="2097" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="390" left="120" top="1902" type="Box" width="405">
+   <BOUNDS height="390" left="120" top="2097" type="Box" width="405">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="2.">
    </PIN>
@@ -269,9 +269,9 @@
    </PIN>
    </NODE>
    <NODE id="42" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" height="270" left="120" top="2490" width="315">
+   <BOUNDS type="Node" height="270" left="120" top="2700" width="315">
    </BOUNDS>
-   <BOUNDS type="Box" height="390" left="120" top="2490" width="405">
+   <BOUNDS type="Box" height="390" left="120" top="2700" width="405">
    </BOUNDS>
    <PIN pinname="Input String" encoded="0" slicecount="1" visible="0" pintype="Input" values="3.">
    </PIN>

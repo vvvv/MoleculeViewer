@@ -57,7 +57,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Typ|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Atom Type|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">

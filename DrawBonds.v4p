@@ -239,15 +239,15 @@
    <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Destination Maximum">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="35">
-   <BOUNDS type="Node" left="7158" top="714" width="255" height="270">
+   <BOUNDS type="Node" left="7143" top="699" width="255" height="270">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="34" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="7140" top="285" width="0" height="0">
+   <BOUNDS type="Node" left="7125" top="270" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7140" top="285" width="1485" height="240">
+   <BOUNDS type="Box" left="7125" top="270" width="1485" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" values="SliderBondRadius">
    </PIN>

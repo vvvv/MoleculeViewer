@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\Work\MoleculeViewer\_Viewer.v4p" systemname="Atoms4" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\Atoms4.v4p" bgcolor="15132390">
-   <BOUNDS type="Window" left="6435" top="1950" width="20055" height="15810">
+   <BOUNDS type="Window" left="1980" top="3180" width="12630" height="12270">
    </BOUNDS>
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="74" debug="0">
-   <BOUNDS type="Node" left="4305" top="555" width="100" height="100">
+   <BOUNDS type="Node" left="8820" top="300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -15,21 +15,21 @@
    </PIN>
    <PIN pinname="Right Button" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="4305" top="555">
+   <BOUNDS type="Box" left="8820" top="300">
    </BOUNDS>
    </NODE>
    <NODE systemname="AtomConstants" filename="AtomConstants.v4p" nodename="AtomConstants.v4p" componentmode="Hidden" id="429">
-   <BOUNDS type="Node" left="6360" top="555" width="0" height="0">
+   <BOUNDS type="Node" left="10875" top="300" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6360" top="555" width="5040" height="4720">
+   <BOUNDS type="Box" left="10875" top="300" width="5040" height="4720">
    </BOUNDS>
-   <BOUNDS type="Window" left="3750" top="1005" width="12645" height="13995">
+   <BOUNDS type="Window" left="12495" top="3765" width="18885" height="14595">
    </BOUNDS>
    </NODE>
    <NODE systemname="Camera" filename="Camera.v4p" nodename="Camera.v4p" componentmode="Hidden" id="504">
-   <BOUNDS type="Node" left="3375" top="6075" width="1395" height="270">
+   <BOUNDS type="Node" left="8235" top="5805" width="1035" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3375" top="6075" width="5877" height="4855">
+   <BOUNDS type="Box" left="8235" top="5805" width="5877" height="4855">
    </BOUNDS>
    <BOUNDS type="Window" left="8775" top="2535" width="11880" height="8625">
    </BOUNDS>
@@ -53,11 +53,11 @@
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="504" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Shelf" filename="Shelf.v4p" nodename="Shelf.v4p" componentmode="Hidden" id="547">
-   <BOUNDS type="Node" left="1575" top="2865" width="1080" height="270">
+   <BOUNDS type="Node" left="6090" top="2610" width="1080" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1575" top="2865" width="3730" height="4435">
+   <BOUNDS type="Box" left="6090" top="2610" width="3730" height="4435">
    </BOUNDS>
-   <BOUNDS type="Window" left="3840" top="7770" width="10185" height="6000">
+   <BOUNDS type="Window" left="4200" top="3645" width="10185" height="6090">
    </BOUNDS>
    <PIN pinname="Selected Atom" visible="1">
    </PIN>
@@ -71,11 +71,11 @@
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="547" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Infolayer" filename="Infolayer.v4p" nodename="Infolayer.v4p" componentmode="Hidden" id="549">
-   <BOUNDS type="Node" left="2037" top="4455" width="1665" height="270">
+   <BOUNDS type="Node" left="6555" top="4200" width="1665" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2037" top="4455" width="4230" height="3270">
+   <BOUNDS type="Box" left="6555" top="4200" width="4230" height="3270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2565" top="1920" width="13050" height="7125">
+   <BOUNDS type="Window" left="2565" top="1920" width="13455" height="7125">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -97,9 +97,9 @@
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="549" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Room" filename="Room.v4p" nodename="Room.v4p" componentmode="Hidden" id="601">
-   <BOUNDS type="Node" left="765" top="4470" width="870" height="270">
+   <BOUNDS type="Node" left="5280" top="4200" width="870" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="765" top="4470" width="3115" height="4225">
+   <BOUNDS type="Box" left="5280" top="4200" width="3115" height="4225">
    </BOUNDS>
    <BOUNDS type="Window" left="1290" top="3060" width="6675" height="5760">
    </BOUNDS>
@@ -107,9 +107,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="603" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11640" top="645" width="5310" height="270">
+   <BOUNDS type="Node" left="255" top="6675" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11640" top="645" width="1875" height="540">
+   <BOUNDS type="Box" left="255" top="6675" width="1875" height="540">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="BUGS">
    </PIN>
@@ -123,41 +123,11 @@
    </PIN>
    </NODE>
    <NODE id="602" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|!!!!1. Is there Still but in Storage?&cr;&lf;&cr;&lf;1. Menu is somehow not always sitting on the left border, despite of my &quot;offset&quot; subpatch. May be it needs to be rebuilt.|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|!!!!1. Is there Still but in Storage?&cr;&lf;&cr;&lf;2. Evalueate pin at AtomInfoStorage.&cr;&lf;&cr;&lf;- S+H solution! &cr;&lf;- DONE, BUT Very strange 3 x FrameDelay configuration just to have a bang. Strange, that it&apos;s not in one frame|">
    </PIN>
-   <BOUNDS type="Node" left="11685" top="1335" width="5310" height="270">
+   <BOUNDS type="Node" left="300" top="7365" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11685" top="1335" width="3000" height="2970">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="641" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11685" top="4875" width="5310" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11685" top="4875" width="1875" height="540">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="NOTES">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="20">
-   </PIN>
-   </NODE>
-   <NODE id="640" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Atoms&apos; transparency. It will be adjusted not in controller, but directly in DrawAtoms... ?&cr;&lf;&cr;&lf;2. Infolayer / Controller: FrameDelay for Alpha???&cr;&lf;&cr;&lf;3. Storage / AtomInfo: FrameDelays for S+H???&cr;&lf;&cr;&lf;14. Model redet direct mit View und gibt Atom Info direct dahin.&cr;&lf;|">
-   </PIN>
-   <BOUNDS type="Node" left="11730" top="5565" width="5310" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11730" top="5565" width="2970" height="2580">
+   <BOUNDS type="Box" left="300" top="7365" width="3060" height="2985">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -167,23 +137,23 @@
    </PIN>
    </NODE>
    <NODE systemname="Keyboard (System Window)" filename="%VVVV%\lib\nodes\modules\System\Keyboard (System Window).v4p" nodename="Keyboard (System Window)" componentmode="Hidden" id="646">
-   <BOUNDS type="Node" left="3135" top="555" width="100" height="100">
+   <BOUNDS type="Node" left="7650" top="300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Keyboard" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="3135" top="555">
+   <BOUNDS type="Box" left="7650" top="300">
    </BOUNDS>
    </NODE>
-   <NODE id="638" systemname="GUI" filename="GUI.v4p" nodename="GUI.v4p" componentmode="InAWindow" debug="0">
+   <NODE id="638" systemname="GUI" filename="GUI.v4p" nodename="GUI.v4p" componentmode="Hidden" debug="0">
    <PIN pinname="Mouse">
    </PIN>
    <PIN pinname="Keyboard" visible="1">
    </PIN>
-   <BOUNDS type="Node" left="3135" top="2865" width="1110" height="270">
+   <BOUNDS type="Node" left="7650" top="2610" width="765" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3135" top="2865" width="3810" height="4464">
+   <BOUNDS type="Box" left="7650" top="2610" width="3810" height="4464">
    </BOUNDS>
-   <BOUNDS type="Window" left="1320" top="5280" width="12915" height="12285">
+   <BOUNDS type="Window" left="825" top="3465" width="14865" height="10470">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -213,9 +183,9 @@
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="638" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="RenderPasses" filename="RenderPasses.v4p" nodename="RenderPasses.v4p" componentmode="Hidden" id="685">
-   <BOUNDS type="Node" left="739" top="6590" width="4020" height="270">
+   <BOUNDS type="Node" left="5254" top="6335" width="4020" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="2861" width="6334" height="7458">
+   <BOUNDS type="Box" left="4515" top="2606" width="6334" height="7458">
    </BOUNDS>
    <BOUNDS type="Window" left="3195" top="6585" width="16320" height="8685">
    </BOUNDS>
@@ -233,11 +203,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Molecule" filename="Molecule.v4p" componentmode="Hidden" id="597" nodename="Molecule.v4p">
-   <BOUNDS type="Node" left="1590" top="3603" width="1845" height="270">
+   <BOUNDS type="Node" left="6105" top="3348" width="1845" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1590" top="3603" width="4800" height="3600">
+   <BOUNDS type="Box" left="6105" top="3348" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="4350" top="315" width="16245" height="10575">
+   <BOUNDS type="Window" left="4170" top="450" width="16245" height="10575">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -314,42 +284,12 @@
    </LINK>
    <LINK srcnodeid="638" srcpinname="Load" dstnodeid="597" dstpinname="Load">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="687" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="15135" top="555" width="5310" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15135" top="555" width="1875" height="540">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|TO DO|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="20">
-   </PIN>
-   </NODE>
-   <NODE id="686" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|4. Color animation for selected Atom of the molecule.&cr;&lf;&cr;&lf;5.Infolayer should be rebuilt so that it is defined in its own coordinates and then just moved by transforms.&cr;&lf;&cr;&lf;8. Molecule &gt; Title. ViewProjectionInverse + Offset should be changed,&cr;&lf;&cr;&lf;9. Helppatch fuer Rotation Successive&cr;&lf;&cr;&lf;16. Eigentlich SelectedAtom muss ins Model gespeichert werden. Und Model sagt zu View wer selected ist. Bei mehrere selected Atoms das ist notwendig, bei uns kann man shortcut machen.&cr;&lf;&cr;&lf;CONTROLLER VON VIEW moeglichst TRENNEN.&cr;&lf;&cr;&lf;17. Store Transform, schauen ob man irgendwie loop entfernen fuer den slice nummer von dem neuen Atom.&cr;&lf;DONE&cr;&lf;&cr;&lf;18. Check Menu&apos;s Toggle Buttons - the innere Quad should be highlighted by ON.|">
-   </PIN>
-   <BOUNDS type="Node" left="15195" top="1275" width="5310" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15195" top="1275" width="4110" height="7305">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="698" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="8115" top="615" width="5310" height="270">
+   <BOUNDS type="Node" left="225" top="180" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="8115" top="615" width="1875" height="540">
+   <BOUNDS type="Box" left="225" top="180" width="3375" height="570">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="INFO">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Molecule Viewer|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -361,53 +301,23 @@
    </PIN>
    </NODE>
    <NODE id="697" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1.  Drag and Drop atoms from the shelf into the screen.&cr;&lf;&cr;&lf;2. Right button click to remove the Atom. Only border atoms (with no children) can be deleted. &cr;&lf;&cr;&lf;3. Atoms can be dropped only on the free Bonds.&cr;&lf;&cr;&lf;4. Left click to the atom to see the info. At the moment only  Carbon (orange one) has info in the right column. &cr;&lf;&cr;&lf;5, Middle click to pan&cr;&lf;&cr;&lf;6. Weel for zoom&cr;&lf;&cr;&lf;6. Left click (emty space) - rotate camera|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|- Drag and drop an atom from the shelf.&cr;&lf;&cr;&lf;- Further atoms can be dropped only onto the free bonds.&cr;&lf;&cr;&lf;- Left click an atom to see its info.&cr;&lf;&cr;&lf;- Left click (emty space) to rotate a camera.&cr;&lf;&cr;&lf;- Right click an atom to remove it. Only border atoms (with no children) can be deleted. &cr;&lf;&cr;&lf;- Middle click to pan&cr;&lf;&cr;&lf;- Weel to zoom|">
    </PIN>
-   <BOUNDS type="Node" left="8160" top="1305" width="5310" height="270">
+   <BOUNDS type="Node" left="240" top="2400" width="5310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="8160" top="1305" width="3000" height="4215">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE id="702" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|2. Evalueate pin at AtomInfoStorage.&cr;&lf;&cr;&lf;- S+H solution! &cr;&lf;- DONE, BUT Very strange 3 x FrameDelay configuration just to have a bang. Strange, that it&apos;s not in one frame&cr;&lf;&cr;&lf;4. InfoLayerController - R are inside - should they be in the parent patch?&cr;&lf;&cr;&lf;- R rausnehmen! Ueberall. Ins parrent patch.&cr;&lf;- NOT EVERYWHERE DONE. Check DrawAtoms and Molecule - Every R goes to parent patch?&cr;&lf;&cr;&lf;5. InfoLayerDraw returns only Button transform and Button is placed in the Controller. That&apos;s because Draw doesn&apos;t receive Mouse. But it is different in other subpatches....&cr;&lf;&cr;&lf;Beide Varianten erklaeren. Pro and cons&cr;&lf;&cr;&lf;6. Shelf should get also state, that camera is on, so no shelf atom is alowed to be picked.&cr;&lf;&cr;&lf;MainController hat Automata mit definirten States, like Orbiting, Shelf, Menu, Add Atom, Delete Atom. Select Atom. Show Info Layer. |">
-   </PIN>
-   <BOUNDS type="Node" left="11820" top="12255" width="5310" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11820" top="12255" width="3150" height="7170">
+   <BOUNDS type="Box" left="240" top="2400" width="3180" height="3750">
    </BOUNDS>
    <PIN pinname="Output String" visible="0">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="705" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="8160" top="6450" width="5310" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8160" top="6450" width="2415" height="675">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="Joreg">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="20">
    </PIN>
    </NODE>
    <NODE systemname="Reset" filename="Reset.v4p" nodename="Reset.v4p" componentmode="Hidden" id="706">
-   <BOUNDS type="Node" left="5490" top="555" width="0" height="0">
+   <BOUNDS type="Node" left="10005" top="300" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5490" top="555" width="3685" height="4245">
+   <BOUNDS type="Box" left="10005" top="300" width="3685" height="4245">
    </BOUNDS>
    <BOUNDS type="Window" left="14666" top="3615" width="3685" height="4245">
    </BOUNDS>
@@ -420,44 +330,14 @@
    </LINK>
    <LINK srcnodeid="597" srcpinname="Something is Selected" dstnodeid="504" dstpinname="Molecule Selected">
    </LINK>
-   <NODE id="708" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. ViewTransform zusammenfassen&cr;&lf;- DONE&cr;&lf;&cr;&lf;2. MouseIncremental wird Rotate Transform Successive Vector.&cr;&lf;- Helppatch&cr;&lf;&cr;&lf;3. Weel for zoom.&cr;&lf;- DONE&cr;&lf;&cr;&lf;4. Cursor and PerfMeter zusammen in einem subpatch.&cr;&lf;- DONE&cr;&lf;&cr;&lf;6. AntTweakBar - anschauen und erwägen.&cr;&lf;&cr;&lf;7. WithinViewport ueberall + AspectRatio see GUI Title&cr;&lf;&cr;&lf;8. GUI ViewProjectionInverse vs. WithinViewport + What&apos;s with sliders?&cr;&lf;&cr;&lf;9. Shelf LinearSpread nach oben.&cr;&lf;- DONE&cr;&lf;&cr;&lf;10. Vector3 nach MouseState.&cr;&lf;- DONE&cr;&lf;&cr;&lf;11. Button MouseOver pin output instead of Select (spread generation). Several places.&cr;&lf;- DONE&cr;&lf;&cr;&lf;12. Light for Shelf anpassen.&cr;&lf;&cr;&lf;13. Immer versuchen statt X, Y getrennt zu halten ein Vector zu nehmen. Auch bei + und so weiter, einfach ein spread zu addieren.&cr;&lf;&cr;&lf;14. Storage, umbau FrameDelays.&cr;&lf;|">
-   </PIN>
-   <BOUNDS type="Node" left="8205" top="7200" width="5310" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8205" top="7200" width="3330" height="8475">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="597" srcpinname="Atoms Info" dstnodeid="549" dstpinname="Atom info">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="711" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11835" top="11625" width="5310" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11835" top="11625" width="3075" height="525">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|OLD Questions|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="20">
-   </PIN>
-   </NODE>
    <NODE systemname="StatesController" filename="StatesController.v4p" componentmode="Hidden" id="736" nodename="StatesController.v4p">
-   <BOUNDS type="Node" left="3930" top="1815" width="1665" height="270">
+   <BOUNDS type="Node" left="7905" top="1575" width="1665" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3930" top="1815" width="4800" height="3600">
+   <BOUNDS type="Box" left="7905" top="1575" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="3450" top="0" width="12240" height="10890">
+   <BOUNDS type="Window" left="3450" top="0" width="13350" height="10890">
    </BOUNDS>
    <PIN pinname="Mouse" visible="1">
    </PIN>
@@ -475,6 +355,8 @@
    </PIN>
    <PIN pinname="Molecule Enable" visible="1">
    </PIN>
+   <PIN pinname="OnMenu" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="736" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
@@ -485,9 +367,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="547" srcpinname="Selected Atom" dstnodeid="736" dstpinname="Selected Shelf Atom" linkstyle="Bezier">
-   <LINKPOINT x="0" y="3485">
+   <LINKPOINT x="4515" y="3235">
    </LINKPOINT>
-   <LINKPOINT x="1375" y="0">
+   <LINKPOINT x="5530" y="0">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="736" srcpinname="Camera Enable" dstnodeid="504" dstpinname="Enable">
@@ -497,7 +379,7 @@
    <LINK srcnodeid="736" srcpinname="Molecule Enable" dstnodeid="597" dstpinname="Enable">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="743">
-   <BOUNDS type="Node" left="750" top="5490" width="1110" height="270">
+   <BOUNDS type="Node" left="5265" top="5235" width="1110" height="270">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -517,7 +399,7 @@
    <LINK srcnodeid="597" srcpinname="Layer" dstnodeid="743" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="747">
-   <BOUNDS type="Node" left="2040" top="5475" width="2250" height="270">
+   <BOUNDS type="Node" left="6555" top="5235" width="1695" height="270">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -525,7 +407,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Layer Template Count" slicecount="1" values="4">
+   <PIN pinname="Layer Template Count" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Layer 3" visible="1">
    </PIN>
@@ -550,4 +432,40 @@
    </LINK>
    <LINK srcnodeid="74" srcpinname="Mouse" dstnodeid="685" dstpinname="Mouse" hiddenwhenlocked="1">
    </LINK>
+   <LINK srcnodeid="638" srcpinname="MouseOver" dstnodeid="736" dstpinname="OnMenu" linkstyle="Bezier">
+   <LINKPOINT x="9570" y="4085">
+   </LINKPOINT>
+   <LINKPOINT x="11520" y="400">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="748" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|alpha. 01 / node13|">
+   </PIN>
+   <BOUNDS type="Node" left="270" top="705" width="5310" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="270" top="705" width="3210" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="749" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="240" top="1860" width="5310" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="240" top="1860" width="1875" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|How to|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   </NODE>
    </PATCH>

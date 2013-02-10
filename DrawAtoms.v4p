@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug29.1.dtd" >
-   <PATCH nodename="C:\Users\Joreg\dev\github\MoleculeViewer\DrawAtoms.v4p" systemname="DrawAtoms" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawAtoms.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\DrawAtoms.v4p" systemname="DrawAtoms" filename="C:\Work\MoleculeViewer\Q-A\Atoms_And_Bonds\DrawAtoms.v4p">
    <NODE id="1" systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden">
    <PIN pinname="Radius" visible="1" slicecount="3" values="0">
    </PIN>

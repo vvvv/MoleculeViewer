@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Work\MoleculeViewer\TextField.v4p" systemname="TextField" filename="C:\Work\MoleculeViewer\TextField.v4p" locked="0">
-   <BOUNDS type="Window" left="2190" top="2730" width="17715" height="10560">
+   <PATCH nodename="C:\Work\MoleculeViewer\TextField.v4p" systemname="TextField" filename="C:\Work\MoleculeViewer\TextField.v4p" locked="0" bgcolor="15132390">
+   <BOUNDS type="Window" left="1560" top="3060" width="15060" height="10035">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
    <BOUNDS type="Node" left="10065" top="330" width="100" height="100">
@@ -231,7 +231,7 @@
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="60" systemname="IOBox (Color)">
    <BOUNDS type="Node" left="13509" top="6579" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="13509" top="6579" width="525" height="285">
+   <BOUNDS type="Box" left="13509" top="6579" width="375" height="285">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
@@ -411,9 +411,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="170" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="9981" top="8769" width="0" height="0">
+   <BOUNDS type="Node" left="9975" top="8775" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9981" top="8769" width="795" height="240">
+   <BOUNDS type="Box" left="9975" top="8775" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -427,9 +427,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="171" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="8556" top="8799" width="0" height="0">
+   <BOUNDS type="Node" left="8550" top="8775" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8556" top="8799" width="945" height="270">
+   <BOUNDS type="Box" left="8550" top="8775" width="945" height="270">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -563,9 +563,9 @@
    <NODE componentmode="InABox" id="199" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="570" top="225" type="Node" width="7425">
    </BOUNDS>
-   <BOUNDS height="6750" left="570" top="225" type="Box" width="3480">
+   <BOUNDS height="6420" left="570" top="225" type="Box" width="3495">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Input text field has 2 main parts:&cr;&lf;- a model (it&apos;s where the typed letters are svaend as a string and maintained)&cr;&lf;- a view that draws the background, typed string and a label for the field.&cr;&lf;&cr;&lf;A model is the myTypewriter subpatch. Please check it for more details.&cr;&lf;&cr;&lf;It is enabled only when mouse is clicked (Up Edge of the TogEdge (Animation)) AND when mouse is placed over the quad representing the field. This is checked via Button (3d Quad).&cr;&lf;&cr;&lf;If the mouse is clicked AND is placed NOT over the Quad, myTypewriter is will be disabled.&cr;&lf;&cr;&lf;When the field is enabled the background Quad should smoothly change the color. LinearFilter (Animation) interpolates betweeen 1 and 0 states of the FlipFlop. These values (in a range 0..1) are used then in InputMoprh (Color) to interpolate between an Active and a Defult color.&cr;&lf;&cr;&lf;Typed text is drawn with a Text (EX9) placed correctly inside the field using some tranformations.&cr;&lf;&cr;&lf;And a label text is placed above the field.|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|The input text field has two main parts:&cr;&lf;- a model (that is where the typed letters are saved and maintained as a string)&cr;&lf;- a view - that draws the background, typed string and a label for the field.&cr;&lf;&cr;&lf;The model is the myTypewriter subpatch. Please check it for more details.&cr;&lf;&cr;&lf;It is enabled only when the mouse button is clicked (&apos;Up Edge&apos; pin of the TogEdge (Animation)) AND when the mouse is placed over the Quad representing the field. This is checked via Button (3d Quad).&cr;&lf;&cr;&lf;If the mouse is clicked AND is NOT placed over the Quad, myTypewriter will be disabled.&cr;&lf;&cr;&lf;When the field is enabled the background Quad should smoothly change color. LinearFilter (Animation) interpolates betweeen 1 and 0 states of the FlipFlop. These values (in a range  of (0,1)) are then used in InputMoprh (Color) to interpolate between &apos;Active&apos; and &apos;Default&apos; color.&cr;&lf;&cr;&lf;Typed string is drawn with a Text (EX9) placed correctly inside the field using transformations.&cr;&lf;&cr;&lf;A label text is drawn above the field.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -607,9 +607,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="196" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="132" top="3786" type="Node" width="315">
+   <BOUNDS height="270" left="132" top="3996" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="132" top="3786" type="Box" width="420">
+   <BOUNDS height="405" left="132" top="3996" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="3.">
    </PIN>
@@ -639,9 +639,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="194" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="132" top="6240" type="Node" width="315">
+   <BOUNDS height="270" left="132" top="6060" type="Node" width="315">
    </BOUNDS>
-   <BOUNDS height="405" left="132" top="6240" type="Box" width="420">
+   <BOUNDS height="405" left="132" top="6060" type="Box" width="420">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="5.">
    </PIN>

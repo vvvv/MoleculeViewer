@@ -253,7 +253,7 @@
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="14400" top="10215" width="11415" height="7065">
+   <BOUNDS type="Window" left="14850" top="10275" width="11415" height="7065">
    </BOUNDS>
    <PIN pinname="Atom to Delete" visible="1">
    </PIN>
@@ -298,7 +298,7 @@
    </LINK>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="279" dstpinname="Selected Atom">
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="279" dstpinname="New Atom Typ">
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="279" dstpinname="New Atom Type">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="279" dstpinname="Insert">
    </LINK>
