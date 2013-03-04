@@ -1,8 +1,8 @@
 MoleculeViewer
 ==============
 
-A demo app showing a complex project(a la real world) built with a clean structure, divided responsobilities and MVC design pattern in mind.
-It's a viewer/builder for simple 3d molecules with its own 3d scene, gui, ability to load/save models and show infos in a floating layer.
+A demo app showing a complex project (a la real world) built with a clean structure, divided responsobilities and MVC design pattern in mind.
+It's a viewer/builder for simple 3d molecules with its own 3d scene, gui, the ability to load/save models and to show infos in a floating layer.
 
 (Almost) every subpatch is documented. 
 Docs are still in progress.
