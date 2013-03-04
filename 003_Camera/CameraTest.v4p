@@ -1,0 +1,131 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+   <PATCH nodename="C:\Work\MoleculeViewer\For the people\003_Camera\CameraTest.v4p" systemname="CameraTest" filename="C:\Work\MoleculeViewer\For the people\003_Camera\CameraTest.v4p">
+   <BOUNDS type="Window" left="4275" top="1185" width="8670" height="6300">
+   </BOUNDS>
+   <NODE systemname="Box (EX9.Geometry)" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="855" top="345" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="690" top="825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Mesh" dstnodeid="1" dstpinname="Mesh">
+   </LINK>
+   <NODE nodename="Group (EX9)" id="2" systemname="Group (EX9)">
+   <BOUNDS type="Node" left="2985" top="2685" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2985" top="2685" width="2400" height="1800">
+   </BOUNDS>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 1">
+   </LINK>
+   <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="3" systemname="Renderer (EX9)">
+   <BOUNDS type="Node" left="2985" top="3120" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2985" top="3120" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12945" top="1215" width="6120" height="4860">
+   </BOUNDS>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Layer" dstnodeid="3" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3225" top="810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cursor (DX9)" filename="%VVVV%\lib\nodes\modules\EX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="3225" top="2055" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Mouse" dstnodeid="8" dstpinname="Mouse">
+   </LINK>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="4860" top="3105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Actual Backbuffer Width" dstnodeid="9" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Actual Backbuffer Height" dstnodeid="9" dstpinname="Aspect Height">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="3" dstpinname="Aspect Ratio">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="4845" top="4095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="10" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5070" top="3660" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5070" top="3660" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="AspectRatio">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="devnul">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="10" dstpinname="Send String">
+   </LINK>
+   <NODE systemname="Camera" filename="Camera.v4p" nodename="Camera.v4p" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="4125" top="2610" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="View" dstnodeid="3" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Projection" dstnodeid="3" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Mouse" dstnodeid="12" dstpinname="Mouse">
+   </LINK>
+   </PATCH>

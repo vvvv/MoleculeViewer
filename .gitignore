@@ -1,6 +1,7 @@
 *~.xml
 *.dll
 /PSD/*.*
-
+/work
 desktop.ini
 /Qfsm
+/Contributions
