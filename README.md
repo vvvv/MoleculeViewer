@@ -15,3 +15,6 @@ Docs are still in progress.
    
 3. Single workshop steps (simplified parts of the app):
    002-008
+   
+Still hungry? Here is great practical advices about "software engineering patterns with vvv" in written form:
+http://vvvv.org/documentation/software-engineering-patterns-with-vvvv
