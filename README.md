@@ -1,10 +1,14 @@
 MoleculeViewer
 ==============
 
-antons molecule viewer demo app.
+A demo app showing a complex project(a la real world) built with a clean structure, divided responsobilities and MVC design pattern in mind.
+It's a viewer/builder for simple 3d molecules with its own 3d scene, gui, ability to load/save models and show infos in a floating layer.
 
-1. Want to look at the final app?
-   "Check 000_MoleculeViewer_FinalApp > _Viewer.v4p"
+(Almost) every subpatch is documented. 
+Docs are still in progress.
+
+1. Want to look at the final app? 
+   Check "000_MoleculeViewer_FinalApp > _Viewer.v4p"
 
 2. Slides for the workshop:
    "Building applications with vvvv - workshop.pdf"
