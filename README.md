@@ -10,4 +10,4 @@ antons molecule viewer demo app.
    MoleculeViewer_Workshop.pdf
    
 3. Single workshop steps (simplified parts of the app):
-   001-008
+   002-008
